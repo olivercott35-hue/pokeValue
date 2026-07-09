@@ -1,0 +1,10 @@
+{
+  "app": {
+    "[project]/app/dashboard/page": [],
+    "[project]/app/page": [],
+    "[project]/app/sets/page": []
+  },
+  "appUsingSizeAdjust": false,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
