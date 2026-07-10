@@ -68,7 +68,7 @@ type CardsClientProps = {
   totalCards: number;
 };
 
-const PAGE_SIZE = 48;
+const PAGE_SIZE = 24;
 
 const smoothEase: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
@@ -140,15 +140,16 @@ export default function CardsClient({
 }: CardsClientProps) {
   const shouldReduceMotion = useReducedMotion();
 
-  const [cards, setCards] = useState<CardWithPrice[]>(initialCards || []);
-  const [page, setPage] = useState(1);
+  const startingCards = initialCards || [];
+  const startingPage = Math.max(1, Math.ceil(startingCards.length / PAGE_SIZE));
+
+  const [cards, setCards] = useState<CardWithPrice[]>(startingCards);
+  const [page, setPage] = useState(startingPage);
   const [loading, setLoading] = useState(false);
   const [sortBy, setSortBy] = useState<SortOption>("value-desc");
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
-  const [hasMore, setHasMore] = useState(
-    (initialCards || []).length === PAGE_SIZE
-  );
+  const [hasMore, setHasMore] = useState(startingCards.length < totalCards);
   const [showMenu, setShowMenu] = useState(false);
   const [resultCount, setResultCount] = useState(totalCards);
 
@@ -157,8 +158,8 @@ export default function CardsClient({
   const loaderRef = useRef<HTMLDivElement | null>(null);
   const abortRef = useRef<AbortController | null>(null);
   const loadingRef = useRef(false);
-  const hasMoreRef = useRef(hasMore);
-  const pageRef = useRef(1);
+  const hasMoreRef = useRef(startingCards.length < totalCards);
+  const pageRef = useRef(startingPage);
 
   const activeSort = useMemo(
     () => sortOptions.find((option) => option.id === sortBy),
@@ -334,7 +335,7 @@ export default function CardsClient({
 
   return (
     <AppLayout>
-      <main className="relative min-h-full overflow-hidden px-4 py-6 text-white sm:px-6 lg:px-8 xl:px-10">
+      <main className="relative min-h-full overflow-hidden bg-[#060607] px-4 py-6 text-white sm:px-6 lg:px-8 xl:px-10">
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <motion.div
             aria-hidden
@@ -351,7 +352,7 @@ export default function CardsClient({
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute left-1/2 top-[-360px] h-[760px] w-[1080px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(168,85,247,0.26),transparent_68%)] blur-3xl"
+            className="absolute left-1/2 top-[-360px] h-[760px] w-[1080px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(109,40,217,0.12),transparent_68%)] blur-3xl"
           />
 
           <motion.div
@@ -369,7 +370,7 @@ export default function CardsClient({
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute right-[-320px] top-[320px] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle,rgba(217,70,239,0.18),transparent_70%)] blur-3xl"
+            className="absolute right-[-320px] top-[320px] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle,rgba(126,34,206,0.075),transparent_70%)] blur-3xl"
           />
 
           <motion.div
@@ -388,10 +389,10 @@ export default function CardsClient({
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute bottom-[-340px] left-[-300px] h-[720px] w-[720px] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.14),transparent_72%)] blur-3xl"
+            className="absolute bottom-[-340px] left-[-300px] h-[720px] w-[720px] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.055),transparent_72%)] blur-3xl"
           />
 
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.018)_1px,transparent_1px)] bg-[size:56px_56px] [mask-image:radial-gradient(circle_at_50%_18%,black,transparent_72%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.012)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.012)_1px,transparent_1px)] bg-[size:56px_56px] [mask-image:radial-gradient(circle_at_50%_18%,black,transparent_72%)]" />
         </div>
 
         <div className="relative mx-auto max-w-[1540px]">
@@ -399,11 +400,11 @@ export default function CardsClient({
             initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.42, ease: smoothEase }}
-            className="mb-6 overflow-hidden rounded-[2.4rem] border border-white/[0.1] bg-[linear-gradient(135deg,rgba(255,255,255,0.105),rgba(255,255,255,0.025))] shadow-[0_38px_150px_rgba(0,0,0,0.42)] backdrop-blur-2xl sm:mb-8"
+            className="mb-6 overflow-hidden rounded-[2.4rem] border border-white/[0.075] bg-[linear-gradient(135deg,rgba(255,255,255,0.065),rgba(255,255,255,0.018))] shadow-[0_38px_150px_rgba(0,0,0,0.42)] backdrop-blur-2xl sm:mb-8"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(216,180,254,0.24),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(56,189,248,0.10),transparent_36%)]" />
-              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-purple-100/90 to-transparent" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(167,139,250,0.09),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(96,165,250,0.04),transparent_36%)]" />
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-200/35 to-transparent" />
               <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-white/22 to-transparent" />
 
               <motion.div
@@ -426,7 +427,7 @@ export default function CardsClient({
 
               <div className="relative grid gap-8 p-5 sm:p-7 lg:grid-cols-[1fr_390px] lg:items-end lg:p-8">
                 <div>
-                  <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-purple-200/20 bg-purple-300/[0.09] px-3 py-2 text-purple-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">
+                  <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-violet-300/12 bg-violet-500/[0.045] px-3 py-2 text-violet-200/80 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">
                     <ShieldCheck className="h-3.5 w-3.5" />
                     <span className="text-[10px] font-black uppercase tracking-[0.24em]">
                       Premium Card Explorer
@@ -477,11 +478,11 @@ export default function CardsClient({
             initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.38, delay: 0.04, ease: smoothEase }}
-            className="sticky top-[76px] z-30 mb-8 rounded-[1.85rem] border border-white/[0.1] bg-[rgba(8,8,14,0.8)] p-3 shadow-[0_26px_100px_rgba(0,0,0,0.4)] backdrop-blur-2xl sm:p-4"
+            className="sticky top-[76px] z-30 mb-8 rounded-[1.85rem] border border-white/[0.075] bg-[rgba(7,7,10,0.9)] p-3 shadow-[0_26px_100px_rgba(0,0,0,0.4)] backdrop-blur-2xl sm:p-4"
           >
             <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
-              <div className="group flex min-h-12 flex-1 items-center gap-3 rounded-2xl border border-white/[0.085] bg-white/[0.045] px-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.065)] transition-colors duration-200 focus-within:border-purple-200/45 focus-within:bg-white/[0.065]">
-                <Search className="h-4 w-4 shrink-0 text-zinc-500 transition-colors duration-200 group-focus-within:text-purple-100" />
+              <div className="group flex min-h-12 flex-1 items-center gap-3 rounded-2xl border border-white/[0.07] bg-white/[0.03] px-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.065)] transition-colors duration-200 focus-within:border-white/[0.18] focus-within:bg-white/[0.045]">
+                <Search className="h-4 w-4 shrink-0 text-zinc-500 transition-colors duration-200 group-focus-within:text-zinc-300" />
 
                 <input
                   value={search}
@@ -512,11 +513,11 @@ export default function CardsClient({
                 <button
                   type="button"
                   onClick={() => setShowMenu((value) => !value)}
-                  className="flex min-h-12 w-full items-center justify-between gap-4 rounded-2xl border border-white/[0.085] bg-white/[0.045] px-4 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.065)] transition-colors duration-200 hover:border-purple-200/35 hover:bg-white/[0.065] lg:w-72"
+                  className="flex min-h-12 w-full items-center justify-between gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.03] px-4 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.065)] transition-colors duration-200 hover:border-white/[0.14] hover:bg-white/[0.045] lg:w-72"
                   aria-expanded={showMenu}
                 >
                   <span className="flex items-center gap-3">
-                    <span className="flex h-9 w-9 items-center justify-center rounded-xl border border-purple-200/16 bg-purple-300/[0.1] text-purple-100">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-xl border border-violet-300/10 bg-violet-500/[0.05] text-violet-200/75">
                       <ArrowDownUp className="h-4 w-4" />
                     </span>
 
@@ -554,7 +555,7 @@ export default function CardsClient({
                       transition={{ duration: 0.18, ease: smoothEase }}
                       className="absolute right-0 top-full z-50 mt-2 w-full overflow-hidden rounded-2xl border border-white/[0.11] bg-[rgba(7,7,12,0.98)] p-2 shadow-[0_34px_100px_rgba(0,0,0,0.62)] backdrop-blur-2xl lg:w-80"
                     >
-                      <div className="flex items-center gap-2 px-3 py-2 text-purple-100">
+                      <div className="flex items-center gap-2 px-3 py-2 text-violet-200/80">
                         <SlidersHorizontal className="h-3.5 w-3.5" />
                         <span className="text-[10px] font-black uppercase tracking-[0.24em]">
                           Sort archive
@@ -572,7 +573,7 @@ export default function CardsClient({
                             }}
                             className={`w-full rounded-xl px-3 py-3 text-left transition-colors duration-150 ${
                               sortBy === option.id
-                                ? "bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white shadow-[0_16px_42px_rgba(168,85,247,0.24)]"
+                                ? "bg-gradient-to-r from-violet-800/90 to-indigo-800/80 text-white shadow-[0_16px_42px_rgba(76,29,149,0.22)]"
                                 : "text-zinc-400 hover:bg-white/[0.06] hover:text-white"
                             }`}
                           >
@@ -582,7 +583,7 @@ export default function CardsClient({
                             <span
                               className={`mt-0.5 block text-xs leading-5 ${
                                 sortBy === option.id
-                                  ? "text-purple-50/80"
+                                  ? "text-violet-100/70"
                                   : "text-zinc-600"
                               }`}
                             >
@@ -629,7 +630,7 @@ export default function CardsClient({
 
           <div className="flex min-h-28 items-center justify-center py-10">
             {loading && cards.length > 0 && (
-              <div className="flex items-center gap-3 rounded-full border border-white/[0.09] bg-white/[0.045] px-5 py-3 text-purple-100 shadow-[0_18px_70px_rgba(0,0,0,0.28)] backdrop-blur-2xl">
+              <div className="flex items-center gap-3 rounded-full border border-white/[0.09] bg-white/[0.045] px-5 py-3 text-violet-200/80 shadow-[0_18px_70px_rgba(0,0,0,0.28)] backdrop-blur-2xl">
                 <Loader2 className="h-4 w-4 animate-spin" />
                 <span className="text-[10px] font-black uppercase tracking-[0.22em]">
                   Loading more cards
@@ -674,15 +675,19 @@ function ExplorerCardTile({
       }}
       className="h-full"
     >
-      <Link href={`/cards/${card.id}`} prefetch={true} className="group block h-full">
-        <article className="relative flex h-full min-h-[420px] overflow-hidden rounded-[1.75rem] border border-white/[0.08] bg-[linear-gradient(145deg,rgba(255,255,255,0.09),rgba(255,255,255,0.025))] p-[1px] shadow-[0_20px_62px_rgba(0,0,0,0.36)] backdrop-blur-2xl transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_30px_96px_rgba(139,92,246,0.24)]">
-          <div className="absolute inset-0 rounded-[1.75rem] bg-[linear-gradient(135deg,rgba(255,255,255,0.18),rgba(255,255,255,0.035)_28%,rgba(168,85,247,0.12)_50%,rgba(56,189,248,0.06)_72%,rgba(255,255,255,0.08))] opacity-55 transition-opacity duration-300 group-hover:opacity-100" />
+      <Link
+        href={`/cards/${card.id}`}
+        prefetch={false}
+        className="group block h-full cursor-pointer"
+      >
+        <article className="relative flex h-full min-h-[420px] overflow-hidden rounded-[1.75rem] border border-white/[0.065] bg-[linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.016))] p-[1px] shadow-[0_20px_62px_rgba(0,0,0,0.36)] backdrop-blur-2xl transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_30px_96px_rgba(76,29,149,0.18)]">
+          <div className="pointer-events-none absolute inset-0 rounded-[1.75rem] bg-[linear-gradient(135deg,rgba(255,255,255,0.18),rgba(255,255,255,0.035)_28%,rgba(109,40,217,0.07)_50%,rgba(59,130,246,0.03)_72%,rgba(255,255,255,0.08))] opacity-55 transition-opacity duration-300 group-hover:opacity-100" />
 
           <div className="relative flex h-full w-full overflow-hidden rounded-[1.7rem] border border-white/[0.06] bg-[rgba(13,13,18,0.78)] p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.09)]">
             <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(216,180,254,0.22),transparent_38%),radial-gradient(circle_at_20%_90%,rgba(56,189,248,0.12),transparent_36%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(167,139,250,0.105),transparent_38%),radial-gradient(circle_at_20%_90%,rgba(96,165,250,0.05),transparent_36%)]" />
               <div className="absolute inset-x-7 top-0 h-px bg-gradient-to-r from-transparent via-white/75 to-transparent" />
-              <div className="absolute -inset-10 rounded-full bg-purple-400/10 blur-2xl" />
+              <div className="absolute -inset-10 rounded-full bg-violet-600/[0.065] blur-2xl" />
             </div>
 
             <div className="pointer-events-none absolute -left-[120%] top-0 h-full w-[85%] -skew-x-12 bg-gradient-to-r from-transparent via-white/[0.13] to-transparent transition-transform duration-700 ease-out group-hover:translate-x-[280%]" />
@@ -703,6 +708,8 @@ function ExplorerCardTile({
                       src={image}
                       alt={card.name}
                       fill
+                      quality={65}
+                      loading="lazy"
                       sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 20vw"
                       className="object-contain p-2.5 drop-shadow-[0_24px_28px_rgba(0,0,0,0.35)] transition-transform duration-300 ease-out group-hover:scale-[1.018]"
                     />
@@ -853,7 +860,7 @@ function HeroMetric({
           {label}
         </span>
 
-        <span className="text-purple-100">{icon}</span>
+        <span className="text-violet-200/80">{icon}</span>
       </div>
 
       <p className="text-xl font-black tracking-tight text-white sm:text-2xl">
@@ -888,11 +895,11 @@ function EmptyState({ search }: { search: string }) {
   return (
     <div className="mx-auto flex min-h-[360px] max-w-2xl items-center justify-center">
       <div className="rounded-[2rem] border border-white/[0.09] bg-[linear-gradient(145deg,rgba(255,255,255,0.08),rgba(255,255,255,0.025))] p-8 text-center shadow-[0_30px_110px_rgba(0,0,0,0.38)] backdrop-blur-2xl">
-        <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-purple-200/15 bg-purple-300/[0.09] text-purple-100">
+        <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-purple-200/15 bg-purple-300/[0.09] text-violet-200/80">
           <Search className="h-6 w-6" />
         </div>
 
-        <p className="text-xs font-black uppercase tracking-[0.25em] text-purple-100">
+        <p className="text-xs font-black uppercase tracking-[0.25em] text-violet-200/80">
           No cards found
         </p>
 

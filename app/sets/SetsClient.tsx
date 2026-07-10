@@ -15,7 +15,6 @@ import {
   Boxes,
   CalendarDays,
   ChevronDown,
-  Clock,
   Layers,
   Loader2,
   Search,
@@ -52,8 +51,8 @@ type SetsClientProps = {
   series?: string[];
 };
 
-const LOAD_STEP = 30;
-const INITIAL_VISIBLE = 45;
+const LOAD_STEP = 18;
+const INITIAL_VISIBLE = 24;
 
 const smoothEase: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
@@ -266,7 +265,7 @@ export default function SetsClient({
       },
       {
         root: null,
-        rootMargin: "340px 0px 520px 0px",
+        rootMargin: "360px 0px 560px 0px",
         threshold: 0,
       }
     );
@@ -278,7 +277,7 @@ export default function SetsClient({
 
   return (
     <AppLayout>
-      <main className="relative min-h-full overflow-hidden px-4 py-6 text-white sm:px-6 lg:px-8 xl:px-10">
+      <main className="relative min-h-full overflow-hidden bg-[#060607] px-4 py-6 text-white sm:px-6 lg:px-8 xl:px-10">
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <motion.div
             aria-hidden
@@ -286,7 +285,7 @@ export default function SetsClient({
               shouldReduceMotion
                 ? undefined
                 : {
-                    opacity: [0.55, 0.85, 0.55],
+                    opacity: [0.55, 0.82, 0.55],
                     scale: [1, 1.06, 1],
                   }
             }
@@ -295,7 +294,7 @@ export default function SetsClient({
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute left-1/2 top-[-360px] h-[760px] w-[1080px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(168,85,247,0.25),transparent_68%)] blur-3xl"
+            className="absolute left-1/2 top-[-360px] h-[760px] w-[1080px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(109,40,217,0.12),transparent_68%)] blur-3xl"
           />
 
           <motion.div
@@ -304,8 +303,8 @@ export default function SetsClient({
               shouldReduceMotion
                 ? undefined
                 : {
-                    x: [0, -34, 0],
-                    opacity: [0.34, 0.56, 0.34],
+                    x: [0, -32, 0],
+                    opacity: [0.34, 0.58, 0.34],
                   }
             }
             transition={{
@@ -313,7 +312,7 @@ export default function SetsClient({
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute right-[-320px] top-[300px] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle,rgba(217,70,239,0.17),transparent_70%)] blur-3xl"
+            className="absolute right-[-320px] top-[320px] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle,rgba(126,34,206,0.075),transparent_70%)] blur-3xl"
           />
 
           <motion.div
@@ -324,7 +323,7 @@ export default function SetsClient({
                 : {
                     x: [0, 26, 0],
                     y: [0, -18, 0],
-                    opacity: [0.24, 0.48, 0.24],
+                    opacity: [0.25, 0.5, 0.25],
                   }
             }
             transition={{
@@ -332,10 +331,10 @@ export default function SetsClient({
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute bottom-[-340px] left-[-300px] h-[720px] w-[720px] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.13),transparent_72%)] blur-3xl"
+            className="absolute bottom-[-340px] left-[-300px] h-[720px] w-[720px] rounded-full bg-[radial-gradient(circle,rgba(37,99,235,0.055),transparent_72%)] blur-3xl"
           />
 
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.018)_1px,transparent_1px)] bg-[size:56px_56px] [mask-image:radial-gradient(circle_at_50%_18%,black,transparent_72%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.012)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.012)_1px,transparent_1px)] bg-[size:56px_56px] [mask-image:radial-gradient(circle_at_50%_18%,black,transparent_72%)]" />
         </div>
 
         <div className="relative mx-auto max-w-[1540px]">
@@ -343,12 +342,12 @@ export default function SetsClient({
             initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.42, ease: smoothEase }}
-            className="mb-6 overflow-hidden rounded-[2.4rem] border border-white/[0.1] bg-[linear-gradient(135deg,rgba(255,255,255,0.105),rgba(255,255,255,0.025))] shadow-[0_38px_150px_rgba(0,0,0,0.42)] backdrop-blur-2xl sm:mb-8"
+            className="mb-6 overflow-hidden rounded-[2.4rem] border border-white/[0.075] bg-[linear-gradient(135deg,rgba(255,255,255,0.065),rgba(255,255,255,0.018))] shadow-[0_38px_150px_rgba(0,0,0,0.42)] backdrop-blur-2xl sm:mb-8"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(216,180,254,0.24),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(56,189,248,0.10),transparent_36%)]" />
-              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-purple-100/90 to-transparent" />
-              <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-white/22 to-transparent" />
+              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(167,139,250,0.09),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(96,165,250,0.04),transparent_36%)]" />
+              <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-200/35 to-transparent" />
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-white/22 to-transparent" />
 
               <motion.div
                 aria-hidden
@@ -365,12 +364,12 @@ export default function SetsClient({
                   repeatDelay: 3,
                   ease: "easeInOut",
                 }}
-                className="absolute top-0 h-full w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/[0.08] to-transparent"
+                className="pointer-events-none absolute top-0 h-full w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/[0.08] to-transparent"
               />
 
-              <div className="relative grid gap-8 p-5 sm:p-7 lg:grid-cols-[1fr_410px] lg:items-end lg:p-8">
+              <div className="relative grid gap-8 p-5 sm:p-7 lg:grid-cols-[1fr_390px] lg:items-end lg:p-8">
                 <div>
-                  <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-purple-200/20 bg-purple-300/[0.09] px-3 py-2 text-purple-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">
+                  <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-violet-300/12 bg-violet-500/[0.045] px-3 py-2 text-violet-200/80 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">
                     <ShieldCheck className="h-3.5 w-3.5" />
                     <span className="text-[10px] font-black uppercase tracking-[0.24em]">
                       Premium Set Explorer
@@ -378,19 +377,19 @@ export default function SetsClient({
                   </div>
 
                   <h1 className="max-w-4xl text-4xl font-black tracking-[-0.05em] text-white sm:text-5xl lg:text-6xl">
-                    Explore every Pokémon TCG era in glass.
+                    A glass-grade Pokémon set archive.
                   </h1>
 
                   <p className="mt-4 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base">
-                    Browse Pokémon sets through a premium glass archive with
-                    animated holographic tiles, fast search, era filtering,
-                    release data and smooth infinite-style loading.
+                    Browse every Pokémon TCG era with the same premium glass
+                    treatment as the card explorer, plus fast search, series
+                    filtering, release data and smooth infinite loading.
                   </p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">
                   <HeroMetric
-                    label="Sets"
+                    label="Database"
                     value={formatNumber(safeSets.length)}
                     icon={<Boxes className="h-4 w-4" />}
                   />
@@ -421,16 +420,16 @@ export default function SetsClient({
             initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.38, delay: 0.04, ease: smoothEase }}
-            className="sticky top-[76px] z-30 mb-8 rounded-[1.85rem] border border-white/[0.1] bg-[rgba(8,8,14,0.82)] p-3 shadow-[0_26px_100px_rgba(0,0,0,0.4)] backdrop-blur-2xl sm:p-4"
+            className="sticky top-[76px] z-30 mb-8 rounded-[1.85rem] border border-white/[0.075] bg-[rgba(7,7,10,0.9)] p-3 shadow-[0_26px_100px_rgba(0,0,0,0.4)] backdrop-blur-2xl sm:p-4"
           >
             <div className="flex flex-col gap-3 xl:flex-row xl:items-center">
-              <div className="group flex min-h-12 flex-1 items-center gap-3 rounded-2xl border border-white/[0.085] bg-white/[0.045] px-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.065)] transition-colors duration-200 focus-within:border-purple-200/45 focus-within:bg-white/[0.065]">
-                <Search className="h-4 w-4 shrink-0 text-zinc-500 transition-colors duration-200 group-focus-within:text-purple-100" />
+              <div className="group flex min-h-12 flex-1 items-center gap-3 rounded-2xl border border-white/[0.07] bg-white/[0.03] px-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.065)] transition-colors duration-200 focus-within:border-white/[0.18] focus-within:bg-white/[0.045]">
+                <Search className="h-4 w-4 shrink-0 text-zinc-500 transition-colors duration-200 group-focus-within:text-zinc-300" />
 
                 <input
                   value={search}
                   onChange={(event) => setSearch(event.target.value)}
-                  placeholder="Search sets, eras, series or release years..."
+                  placeholder="Search sets, eras, series, or release years..."
                   className="h-12 w-full bg-transparent text-sm font-medium text-white outline-none placeholder:text-zinc-600"
                 />
 
@@ -456,27 +455,30 @@ export default function SetsClient({
                 <div className="relative" ref={seriesDropdownRef}>
                   <button
                     type="button"
-                    onClick={() => setShowSeriesMenu((value) => !value)}
-                    className="flex min-h-12 w-full items-center justify-between gap-4 rounded-2xl border border-white/[0.085] bg-white/[0.045] px-4 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.065)] transition-colors duration-200 hover:border-purple-200/35 hover:bg-white/[0.065] xl:w-72"
+                    onClick={() => {
+                      setShowSeriesMenu((value) => !value);
+                      setShowSortMenu(false);
+                    }}
+                    className="flex min-h-12 w-full items-center justify-between gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.03] px-4 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.065)] transition-colors duration-200 hover:border-white/[0.15] hover:bg-white/[0.045] xl:w-64"
                     aria-expanded={showSeriesMenu}
                   >
-                    <span className="flex items-center gap-3">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-xl border border-purple-200/16 bg-purple-300/[0.1] text-purple-100">
+                    <span className="flex min-w-0 items-center gap-3">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-violet-300/10 bg-violet-500/[0.045] text-violet-200/80">
                         <Layers className="h-4 w-4" />
                       </span>
 
-                      <span>
+                      <span className="min-w-0">
                         <span className="block text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
                           Series
                         </span>
-                        <span className="block max-w-[170px] truncate text-sm font-bold text-white">
+                        <span className="block truncate text-sm font-bold text-white">
                           {selectedSeries === "all" ? "All eras" : selectedSeries}
                         </span>
                       </span>
                     </span>
 
                     <ChevronDown
-                      className={`h-4 w-4 text-zinc-500 transition-transform duration-200 ${
+                      className={`h-4 w-4 shrink-0 text-zinc-500 transition-transform duration-200 ${
                         showSeriesMenu ? "rotate-180" : ""
                       }`}
                     />
@@ -527,12 +529,15 @@ export default function SetsClient({
                 <div className="relative" ref={sortDropdownRef}>
                   <button
                     type="button"
-                    onClick={() => setShowSortMenu((value) => !value)}
-                    className="flex min-h-12 w-full items-center justify-between gap-4 rounded-2xl border border-white/[0.085] bg-white/[0.045] px-4 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.065)] transition-colors duration-200 hover:border-purple-200/35 hover:bg-white/[0.065] xl:w-72"
+                    onClick={() => {
+                      setShowSortMenu((value) => !value);
+                      setShowSeriesMenu(false);
+                    }}
+                    className="flex min-h-12 w-full items-center justify-between gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.03] px-4 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.065)] transition-colors duration-200 hover:border-white/[0.15] hover:bg-white/[0.045] xl:w-64"
                     aria-expanded={showSortMenu}
                   >
                     <span className="flex items-center gap-3">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-xl border border-purple-200/16 bg-purple-300/[0.1] text-purple-100">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-xl border border-violet-300/10 bg-violet-500/[0.045] text-violet-200/80">
                         <ArrowDownUp className="h-4 w-4" />
                       </span>
 
@@ -570,10 +575,10 @@ export default function SetsClient({
                         transition={{ duration: 0.18, ease: smoothEase }}
                         className="absolute right-0 top-full z-50 mt-2 w-full overflow-hidden rounded-2xl border border-white/[0.11] bg-[rgba(7,7,12,0.98)] p-2 shadow-[0_34px_100px_rgba(0,0,0,0.62)] backdrop-blur-2xl xl:w-80"
                       >
-                        <div className="flex items-center gap-2 px-3 py-2 text-purple-100">
+                        <div className="flex items-center gap-2 px-3 py-2 text-violet-200/80">
                           <SlidersHorizontal className="h-3.5 w-3.5" />
                           <span className="text-[10px] font-black uppercase tracking-[0.24em]">
-                            Sort sets
+                            Sort archive
                           </span>
                         </div>
 
@@ -588,7 +593,7 @@ export default function SetsClient({
                               }}
                               className={`w-full rounded-xl px-3 py-3 text-left transition-colors duration-150 ${
                                 sortBy === option.id
-                                  ? "bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white shadow-[0_16px_42px_rgba(168,85,247,0.24)]"
+                                  ? "bg-gradient-to-r from-violet-800/90 to-indigo-800/80 text-white shadow-[0_16px_42px_rgba(76,29,149,0.22)]"
                                   : "text-zinc-400 hover:bg-white/[0.06] hover:text-white"
                               }`}
                             >
@@ -598,7 +603,7 @@ export default function SetsClient({
                               <span
                                 className={`mt-0.5 block text-xs leading-5 ${
                                   sortBy === option.id
-                                    ? "text-purple-50/80"
+                                    ? "text-violet-100/70"
                                     : "text-zinc-600"
                                 }`}
                               >
@@ -616,7 +621,7 @@ export default function SetsClient({
 
             <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-zinc-500">
               <StatusPill>
-                {search ? "Filtered results" : "Full set archive"}
+                {search ? "Filtered results" : "Full archive"}
               </StatusPill>
               <StatusPill>
                 {selectedSeries === "all" ? "All eras" : selectedSeries}
@@ -626,7 +631,7 @@ export default function SetsClient({
           </motion.section>
 
           {visibleSets.length > 0 ? (
-            <section className="grid auto-rows-fr grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+            <section className="grid grid-cols-1 gap-5 2xl:grid-cols-2">
               {visibleSets.map((set, index) => (
                 <SetTile
                   key={set.id}
@@ -644,7 +649,7 @@ export default function SetsClient({
 
           <div className="flex min-h-28 items-center justify-center py-10">
             {softLoading && hasMore && (
-              <div className="flex items-center gap-3 rounded-full border border-white/[0.09] bg-white/[0.045] px-5 py-3 text-purple-100 shadow-[0_18px_70px_rgba(0,0,0,0.28)] backdrop-blur-2xl">
+              <div className="flex items-center gap-3 rounded-full border border-white/[0.09] bg-white/[0.045] px-5 py-3 text-violet-200/80 shadow-[0_18px_70px_rgba(0,0,0,0.28)] backdrop-blur-2xl">
                 <Loader2 className="h-4 w-4 animate-spin" />
                 <span className="text-[10px] font-black uppercase tracking-[0.22em]">
                   Loading more sets
@@ -654,7 +659,7 @@ export default function SetsClient({
 
             {!softLoading && !hasMore && visibleSets.length > 0 && (
               <p className="rounded-full border border-white/[0.08] bg-white/[0.04] px-5 py-3 text-center text-[10px] font-black uppercase tracking-[0.25em] text-zinc-600">
-                End of set archive
+                End of archive
               </p>
             )}
           </div>
@@ -680,124 +685,129 @@ function SetTile({
 
   return (
     <motion.div
-      initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 14, scale: 0.985 }}
+      initial={
+        reduceMotion ? { opacity: 1 } : { opacity: 0, y: 12, scale: 0.99 }
+      }
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{
         duration: 0.3,
-        delay: Math.min((index % 12) * 0.018, 0.16),
+        delay: Math.min((index % 10) * 0.016, 0.14),
         ease: smoothEase,
       }}
-      className="h-full"
+      className="h-full overflow-visible py-1"
     >
-      <Link href={`/sets/${set.id}`} prefetch={true} className="group block h-full">
-        <article className="relative flex h-full min-h-[330px] overflow-hidden rounded-[1.75rem] border border-white/[0.08] bg-[linear-gradient(145deg,rgba(255,255,255,0.09),rgba(255,255,255,0.025))] p-[1px] shadow-[0_20px_62px_rgba(0,0,0,0.36)] backdrop-blur-2xl transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_30px_96px_rgba(139,92,246,0.24)]">
-          <div className="absolute inset-0 rounded-[1.75rem] bg-[linear-gradient(135deg,rgba(255,255,255,0.18),rgba(255,255,255,0.035)_28%,rgba(168,85,247,0.12)_50%,rgba(56,189,248,0.06)_72%,rgba(255,255,255,0.08))] opacity-55 transition-opacity duration-300 group-hover:opacity-100" />
+      <Link
+        href={`/sets/${set.id}`}
+        prefetch={false}
+        className="group block h-full cursor-pointer"
+      >
+        <article className="relative flex h-full min-h-[228px] overflow-hidden rounded-[1.75rem] border border-white/[0.055] bg-[linear-gradient(145deg,rgba(255,255,255,0.03),rgba(255,255,255,0.004))] p-[1px] shadow-[0_20px_62px_rgba(0,0,0,0.44)] backdrop-blur-2xl transition-[transform,border-color,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:border-white/[0.1] hover:shadow-[0_30px_96px_rgba(50,20,100,0.17)]">
+          <div className="pointer-events-none absolute inset-0 rounded-[1.75rem] bg-[linear-gradient(135deg,rgba(255,255,255,0.075),rgba(255,255,255,0.008)_30%,rgba(76,29,149,0.04)_58%,rgba(30,64,175,0.01)_78%,rgba(255,255,255,0.02))] opacity-45 transition-opacity duration-300 group-hover:opacity-90" />
 
-          <div className="relative flex h-full w-full overflow-hidden rounded-[1.7rem] border border-white/[0.06] bg-[rgba(13,13,18,0.78)] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.09)]">
+          <div className="relative grid h-full w-full grid-cols-[132px_minmax(0,1fr)] overflow-hidden rounded-[1.7rem] border border-white/[0.045] bg-[rgba(4,4,7,0.97)] p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.055)] sm:grid-cols-[220px_minmax(0,1fr)] sm:p-4">
             <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(216,180,254,0.22),transparent_38%),radial-gradient(circle_at_20%_90%,rgba(56,189,248,0.12),transparent_36%)]" />
-              <div className="absolute inset-x-7 top-0 h-px bg-gradient-to-r from-transparent via-white/75 to-transparent" />
-              <div className="absolute -inset-10 rounded-full bg-purple-400/10 blur-2xl" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_10%,rgba(139,92,246,0.075),transparent_34%),radial-gradient(circle_at_88%_92%,rgba(59,130,246,0.028),transparent_38%)]" />
+              <div className="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-white/50 to-transparent" />
+              <div className="absolute -inset-12 rounded-full bg-violet-950/20 blur-3xl" />
             </div>
 
-            <div className="pointer-events-none absolute -left-[120%] top-0 h-full w-[85%] -skew-x-12 bg-gradient-to-r from-transparent via-white/[0.13] to-transparent transition-transform duration-700 ease-out group-hover:translate-x-[280%]" />
+            <div className="pointer-events-none absolute -left-[120%] top-0 z-20 h-full w-[76%] -skew-x-12 bg-gradient-to-r from-transparent via-white/[0.09] to-transparent transition-transform duration-700 ease-out group-hover:translate-x-[300%]" />
 
-            <div className="relative flex h-full w-full flex-col">
-              <div className="flex items-center justify-between gap-3">
-                <div className="rounded-full border border-white/[0.11] bg-black/42 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] text-zinc-300 backdrop-blur-xl">
-                  {getReleaseYear(set)}
-                </div>
+            <div className="relative z-10 min-h-[198px] overflow-hidden rounded-[1.35rem] border border-white/[0.055] bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.065),rgba(13,13,18,0.98)_46%,rgba(4,4,7,1))] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
+              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.012)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.012)_1px,transparent_1px)] bg-[size:30px_30px] opacity-60" />
 
-                {symbol ? (
-                  <div className="relative h-10 w-10 overflow-hidden rounded-2xl border border-white/[0.1] bg-white/[0.05] p-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
-                    <Image
-                      src={symbol}
-                      alt={`${set.name} symbol`}
-                      fill
-                      sizes="40px"
-                      className="object-contain p-2"
-                    />
-                  </div>
-                ) : (
-                  <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/[0.1] bg-white/[0.05] text-zinc-600">
-                    <Boxes className="h-4 w-4" />
-                  </div>
-                )}
+              <div className="absolute left-2 top-2 z-20 rounded-full border border-white/[0.09] bg-black/55 px-2.5 py-1.5 text-[9px] font-black uppercase tracking-[0.14em] text-zinc-400 backdrop-blur-xl">
+                {getReleaseYear(set)}
               </div>
 
-              <div className="relative mt-6 flex h-28 items-center justify-center overflow-hidden rounded-[1.35rem] border border-white/[0.07] bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.12),rgba(21,21,28,0.98)_48%,rgba(7,7,10,1))] px-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.09)]">
-                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.018)_1px,transparent_1px)] bg-[size:28px_28px] opacity-70" />
+              <div className="absolute right-2 top-2 z-20 rounded-full border border-white/[0.075] bg-black/50 px-2.5 py-1.5 text-[9px] font-black uppercase tracking-[0.14em] text-zinc-500 backdrop-blur-xl">
+                {String(set.id || "SET").toUpperCase().slice(0, 8)}
+              </div>
+
+              {symbol && (
+                <div className="pointer-events-none absolute bottom-3 right-3 z-10 h-11 w-11 opacity-20">
+                  <Image
+                    src={symbol}
+                    alt=""
+                    fill
+                    quality={65}
+                    loading="lazy"
+                    sizes="44px"
+                    className="object-contain"
+                  />
+                </div>
+              )}
+
+              <div className="relative h-full min-h-[198px] w-full">
+                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(91,33,182,0.07),transparent_48%)]" />
 
                 {logo ? (
                   <Image
                     src={logo}
                     alt={`${set.name} logo`}
                     fill
-                    sizes="(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 25vw"
-                    className="object-contain p-6 drop-shadow-[0_18px_26px_rgba(0,0,0,0.36)] transition-transform duration-300 ease-out group-hover:scale-[1.025]"
+                    quality={65}
+                    loading="lazy"
+                    sizes="(max-width: 640px) 42vw, (max-width: 1280px) 34vw, 24vw"
+                    className="object-contain p-5 drop-shadow-[0_20px_26px_rgba(0,0,0,0.42)] transition-transform duration-300 ease-out group-hover:scale-[1.025] sm:p-7"
                   />
                 ) : (
-                  <h2 className="relative text-center text-2xl font-black tracking-tight text-white">
-                    {set.name}
-                  </h2>
+                  <div className="flex h-full items-center justify-center px-5 text-center text-lg font-black leading-6 text-zinc-100">
+                    {set.name || "Unknown Set"}
+                  </div>
                 )}
               </div>
+            </div>
 
-              <div className="mt-5 flex flex-1 flex-col">
-                <div className="min-h-[74px]">
-                  <h2 className="line-clamp-2 text-xl font-black leading-6 tracking-tight text-white">
-                    {set.name || "Unknown Set"}
-                  </h2>
+            <div className="relative z-10 flex min-w-0 flex-col py-1 pl-3 sm:pl-5">
+              <div>
+                <p className="text-[9px] font-black uppercase tracking-[0.25em] text-zinc-700">
+                  {set.series || "Pokémon TCG"}
+                </p>
 
-                  <p className="mt-2 line-clamp-1 text-sm font-semibold text-zinc-500">
-                    {set.series || "Pokémon TCG"}
-                  </p>
+                <h2 className="mt-2 line-clamp-2 text-lg font-black leading-6 tracking-tight text-zinc-100 transition-colors duration-300 group-hover:text-white sm:text-xl">
+                  {set.name || "Unknown Set"}
+                </h2>
+
+                <p className="mt-2 line-clamp-2 text-xs font-semibold leading-5 text-zinc-600">
+                  Explore cards, release details and market data from this set.
+                </p>
+              </div>
+
+              <div className="mt-auto pt-4">
+                <div className="flex gap-2.5">
+                  <div className="min-w-0 flex-1 rounded-2xl border border-white/[0.05] bg-black/20 px-3 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.025)]">
+                    <div className="mb-1.5 flex items-center gap-1.5 text-zinc-600">
+                      <Layers className="h-3.5 w-3.5" />
+                      <span className="text-[8px] font-black uppercase tracking-[0.18em]">
+                        Cards
+                      </span>
+                    </div>
+                    <p className="text-sm font-black text-zinc-200">
+                      {formatNumber(cardCount)}
+                    </p>
+                  </div>
+
+                  <div className="min-w-0 flex-1 rounded-2xl border border-white/[0.05] bg-black/20 px-3 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.025)]">
+                    <div className="mb-1.5 flex items-center gap-1.5 text-zinc-600">
+                      <CalendarDays className="h-3.5 w-3.5" />
+                      <span className="text-[8px] font-black uppercase tracking-[0.18em]">
+                        Released
+                      </span>
+                    </div>
+                    <p className="truncate text-xs font-black text-zinc-300">
+                      {releaseDate}
+                    </p>
+                  </div>
                 </div>
 
-                <div className="mt-auto grid grid-cols-2 gap-3">
-                  <SetStat
-                    label="Cards"
-                    value={formatNumber(cardCount)}
-                    icon={<Layers className="h-3.5 w-3.5" />}
-                  />
-
-                  <SetStat
-                    label="Released"
-                    value={releaseDate}
-                    icon={<Clock className="h-3.5 w-3.5" />}
-                  />
-                </div>
-
-                <div className="mt-4 h-px bg-gradient-to-r from-transparent via-white/[0.09] to-transparent" />
+                <div className="mt-4 h-px bg-gradient-to-r from-transparent via-white/[0.065] to-transparent transition-colors duration-300 group-hover:via-white/[0.12]" />
               </div>
             </div>
           </div>
         </article>
       </Link>
     </motion.div>
-  );
-}
-
-function SetStat({
-  label,
-  value,
-  icon,
-}: {
-  label: string;
-  value: string;
-  icon: ReactNode;
-}) {
-  return (
-    <div className="rounded-2xl border border-white/[0.075] bg-white/[0.04] px-3 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.055)]">
-      <div className="mb-1.5 flex items-center gap-1.5 text-purple-100">
-        {icon}
-        <span className="text-[9px] font-black uppercase tracking-[0.18em] text-zinc-600">
-          {label}
-        </span>
-      </div>
-
-      <p className="truncate text-xs font-black text-zinc-200">{value}</p>
-    </div>
   );
 }
 
@@ -816,7 +826,7 @@ function SeriesButton({
       onClick={onClick}
       className={`w-full rounded-xl px-3 py-3 text-left text-sm font-bold transition-colors duration-150 ${
         active
-          ? "bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white shadow-[0_16px_42px_rgba(168,85,247,0.24)]"
+          ? "bg-gradient-to-r from-violet-800/90 to-indigo-800/80 text-white shadow-[0_16px_42px_rgba(76,29,149,0.22)]"
           : "text-zinc-400 hover:bg-white/[0.06] hover:text-white"
       }`}
     >
@@ -841,7 +851,7 @@ function HeroMetric({
           {label}
         </span>
 
-        <span className="text-purple-100">{icon}</span>
+        <span className="text-violet-200/80">{icon}</span>
       </div>
 
       <p className="text-xl font-black tracking-tight text-white sm:text-2xl">
@@ -863,11 +873,11 @@ function EmptyState({ search }: { search: string }) {
   return (
     <div className="mx-auto flex min-h-[360px] max-w-2xl items-center justify-center">
       <div className="rounded-[2rem] border border-white/[0.09] bg-[linear-gradient(145deg,rgba(255,255,255,0.08),rgba(255,255,255,0.025))] p-8 text-center shadow-[0_30px_110px_rgba(0,0,0,0.38)] backdrop-blur-2xl">
-        <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-purple-200/15 bg-purple-300/[0.09] text-purple-100">
+        <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-violet-300/10 bg-violet-500/[0.045] text-violet-200/80">
           <Search className="h-6 w-6" />
         </div>
 
-        <p className="text-xs font-black uppercase tracking-[0.25em] text-purple-100">
+        <p className="text-xs font-black uppercase tracking-[0.25em] text-violet-200/80">
           No sets found
         </p>
 
@@ -880,7 +890,7 @@ function EmptyState({ search }: { search: string }) {
           <span className="font-bold text-zinc-300">
             {search ? `"${search}"` : "that query"}
           </span>
-          . Search by set name, series, era or release year.
+          . Search by set name, series, era, or release year.
         </p>
       </div>
     </div>
