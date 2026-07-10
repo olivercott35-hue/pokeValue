@@ -1,220 +1,511 @@
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import AppLayout from "@/components/layout/AppLayout";
-import { guides } from "@/lib/guides";
+import {
+  ArrowRight,
+  BarChart3,
+  BookOpen,
+  Boxes,
+  Gem,
+  Layers,
+  Search,
+  ShieldCheck,
+  Sparkles,
+  TrendingUp,
+  WalletCards,
+} from "lucide-react";
 
-export const metadata = {
-  title: "PokeValue | UK Pokémon Card Price Tracker",
+import AppLayout from "@/components/layout/AppLayout";
+import {
+  getAllPokemonCards,
+  getAllPokemonSets,
+  getPokemonCardPrice,
+  type PokemonCard,
+  type PokemonSet,
+} from "@/lib/pokemon-data";
+
+export const revalidate = 86400;
+
+export const metadata: Metadata = {
+  title: "PokeValue | Pokémon Card Prices, Sets & Collection Tools",
   description:
-    "Track Pokémon card prices, explore sets, browse collecting guides, and manage your Pokémon TCG collection with PokeValue.",
+    "Track Pokémon card values, browse Pokémon TCG sets, research market prices and learn how to value your collection with PokeValue.",
+  alternates: {
+    canonical: "https://pokevalue.co.uk",
+  },
+  openGraph: {
+    title: "PokeValue | Pokémon Card Prices, Sets & Collection Tools",
+    description:
+      "Browse Pokémon card prices, explore sets, compare market values and build your Pokémon TCG collection with PokeValue.",
+    url: "https://pokevalue.co.uk",
+    siteName: "PokeValue",
+    type: "website",
+  },
 };
 
-export default function HomePage() {
-  const featuredGuides = guides.slice(0, 6);
+function safeNumber(value: unknown, fallback = 0) {
+  const number = Number(value);
+
+  return Number.isFinite(number) ? number : fallback;
+}
+
+function formatNumber(value: unknown) {
+  return safeNumber(value).toLocaleString("en-GB");
+}
+
+function formatPrice(value: unknown) {
+  const price = safeNumber(value);
+
+  if (price <= 0) return "No market";
+
+  return new Intl.NumberFormat("en-GB", {
+    style: "currency",
+    currency: "GBP",
+    minimumFractionDigits: price >= 100 ? 0 : 2,
+    maximumFractionDigits: price >= 100 ? 0 : 2,
+  }).format(price);
+}
+
+function getReleaseTime(set: PokemonSet) {
+  const time = new Date(set.releaseDate || "1900-01-01").getTime();
+
+  return Number.isNaN(time) ? 0 : time;
+}
+
+function getTopCard(cards: PokemonCard[]) {
+  let topCard: PokemonCard | null = null;
+  let topPrice = 0;
+  let pricedCount = 0;
+  let totalMarketValue = 0;
+
+  for (const card of cards) {
+    const price = getPokemonCardPrice(card);
+
+    if (price > 0) {
+      pricedCount += 1;
+      totalMarketValue += price;
+    }
+
+    if (price > topPrice) {
+      topPrice = price;
+      topCard = card;
+    }
+  }
+
+  return {
+    topCard,
+    topPrice,
+    pricedCount,
+    totalMarketValue,
+  };
+}
+
+export default async function HomePage() {
+  const [cards, sets] = await Promise.all([
+    getAllPokemonCards(),
+    getAllPokemonSets(),
+  ]);
+
+  const safeCards = Array.isArray(cards) ? cards : [];
+  const safeSets = Array.isArray(sets) ? sets : [];
+
+  const newestSet =
+    safeSets
+      .slice()
+      .sort((a, b) => getReleaseTime(b) - getReleaseTime(a))[0] || null;
+
+  const { topCard, topPrice, pricedCount, totalMarketValue } =
+    getTopCard(safeCards);
 
   return (
     <AppLayout>
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <section className="rounded-3xl border border-white/10 bg-zinc-950/70 p-10 md:p-16">
-          <p className="text-sm font-semibold text-purple-400 mb-4">
-            UK Pokémon Card Price Tracker
-          </p>
+      <main className="relative min-h-full overflow-hidden px-4 py-5 text-white sm:px-6 lg:px-8 xl:px-10">
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="absolute left-1/2 top-[-360px] h-[720px] w-[1040px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(168,85,247,0.26),transparent_68%)] blur-3xl" />
+          <div className="absolute right-[-340px] top-[340px] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle,rgba(217,70,239,0.15),transparent_70%)] blur-3xl" />
+          <div className="absolute bottom-[-360px] left-[-320px] h-[720px] w-[720px] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.12),transparent_72%)] blur-3xl" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.018)_1px,transparent_1px)] bg-[size:56px_56px] [mask-image:radial-gradient(circle_at_50%_18%,black,transparent_72%)]" />
+        </div>
 
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white max-w-4xl">
-            Track Pokémon card prices, explore sets, and learn what your cards
-            are worth.
-          </h1>
+        <div className="relative mx-auto max-w-[1540px]">
+          <section className="mb-6 overflow-hidden rounded-[2.1rem] border border-white/[0.1] bg-[linear-gradient(135deg,rgba(255,255,255,0.105),rgba(255,255,255,0.025))] shadow-[0_34px_130px_rgba(0,0,0,0.42)] backdrop-blur-2xl">
+            <div className="relative">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(216,180,254,0.22),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(56,189,248,0.1),transparent_36%)]" />
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-purple-100/90 to-transparent" />
+              <div className="absolute top-0 h-full w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/[0.05] to-transparent" />
 
-          <p className="mt-6 text-zinc-400 text-lg max-w-3xl leading-8">
-            PokeValue helps Pokémon collectors research card prices, browse
-            sets, understand rarity, track collections, and learn how Pokémon
-            card values change over time.
-          </p>
+              <div className="relative grid gap-6 p-5 sm:p-6 lg:grid-cols-[1fr_390px] lg:items-center lg:p-7 xl:grid-cols-[1fr_430px]">
+                <div>
+                  <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-purple-200/20 bg-purple-300/[0.09] px-3 py-2 text-purple-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">
+                    <ShieldCheck className="h-3.5 w-3.5" />
+                    <span className="text-[10px] font-black uppercase tracking-[0.24em]">
+                      Pokémon TCG Market Tools
+                    </span>
+                  </div>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Link
+                  <h1 className="max-w-4xl text-3xl font-black leading-[0.95] tracking-[-0.05em] text-white sm:text-4xl lg:text-5xl xl:text-6xl">
+                    Value your Pokémon cards with a premium market archive.
+                  </h1>
+
+                  <p className="mt-4 max-w-3xl text-sm leading-7 text-zinc-400">
+                    Browse Pokémon card prices, research sets, compare market
+                    values, build a collection and learn how to value cards
+                    properly before buying, selling or grading.
+                  </p>
+
+                  <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                    <Link
+                      href="/cards"
+                      className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-black text-black shadow-[0_18px_60px_rgba(255,255,255,0.12)] transition hover:-translate-y-0.5 hover:bg-purple-100"
+                    >
+                      Explore Cards
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                    </Link>
+
+                    <Link
+                      href="/sets"
+                      className="inline-flex items-center justify-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.05] px-5 py-3 text-sm font-black text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.07)] backdrop-blur-xl transition hover:-translate-y-0.5 hover:border-purple-200/35 hover:bg-white/[0.08]"
+                    >
+                      Browse Sets
+                    </Link>
+
+                    <Link
+                      href="/guides"
+                      className="inline-flex items-center justify-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.035] px-5 py-3 text-sm font-black text-zinc-300 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur-xl transition hover:-translate-y-0.5 hover:text-white"
+                    >
+                      Valuation Guides
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <HomeStat
+                    label="Cards Tracked"
+                    value={formatNumber(safeCards.length)}
+                    icon={<Layers className="h-4 w-4" />}
+                  />
+
+                  <HomeStat
+                    label="Sets Indexed"
+                    value={formatNumber(safeSets.length)}
+                    icon={<Boxes className="h-4 w-4" />}
+                  />
+
+                  <HomeStat
+                    label="Market Prices"
+                    value={formatNumber(pricedCount)}
+                    icon={<TrendingUp className="h-4 w-4" />}
+                  />
+
+                  <HomeStat
+                    label="Indexed Value"
+                    value={formatPrice(totalMarketValue)}
+                    icon={<BarChart3 className="h-4 w-4" />}
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-8 grid gap-6 lg:grid-cols-[1.25fr_0.75fr]">
+            <div className="overflow-hidden rounded-[2.25rem] border border-white/[0.09] bg-[linear-gradient(145deg,rgba(255,255,255,0.08),rgba(255,255,255,0.024))] p-5 shadow-[0_30px_110px_rgba(0,0,0,0.38)] backdrop-blur-2xl sm:p-7">
+              <div className="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-[0.26em] text-purple-100">
+                    Market Snapshot
+                  </p>
+                  <h2 className="mt-2 text-2xl font-black tracking-tight text-white sm:text-3xl">
+                    Dashboard stats, now on Home.
+                  </h2>
+                </div>
+
+                <div className="hidden h-12 w-12 items-center justify-center rounded-2xl border border-purple-200/15 bg-purple-300/[0.09] text-purple-100 sm:flex">
+                  <Sparkles className="h-5 w-5" />
+                </div>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-2">
+                <MarketPanel
+                  label="Newest Set"
+                  title={newestSet?.name || "Unknown"}
+                  description={
+                    newestSet?.series
+                      ? `${newestSet.series} • ${
+                          newestSet.releaseDate || "No release date"
+                        }`
+                      : "Latest indexed Pokémon TCG expansion."
+                  }
+                  href={newestSet ? `/sets/${newestSet.id}` : "/sets"}
+                  icon={<Boxes className="h-5 w-5" />}
+                />
+
+                <MarketPanel
+                  label="Top Indexed Card"
+                  title={topCard?.name || "No market card"}
+                  description={
+                    topCard
+                      ? `${topCard.set?.name || "Unknown set"} • ${formatPrice(
+                          topPrice
+                        )}`
+                      : "Cards with market pricing will appear here."
+                  }
+                  href={topCard ? `/cards/${topCard.id}` : "/cards"}
+                  icon={<Gem className="h-5 w-5" />}
+                />
+
+                <MarketPanel
+                  label="Card Explorer"
+                  title="Search by name, set, rarity or type"
+                  description="Find cards quickly using the local PokeValue archive."
+                  href="/cards"
+                  icon={<Search className="h-5 w-5" />}
+                />
+
+                <MarketPanel
+                  label="Collection Tools"
+                  title="Track favourites and portfolio value"
+                  description="Use collection, favourites and portfolio pages to organise cards."
+                  href="/collection"
+                  icon={<WalletCards className="h-5 w-5" />}
+                />
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-[2.25rem] border border-white/[0.09] bg-[linear-gradient(145deg,rgba(255,255,255,0.08),rgba(255,255,255,0.024))] p-5 shadow-[0_30px_110px_rgba(0,0,0,0.38)] backdrop-blur-2xl sm:p-7">
+              <p className="text-[10px] font-black uppercase tracking-[0.26em] text-purple-100">
+                Featured Card
+              </p>
+
+              {topCard ? (
+                <Link href={`/cards/${topCard.id}`} className="group mt-5 block">
+                  <div className="relative mx-auto aspect-[5/7] max-w-[220px] overflow-hidden rounded-[1.75rem] border border-white/[0.08] bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.12),rgba(20,20,28,0.98)_45%,rgba(7,7,10,1))] shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+                    {topCard.images?.large || topCard.images?.small ? (
+                      <Image
+                        src={topCard.images.large || topCard.images.small || ""}
+                        alt={topCard.name}
+                        fill
+                        sizes="220px"
+                        className="object-contain p-3 drop-shadow-[0_24px_28px_rgba(0,0,0,0.38)] transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    ) : null}
+                  </div>
+
+                  <h3 className="mt-5 text-xl font-black tracking-tight text-white">
+                    {topCard.name}
+                  </h3>
+
+                  <p className="mt-2 text-sm font-semibold text-zinc-500">
+                    {topCard.set?.name || "Unknown set"}
+                  </p>
+
+                  <p className="mt-3 text-2xl font-black text-emerald-300">
+                    {formatPrice(topPrice)}
+                  </p>
+                </Link>
+              ) : (
+                <p className="mt-5 text-sm leading-7 text-zinc-500">
+                  Once market prices are available, the top indexed card will
+                  appear here.
+                </p>
+              )}
+            </div>
+          </section>
+
+          <section className="mb-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <FeatureCard
+              title="Card Explorer"
+              description="Browse Pokémon cards with images, set data, rarity details and market values."
               href="/cards"
-              className="rounded-xl bg-purple-600 px-6 py-3 font-semibold text-white hover:bg-purple-500 transition"
-            >
-              Browse Cards
-            </Link>
+              icon={<Search className="h-5 w-5" />}
+            />
 
-            <Link
+            <FeatureCard
+              title="Set Explorer"
+              description="Explore Pokémon TCG sets by era, release date and card totals."
+              href="/sets"
+              icon={<Boxes className="h-5 w-5" />}
+            />
+
+            <FeatureCard
+              title="Guides"
+              description="Learn how card condition, rarity, demand and grading affect value."
               href="/guides"
-              className="rounded-xl border border-white/10 px-6 py-3 font-semibold text-zinc-200 hover:bg-white/5 transition"
-            >
-              Read Guides
-            </Link>
-          </div>
-        </section>
+              icon={<BookOpen className="h-5 w-5" />}
+            />
 
-        <section className="grid md:grid-cols-3 gap-5 mt-10">
-          {[
-            {
-              title: "Live Card Prices",
-              text: "Research Pokémon card values using market data, rarity, set information, and card details.",
-            },
-            {
-              title: "Set Explorer",
-              text: "Browse Pokémon sets, view cards, compare rarities, and discover valuable pulls from each release.",
-            },
-            {
-              title: "Collector Guides",
-              text: "Learn about grading, condition, fake cards, rarity symbols, sealed products, and market trends.",
-            },
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="rounded-2xl border border-white/10 bg-zinc-950/60 p-6"
-            >
-              <h2 className="text-xl font-bold text-white">{item.title}</h2>
-              <p className="mt-3 text-zinc-400 leading-7">{item.text}</p>
-            </div>
-          ))}
-        </section>
+            <FeatureCard
+              title="Portfolio"
+              description="Organise your collection and estimate the value of cards you track."
+              href="/portfolio"
+              icon={<WalletCards className="h-5 w-5" />}
+            />
+          </section>
 
-        <section className="mt-12 rounded-3xl border border-white/10 bg-zinc-950/60 p-8">
-          <p className="text-sm font-semibold text-purple-400 mb-3">
-            Pokémon Collecting Hub
-          </p>
-
-          <h2 className="text-3xl font-bold text-white mb-4">
-            What is PokeValue?
-          </h2>
-
-          <div className="space-y-5 text-zinc-400 leading-8">
-            <p>
-              PokeValue is a Pokémon card value and collection tracking platform
-              designed to make the Pokémon TCG market easier to understand. Many
-              collectors own cards but do not know which ones are valuable, how
-              condition affects price, or which sets are worth exploring.
-            </p>
-
-            <p>
-              The platform lets you search Pokémon cards, browse full sets, view
-              card rarities, check market prices, save favourites, and track
-              your collection. It is built for collectors who want a faster and
-              cleaner way to research Pokémon card values.
-            </p>
-
-            <p>
-              Pokémon card prices can change because of rarity, grading
-              potential, condition, demand, nostalgia, reprints, and collector
-              hype. PokeValue combines card tools with educational guides so
-              collectors can make better buying, selling, and grading decisions.
-            </p>
-          </div>
-        </section>
-
-        <section className="mt-12">
-          <div className="flex items-end justify-between gap-6 mb-6">
-            <div>
-              <p className="text-sm font-semibold text-purple-400 mb-3">
-                Latest Guides
+          <section className="mb-8 overflow-hidden rounded-[2.25rem] border border-white/[0.09] bg-[linear-gradient(145deg,rgba(255,255,255,0.08),rgba(255,255,255,0.024))] p-5 shadow-[0_30px_110px_rgba(0,0,0,0.38)] backdrop-blur-2xl sm:p-8">
+            <div className="max-w-4xl">
+              <p className="text-[10px] font-black uppercase tracking-[0.26em] text-purple-100">
+                How PokeValue helps
               </p>
 
-              <h2 className="text-3xl font-bold text-white">
-                Learn how Pokémon card values work
+              <h2 className="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">
+                Research Pokémon card values before you buy, sell or grade.
               </h2>
-            </div>
 
-            <Link
-              href="/guides"
-              className="hidden md:inline-flex rounded-xl border border-white/10 px-5 py-3 text-sm font-bold text-zinc-200 hover:bg-white/5 transition"
-            >
-              View all guides
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
-            {featuredGuides.map((guide) => (
-              <Link
-                key={guide.slug}
-                href={`/guides/${guide.slug}`}
-                className="rounded-2xl border border-white/10 bg-zinc-950/60 p-6 hover:border-purple-500/40 transition"
-              >
-                <p className="text-xs font-bold uppercase tracking-wider text-purple-400 mb-3">
-                  {guide.category} • {guide.readTime}
+              <div className="mt-6 grid gap-6 text-sm leading-7 text-zinc-400 lg:grid-cols-3">
+                <p>
+                  Pokémon card prices can change depending on condition,
+                  language, edition, popularity, grading potential and recent
+                  market demand. PokeValue gives collectors a faster way to
+                  research cards and compare sets in one place.
                 </p>
 
-                <h3 className="text-xl font-bold text-white">{guide.title}</h3>
-
-                <p className="mt-3 text-zinc-400 leading-7">
-                  {guide.description}
+                <p>
+                  The card explorer is designed for quick discovery. You can
+                  search by Pokémon name, set, rarity, type or collector number,
+                  then open individual cards to review their details and market
+                  information.
                 </p>
 
-                <p className="mt-5 text-sm font-semibold text-purple-400">
-                  Read guide →
+                <p>
+                  The guides section adds helpful context for newer collectors,
+                  including how to inspect condition, understand grading, spot
+                  fake cards and value Pokémon cards in the UK market.
                 </p>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-12 grid md:grid-cols-2 gap-6">
-          <div className="rounded-2xl border border-white/10 bg-zinc-950/60 p-6">
-            <h2 className="text-2xl font-bold mb-3 text-white">
-              For collectors
-            </h2>
-
-            <p className="text-zinc-400 leading-7">
-              Quickly check what your Pokémon cards may be worth, save cards you
-              own, and build a better understanding of your collection over
-              time.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-white/10 bg-zinc-950/60 p-6">
-            <h2 className="text-2xl font-bold mb-3 text-white">
-              For market research
-            </h2>
-
-            <p className="text-zinc-400 leading-7">
-              Explore valuable cards, compare sets, identify popular releases,
-              and follow how different parts of the Pokémon TCG market perform.
-            </p>
-          </div>
-        </section>
-
-        <section className="mt-12 rounded-3xl border border-white/10 bg-zinc-950/60 p-8">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Frequently Asked Questions
-          </h2>
-
-          <div className="space-y-6">
-            <div>
-              <h3 className="font-semibold text-white">
-                Are Pokémon card prices always exact?
-              </h3>
-              <p className="text-zinc-400 mt-2 leading-7">
-                No. Prices should be used as estimates because real selling
-                prices can change depending on condition, grading, demand, and
-                where the card is sold.
-              </p>
+              </div>
             </div>
+          </section>
 
-            <div>
-              <h3 className="font-semibold text-white">
-                Can I track my own collection?
-              </h3>
-              <p className="text-zinc-400 mt-2 leading-7">
-                Yes. PokeValue lets you add cards to your collection and monitor
-                an estimated portfolio value.
-              </p>
-            </div>
+          <section className="grid gap-6 lg:grid-cols-2">
+            <FaqItem
+              question="Does PokeValue replace professional appraisal?"
+              answer="No. PokeValue is a research tool. Final value depends on condition, edition, buyer demand, authenticity and the exact sale venue."
+            />
 
-            <div>
-              <h3 className="font-semibold text-white">
-                Is PokeValue only for UK collectors?
-              </h3>
-              <p className="text-zinc-400 mt-2 leading-7">
-                The site is designed with UK collectors in mind, but anyone can
-                use it to research Pokémon cards, sets, rarity, and market
-                trends.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
+            <FaqItem
+              question="Why can two copies of the same card be worth different amounts?"
+              answer="Condition, centering, surface quality, print version, grading result and market demand can all change the price of the same Pokémon card."
+            />
+
+            <FaqItem
+              question="Is this useful for UK collectors?"
+              answer="Yes. PokeValue is built with UK collectors in mind, including GBP display and guides focused on valuing Pokémon cards from a UK perspective."
+            />
+
+            <FaqItem
+              question="What should I do before selling a valuable card?"
+              answer="Check the exact set and number, inspect condition carefully, compare recent market prices and consider whether grading could increase buyer confidence."
+            />
+          </section>
+        </div>
+      </main>
     </AppLayout>
+  );
+}
+
+function HomeStat({
+  label,
+  value,
+  icon,
+}: {
+  label: string;
+  value: string;
+  icon: ReactNode;
+}) {
+  return (
+    <div className="rounded-2xl border border-white/[0.08] bg-white/[0.055] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.075)] backdrop-blur-xl">
+      <div className="mb-3 flex items-center justify-between gap-3">
+        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500">
+          {label}
+        </span>
+
+        <span className="text-purple-100">{icon}</span>
+      </div>
+
+      <p className="text-xl font-black tracking-tight text-white sm:text-2xl">
+        {value}
+      </p>
+    </div>
+  );
+}
+
+function MarketPanel({
+  label,
+  title,
+  description,
+  href,
+  icon,
+}: {
+  label: string;
+  title: string;
+  description: string;
+  href: string;
+  icon: ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      className="group rounded-[1.5rem] border border-white/[0.08] bg-white/[0.045] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.055)] transition hover:-translate-y-0.5 hover:border-purple-200/30 hover:bg-white/[0.065]"
+    >
+      <div className="mb-4 flex items-center justify-between gap-3">
+        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-600">
+          {label}
+        </span>
+
+        <span className="text-purple-100">{icon}</span>
+      </div>
+
+      <h3 className="line-clamp-2 text-lg font-black tracking-tight text-white">
+        {title}
+      </h3>
+
+      <p className="mt-2 line-clamp-2 text-sm leading-6 text-zinc-500">
+        {description}
+      </p>
+    </Link>
+  );
+}
+
+function FeatureCard({
+  title,
+  description,
+  href,
+  icon,
+}: {
+  title: string;
+  description: string;
+  href: string;
+  icon: ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      className="group rounded-[1.75rem] border border-white/[0.09] bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.022))] p-5 shadow-[0_24px_80px_rgba(0,0,0,0.3)] backdrop-blur-2xl transition hover:-translate-y-1 hover:border-purple-200/30 hover:shadow-[0_30px_96px_rgba(139,92,246,0.18)]"
+    >
+      <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl border border-purple-200/15 bg-purple-300/[0.09] text-purple-100">
+        {icon}
+      </div>
+
+      <h3 className="text-xl font-black tracking-tight text-white">{title}</h3>
+
+      <p className="mt-3 text-sm leading-7 text-zinc-500">{description}</p>
+
+      <div className="mt-5 flex items-center gap-2 text-sm font-black text-purple-100">
+        Open
+        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+      </div>
+    </Link>
+  );
+}
+
+function FaqItem({ question, answer }: { question: string; answer: string }) {
+  return (
+    <div className="rounded-[1.75rem] border border-white/[0.09] bg-white/[0.045] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.055)] backdrop-blur-2xl">
+      <h3 className="text-lg font-black tracking-tight text-white">
+        {question}
+      </h3>
+
+      <p className="mt-3 text-sm leading-7 text-zinc-500">{answer}</p>
+    </div>
   );
 }

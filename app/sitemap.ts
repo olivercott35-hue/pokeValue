@@ -1,117 +1,104 @@
-import { MetadataRoute } from "next";
-import { guides } from "@/lib/guides";
-import { newsArticles } from "@/lib/news";
+import type { MetadataRoute } from "next";
+import { getAllPokemonSets } from "@/lib/pokemon-data";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.pokevalue.co.uk";
-  const lastModified = new Date();
+const baseUrl = "https://pokevalue.co.uk";
 
-  const staticPages: MetadataRoute.Sitemap = [
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const staticRoutes: MetadataRoute.Sitemap = [
     {
-      url: `${baseUrl}`,
-      lastModified,
+      url: `${baseUrl}/`,
+      lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
     },
     {
-      url: `${baseUrl}/dashboard`,
-      lastModified,
-      changeFrequency: "daily",
-      priority: 0.9,
-    },
-    {
       url: `${baseUrl}/cards`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/sets`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/guides`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/news`,
-      lastModified,
-      changeFrequency: "daily",
-      priority: 0.8,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/collection`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.7,
+      priority: 0.65,
     },
     {
       url: `${baseUrl}/favorites`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.7,
+      priority: 0.55,
     },
     {
       url: `${baseUrl}/portfolio`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.65,
     },
     {
       url: `${baseUrl}/market-movers`,
-      lastModified,
-      changeFrequency: "daily",
-      priority: 0.8,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.65,
     },
     {
       url: `${baseUrl}/analytics`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.7,
+      priority: 0.55,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "yearly",
-      priority: 0.4,
+      priority: 0.5,
     },
     {
       url: `${baseUrl}/terms`,
-      lastModified,
+      lastModified: new Date(),
       changeFrequency: "yearly",
-      priority: 0.4,
+      priority: 0.5,
     },
   ];
 
-  const guidePages: MetadataRoute.Sitemap = guides.map((guide) => ({
-    url: `${baseUrl}/guides/${guide.slug}`,
-    lastModified,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
+  const sets = await getAllPokemonSets();
 
-  const newsPages: MetadataRoute.Sitemap = newsArticles.map((article) => ({
-    url: `${baseUrl}/news/${article.slug}`,
-    lastModified,
+  const setRoutes: MetadataRoute.Sitemap = sets.map((set) => ({
+    url: `${baseUrl}/sets/${set.id}`,
+    lastModified: set.updatedAt ? new Date(set.updatedAt) : new Date(),
     changeFrequency: "weekly",
-    priority: 0.75,
+    priority: 0.7,
   }));
 
-  return [...staticPages, ...guidePages, ...newsPages];
+  return [...staticRoutes, ...setRoutes];
 }

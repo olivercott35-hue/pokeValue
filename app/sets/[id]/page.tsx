@@ -1,87 +1,157 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SetClient from "./SetClient";
+import {
+  getAllPokemonSets,
+  getPokemonCardsBySetId,
+  getPokemonCardMarketPriceGBP,
+  getPokemonResolvedMarketPrice,
+  getPokemonResolvedTrend,
+  getPokemonSetById,
+  getPokemonSetCardCount,
+  getPokemonSetReleaseYear,
+  type PokemonCard,
+} from "@/lib/pokemon-data";
 
-async function getSet(id: string) {
-  try {
-    const res = await fetch(`https://api.pokemontcg.io/v2/sets/${id}`, {
-      next: { revalidate: 3600 },
-    });
+type PageProps = {
+  params: Promise<{
+    id: string;
+  }>;
+};
 
-    if (!res.ok) return null;
+function getReleaseTime(value?: string) {
+  const time = new Date(value || "1900-01-01").getTime();
 
-    const json = await res.json();
-
-    return json.data || null;
-  } catch {
-    return null;
-  }
+  return Number.isNaN(time) ? 0 : time;
 }
 
-async function getSetCards(id: string) {
-  try {
-    const params = new URLSearchParams();
+function getCardNumberValue(number?: string) {
+  if (!number) return Number.MAX_SAFE_INTEGER;
 
-    params.set("q", `set.id:${id}`);
-    params.set("pageSize", "250");
-    params.set("orderBy", "number");
+  const match = number.match(/\d+/);
 
-    const res = await fetch(`https://api.pokemontcg.io/v2/cards?${params}`, {
-      next: { revalidate: 3600 },
-    });
+  if (!match) return Number.MAX_SAFE_INTEGER;
 
-    if (!res.ok) return [];
+  return Number(match[0]);
+}
 
-    const json = await res.json();
+function enrichCard(card: PokemonCard) {
+  const resolvedPrice = getPokemonResolvedMarketPrice(card);
+  const resolvedTrend = getPokemonResolvedTrend(card);
 
-    return Array.isArray(json.data) ? json.data : [];
-  } catch {
-    return [];
-  }
+  return {
+    ...card,
+    pokeValueMarketPriceUSD: resolvedPrice.usd,
+    pokeValuePriceGBP: getPokemonCardMarketPriceGBP(card),
+    pokeValuePriceSource: resolvedPrice.label,
+    pokeValuePriceKey: resolvedPrice.key,
+    pokeValueTrendDirection: resolvedTrend.direction,
+    pokeValueTrendPercent: resolvedTrend.changePercent,
+    pokeValueTrendLabel: resolvedTrend.label,
+    pokeValueCardNumberSort: getCardNumberValue(card.number),
+  };
+}
+
+export async function generateStaticParams() {
+  const sets = await getAllPokemonSets();
+
+  return sets.map((set) => ({
+    id: set.id,
+  }));
 }
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ id: string }>;
-}): Promise<Metadata> {
+}: PageProps): Promise<Metadata> {
   const { id } = await params;
-  const setData = await getSet(id);
+  const set = await getPokemonSetById(id);
 
-  if (!setData) {
+  if (!set) {
     return {
       title: "Set Not Found | PokeValue",
-      description: "This Pokémon TCG set could not be found on PokeValue.",
     };
   }
 
-  const total = setData.total || setData.printedTotal || 0;
-  const releaseDate = setData.releaseDate || "unknown release date";
-  const series = setData.series || "Pokémon TCG";
+  const title = `${set.name} Pokémon Cards & Prices | PokeValue`;
+  const description = `Explore ${set.name} Pokémon cards, release information, collector numbers and market prices in the PokeValue set archive.`;
 
   return {
-    title: `${setData.name} Pokémon Cards | PokeValue`,
-    description: `Browse ${setData.name} from the ${series} series. View ${total} Pokémon cards, release date ${releaseDate}, rarities and available market estimates.`,
+    title,
+    description,
+    alternates: {
+      canonical: `https://pokevalue.co.uk/sets/${set.id}`,
+    },
     openGraph: {
-      title: `${setData.name} | PokeValue`,
-      description: `Explore cards from ${setData.name}, including card numbers, rarities and market estimates where available.`,
-      images: setData?.images?.logo
-        ? [{ url: setData.images.logo }]
+      title,
+      description,
+      url: `https://pokevalue.co.uk/sets/${set.id}`,
+      siteName: "PokeValue",
+      type: "website",
+      images: set.images?.logo
+        ? [
+            {
+              url: set.images.logo,
+              alt: `${set.name} logo`,
+            },
+          ]
         : undefined,
     },
   };
 }
 
-export default async function SetPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+export default async function SetPage({ params }: PageProps) {
   const { id } = await params;
 
-  const [setData, cards] = await Promise.all([getSet(id), getSetCards(id)]);
+  const set = await getPokemonSetById(id);
 
-  if (!setData) notFound();
+  if (!set) {
+    notFound();
+  }
 
-  return <SetClient setData={setData} initialCards={cards} />;
+  const cards = await getPokemonCardsBySetId(id);
+
+  const enrichedSet = {
+    ...set,
+    pokeValueCardCount: getPokemonSetCardCount(set),
+    pokeValueReleaseYear: getPokemonSetReleaseYear(set) || "—",
+    pokeValueReleaseTime: getReleaseTime(set.releaseDate),
+  };
+
+  const enrichedCards = cards
+    .map(enrichCard)
+    .sort((a, b) => {
+      const numberDiff =
+        Number(a.pokeValueCardNumberSort || 0) -
+        Number(b.pokeValueCardNumberSort || 0);
+
+      if (numberDiff !== 0) return numberDiff;
+
+      return String(a.name || "").localeCompare(String(b.name || ""));
+    });
+
+  const pricedCards = enrichedCards.filter(
+    (card) => Number(card.pokeValuePriceGBP || 0) > 0
+  );
+
+  const highestCard =
+    pricedCards
+      .slice()
+      .sort(
+        (a, b) =>
+          Number(b.pokeValuePriceGBP || 0) - Number(a.pokeValuePriceGBP || 0)
+      )[0] || null;
+
+  const totalMarketValue = pricedCards.reduce(
+    (total, card) => total + Number(card.pokeValuePriceGBP || 0),
+    0
+  );
+
+  return (
+    <SetClient
+      set={enrichedSet}
+      cards={enrichedCards}
+      highestCard={highestCard}
+      totalMarketValue={totalMarketValue}
+    />
+  );
 }
