@@ -50,7 +50,7 @@ export default function PrivacyPage() {
             </p>
 
             <p className="text-zinc-600 mt-3 text-sm">
-              Last updated: 2026
+              Last updated: 18 July 2026
             </p>
           </motion.header>
 
@@ -90,12 +90,12 @@ export default function PrivacyPage() {
                 </PolicySection>
 
                 <PolicySection title="Cookies And Advertising" icon={<Cookie size={16} />}>
-                  PokeValue may use cookies and similar technologies. Third-party
-                  advertising services, including Google AdSense, may use cookies
-                  to display, personalise, and measure advertisements. These
-                  services may collect information such as your browser,
-                  approximate location, device information, pages visited, and
-                  interactions with ads.
+                  PokeValue may use cookies and similar technologies. When Google
+                  advertising is enabled for visitors in the UK or European
+                  Economic Area, a Google-certified consent message is used to
+                  request and record advertising choices. Google AdSense may use
+                  cookies or similar identifiers to display, personalise, and
+                  measure advertisements according to the choice you make.
                 </PolicySection>
 
                 <PolicySection title="Analytics" icon={<Eye size={16} />}>
@@ -115,11 +115,11 @@ export default function PrivacyPage() {
                 </PolicySection>
 
                 <PolicySection title="Your Choices" icon={<LockKeyhole size={16} />}>
-                  You can manage cookies through your browser settings. You can
-                  also clear your browser storage to remove locally saved
-                  collection and favourite data from your current device. If you
-                  do not want advertising cookies, you can adjust your browser or
-                  Google ad settings where available.
+                  You can use the consent message to accept, reject, or manage
+                  advertising choices where it is displayed. You can also manage
+                  cookies through your browser settings and clear browser storage
+                  to remove locally saved collection and favourite data from your
+                  current device.
                 </PolicySection>
 
                 <PolicySection title="Children's Privacy" icon={<ShieldAlert size={16} />}>

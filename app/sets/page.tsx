@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description:
     "Browse Pokémon TCG sets with premium visuals, release dates, card totals and fast local-cache set discovery on PokeValue.",
   alternates: {
-    canonical: "https://pokevalue.co.uk/sets",
+    canonical: "https://www.pokevalue.co.uk/sets",
   },
   openGraph: {
     title: "Pokémon Set Explorer | PokeValue",
     description:
       "Explore Pokémon TCG sets, eras, release years and card totals with the premium PokeValue set archive.",
-    url: "https://pokevalue.co.uk/sets",
+    url: "https://www.pokevalue.co.uk/sets",
     siteName: "PokeValue",
     type: "website",
   },

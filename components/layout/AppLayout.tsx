@@ -53,9 +53,6 @@ export default function AppLayout({
                         <Link href="/guides" className="block hover:text-white">
                           Guides
                         </Link>
-                        <Link href="/news" className="block hover:text-white">
-                          News
-                        </Link>
                       </div>
                     </div>
 
@@ -68,6 +65,12 @@ export default function AppLayout({
                         </Link>
                         <Link href="/contact" className="block hover:text-white">
                           Contact
+                        </Link>
+                        <Link href="/methodology" className="block hover:text-white">
+                          Pricing Methodology
+                        </Link>
+                        <Link href="/editorial-policy" className="block hover:text-white">
+                          Editorial Policy
                         </Link>
                         <Link href="/privacy" className="block hover:text-white">
                           Privacy Policy

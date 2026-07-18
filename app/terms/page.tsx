@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import AppLayout from "@/components/layout/AppLayout";
+
+
+export const metadata: Metadata = {
+  title: "Terms of Service | PokeValue",
+  description:
+    "Read the terms that apply to PokeValue card research, marketplace estimates and browser-based collection tools.",
+  alternates: {
+    canonical: "https://www.pokevalue.co.uk/terms",
+  },
+};
 
 const sections = [
   {
@@ -108,7 +119,7 @@ export default function TermsPage() {
               PokeValue.
             </p>
 
-            <p className="mt-4 text-sm text-zinc-600">Last updated: 2026</p>
+            <p className="mt-4 text-sm text-zinc-600">Last updated: 18 July 2026</p>
           </header>
 
           <div className="rounded-[2rem] border border-white/[0.06] bg-white/[0.03] p-8 md:p-10 backdrop-blur-2xl">

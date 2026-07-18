@@ -1,3 +1,5 @@
+import { getResolvedCardPrice } from "@/lib/card-pricing";
+
 export type SearchScanData = {
   rawText: string;
   nameGuesses: string[];
@@ -16,26 +18,7 @@ function norm(value: any) {
 }
 
 function getPrice(card: any) {
-  const cm = card?.cardmarket?.prices;
-  const tcg = card?.tcgplayer?.prices;
-  const firstTcg: any = tcg ? Object.values(tcg)[0] : null;
-
-  const values = [
-    cm?.trendPrice,
-    cm?.averageSellPrice,
-    cm?.avg7,
-    cm?.avg30,
-    firstTcg?.market,
-    firstTcg?.mid,
-    firstTcg?.low,
-  ];
-
-  for (const value of values) {
-    const number = Number(value);
-    if (!Number.isNaN(number) && number > 0) return number;
-  }
-
-  return 0;
+  return getResolvedCardPrice(card).gbpValue;
 }
 
 async function fetchCards(q: string, pageSize = 50) {

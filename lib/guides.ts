@@ -16,405 +16,241 @@ export const guides: Guide[] = [
     slug: "how-to-value-pokemon-cards",
     title: "How to Value Pokémon Cards in the UK",
     description:
-      "Learn how rarity, condition, grading, demand, set popularity, and recent sales affect Pokémon card values.",
+      "A practical UK guide to identifying the exact printing, assessing condition, comparing marketplace evidence, accounting for fees and producing a realistic Pokémon card valuation.",
     category: "Card Values",
-    readTime: "12 min read",
-    updated: "2026",
+    readTime: "6 min read",
+    updated: "18 July 2026",
     sections: [
       {
-        heading: "What decides a Pokémon card's value?",
+        heading: "Start with the exact card, not only the Pokémon name",
         body: [
-          "A Pokémon card's value is usually based on a mix of rarity, condition, popularity, set demand, artwork, grading potential, and recent sales. No single factor decides the price on its own.",
-          "Two cards with the same name can sell for very different prices if one is damaged, one is Near Mint, one is graded, or one comes from a more desirable set.",
+          "A useful valuation begins with identification. Two cards can feature the same Pokémon and almost identical artwork while belonging to different sets, years, languages or print variants. Check the set symbol, collector number, card name, rarity, language and any first-edition, reverse-holo, promotional or stamped markings before comparing prices.",
+          "Use the collector number together with the set name whenever possible. A search for “Charizard 100/101 Dragon Frontiers” is much more precise than a search for “old Charizard”. If the card has no obvious set symbol, compare it with a verified checklist and look for copyright dates, promotional numbering and card-layout details.",
         ],
       },
       {
-        heading: "Condition is one of the biggest factors",
+        heading: "Confirm the finish and print variant",
         body: [
-          "Condition can completely change a Pokémon card's value. Scratches, whitening, dents, bends, creases, print lines, and surface marks can reduce what collectors are willing to pay.",
-          "Near Mint cards usually attract the highest raw prices because they display better, are easier to sell, and may have better grading potential.",
+          "Normal, holofoil, reverse-holo, first-edition and unlimited copies should not be valued as though they are interchangeable. The same database record can sometimes contain several marketplace price fields, and the highest field may belong to a different variant from the card in your hand.",
+          "PokeValue displays the marketplace and selected variant beside the estimate. Before using that figure, compare the finish of your physical card with the labelled variant. If they do not match, find evidence for the correct version rather than applying the displayed number automatically.",
         ],
       },
       {
-        heading: "Rarity and demand work together",
+        heading: "Assess condition before looking at the final number",
         body: [
-          "Rare cards, secret rares, alternate arts, special illustration rares, and promos can be valuable, but rarity alone is not enough. A rare card still needs demand from collectors.",
-          "Cards featuring popular Pokémon such as Charizard, Pikachu, Umbreon, Rayquaza, Gengar, Mew, Lugia, and Eeveelutions often attract stronger attention.",
+          "Condition can create a large gap between two copies of the same card. Inspect the front and back under bright, indirect light. Look for whitening, corner wear, scratches, print lines, dents, creases, stains, edge chips, silvering and surface pressure marks. Tilt holofoil cards slowly because scratches and indentations can disappear when viewed straight on.",
+          "Use conservative wording. A card that looks clean in a sleeve is not automatically Near Mint. Remove it carefully, inspect both sides and note every defect. When unsure between two condition categories, valuing at the lower category is usually safer than assuming a premium condition that a buyer may reject.",
         ],
       },
       {
-        heading: "Recent sales matter more than asking prices",
+        heading: "Compare sold evidence, not only optimistic listings",
         body: [
-          "A listing price is only what a seller wants. A sold price is what a buyer actually paid. When valuing a card, recent sold listings are usually more useful than active listings.",
-          "Market prices should be treated as estimates. Real sale prices can change depending on condition, platform fees, postage, seller reputation, and timing.",
+          "An active listing shows what a seller hopes to receive; it does not prove that buyers are paying that amount. Recent completed sales are more useful when they match the same printing, language, condition and grading status. One unusual sale should not define the value, especially when several lower sales sit around a consistent range.",
+          "Try to collect at least three relevant comparisons. Remove obvious outliers, damaged copies presented as clean, lots containing several cards and sales with unclear photographs. If there are very few recent sales, use a wider range and state that confidence is low rather than presenting a precise figure that the evidence cannot support.",
         ],
       },
       {
-        heading: "How PokeValue helps",
+        heading: "Use marketplace estimates as a starting point",
         body: [
-          "PokeValue helps collectors research Pokémon cards faster by combining card data, set information, rarity, images, and available market pricing in one place.",
-          "Use PokeValue as a starting point, then compare condition and recent sales before making important buying, selling, or grading decisions.",
+          "Marketplace trend and market fields are useful for screening a large collection, but they are not guaranteed sale prices. They may combine listings from different sellers, may update at different intervals and may not reflect the exact condition of your copy. A displayed estimate should lead to further checking, not replace it.",
+          "PokeValue uses one consistent resolver across card, set and collection pages. For a UK and European audience, available Cardmarket data is prioritised, with one clearly labelled available TCGplayer market variant used as a fallback. The full rule and its limitations are explained on the Pricing Methodology page.",
+        ],
+      },
+      {
+        heading: "Convert currencies and account for selling costs",
+        body: [
+          "A euro or US-dollar marketplace value is not the same as the amount that reaches a UK seller. Currency conversion changes, and a sale may also involve marketplace fees, payment fees, postage, packaging, insurance or an auction-house commission. Buyers may also pay less when a seller has limited feedback or weak photographs.",
+          "For example, imagine matching raw sales around £120. If selling costs and insured delivery total roughly £15, the practical net value may be nearer £105. A local cash buyer may offer less for convenience, while a patient direct sale could achieve more. Decide whether you are estimating retail asking value, likely sale value or expected net proceeds and label it clearly.",
+        ],
+      },
+      {
+        heading: "Separate raw and graded markets",
+        body: [
+          "A raw card should not be valued from the price of a top-graded copy. Graded prices include the assigned grade, authentication, population, holder preference and buyer confidence. Even a visually clean raw card may receive a lower grade because of centering, tiny surface damage or print defects.",
+          "When considering grading, compare the raw value with several realistic grade outcomes rather than only the highest grade. Include grading fees, shipping, insurance and the time your money is tied up. A card can be collectible and valuable without grading being financially sensible.",
+        ],
+      },
+      {
+        heading: "Create a valuation range",
+        body: [
+          "A range is often more honest than a single number. Record a conservative value, a likely value and a strong-sale value. The conservative figure might reflect a quick sale or the lower end of comparable condition; the likely figure should match the central cluster of evidence; the strong-sale figure assumes good presentation and patience.",
+          "For a card with comparable sales at £82, £90, £94 and £110, a reasonable working range might be £85–£100 rather than claiming exactly £94.00. If your copy has noticeable whitening compared with the sold examples, move the range down. If it is clearly cleaner and the market is active, the upper end may be more realistic.",
+        ],
+      },
+      {
+        heading: "Common valuation mistakes",
+        body: [
+          "Frequent mistakes include comparing the wrong set, using a first-edition price for an unlimited card, treating reverse-holo and normal copies as identical, ignoring condition, copying the highest active listing, comparing raw cards with graded tens and forgetting selling costs.",
+          "Another mistake is assuming rarity guarantees demand. A technically rare card can remain inexpensive when few collectors want it, while a lower-rarity card featuring a popular Pokémon or artwork can sell consistently. Value depends on both scarcity and buyer interest.",
+        ],
+      },
+      {
+        heading: "A repeatable UK valuation checklist",
+        body: [
+          "Write down the exact set, number, language and finish. Inspect condition outside the sleeve. Check the clearly labelled PokeValue marketplace estimate. Collect several recent matching sales. Exclude mismatched variants and obvious outliers. Convert currencies where needed, subtract likely selling costs and finish with a range rather than an unsupported exact figure.",
+          "Recheck important cards before selling because markets change. For expensive vintage cards, unusual errors or cards with uncertain authenticity, consider an experienced dealer, auction specialist or recognised grading service. PokeValue is a research tool, not a guaranteed professional appraisal.",
         ],
       },
     ],
   },
   {
     slug: "pokemon-card-condition-guide",
-    title: "Pokémon Card Condition Guide",
+    title: "Pokémon Card Condition Guide for Collectors",
     description:
-      "Understand Near Mint, Lightly Played, whitening, scratches, dents, centering, and how condition affects Pokémon card value.",
+      "Learn how to inspect Pokémon card corners, edges, surfaces, centering, dents and creases, then describe condition consistently before buying, selling or grading.",
     category: "Condition",
-    readTime: "11 min read",
-    updated: "2026",
+    readTime: "5 min read",
+    updated: "18 July 2026",
     sections: [
       {
-        heading: "Why condition matters",
+        heading: "Why condition descriptions need to be conservative",
         body: [
-          "Condition is one of the most important parts of Pokémon card pricing. A rare card in poor condition can be worth much less than the same card in clean Near Mint condition.",
-          "Collectors usually inspect the front, back, corners, edges, surface, and centering before deciding what a card is worth.",
+          "Condition is one of the largest sources of disagreement in Pokémon card sales. Terms such as Near Mint, Excellent, Lightly Played and Played are useful, but marketplaces and collectors do not always apply them in exactly the same way. Clear photographs and a written defect list are more reliable than a label alone.",
+          "Describe the card you can prove, not the grade you hope it might receive. A card can look excellent from the front while the back has edge whitening, a pressure dent or a small crease. Inspect both sides before assigning any condition category.",
         ],
       },
       {
-        heading: "Near Mint",
+        heading: "Prepare a safe inspection area",
         body: [
-          "Near Mint cards have very little visible wear. They may have tiny imperfections, but they should look clean overall with strong corners, minimal whitening, and a clean surface.",
-          "Near Mint cards are usually the most desirable raw copies because they display well and may be suitable for grading.",
+          "Wash and dry your hands, clear the surface and use bright indirect light. A clean playmat or soft lint-free surface reduces the chance of adding scratches. Remove the card from rigid holders slowly and avoid dragging the surface against a sleeve seam.",
+          "Use a movable desk lamp and inspect from several angles. A phone torch held too close can create glare, so move the light rather than relying on one straight-on view. Magnification can help with expensive cards, but normal viewing is still important because buyers judge the overall presentation as well as tiny defects.",
         ],
       },
       {
-        heading: "Lightly Played",
+        heading: "Corners",
         body: [
-          "Lightly Played cards usually have small signs of handling, such as minor whitening, small edge marks, or light surface wear.",
-          "They can still be collectible, but they normally sell for less than Near Mint copies.",
+          "Check all eight visible corner faces: four on the front and four on the back. Look for whitening, rounding, splitting, lifting foil and small impact marks. One damaged corner can materially affect a clean-looking card, particularly when grading is being considered.",
+          "Vintage cards may have minor corner wear consistent with age, but age does not erase the defect. Photograph each corner closely when selling a valuable card. Avoid using a dark background that hides whitening or an overexposed background that removes edge detail.",
         ],
       },
       {
-        heading: "Moderately Played and Damaged",
+        heading: "Edges",
         body: [
-          "Moderately Played cards may have obvious whitening, scratches, corner wear, or small bends. Damaged cards may have creases, water damage, peeling, dents, heavy scratching, or major surface problems.",
-          "Even expensive Pokémon cards can lose a large percentage of value when damage is visible.",
+          "Run your eyes along every edge without rubbing it. Common problems include white chips, rough factory cuts, silvering on holofoil borders, small dents and edge impressions caused by tight binders or poor storage. Check the back carefully because blue-border whitening is often easier to see there.",
+          "Factory roughness and later wear can look similar. For a sales description, the practical point is that the defect is visible, not whether it occurred during printing. State what can be seen and include a clear photograph rather than promising a buyer that an imperfection will be ignored by a grader.",
         ],
       },
       {
-        heading: "Always check both sides",
+        heading: "Front and back surfaces",
         body: [
-          "Many collectors focus only on the front, but the back of a Pokémon card often reveals whitening, corner damage, edge wear, and handling marks.",
-          "Before selling or grading, check the card under good lighting and compare it with recently sold cards in similar condition.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "psa-vs-ace-vs-cgc-grading",
-    title: "PSA vs ACE vs CGC Grading",
-    description:
-      "Compare popular Pokémon card grading companies and learn when grading may be worth it.",
-    category: "Grading",
-    readTime: "12 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "What is Pokémon card grading?",
-        body: [
-          "Card grading is when a professional grading company checks a card's condition, assigns it a grade, and seals it in a protective slab.",
-          "Collectors grade cards to protect them, make condition easier to understand, and sometimes increase resale value.",
+          "Tilt the card slowly under light. Search for scratches, scuffs, fingerprints, stains, clouding, print lines, roller marks, indentations and areas where the gloss differs. Holofoil surfaces can hide fine scratching until the light reaches the correct angle.",
+          "Do not attempt aggressive cleaning. Liquids, abrasives, erasers and polishes can alter the finish or create new damage. A loose speck can sometimes be removed safely with clean air or an extremely soft approach, but a mark that does not lift immediately should be treated as part of the condition.",
         ],
       },
       {
-        heading: "PSA",
+        heading: "Dents, bends and creases",
         body: [
-          "PSA is one of the most recognised grading companies worldwide. PSA 10 Pokémon cards often attract strong collector demand, especially for popular chase cards and vintage cards.",
-          "PSA can be appealing for resale value, but submission costs, turnaround times, shipping, and import considerations can matter for UK collectors.",
+          "A pressure dent may be visible only from one angle, but it can be more serious than light edge whitening. Check around the artwork, text box and centre of the back for small depressions. Binder rings, top loaders, clips and stacked objects are common causes.",
+          "A crease breaks or permanently folds the card structure and normally moves the card into a significantly lower condition category. Flattening a crease under weight does not restore the fibres. Disclose it clearly even when the front artwork makes it difficult to notice.",
         ],
       },
       {
-        heading: "ACE",
+        heading: "Centering and print quality",
         body: [
-          "ACE is popular with many UK collectors because it is UK-based and offers custom labels that can match the card artwork.",
-          "ACE can be a good option for collectors who want attractive slabs, easier UK submissions, and strong presentation for personal collections.",
+          "Centering describes how evenly the printed design sits within the borders. It matters strongly for grading, but an off-centre card can still have clean surfaces and edges. Keep centering separate from physical wear when describing a raw card.",
+          "Other factory issues include print lines, ink dots, miscuts, texture problems and poorly cut edges. Some genuine errors attract collectors, but most ordinary print defects reduce grading potential. Do not call a printing flaw an error card unless the feature is recognised and clearly documented.",
         ],
       },
       {
-        heading: "CGC",
+        heading: "Practical raw condition categories",
         body: [
-          "CGC is also used by many trading card collectors and is known for professional grading and clear slab presentation.",
-          "Some collectors prefer CGC for certain cards, while others focus on PSA for resale. The best choice depends on your goal.",
+          "Near Mint generally means a clean card with only very minor imperfections visible on close inspection. Lightly Played usually allows limited edge wear or fine scratching while keeping strong overall presentation. Moderately Played has more obvious wear, and Heavily Played includes substantial whitening, scratches, dents or structural damage. Damaged cards may have creases, tears, water damage, writing or severe surface problems.",
+          "These descriptions are not universal grading standards. When a card sits between categories, use the lower category and explain why. Buyers are more likely to trust a conservative listing with detailed photographs than an optimistic label followed by hidden defects.",
         ],
       },
       {
-        heading: "When grading is worth it",
+        heading: "Condition and grading are not the same thing",
         body: [
-          "Grading is usually most worth considering when the card is valuable, popular, rare, and in excellent condition.",
-          "If a card has visible scratches, whitening, dents, poor centering, or low raw value, grading may cost more than the value it adds.",
+          "A seller's Near Mint description does not guarantee a high numerical grade. Grading companies apply their own standards to centering, corners, edges, surface and authenticity. Tiny defects that are acceptable in a raw marketplace description can still prevent a top grade.",
+          "Before submitting, inspect the card as though you were trying to reject it. Estimate several possible grades and compare the financial result for each one. If grading only makes sense at the highest possible grade, the decision is carrying substantial risk.",
+        ],
+      },
+      {
+        heading: "How to document condition when selling",
+        body: [
+          "Use front and back photographs, close-ups of every defect and at least one angled-light image for holofoil or textured cards. Avoid filters, heavy sharpening and dark sleeves that hide the edges. State whether the card has a dent, crease, print line or noticeable whitening instead of relying only on “see pictures”.",
+          "Package the card so its condition cannot worsen in transit. Use an inner sleeve, suitable rigid protection, a team bag or sealed outer sleeve, and a rigid mailer or box appropriate to the value. Good documentation protects both buyer and seller if a dispute occurs.",
         ],
       },
     ],
   },
   {
     slug: "how-to-spot-fake-pokemon-cards",
-    title: "How to Spot Fake Pokémon Cards",
+    title: "How to Spot Fake Pokémon Cards Safely",
     description:
-      "Simple checks collectors can use to avoid fake Pokémon cards when buying online or in person.",
-    category: "Buying Safely",
-    readTime: "12 min read",
-    updated: "2026",
+      "A careful authentication checklist covering print quality, fonts, texture, holo patterns, card stock, numbering and seller warning signs without damaging the card.",
+    category: "Authenticity",
+    readTime: "5 min read",
+    updated: "18 July 2026",
     sections: [
       {
-        heading: "Why fake Pokémon cards are common",
+        heading: "Use several checks together",
         body: [
-          "Fake Pokémon cards are common online, especially in suspicious bundles, cheap booster boxes, marketplace listings, and cards with poor photos.",
-          "Learning basic checks can help collectors avoid wasting money on counterfeit cards.",
+          "No single home test proves that a Pokémon card is genuine. Counterfeits vary from obvious low-quality copies to convincing reproductions. The safest approach is to compare several features against a verified card from the same set and printing.",
+          "Do not destroy a card to test it. Rip tests, cutting edges and chemical tests permanently damage genuine cards and are unnecessary for normal collecting. When the value is high or the evidence conflicts, seek an experienced dealer or recognised authentication service.",
         ],
       },
       {
-        heading: "Check print quality",
+        heading: "Confirm that the card should exist",
         body: [
-          "Real Pokémon cards usually have sharp text, clean colours, and consistent printing. Fake cards often look blurry, too dark, too shiny, washed out, or strangely coloured.",
-          "Compare the card with official images or a card you know is real.",
+          "Search the exact set and collector number in a reliable checklist. Confirm the card name, artwork, rarity, language, weakness, resistance, attacks, HP, copyright line and set symbol. Fake cards often combine artwork from one printing with the text or number from another.",
+          "Watch for impossible combinations, such as a modern rarity treatment on an older layout, a collector number not found in the set, or a promotional stamp that does not match known distribution. An unfamiliar card is not automatically fake, but it needs stronger verification.",
         ],
       },
       {
-        heading: "Check the back of the card",
+        heading: "Compare fonts, spacing and symbols",
         body: [
-          "The back of a fake card may have incorrect colours, poor contrast, strange borders, or a different blue tone.",
-          "Side-by-side comparison with a genuine card can make fake backs easier to spot.",
+          "Official cards use consistent typefaces, spacing and symbol shapes within an era. Counterfeits may have letters that are too thin or bold, uneven line spacing, incorrect energy symbols, misplaced accent marks or text that sits too close to a border.",
+          "Compare with a high-resolution verified image and, ideally, a genuine physical card from the same set. Do not compare only with a random online photograph because colour balance, compression and camera angle can make genuine printing look different.",
         ],
       },
       {
-        heading: "Look at texture and holo pattern",
+        heading: "Inspect colour and print sharpness",
         body: [
-          "Many modern rare cards have specific texture patterns. Fake cards often fail to copy the texture correctly or use a flat shine that looks wrong.",
-          "For expensive cards, ask for clear angled photos so you can inspect the texture and surface.",
+          "Fake cards often have oversaturated artwork, muddy shadows, weak blacks or a back colour that is noticeably purple, grey or washed out. Fine text and thin lines may look fuzzy because the card was copied from a scan rather than printed from original production files.",
+          "Colour alone is not decisive. Genuine cards vary between print runs, factories and languages, and phone cameras alter white balance. Use colour as one part of the evidence and compare under the same lighting.",
         ],
       },
       {
-        heading: "Be careful with prices that look too good",
+        heading: "Check holofoil and texture behaviour",
         body: [
-          "If an expensive card is listed far below normal market value, be cautious. Very cheap listings can be fake, damaged, stolen images, or misleading.",
-          "Buy from trusted sellers with strong feedback, clear photos, and fair return policies.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "best-pokemon-sets-to-collect",
-    title: "Best Pokémon Sets to Collect",
-    description:
-      "Learn how to choose Pokémon sets based on artwork, chase cards, popularity, and long-term collector demand.",
-    category: "Sets",
-    readTime: "10 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "What makes a set collectible?",
-        body: [
-          "A Pokémon set becomes desirable when it has strong artwork, popular Pokémon, memorable chase cards, good pull excitement, and long-term collector interest.",
-          "Some sets are remembered because of one iconic card, while others stay popular because the whole card list is strong.",
+          "The holo pattern should match the specific card and era. Some fakes use a generic rainbow sheet across the entire card, while the genuine version limits foil to particular areas or uses a recognisable directional pattern. Tilt the card and compare how the foil moves.",
+          "Modern textured cards should have texture lines that align with the intended design rather than a random grid or smooth glossy surface. A missing texture is suspicious when the exact genuine printing is known to have one, but confirm the variant because normal and promotional copies can differ.",
         ],
       },
       {
-        heading: "Look for popular Pokémon",
+        heading: "Feel, thickness and edges",
         body: [
-          "Sets featuring Charizard, Pikachu, Umbreon, Rayquaza, Gengar, Mew, Lugia, and Eeveelutions often attract strong demand.",
-          "Cards with beloved Pokémon tend to remain easier to sell and more interesting to collectors.",
+          "Counterfeits may feel excessively glossy, thin, stiff or waxy. Genuine card stock usually has a consistent layered feel, but age, humidity and sleeves can affect handling. Avoid flexing an expensive card simply to judge stiffness.",
+          "Inspect the edge under good light. Some genuine cards show a dark internal layer, while many fakes reveal bright white or poorly bonded stock. This is only a supporting clue; edge appearance varies and should never be used alone to authenticate a card.",
         ],
       },
       {
-        heading: "Artwork matters",
+        heading: "Be cautious with the light test",
         body: [
-          "Modern Pokémon sets with special illustration rares and alternate arts can become popular because collectors value beautiful artwork.",
-          "A set with multiple standout artworks may have stronger long-term appeal than a set with only one chase card.",
+          "Holding a light behind a card is sometimes suggested because thin counterfeit stock may transmit more light. The result changes with the torch strength, card era, print factory and surrounding light, so it is not a pass-or-fail test.",
+          "A card that transmits light is not automatically fake, and a thick counterfeit may block light. Use the test only as a comparison between cards from the same era and never expose the card to heat or prolonged intense light.",
         ],
       },
       {
-        heading: "Sealed or singles?",
+        heading: "Seller and listing warning signs",
         body: [
-          "Some collectors prefer sealed products such as booster boxes and elite trainer boxes, while others prefer buying individual cards.",
-          "Sealed products require careful storage and patience. Singles are usually better if you want specific cards without gambling on pack pulls.",
+          "A price far below the normal range, stock photographs, refusal to show the back, blurred images, a large supply of rare cards and pressure to pay outside protected systems are warning signs. Check feedback, sale history and whether the seller answers specific questions about condition and origin.",
+          "Bundles described as “gold metal cards”, unofficial fan cards or novelty cards may be sold openly, but they should not be represented as official tournament-legal Pokémon TCG cards. Read the wording carefully and do not assume every item using Pokémon artwork is an authentic trading card.",
         ],
       },
       {
-        heading: "Collect what you enjoy",
+        heading: "Vintage and high-value cards",
         body: [
-          "Pokémon card prices can rise and fall. Collecting only for profit can be risky.",
-          "The best sets to collect are often the ones you genuinely enjoy, especially if they also have strong demand and memorable cards.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "why-pokemon-card-prices-change",
-    title: "Why Pokémon Card Prices Change",
-    description:
-      "Learn why Pokémon card prices rise and fall due to supply, demand, hype, reprints, grading trends, and collector behaviour.",
-    category: "Market Trends",
-    readTime: "11 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Pokémon card prices are always moving",
-        body: [
-          "Pokémon card prices change because the market is affected by supply, demand, nostalgia, new releases, social media attention, grading trends, and reprints.",
-          "A card that is expensive today may fall later, while overlooked cards can rise if collector interest grows.",
+          "Vintage counterfeits can imitate wear to appear convincing. Check period-correct fonts, holo patterns, copyright details and card stock. For first-edition and shadowless cards, verify that every identifying feature belongs together rather than focusing only on the stamp.",
+          "For a high-value purchase, request clear front, back, edge and angled-light photographs before paying. Consider an in-person inspection or an authentication-backed marketplace. The cost of professional verification can be reasonable compared with the loss from buying a sophisticated counterfeit.",
         ],
       },
       {
-        heading: "Supply and demand",
+        heading: "A safe authentication checklist",
         body: [
-          "If many collectors want a card and there are not many available, the price often rises.",
-          "If a card becomes easy to find or demand drops, the price can fall.",
-        ],
-      },
-      {
-        heading: "Hype and social media",
-        body: [
-          "Social media can quickly increase demand for certain cards. A popular video, influencer, or market trend can make collectors pay more attention to a card.",
-          "However, hype can fade quickly, so prices caused by sudden attention may not always last.",
-        ],
-      },
-      {
-        heading: "Reprints and availability",
-        body: [
-          "When sealed products are reprinted or become widely available again, prices for some cards can drop because more copies enter the market.",
-          "Older cards with limited supply can behave differently because fewer sealed products remain available.",
-        ],
-      },
-      {
-        heading: "Grading trends",
-        body: [
-          "If many copies of a card receive high grades, graded prices may become more competitive.",
-          "If very few copies grade highly, top-grade slabs can become more desirable.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "pokemon-rarity-symbols-explained",
-    title: "Pokémon Rarity Symbols Explained",
-    description:
-      "Understand common, uncommon, rare, ultra rare, secret rare, illustration rare, and special illustration rare Pokémon cards.",
-    category: "Rarity",
-    readTime: "10 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Why rarity symbols matter",
-        body: [
-          "Rarity symbols help collectors understand how difficult a card may be to pull from a booster pack.",
-          "Modern Pokémon sets include many rarity types, and understanding them makes collecting easier.",
-        ],
-      },
-      {
-        heading: "Common, uncommon, and rare",
-        body: [
-          "Common cards are usually the easiest to pull, followed by uncommon cards. Rare cards are less common and may have holo or non-holo versions depending on the set.",
-          "Older sets and modern sets can use rarity differently, so always check the specific set.",
-        ],
-      },
-      {
-        heading: "Ultra rares and secret rares",
-        body: [
-          "Ultra rare cards usually include special card types, textured cards, full arts, or powerful Pokémon variants.",
-          "Secret rares are often numbered beyond the normal set number and can be harder to pull.",
-        ],
-      },
-      {
-        heading: "Illustration rares",
-        body: [
-          "Modern illustration rares and special illustration rares are popular because they focus heavily on artwork.",
-          "These cards can become valuable when beautiful art combines with a popular Pokémon.",
-        ],
-      },
-      {
-        heading: "Rarity is not everything",
-        body: [
-          "A rare card is not automatically valuable. Demand, Pokémon popularity, condition, artwork, and set popularity also matter.",
-          "Some lower rarity cards can still be desirable if the artwork or Pokémon is especially popular.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "how-to-store-pokemon-cards",
-    title: "How to Store Pokémon Cards Properly",
-    description:
-      "Protect your Pokémon cards from scratches, bends, moisture, sunlight, and long-term damage.",
-    category: "Protection",
-    readTime: "9 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Why storage matters",
-        body: [
-          "Poor storage can damage Pokémon cards over time. Scratches, bends, humidity, sunlight, and pressure can reduce condition and value.",
-          "Good storage is especially important for rare cards, expensive cards, and cards you may want to grade later.",
-        ],
-      },
-      {
-        heading: "Use sleeves",
-        body: [
-          "A soft sleeve is the first layer of protection. It helps prevent scratches and surface wear when handling cards.",
-          "For valuable cards, use a sleeve before placing the card into a top loader, semi-rigid holder, or binder.",
-        ],
-      },
-      {
-        heading: "Use top loaders or semi-rigid holders",
-        body: [
-          "Top loaders and semi-rigid holders protect cards from bending and pressure. They are useful for valuable cards, shipping, and grading submissions.",
-          "Do not force a card into a holder. If it feels tight, use a better-fitting sleeve or holder.",
-        ],
-      },
-      {
-        heading: "Avoid heat, moisture, and sunlight",
-        body: [
-          "Store cards in a cool, dry place away from direct sunlight. Moisture can warp cards, and sunlight can fade colours over time.",
-          "Avoid garages, windowsills, bathrooms, and damp rooms.",
-        ],
-      },
-      {
-        heading: "Binder tips",
-        body: [
-          "Binders are useful for collections, but avoid overfilling pages or using binders that bend cards.",
-          "Side-loading binder pages are often safer than cheap loose-ring binders because they reduce the risk of cards falling out or being dented by rings.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "how-to-clean-pokemon-cards-safely",
-    title: "How to Clean Pokémon Cards Safely",
-    description:
-      "Learn what you should and should not do when cleaning Pokémon cards before storing, selling, or grading.",
-    category: "Protection",
-    readTime: "8 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Be extremely careful",
-        body: [
-          "Pokémon cards are made from layered card stock, so aggressive cleaning can permanently damage them.",
-          "Never use water, chemicals, alcohol wipes, soap, polish, or rough cloths on valuable cards.",
-        ],
-      },
-      {
-        heading: "What you can safely do",
-        body: [
-          "For light dust, gently use a clean microfibre cloth with almost no pressure.",
-          "If a card has loose dust or debris, remove it carefully before placing it into a sleeve.",
-        ],
-      },
-      {
-        heading: "What cleaning cannot fix",
-        body: [
-          "Cleaning will not remove dents, creases, whitening, water damage, scratches, print lines, or deep surface problems.",
-          "Trying to fix these issues can make the card worse and reduce value further.",
-        ],
-      },
-      {
-        heading: "Before grading",
-        body: [
-          "If you plan to grade a card, avoid doing anything risky. A grading company may treat altered or damaged cards differently.",
-          "Only remove obvious loose dust. Do not attempt to restore or modify the card.",
+          "Confirm the set and number, compare the layout with a verified example, inspect fonts and symbols, examine print sharpness, verify holo or texture behaviour, inspect the back and edges, and assess the seller. Record which checks passed and which remain uncertain.",
+          "If several independent details are wrong, treat the card as suspicious. If everything appears correct but the value is significant, that is still not a guarantee. Authentication is about building confidence from consistent evidence, not finding one magical test.",
         ],
       },
     ],
@@ -423,480 +259,79 @@ export const guides: Guide[] = [
     slug: "should-you-grade-your-pokemon-cards",
     title: "Should You Grade Your Pokémon Cards?",
     description:
-      "Learn when Pokémon card grading is worth it and when it may cost more than the value it adds.",
+      "A UK-focused decision guide covering condition screening, fees, realistic grade outcomes, liquidity, population reports and when keeping a card raw makes more sense.",
     category: "Grading",
-    readTime: "11 min read",
-    updated: "2026",
+    readTime: "5 min read",
+    updated: "18 July 2026",
     sections: [
       {
-        heading: "Why collectors grade cards",
+        heading: "Grading solves specific problems",
         body: [
-          "Collectors grade cards to protect them, confirm condition, increase buyer confidence, and sometimes improve resale value.",
-          "A graded card is sealed in a slab with a grade that represents the grading company's assessment of condition.",
+          "A graded holder provides an independent opinion on authenticity and condition, protects the card and can make valuable cards easier to compare. It can also improve buyer confidence when the grading company is recognised by the intended market.",
+          "Grading does not automatically create profit. The result may be lower than expected, fees can be substantial and some collectors prefer raw cards. Start by deciding whether your goal is protection, authentication, resale, registry collecting or personal presentation.",
         ],
       },
       {
-        heading: "When grading makes sense",
+        heading: "Identify the exact card and raw value",
         body: [
-          "Grading is most useful for cards that are valuable, popular, rare, and in excellent condition.",
-          "If a card has strong centering, clean corners, clean edges, no dents, and a strong surface, grading may be worth considering.",
+          "Before estimating a graded outcome, confirm the exact set, number, language, finish and edition. Compare several recent raw sales in matching condition. An incorrect variant can make the entire grading calculation meaningless.",
+          "Use a realistic raw value rather than the highest asking price. If a clean raw card regularly sells around £70, treat £70 as the opportunity cost of submitting it because you could potentially sell it without paying grading fees or waiting for a return.",
         ],
       },
       {
-        heading: "When grading may not be worth it",
+        heading: "Screen condition ruthlessly",
         body: [
-          "If a card is low value, damaged, badly off-centre, heavily scratched, or has whitening, grading may not add enough value.",
-          "Always compare raw prices, graded prices, grading fees, postage, and likely grade before submitting.",
+          "Inspect centering, corners, edges and surfaces under angled light. Look for whitening, dents, print lines, scratches, stains, creases and factory defects. A tiny dent can matter more than several small edge marks, and clean-looking fronts can hide damage on the back.",
+          "Estimate at least three outcomes: a disappointing grade, a likely grade and an optimistic grade. If the submission only works financially at the optimistic result, it is a high-risk decision rather than an obvious grading candidate.",
         ],
       },
       {
-        heading: "Grade expectations",
+        heading: "Calculate the complete cost",
         body: [
-          "Many collectors overestimate condition. A card that looks clean at first glance may still have tiny flaws that prevent a top grade.",
-          "Check both sides under strong lighting before assuming a card can receive a high grade.",
+          "Include the grading fee, shipping to the service, return shipping, insurance, intermediary fees, customs or tax where relevant, protective packaging and the cost of capital while the card is unavailable. Promotional grading prices can still become expensive once a single-card shipment is fully insured.",
+          "Suppose a card is worth £80 raw and the complete submission cost is £35. Your effective position is already £115 before considering selling fees. If the likely graded sale is £120, the small difference may not justify the risk, time and possibility of a lower grade.",
         ],
       },
       {
-        heading: "Personal collection vs resale",
+        heading: "Compare realistic graded sales",
         body: [
-          "Grading can still be worth it for personal enjoyment even if it does not maximise profit.",
-          "Some collectors simply prefer the protection and presentation of a slab.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "best-places-to-buy-pokemon-cards",
-    title: "Best Places to Buy Pokémon Cards",
-    description:
-      "Learn where collectors commonly buy Pokémon cards and how to reduce the risk of overpaying or buying fakes.",
-    category: "Buying",
-    readTime: "10 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Card shops",
-        body: [
-          "Local card shops can be a good place to buy sealed products, singles, sleeves, binders, and graded cards.",
-          "The advantage is that you can often inspect cards in person and ask questions before buying.",
+          "Use sold evidence for the same card, language, grading company and numerical grade. A grade from one company may not trade at the same price as the same number from another. Do not value every slab from the most expensive result in the market.",
+          "Look at sale frequency as well as price. A card showing one high sale and no other buyers may be difficult to liquidate. A slightly lower price with regular sales can be more useful when deciding whether grading improves marketability.",
         ],
       },
       {
-        heading: "Online marketplaces",
+        heading: "Understand population reports",
         body: [
-          "Online marketplaces usually offer more choice, but you need to check seller feedback, photos, return policies, and recent prices.",
-          "For expensive cards, ask for clear front and back photos before purchasing.",
+          "Population reports show how many examples a grading company has recorded at each grade, but they do not reveal every card in existence. Resubmissions, crossovers and cards graded by other companies can distort the apparent supply.",
+          "A low population can support interest when demand is strong, but low population alone does not create value. Some cards have few graded copies because few collectors want to submit them. Combine population data with sale frequency and collector demand.",
         ],
       },
       {
-        heading: "Card shows and events",
+        heading: "Choose a service for the intended buyer",
         body: [
-          "Card shows can be useful for meeting sellers, comparing condition in person, and trading with other collectors.",
-          "Always inspect cards carefully and avoid rushing into expensive purchases.",
+          "UK collectors may consider domestic services for lower shipping complexity, while international companies may have broader resale recognition for certain cards. Compare current fees, insurance arrangements, declared-value rules, turnaround information and the prices achieved by each holder in your target market.",
+          "Do not select a company only because it appears to give higher grades. Consistent standards, authentication reputation, holder security, customer support and buyer trust matter. Service terms change, so confirm the current details directly before sending cards.",
         ],
       },
       {
-        heading: "Avoid suspicious deals",
+        heading: "When grading often makes sense",
         body: [
-          "Be cautious with listings that are far cheaper than market value, use stock images, or refuse to provide clear photos.",
-          "If a deal feels too good to be true, it often is.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "best-places-to-sell-pokemon-cards",
-    title: "Best Places to Sell Pokémon Cards",
-    description:
-      "Learn common ways to sell Pokémon cards and how to present your cards professionally.",
-    category: "Selling",
-    readTime: "10 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Selling singles",
-        body: [
-          "Selling valuable cards individually usually gets better returns than selling everything as a bulk lot.",
-          "Use clear photos, accurate condition descriptions, and realistic pricing based on recent sales.",
+          "Strong candidates include valuable cards that need authentication, exceptionally clean vintage cards, high-demand modern chase cards with realistic top-grade potential, cards where a mid-grade still preserves value and sentimental cards that benefit from long-term protection.",
+          "Grading can also make collection management easier when insurance or inheritance records require a third-party description. Financial return is not the only valid reason, but the owner should be clear when the decision is personal rather than an investment calculation.",
         ],
       },
       {
-        heading: "Selling collections",
+        heading: "When keeping a card raw may be better",
         body: [
-          "Selling a whole collection is faster but usually means accepting a lower total price.",
-          "Before selling, separate higher-value cards from bulk commons and check prices using a tool like PokeValue.",
+          "Low-value cards, cards with obvious dents or creases, cards where grading costs approach the raw value and cards with a very small graded buyer pool often make more sense raw. Some binder collectors also value easy viewing and set completion more than a slab.",
+          "Keeping a card raw does not mean leaving it unprotected. Use an appropriate sleeve, rigid holder or binder, control moisture and sunlight, and document the condition. You can reconsider grading if the market, card value or your collecting goal changes.",
         ],
       },
       {
-        heading: "Photos matter",
+        heading: "A simple grading decision worksheet",
         body: [
-          "Good photos can help buyers trust your listing. Show the front, back, corners, and any damage clearly.",
-          "Do not hide flaws. Accurate listings reduce disputes and returns.",
-        ],
-      },
-      {
-        heading: "Pricing realistically",
-        body: [
-          "Do not price only from the highest active listing. Compare recent sold prices and condition.",
-          "A fair price usually sells faster than an unrealistic listing that sits for months.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "buying-singles-vs-booster-packs",
-    title: "Buying Singles vs Booster Packs",
-    description:
-      "Compare buying individual Pokémon cards against opening sealed booster packs.",
-    category: "Buying",
-    readTime: "9 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Buying singles",
-        body: [
-          "Buying singles is usually the most direct way to get the exact cards you want.",
-          "It can be more cost-effective than opening packs if you are chasing one specific card.",
-        ],
-      },
-      {
-        heading: "Opening booster packs",
-        body: [
-          "Opening packs is fun and exciting, but it is unpredictable.",
-          "Most packs will not contain the chase card you want, so opening sealed products can become expensive quickly.",
-        ],
-      },
-      {
-        heading: "Which is better for value?",
-        body: [
-          "If your goal is value, buying singles is usually safer. You know exactly what you are getting and can compare condition before buying.",
-          "If your goal is enjoyment, opening packs can still be worth it as entertainment.",
-        ],
-      },
-      {
-        heading: "A balanced approach",
-        body: [
-          "Many collectors open some packs for fun and buy singles for the cards they really want.",
-          "This can keep collecting enjoyable without relying entirely on luck.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "are-pokemon-cards-a-good-investment",
-    title: "Are Pokémon Cards a Good Investment?",
-    description:
-      "Understand the risks and opportunities of treating Pokémon cards as collectibles with investment potential.",
-    category: "Investing",
-    readTime: "11 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Pokémon cards can rise in value",
-        body: [
-          "Some Pokémon cards and sealed products have increased significantly over time, especially popular vintage cards, rare promos, and iconic chase cards.",
-          "However, past performance does not guarantee future growth.",
-        ],
-      },
-      {
-        heading: "Collectibles are risky",
-        body: [
-          "Prices can fall due to reprints, reduced hype, changing demand, or wider market conditions.",
-          "Unlike savings or traditional investments, collectibles can be harder to sell quickly at a fair price.",
-        ],
-      },
-      {
-        heading: "Condition and authenticity matter",
-        body: [
-          "A valuable card must still be genuine and in desirable condition. Fake cards, damaged cards, and overgraded cards can create losses.",
-          "Always check condition, compare recent sales, and buy from trusted sellers.",
-        ],
-      },
-      {
-        heading: "Collect first, invest second",
-        body: [
-          "The safest mindset is to collect cards you genuinely enjoy. If they rise in value, that is a bonus.",
-          "Only spend money you can afford to keep tied up, and do not rely on Pokémon cards as guaranteed profit.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "most-valuable-modern-pokemon-cards",
-    title: "Most Valuable Modern Pokémon Cards",
-    description:
-      "Learn what makes modern Pokémon cards valuable, from alternate arts to special illustration rares.",
-    category: "Modern Cards",
-    readTime: "10 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Modern chase cards",
-        body: [
-          "Modern valuable cards are often alternate arts, special illustration rares, rare promos, or cards featuring extremely popular Pokémon.",
-          "Artwork quality is a major driver of modern card demand.",
-        ],
-      },
-      {
-        heading: "Popular Pokémon drive demand",
-        body: [
-          "Cards featuring Umbreon, Charizard, Pikachu, Rayquaza, Gengar, Mew, Lugia, and Eeveelutions often attract strong collector attention.",
-          "A beautiful artwork featuring a popular Pokémon can become the main chase card of a set.",
-        ],
-      },
-      {
-        heading: "Condition still matters",
-        body: [
-          "Modern cards can still have print lines, poor centering, whitening, and surface marks straight from packs.",
-          "Clean copies may sell for more, especially if collectors believe they have strong grading potential.",
-        ],
-      },
-      {
-        heading: "Modern prices can change quickly",
-        body: [
-          "Modern card prices can rise fast during hype and fall when more supply enters the market.",
-          "Check current market data before buying expensive modern cards.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "most-valuable-vintage-pokemon-cards",
-    title: "Most Valuable Vintage Pokémon Cards",
-    description:
-      "Understand why vintage Pokémon cards can be valuable and what collectors look for.",
-    category: "Vintage Cards",
-    readTime: "10 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Why vintage cards are popular",
-        body: [
-          "Vintage Pokémon cards are popular because of nostalgia, limited supply, iconic artwork, and the history of the early Pokémon TCG.",
-          "Cards from older sets can be valuable, especially if they are rare and in excellent condition.",
-        ],
-      },
-      {
-        heading: "Condition is critical",
-        body: [
-          "Many vintage cards were played with by children, so finding clean copies can be difficult.",
-          "High-grade vintage cards can command much higher prices than worn raw copies.",
-        ],
-      },
-      {
-        heading: "First edition and shadowless cards",
-        body: [
-          "Some older cards have special print differences such as First Edition stamps or shadowless layouts.",
-          "These differences can significantly affect value, so collectors should learn how to identify them properly.",
-        ],
-      },
-      {
-        heading: "Be careful with fakes",
-        body: [
-          "High-value vintage cards are often targeted by counterfeiters.",
-          "Always check print quality, card back colour, holo pattern, condition, and seller reputation before buying expensive vintage cards.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "best-pokemon-sets-to-invest-in",
-    title: "Best Pokémon Sets to Invest In",
-    description:
-      "Learn what collectors look for when choosing Pokémon sets with long-term appeal.",
-    category: "Investing",
-    readTime: "11 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Strong sets have strong chase cards",
-        body: [
-          "Sets with memorable chase cards, popular Pokémon, and standout artwork tend to attract long-term collector interest.",
-          "A set with multiple desirable cards can be more resilient than a set relying on only one card.",
-        ],
-      },
-      {
-        heading: "Sealed products are different",
-        body: [
-          "Sealed booster boxes, elite trainer boxes, and special collections can behave differently from individual cards.",
-          "Storage condition, print availability, and collector demand all affect sealed product value.",
-        ],
-      },
-      {
-        heading: "Print runs matter",
-        body: [
-          "If a set is heavily printed and widely available, prices may stay lower for longer.",
-          "If sealed supply becomes harder to find and demand remains strong, prices may rise.",
-        ],
-      },
-      {
-        heading: "Do not ignore enjoyment",
-        body: [
-          "Investing only for profit can make collecting stressful. Choose sets you understand and genuinely like.",
-          "Knowledge of the cards, artwork, and collector demand can help you make better decisions.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "how-population-reports-affect-prices",
-    title: "How Population Reports Affect Card Prices",
-    description:
-      "Learn how graded card population reports can influence Pokémon card prices.",
-    category: "Grading",
-    readTime: "9 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "What is a population report?",
-        body: [
-          "A population report shows how many copies of a card have been graded by a grading company at each grade.",
-          "Collectors use this information to understand how common or rare high-grade copies may be.",
-        ],
-      },
-      {
-        heading: "Why low population matters",
-        body: [
-          "If a popular card has very few high-grade copies, collectors may pay more for top grades.",
-          "Low population can create scarcity, but it only matters if demand is also strong.",
-        ],
-      },
-      {
-        heading: "Population can change",
-        body: [
-          "Population reports are not fixed. More copies can be submitted over time, especially if a card becomes popular or rises in value.",
-          "A card that looks rare in high grade today may become less rare later.",
-        ],
-      },
-      {
-        heading: "Use population reports carefully",
-        body: [
-          "Population data is useful, but it should not be the only reason you buy a card.",
-          "Artwork, Pokémon popularity, set demand, condition, and recent sales still matter.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "what-makes-a-chase-card-valuable",
-    title: "What Makes a Chase Card Valuable?",
-    description:
-      "Understand why certain cards become the most wanted cards in a Pokémon set.",
-    category: "Market Trends",
-    readTime: "10 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "What is a chase card?",
-        body: [
-          "A chase card is usually one of the most desirable cards in a set. It may have rare artwork, a popular Pokémon, or a difficult pull rate.",
-          "Collectors often open packs or buy singles specifically because of these cards.",
-        ],
-      },
-      {
-        heading: "Artwork and Pokémon popularity",
-        body: [
-          "Beautiful artwork can make a card stand out even if the Pokémon is not the strongest in gameplay.",
-          "When great artwork combines with a popular Pokémon, demand can become very strong.",
-        ],
-      },
-      {
-        heading: "Pull rates and rarity",
-        body: [
-          "If a card is difficult to pull, supply may be limited compared with demand.",
-          "However, rarity alone does not guarantee value. Collectors still need to want the card.",
-        ],
-      },
-      {
-        heading: "Market momentum",
-        body: [
-          "Once a card becomes known as the chase card of a set, demand can increase further because more collectors focus on it.",
-          "This can create price movement, especially near release when supply and demand are unstable.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "understanding-pokemon-tcg-market-prices",
-    title: "Understanding Pokémon TCG Market Prices",
-    description:
-      "Learn how Pokémon card market prices work and why different platforms may show different values.",
-    category: "Card Values",
-    readTime: "10 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Market price is an estimate",
-        body: [
-          "Market price usually represents an estimated value based on recent listings or sales data, depending on the source.",
-          "It should not be treated as a guaranteed sale price because condition, location, and demand all matter.",
-        ],
-      },
-      {
-        heading: "Different platforms show different prices",
-        body: [
-          "Prices may vary between marketplaces because of fees, buyer behaviour, currency, availability, and seller reputation.",
-          "A card may sell for one price on one platform and a different price somewhere else.",
-        ],
-      },
-      {
-        heading: "Raw vs graded values",
-        body: [
-          "Raw card prices and graded card prices are different markets.",
-          "A high-grade slab may sell for much more than a raw card, but grading costs and grade risk must be considered.",
-        ],
-      },
-      {
-        heading: "Use PokeValue as a starting point",
-        body: [
-          "PokeValue is designed to give collectors a useful starting point when researching values.",
-          "For expensive cards, always compare multiple sources and recent sold prices before buying or selling.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "common-mistakes-new-pokemon-collectors-make",
-    title: "Common Mistakes New Pokémon Collectors Make",
-    description:
-      "Avoid common beginner mistakes when buying, storing, grading, and selling Pokémon cards.",
-    category: "Beginner Guide",
-    readTime: "10 min read",
-    updated: "2026",
-    sections: [
-      {
-        heading: "Buying without checking prices",
-        body: [
-          "New collectors sometimes overpay because they do not check recent market prices before buying.",
-          "Before purchasing expensive cards, compare prices, condition, and seller reputation.",
-        ],
-      },
-      {
-        heading: "Not protecting cards properly",
-        body: [
-          "Leaving cards loose, stacking valuable cards, or storing them in poor conditions can cause damage.",
-          "Use sleeves, binders, top loaders, and dry storage to keep cards protected.",
-        ],
-      },
-      {
-        heading: "Grading every card",
-        body: [
-          "Not every card is worth grading. Grading fees can be higher than the value added.",
-          "Focus on cards that are valuable, clean, popular, and likely to receive a strong grade.",
-        ],
-      },
-      {
-        heading: "Ignoring condition",
-        body: [
-          "A card can look valuable online but be worth much less if it has scratches, whitening, dents, or creases.",
-          "Always inspect condition carefully before buying or selling.",
-        ],
-      },
-      {
-        heading: "Chasing hype",
-        body: [
-          "Buying only because a card is trending can be risky. Hype can fade and prices can fall.",
-          "Collect cards you enjoy and use market data to make calmer decisions.",
+          "Write down the raw sale range, complete grading cost, estimated values for several grades, probability you assign to each outcome, expected selling fees and expected waiting time. Then compare the weighted result with selling or keeping the card raw.",
+          "For example, a £150 raw card with £40 total grading cost should not be judged only against a £400 top-grade sale. If the likely grade sells for £190 and a lower grade sells for £130, the downside and fees may outweigh the chance of the top result. Use conservative evidence and grade because the full decision makes sense, not because the best-case number is exciting.",
         ],
       },
     ],

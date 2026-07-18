@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   BarChart3,
+  BookCheck,
   BookOpen,
   Boxes,
   Briefcase,
@@ -12,9 +13,8 @@ import {
   Info,
   LineChart,
   Mail,
-  Newspaper,
   Search,
-  Settings,
+  Scale,
   ShieldCheck,
   Sparkles,
   TrendingUp,
@@ -49,11 +49,6 @@ const navItems = [
     icon: BookOpen,
   },
   {
-    label: "News",
-    href: "/news",
-    icon: Newspaper,
-  },
-  {
     label: "Collection",
     href: "/collection",
     icon: WalletCards,
@@ -67,11 +62,6 @@ const navItems = [
     label: "Portfolio",
     href: "/portfolio",
     icon: Briefcase,
-  },
-  {
-    label: "Wishlist",
-    href: "/wishlist",
-    icon: Sparkles,
   },
   {
     label: "Market Movers",
@@ -97,6 +87,16 @@ const navItems = [
 
 const legalItems = [
   {
+    label: "Pricing Methodology",
+    href: "/methodology",
+    icon: Scale,
+  },
+  {
+    label: "Editorial Policy",
+    href: "/editorial-policy",
+    icon: BookCheck,
+  },
+  {
     label: "Privacy Policy",
     href: "/privacy",
     icon: ShieldCheck,
@@ -106,15 +106,12 @@ const legalItems = [
     href: "/terms",
     icon: LineChart,
   },
-  {
-    label: "Settings",
-    href: "/settings",
-    icon: Settings,
-  },
 ];
 
 function isActivePath(pathname: string, href: string) {
-  if (href === "/") return pathname === "/";
+  if (href === "/") {
+    return pathname === "/";
+  }
 
   return pathname === href || pathname.startsWith(`${href}/`);
 }
@@ -134,6 +131,7 @@ export default function Sidebar({
             : "pointer-events-none opacity-0"
         }`}
         onClick={() => setMobileOpen?.(false)}
+        aria-hidden={!mobileOpen}
       />
 
       <aside
@@ -142,9 +140,9 @@ export default function Sidebar({
         }`}
       >
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-purple-500/12 blur-3xl" />
-          <div className="absolute bottom-0 right-[-120px] h-72 w-72 rounded-full bg-fuchsia-500/10 blur-3xl" />
-          <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-purple-200/40 to-transparent" />
+          <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-purple-500/[0.1] blur-3xl" />
+          <div className="absolute bottom-0 right-[-120px] h-72 w-72 rounded-full bg-fuchsia-500/[0.07] blur-3xl" />
+          <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-purple-200/30 to-transparent" />
         </div>
 
         <div className="relative flex h-20 items-center justify-between border-b border-white/[0.06] px-5">
@@ -152,6 +150,7 @@ export default function Sidebar({
             href="/"
             onClick={() => setMobileOpen?.(false)}
             className="flex items-center gap-3"
+            aria-label="PokeValue home"
           >
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-purple-200/20 bg-purple-300/[0.1] text-purple-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
               <Sparkles className="h-5 w-5" />
@@ -161,6 +160,7 @@ export default function Sidebar({
               <p className="text-lg font-black tracking-[-0.04em] text-white">
                 PokeValue
               </p>
+
               <p className="text-[10px] font-black uppercase tracking-[0.22em] text-zinc-600">
                 TCG Market
               </p>
@@ -177,7 +177,10 @@ export default function Sidebar({
           </button>
         </div>
 
-        <nav className="relative flex-1 overflow-y-auto px-3 py-4">
+        <nav
+          className="relative flex-1 overflow-y-auto px-3 py-4"
+          aria-label="Main navigation"
+        >
           <div className="space-y-1">
             {navItems.map((item) => {
               const active = isActivePath(pathname, item.href);
@@ -188,6 +191,7 @@ export default function Sidebar({
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen?.(false)}
+                  aria-current={active ? "page" : undefined}
                   className={`group relative flex items-center gap-3 overflow-hidden rounded-2xl px-3 py-3 text-sm font-bold transition ${
                     active
                       ? "bg-white/[0.075] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.07)]"
@@ -226,6 +230,7 @@ export default function Sidebar({
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen?.(false)}
+                  aria-current={active ? "page" : undefined}
                   className={`group relative flex items-center gap-3 rounded-2xl px-3 py-3 text-sm font-bold transition ${
                     active
                       ? "bg-white/[0.075] text-white"
@@ -254,8 +259,10 @@ export default function Sidebar({
             <p className="text-[10px] font-black uppercase tracking-[0.22em] text-purple-100">
               Market Archive
             </p>
+
             <p className="mt-2 text-xs leading-5 text-zinc-500">
-              Search cards, sets and collection tools from one clean homepage.
+              Search Pokémon cards, explore sets and research market values in
+              one place.
             </p>
           </div>
         </div>

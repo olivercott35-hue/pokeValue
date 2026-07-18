@@ -15,9 +15,9 @@ export type NewsArticle = {
   export const newsArticles: NewsArticle[] = [
     {
       slug: "pokemon-tcg-30th-celebration-revealed",
-      title: "Pokémon TCG 30th Celebration Set Revealed",
+      title: "Pokémon TCG 30th Anniversary: What Collectors Should Watch",
       description:
-        "Pokémon TCG's 30th Celebration set is shaping up to be one of the biggest collector releases of 2026.",
+        "A cautious look at the Pokémon TCG 30th anniversary, the products collectors may see, and the signals worth watching before details are confirmed.",
       category: "Releases",
       date: "July 2026",
       readTime: "5 min read",

@@ -32,13 +32,13 @@ export const metadata: Metadata = {
   description:
     "Track Pokémon card values, browse Pokémon TCG sets, research market prices and learn how to value your collection with PokeValue.",
   alternates: {
-    canonical: "https://pokevalue.co.uk",
+    canonical: "https://www.pokevalue.co.uk",
   },
   openGraph: {
     title: "PokeValue | Pokémon Card Prices, Sets & Collection Tools",
     description:
       "Browse Pokémon card prices, explore sets, compare market values and build your Pokémon TCG collection with PokeValue.",
-    url: "https://pokevalue.co.uk",
+    url: "https://www.pokevalue.co.uk",
     siteName: "PokeValue",
     type: "website",
   },

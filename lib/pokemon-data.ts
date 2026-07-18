@@ -3,6 +3,10 @@ import "server-only";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { cache } from "react";
+import {
+  getResolvedCardPrice,
+  getResolvedCardTrend,
+} from "@/lib/card-pricing";
 
 export type PokemonPriceShape = {
   low?: number;
@@ -132,22 +136,6 @@ type PokemonDataCache = {
 };
 
 const DATA_DIR = path.join(process.cwd(), "data");
-const USD_TO_GBP = 0.79;
-
-/**
- * Priority for the explorer:
- * use the most representative visible market variant first.
- * We avoid silently prioritising reverse holo over normal/holo unless needed.
- */
-const MARKET_PRIORITY: { key: string; label: string }[] = [
-  { key: "holofoil", label: "Holofoil market" },
-  { key: "normal", label: "Normal market" },
-  { key: "unlimitedHolofoil", label: "Unlimited holofoil market" },
-  { key: "unlimitedNormal", label: "Unlimited normal market" },
-  { key: "1stEditionHolofoil", label: "1st edition holofoil market" },
-  { key: "1stEditionNormal", label: "1st edition normal market" },
-  { key: "reverseHolofoil", label: "Reverse holofoil market" },
-];
 
 async function readLocalDataFile<T>(filename: string): Promise<T[]> {
   const filePath = path.join(DATA_DIR, filename);
@@ -222,109 +210,23 @@ function scoreCardSearch(card: PokemonCard, query: string) {
   return score;
 }
 
-function getValidNumber(value: unknown) {
-  const parsed = Number(value || 0);
-  return Number.isFinite(parsed) && parsed > 0 ? parsed : 0;
-}
-
-export function getPokemonResolvedMarketPrice(card: PokemonCard): ResolvedMarketPrice {
-  const prices = card.tcgplayer?.prices;
-
-  if (!prices) {
-    return {
-      usd: 0,
-      gbp: 0,
-      key: null,
-      label: "No TCGplayer market price",
-    };
-  }
-
-  for (const option of MARKET_PRIORITY) {
-    const market = getValidNumber(prices[option.key]?.market);
-
-    if (market > 0) {
-      return {
-        usd: market,
-        gbp: market * USD_TO_GBP,
-        key: option.key,
-        label: option.label,
-      };
-    }
-  }
-
-  const fallback = Object.entries(prices)
-    .map(([key, price]) => ({
-      key,
-      market: getValidNumber(price?.market),
-    }))
-    .filter((item) => item.market > 0)
-    .sort((a, b) => b.market - a.market)[0];
-
-  if (fallback) {
-    return {
-      usd: fallback.market,
-      gbp: fallback.market * USD_TO_GBP,
-      key: fallback.key,
-      label: `${fallback.key} market`,
-    };
-  }
+export function getPokemonResolvedMarketPrice(
+  card: PokemonCard
+): ResolvedMarketPrice {
+  const price = getResolvedCardPrice(card);
 
   return {
-    usd: 0,
-    gbp: 0,
-    key: null,
-    label: "No TCGplayer market price",
+    // Kept for backwards compatibility with existing sort code. The GBP value
+    // remains the single display value used across the site.
+    usd: price.gbpValue / 0.79,
+    gbp: price.gbpValue,
+    key: price.variantKey,
+    label: price.label,
   };
 }
 
 export function getPokemonResolvedTrend(card: PokemonCard): ResolvedTrend {
-  const prices = card.cardmarket?.prices;
-
-  if (!prices) {
-    return {
-      direction: "flat",
-      changePercent: null,
-      label: "No trend data",
-    };
-  }
-
-  const trendPrice = getValidNumber(prices.trendPrice);
-  const baseline =
-    getValidNumber(prices.avg7) ||
-    getValidNumber(prices.averageSellPrice) ||
-    getValidNumber(prices.avg30);
-
-  if (!trendPrice || !baseline) {
-    return {
-      direction: "flat",
-      changePercent: null,
-      label: "No trend data",
-    };
-  }
-
-  const changePercent = ((trendPrice - baseline) / baseline) * 100;
-
-  if (Math.abs(changePercent) < 1.5) {
-    return {
-      direction: "flat",
-      changePercent,
-      label: "Stable trend",
-    };
-  }
-
-  if (changePercent > 0) {
-    return {
-      direction: "up",
-      changePercent,
-      label: "Trending up",
-    };
-  }
-
-  return {
-    direction: "down",
-    changePercent,
-    label: "Trending down",
-  };
+  return getResolvedCardTrend(card);
 }
 
 const getPokemonDataCache = cache(async (): Promise<PokemonDataCache> => {

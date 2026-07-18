@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { PRICE_CONVERSION_TO_GBP } from "@/lib/card-pricing";
 
 export type CurrencyCode = "GBP" | "USD" | "EUR";
 export type PriceSourceCurrency = CurrencyCode;
@@ -11,11 +12,6 @@ const symbols: Record<CurrencyCode, string> = {
   EUR: "€",
 };
 
-const toGBP: Record<CurrencyCode, number> = {
-  GBP: 1,
-  USD: 0.79,
-  EUR: 0.86,
-};
 
 type CurrencyContextValue = {
   currency: CurrencyCode;
@@ -53,8 +49,8 @@ export function CurrencyProvider({ children }: { children: React.ReactNode }) {
 
         if (!number || Number.isNaN(number)) return "No data";
 
-        const valueInGBP = number * toGBP[sourceCurrency];
-        const converted = valueInGBP / toGBP[currency];
+        const valueInGBP = number * PRICE_CONVERSION_TO_GBP[sourceCurrency];
+        const converted = valueInGBP / PRICE_CONVERSION_TO_GBP[currency];
 
         return `${symbols[currency]}${converted.toFixed(2)}`;
       },

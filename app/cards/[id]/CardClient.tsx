@@ -4,15 +4,6 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { motion } from "framer-motion";
 import {
-  CartesianGrid,
-  Line,
-  LineChart,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
-import {
   BadgeDollarSign,
   BarChart3,
   CalendarDays,
@@ -32,98 +23,8 @@ import {
 import AppLayout from "@/components/layout/AppLayout";
 import AddToCollectionButton from "@/components/AddToCollectionButton";
 import FavoriteButton from "@/components/FavoriteButton";
-import {
-  useCurrency,
-  type PriceSourceCurrency,
-} from "@/components/CurrencyProvider";
-
-type PricePoint = {
-  label: string;
-  price: number;
-};
-
-type PriceInfo = {
-  sourceCurrency: PriceSourceCurrency;
-  source: string;
-  market: number;
-  low: number;
-  mid: number;
-  high: number;
-  chartData: PricePoint[];
-};
-
-function getPriceInfo(card: any): PriceInfo {
-  const cm = card?.cardmarket?.prices;
-  const tcg = card?.tcgplayer?.prices;
-  const firstTcg: any = tcg ? Object.values(tcg)[0] : null;
-
-  const cmTrend = Number(cm?.trendPrice || 0);
-  const cmAvg1 = Number(cm?.avg1 || 0);
-  const cmAvg7 = Number(cm?.avg7 || 0);
-  const cmAvg30 = Number(cm?.avg30 || 0);
-  const cmLow = Number(cm?.lowPrice || 0);
-  const cmAvgSell = Number(cm?.averageSellPrice || 0);
-
-  if (cmTrend || cmAvgSell || cmAvg7 || cmAvg30) {
-    const market = cmTrend || cmAvgSell || cmAvg7 || cmAvg30;
-    const low = cmLow || market;
-    const mid = cmAvgSell || cmAvg7 || market;
-    const high = Math.max(market, mid, low);
-
-    return {
-      sourceCurrency: "EUR",
-      source: "Cardmarket",
-      market,
-      low,
-      mid,
-      high,
-      chartData: [
-        { label: "30D", price: cmAvg30 },
-        { label: "7D", price: cmAvg7 },
-        { label: "1D", price: cmAvg1 },
-        { label: "Trend", price: cmTrend },
-        { label: "Market", price: market },
-      ].filter((point) => point.price > 0),
-    };
-  }
-
-  const tcgLow = Number(firstTcg?.low || 0);
-  const tcgMid = Number(firstTcg?.mid || 0);
-  const tcgMarket = Number(firstTcg?.market || 0);
-  const tcgHigh = Number(firstTcg?.high || 0);
-
-  if (tcgLow || tcgMid || tcgMarket || tcgHigh) {
-    const market = tcgMarket || tcgMid || tcgLow || tcgHigh;
-    const low = tcgLow || market;
-    const mid = tcgMid || market;
-    const high = tcgHigh || Math.max(market, mid, low);
-
-    return {
-      sourceCurrency: "USD",
-      source: "TCGPlayer",
-      market,
-      low,
-      mid,
-      high,
-      chartData: [
-        { label: "Low", price: low },
-        { label: "Mid", price: mid },
-        { label: "Market", price: market },
-        { label: "High", price: high },
-      ].filter((point) => point.price > 0),
-    };
-  }
-
-  return {
-    sourceCurrency: "GBP",
-    source: "No market data",
-    market: 0,
-    low: 0,
-    mid: 0,
-    high: 0,
-    chartData: [],
-  };
-}
+import { useCurrency } from "@/components/CurrencyProvider";
+import { getResolvedCardPrice } from "@/lib/card-pricing";
 
 function listText(values: any[], fallback = "Unknown") {
   const clean = values.filter(Boolean).map(String);
@@ -184,7 +85,7 @@ function getGradingAdvice(card: any) {
   return `${name} is usually best assessed by condition first. For many lower-rarity cards, grading only makes sense if the card is especially popular, older, difficult to find in clean condition, or personally meaningful to your collection.`;
 }
 
-function getPriceExplanation(prices: PriceInfo) {
+function getPriceExplanation(prices: ReturnType<typeof getResolvedCardPrice>) {
   if (prices.market > 0) {
     return `PokeValue is currently showing a market estimate from ${prices.source}. This is not a guaranteed sale price. Pokémon card prices can change depending on condition, language, print quality, seller fees, buyer demand, recent listings and whether the card is raw or graded.`;
   }
@@ -195,9 +96,7 @@ function getPriceExplanation(prices: PriceInfo) {
 export default function CardClient({ card }: { card: any }) {
   const { formatPrice } = useCurrency();
 
-  const prices = useMemo(() => {
-    return getPriceInfo(card);
-  }, [card]);
+  const prices = useMemo(() => getResolvedCardPrice(card), [card]);
 
   const displayPrice = (value: number) =>
     formatPrice(value, prices.sourceCurrency);
@@ -278,20 +177,20 @@ export default function CardClient({ card }: { card: any }) {
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:gap-4">
               <Metric
                 icon={<BadgeDollarSign size={14} />}
-                label="Market"
+                label="Market estimate"
                 value={displayPrice(prices.market)}
               />
 
               <Metric
                 icon={<TrendingUp size={14} />}
-                label="Low"
+                label="Low reference"
                 value={displayPrice(prices.low)}
               />
 
               <Metric
                 icon={<BarChart3 size={14} />}
-                label="High"
-                value={displayPrice(prices.high)}
+                label="Average reference"
+                value={displayPrice(prices.average)}
               />
 
               <Metric
@@ -312,128 +211,77 @@ export default function CardClient({ card }: { card: any }) {
               }}
               className="relative overflow-hidden rounded-3xl border border-white/[0.06] bg-white/[0.035] p-5 backdrop-blur-2xl sm:p-6"
             >
-              <div className="pointer-events-none absolute top-0 right-0 h-72 w-72 rounded-full bg-purple-500/10 blur-[100px]" />
+              <div className="pointer-events-none absolute right-0 top-0 h-72 w-72 rounded-full bg-purple-500/10 blur-[100px]" />
 
-              <div className="relative mb-5 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <div>
-                  <div className="mb-1 flex items-center gap-2 text-purple-400">
-                    <TrendingUp size={14} />
+              <div className="relative flex flex-col gap-6">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                  <div>
+                    <div className="mb-1 flex items-center gap-2 text-purple-400">
+                      <TrendingUp size={14} />
 
-                    <span className="text-[10px] font-black uppercase tracking-[0.25em]">
-                      Price Line
-                    </span>
+                      <span className="text-[10px] font-black uppercase tracking-[0.25em]">
+                        Marketplace reference data
+                      </span>
+                    </div>
+
+                    <p className="max-w-2xl text-xs leading-6 text-zinc-500">
+                      These are labelled marketplace fields for the same selected
+                      price source and variant. They are not presented as a
+                      historical price chart.
+                    </p>
                   </div>
 
-                  <p className="text-xs leading-relaxed text-zinc-500">
-                    Uses real available {prices.source} fields. No fake random
-                    history.
-                  </p>
+                  <div className="sm:text-right">
+                    <p className="text-3xl font-black">
+                      {displayPrice(prices.market)}
+                    </p>
+
+                    <p className="text-[10px] uppercase tracking-widest text-zinc-500">
+                      {prices.label}
+                    </p>
+                  </div>
                 </div>
 
-                <div className="sm:text-right">
-                  <p className="text-3xl font-black">
-                    {displayPrice(prices.market)}
-                  </p>
-
-                  <p className="text-[10px] uppercase tracking-widest text-zinc-500">
-                    Current market
-                  </p>
-                </div>
-              </div>
-
-              <div className="relative h-[260px] sm:h-[320px]">
-                {prices.chartData.length > 0 ? (
-                  <ResponsiveContainer width="100%" height="100%">
-                    <LineChart
-                      data={prices.chartData}
-                      margin={{
-                        top: 18,
-                        right: 12,
-                        left: 0,
-                        bottom: 8,
-                      }}
-                    >
-                      <CartesianGrid
-                        stroke="rgba(255,255,255,0.06)"
-                        vertical={false}
-                      />
-
-                      <XAxis
-                        dataKey="label"
-                        tickLine={false}
-                        axisLine={false}
-                        stroke="#71717a"
-                        tick={{
-                          fill: "#71717a",
-                          fontSize: 10,
-                          fontWeight: 700,
-                        }}
-                        dy={8}
-                      />
-
-                      <YAxis
-                        tickLine={false}
-                        axisLine={false}
-                        stroke="#71717a"
-                        tick={{
-                          fill: "#71717a",
-                          fontSize: 10,
-                          fontWeight: 700,
-                        }}
-                        tickFormatter={(value) =>
-                          displayPrice(Number(value)).replace(/\.\d{2}$/, "")
-                        }
-                        width={58}
-                      />
-
-                      <Tooltip
-                        cursor={{
-                          stroke: "rgba(168,85,247,0.35)",
-                          strokeWidth: 1,
-                        }}
-                        formatter={(value: any) => [
-                          displayPrice(Number(value)),
-                          "Price",
-                        ]}
-                        labelStyle={{
-                          color: "#a1a1aa",
-                          fontSize: 12,
-                          fontWeight: 700,
-                        }}
-                        contentStyle={{
-                          background: "rgba(5,5,9,0.94)",
-                          border: "1px solid rgba(255,255,255,0.08)",
-                          borderRadius: "16px",
-                          boxShadow: "0 18px 60px rgba(0,0,0,0.45)",
-                        }}
-                      />
-
-                      <Line
-                        type="monotone"
-                        dataKey="price"
-                        stroke="#a855f7"
-                        strokeWidth={3}
-                        isAnimationActive={false}
-                        dot={{
-                          r: 4,
-                          strokeWidth: 2,
-                          stroke: "#ffffff",
-                          fill: "#a855f7",
-                        }}
-                        activeDot={{
-                          r: 7,
-                          strokeWidth: 2,
-                          stroke: "#ffffff",
-                          fill: "#a855f7",
-                        }}
-                      />
-                    </LineChart>
-                  </ResponsiveContainer>
+                {prices.referenceValues.length > 0 ? (
+                  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    {prices.referenceValues.map((point) => (
+                      <div
+                        key={point.label}
+                        className="rounded-2xl border border-white/[0.06] bg-white/[0.025] p-4"
+                      >
+                        <p className="text-[9px] font-black uppercase tracking-[0.2em] text-zinc-500">
+                          {point.label}
+                        </p>
+                        <p className="mt-2 text-lg font-black text-white">
+                          {displayPrice(point.value)}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 ) : (
-                  <div className="flex h-full items-center justify-center rounded-2xl border border-white/[0.05] bg-white/[0.02] text-center text-sm text-zinc-500">
-                    No price data available yet.
+                  <div className="rounded-2xl border border-white/[0.05] bg-white/[0.02] p-6 text-center text-sm text-zinc-500">
+                    No marketplace reference data is available yet.
                   </div>
                 )}
+
+                <div className="flex flex-col gap-3 border-t border-white/[0.06] pt-4 text-xs text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
+                  <p>
+                    Variant: <span className="font-bold text-zinc-300">{prices.variantLabel}</span>
+                    {prices.updatedAt ? ` • Source updated ${prices.updatedAt}` : ""}
+                  </p>
+
+                  {prices.sourceUrl && (
+                    <a
+                      href={prices.sourceUrl}
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                      className="inline-flex items-center gap-2 font-bold text-purple-300 transition hover:text-purple-200"
+                    >
+                      View source
+                      <ExternalLink size={13} />
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
 

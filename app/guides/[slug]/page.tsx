@@ -23,9 +23,21 @@ export async function generateMetadata({
     };
   }
 
+  const canonical = `https://www.pokevalue.co.uk/guides/${guide.slug}`;
+
   return {
     title: `${guide.title} | PokeValue`,
     description: guide.description,
+    alternates: {
+      canonical,
+    },
+    openGraph: {
+      title: guide.title,
+      description: guide.description,
+      url: canonical,
+      siteName: "PokeValue",
+      type: "article",
+    },
   };
 }
 
@@ -43,8 +55,67 @@ export default async function GuideArticlePage({
     .filter((item) => item.slug !== guide.slug && item.category === guide.category)
     .slice(0, 3);
 
+  const canonical = `https://www.pokevalue.co.uk/guides/${guide.slug}`;
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: guide.title,
+    description: guide.description,
+    datePublished: "2026-07-18",
+    dateModified: "2026-07-18",
+    author: {
+      "@type": "Organization",
+      name: "PokeValue Editorial Team",
+      url: "https://www.pokevalue.co.uk/editorial-policy",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "PokeValue",
+      url: "https://www.pokevalue.co.uk",
+    },
+    mainEntityOfPage: canonical,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.pokevalue.co.uk",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Guides",
+        item: "https://www.pokevalue.co.uk/guides",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: guide.title,
+        item: canonical,
+      },
+    ],
+  };
+
   return (
-    <AppLayout>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <AppLayout>
       <article className="max-w-5xl mx-auto px-6 py-12">
         <Link
           href="/guides"
@@ -64,6 +135,16 @@ export default async function GuideArticlePage({
 
           <p className="mt-6 text-lg text-zinc-400 leading-8">
             {guide.description}
+          </p>
+
+          <p className="mt-5 text-sm text-zinc-500">
+            Written and reviewed by{" "}
+            <Link
+              href="/editorial-policy"
+              className="font-bold text-zinc-300 hover:text-white"
+            >
+              PokeValue Editorial Team
+            </Link>
           </p>
         </header>
 
@@ -156,6 +237,7 @@ export default async function GuideArticlePage({
           </div>
         </section>
       </article>
-    </AppLayout>
+      </AppLayout>
+    </>
   );
 }

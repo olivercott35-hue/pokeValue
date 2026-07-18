@@ -12,15 +12,15 @@ import {
 export const metadata: Metadata = {
   title: "Pokémon Card Explorer | PokeValue",
   description:
-    "Browse Pokémon TCG cards with images, set information, rarity details and representative TCGplayer market prices from the PokeValue local card database.",
+    "Browse Pokémon TCG cards with images, set information, rarity details and clearly labelled Cardmarket or TCGplayer estimates from the PokeValue local database.",
   alternates: {
-    canonical: "https://pokevalue.co.uk/cards",
+    canonical: "https://www.pokevalue.co.uk/cards",
   },
   openGraph: {
     title: "Pokémon Card Explorer | PokeValue",
     description:
-      "Explore Pokémon cards, sets, rarities and TCGplayer market prices using the PokeValue card archive.",
-    url: "https://pokevalue.co.uk/cards",
+      "Explore Pokémon cards, sets, rarities and clearly labelled marketplace estimates using the PokeValue card archive.",
+    url: "https://www.pokevalue.co.uk/cards",
     siteName: "PokeValue",
     type: "website",
   },

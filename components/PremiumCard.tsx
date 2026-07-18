@@ -2,53 +2,12 @@
 
 import { motion } from "framer-motion";
 import { BadgeDollarSign, TrendingUp } from "lucide-react";
-import {
-  useCurrency,
-  type PriceSourceCurrency,
-} from "@/components/CurrencyProvider";
-
-function getCardValue(card: any): {
-  value: number;
-  sourceCurrency: PriceSourceCurrency;
-} {
-  const cm = card?.cardmarket?.prices;
-  const tcg = card?.tcgplayer?.prices;
-  const firstTcg: any = tcg ? Object.values(tcg)[0] : null;
-
-  const cardmarketCandidates = [
-    cm?.trendPrice,
-    cm?.averageSellPrice,
-    cm?.avg7,
-    cm?.avg30,
-  ];
-
-  for (const candidate of cardmarketCandidates) {
-    const value = Number(candidate);
-    if (!Number.isNaN(value) && value > 0) {
-      return { value, sourceCurrency: "EUR" };
-    }
-  }
-
-  const tcgCandidates = [
-    firstTcg?.market,
-    firstTcg?.mid,
-    firstTcg?.low,
-    firstTcg?.high,
-  ];
-
-  for (const candidate of tcgCandidates) {
-    const value = Number(candidate);
-    if (!Number.isNaN(value) && value > 0) {
-      return { value, sourceCurrency: "USD" };
-    }
-  }
-
-  return { value: 0, sourceCurrency: "GBP" };
-}
+import { useCurrency } from "@/components/CurrencyProvider";
+import { getResolvedCardPrice } from "@/lib/card-pricing";
 
 export default function PremiumCard({ card }: { card: any }) {
   const { formatPrice } = useCurrency();
-  const price = getCardValue(card);
+  const price = getResolvedCardPrice(card);
 
   return (
     <motion.div
@@ -95,15 +54,15 @@ export default function PremiumCard({ card }: { card: any }) {
           </div>
 
           <div className="flex shrink-0 items-center gap-1.5 rounded-xl border border-purple-500/20 bg-purple-500/10 px-2.5 py-1.5 text-purple-300">
-            {price.value > 0 ? (
+            {price.market > 0 ? (
               <BadgeDollarSign size={13} />
             ) : (
               <TrendingUp size={13} />
             )}
 
             <span className="text-xs font-black">
-              {price.value > 0
-                ? formatPrice(price.value, price.sourceCurrency)
+              {price.market > 0
+                ? formatPrice(price.market, price.sourceCurrency)
                 : "No data"}
             </span>
           </div>

@@ -6,6 +6,21 @@ export const metadata = {
   title: "Pokémon TCG News | PokeValue",
   description:
     "Read Pokémon TCG news, market updates, collecting trends, new set coverage, grading discussion, and card price insights.",
+  alternates: {
+    canonical: "https://www.pokevalue.co.uk/news",
+  },
+  openGraph: {
+    title: "Pokémon TCG News | PokeValue",
+    description:
+      "Pokémon TCG releases, collector trends and clearly labelled market commentary.",
+    url: "https://www.pokevalue.co.uk/news",
+    siteName: "PokeValue",
+    type: "website",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function NewsPage() {

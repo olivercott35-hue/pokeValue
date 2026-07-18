@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 
 import AppLayout from "@/components/layout/AppLayout";
+import { getResolvedCardPrice } from "@/lib/card-pricing";
 
 type ScanResult = {
   scan: any;
@@ -28,28 +29,9 @@ type ScanResult = {
 };
 
 function getPrice(card: any, fallback = 0) {
-  if (card?._price) return Number(card._price);
+  if (!card) return fallback;
 
-  const cm = card?.cardmarket?.prices;
-  const tcg = card?.tcgplayer?.prices;
-  const firstTcg: any = tcg ? Object.values(tcg)[0] : null;
-
-  const values = [
-    cm?.trendPrice,
-    cm?.averageSellPrice,
-    cm?.avg7,
-    cm?.avg30,
-    firstTcg?.market,
-    firstTcg?.mid,
-    firstTcg?.low,
-  ];
-
-  for (const value of values) {
-    const number = Number(value);
-    if (!Number.isNaN(number) && number > 0) return number;
-  }
-
-  return fallback;
+  return getResolvedCardPrice(card).gbpValue || fallback;
 }
 
 export default function ScannerPage() {

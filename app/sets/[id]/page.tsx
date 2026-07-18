@@ -79,12 +79,12 @@ export async function generateMetadata({
     title,
     description,
     alternates: {
-      canonical: `https://pokevalue.co.uk/sets/${set.id}`,
+      canonical: `https://www.pokevalue.co.uk/sets/${set.id}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://pokevalue.co.uk/sets/${set.id}`,
+      url: `https://www.pokevalue.co.uk/sets/${set.id}`,
       siteName: "PokeValue",
       type: "website",
       images: set.images?.logo
@@ -146,12 +146,46 @@ export default async function SetPage({ params }: PageProps) {
     0
   );
 
+  const canonical = `https://www.pokevalue.co.uk/sets/${encodeURIComponent(set.id)}`;
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.pokevalue.co.uk",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Sets",
+        item: "https://www.pokevalue.co.uk/sets",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: set.name,
+        item: canonical,
+      },
+    ],
+  };
+
   return (
-    <SetClient
-      set={enrichedSet}
-      cards={enrichedCards}
-      highestCard={highestCard}
-      totalMarketValue={totalMarketValue}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <SetClient
+        set={enrichedSet}
+        cards={enrichedCards}
+        highestCard={highestCard}
+        totalMarketValue={totalMarketValue}
+      />
+    </>
   );
 }

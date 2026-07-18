@@ -10,12 +10,18 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import { CurrencyProvider } from "@/components/CurrencyProvider";
-import CookieBanner from "@/components/CookieBanner";
+import AdSenseScript from "@/components/AdSenseScript";
+
+const baseUrl = "https://www.pokevalue.co.uk";
+const adsensePublisherId =
+  process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID ||
+  "ca-pub-3780442870354296";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "PokeValue | UK Pokémon Card Price Tracker",
   description:
-    "PokeValue helps UK Pokémon collectors check card prices, explore sets, track collections, and learn how Pokémon card values change over time.",
+    "PokeValue helps UK Pokémon collectors research card prices, explore sets, organise collections and understand how marketplace estimates are selected.",
   keywords: [
     "Pokémon card prices",
     "Pokemon card value",
@@ -23,13 +29,38 @@ export const metadata: Metadata = {
     "Pokémon TCG prices",
     "PokeValue",
   ],
+  applicationName: "PokeValue",
+  authors: [{ name: "PokeValue Editorial Team" }],
+  creator: "PokeValue",
+  publisher: "PokeValue",
+  other: {
+    "google-adsense-account": adsensePublisherId,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     title: "PokeValue | UK Pokémon Card Price Tracker",
     description:
-      "Track Pokémon card prices, explore sets, and learn how to value your collection.",
-    url: "https://www.pokevalue.co.uk",
+      "Research Pokémon card prices, explore sets and understand the marketplace source behind each estimate.",
+    url: baseUrl,
     siteName: "PokeValue",
     type: "website",
+    locale: "en_GB",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PokeValue | UK Pokémon Card Price Tracker",
+    description:
+      "Research Pokémon card prices, sets and clearly labelled marketplace estimates.",
   },
 };
 
@@ -39,18 +70,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en-GB">
       <body className="bg-[#050505] text-white font-sora">
+        <Script id="google-consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              ad_storage: 'denied',
+              analytics_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              wait_for_update: 500
+            });
+          `}
+        </Script>
+
         <CurrencyProvider>
-          <Script
-            async
-            strategy="afterInteractive"
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3780442870354296"
-            crossOrigin="anonymous"
-          />
+          <AdSenseScript publisherId={adsensePublisherId} />
 
           {children}
-          <CookieBanner />
           <Analytics />
         </CurrencyProvider>
       </body>

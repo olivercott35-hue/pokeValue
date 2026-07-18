@@ -6,6 +6,17 @@ export const metadata = {
   title: "Pokémon Card Guides | PokeValue",
   description:
     "Learn how to value Pokémon cards, check condition, understand grading, avoid fakes, protect cards, and follow Pokémon TCG market trends.",
+  alternates: {
+    canonical: "https://www.pokevalue.co.uk/guides",
+  },
+  openGraph: {
+    title: "Pokémon Card Guides | PokeValue",
+    description:
+      "Practical Pokémon TCG guides for UK collectors researching value, condition, grading and storage.",
+    url: "https://www.pokevalue.co.uk/guides",
+    siteName: "PokeValue",
+    type: "website",
+  },
 };
 
 export default function GuidesPage() {

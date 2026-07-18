@@ -20,12 +20,32 @@ export async function generateMetadata({
   if (!article) {
     return {
       title: "News Article Not Found | PokeValue",
+      robots: {
+        index: false,
+        follow: true,
+      },
     };
   }
+
+  const canonical = `https://www.pokevalue.co.uk/news/${article.slug}`;
 
   return {
     title: `${article.title} | PokeValue News`,
     description: article.description,
+    alternates: {
+      canonical,
+    },
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      url: canonical,
+      siteName: "PokeValue",
+      type: "article",
+    },
+    robots: {
+      index: false,
+      follow: true,
+    },
   };
 }
 
@@ -45,8 +65,41 @@ export default async function NewsArticlePage({
     )
     .slice(0, 3);
 
+  const canonical = `https://www.pokevalue.co.uk/news/${article.slug}`;
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.pokevalue.co.uk",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "News",
+        item: "https://www.pokevalue.co.uk/news",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: canonical,
+      },
+    ],
+  };
+
   return (
-    <AppLayout>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <AppLayout>
       <article className="max-w-5xl mx-auto px-6 py-12">
         <Link
           href="/news"
@@ -161,6 +214,7 @@ export default async function NewsArticlePage({
           </section>
         )}
       </article>
-    </AppLayout>
+      </AppLayout>
+    </>
   );
 }
