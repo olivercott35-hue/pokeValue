@@ -1,160 +1,145 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight, BookOpen, Clock3, ShieldCheck } from "lucide-react";
+
 import AppLayout from "@/components/layout/AppLayout";
+import {
+  GlassPanel,
+  PageHero,
+  PageShell,
+  PrimaryLink,
+  SectionHeading,
+  SecondaryLink,
+} from "@/components/ui/SitePage";
 import { guides } from "@/lib/guides";
 
-export const metadata = {
-  title: "Pokémon Card Guides | PokeValue",
+export const metadata: Metadata = {
+  title: "Pokémon Card Collecting Guides | PokeValue",
   description:
-    "Learn how to value Pokémon cards, check condition, understand grading, avoid fakes, protect cards, and follow Pokémon TCG market trends.",
-  alternates: {
-    canonical: "https://www.pokevalue.co.uk/guides",
-  },
-  openGraph: {
-    title: "Pokémon Card Guides | PokeValue",
-    description:
-      "Practical Pokémon TCG guides for UK collectors researching value, condition, grading and storage.",
-    url: "https://www.pokevalue.co.uk/guides",
-    siteName: "PokeValue",
-    type: "website",
-  },
+    "Original UK-focused guides to valuing, inspecting, authenticating and grading Pokémon cards using repeatable evidence rather than hype.",
+  alternates: { canonical: "https://www.pokevalue.co.uk/guides" },
 };
 
 export default function GuidesPage() {
-  const featuredGuides = guides.slice(0, 3);
-  const categories = Array.from(new Set(guides.map((guide) => guide.category)));
-
   return (
     <AppLayout>
-      <div className="relative max-w-7xl mx-auto px-6 py-12">
-        <section className="mb-10 rounded-3xl border border-white/[0.06] bg-white/[0.03] p-8 md:p-10 backdrop-blur-2xl">
-          <p className="text-sm font-semibold text-purple-400 mb-3">
-            Pokémon Collecting Guides
-          </p>
-
-          <h1 className="max-w-4xl text-4xl md:text-6xl font-black tracking-tight text-white">
-            Learn how to value, collect, protect, and understand Pokémon cards
-          </h1>
-
-          <p className="mt-6 max-w-4xl text-zinc-400 leading-8">
-            PokeValue guides help collectors understand Pokémon card prices,
-            condition, rarity, grading, fake cards, storage, market trends,
-            buying decisions, selling strategies, and long-term collecting.
-          </p>
-        </section>
-
-        <section className="mb-10 grid gap-5 md:grid-cols-3">
-          {featuredGuides.map((guide) => (
-            <Link
-              key={guide.slug}
-              href={`/guides/${guide.slug}`}
-              className="rounded-3xl border border-purple-500/20 bg-purple-500/5 p-6 hover:border-purple-500/50 transition"
-            >
-              <p className="text-xs font-black uppercase tracking-wider text-purple-400 mb-3">
-                Featured • {guide.readTime}
+      <PageShell width="content">
+        <PageHero
+          eyebrow="Original collector education"
+          icon={<BookOpen className="h-4 w-4" />}
+          title="Practical Pokémon card guides built around real decisions."
+          description={
+            <p>
+              Use these long-form guides to identify cards correctly, inspect
+              condition, compare marketplace evidence, assess authenticity and
+              decide whether grading makes sense. Every article is reviewed
+              under the PokeValue editorial policy.
+            </p>
+          }
+          actions={
+            <>
+              <PrimaryLink href="#guide-library" arrow>
+                Browse the library
+              </PrimaryLink>
+              <SecondaryLink href="/editorial-policy">Editorial policy</SecondaryLink>
+            </>
+          }
+          aside={
+            <div className="rounded-[1.7rem] border border-white/[0.07] bg-black/20 p-5">
+              <p className="text-[10px] font-black uppercase tracking-[0.22em] text-violet-200/75">
+                Library standard
               </p>
+              <div className="mt-4 space-y-3 text-sm leading-6 text-zinc-500">
+                <p>• UK terminology and realistic selling costs</p>
+                <p>• Exact variants and condition considered</p>
+                <p>• No guaranteed values or investment promises</p>
+                <p>• Visible review and update dates</p>
+              </div>
+            </div>
+          }
+        />
 
-              <h2 className="text-2xl font-black text-white leading-tight">
-                {guide.title}
-              </h2>
+        <GlassPanel className="mt-7" as="div">
+          <div id="guide-library" className="scroll-mt-24">
+            <SectionHeading
+              eyebrow="Guide library"
+              title={`${guides.length} focused collector guides`}
+              description="A smaller, stronger library is more useful than dozens of shallow pages. Each guide covers a core task in enough detail to act on it."
+            />
 
-              <p className="mt-4 text-zinc-400 leading-7">
-                {guide.description}
-              </p>
+            <div className="grid gap-4 md:grid-cols-2">
+              {guides.map((guide, index) => (
+                <Link
+                  key={guide.slug}
+                  href={`/guides/${guide.slug}`}
+                  className="group relative overflow-hidden rounded-[1.65rem] border border-white/[0.07] bg-white/[0.025] p-6 transition duration-300 hover:-translate-y-1 hover:border-violet-200/[0.18] hover:bg-white/[0.045]"
+                >
+                  <div className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-violet-500/[0.045] opacity-0 blur-3xl transition duration-500 group-hover:opacity-100" />
+                  <div className="relative flex items-start justify-between gap-4">
+                    <div>
+                      <p className="text-[10px] font-black uppercase tracking-[0.22em] text-violet-200/75">
+                        {guide.category}
+                      </p>
+                      <h2 className="mt-3 text-2xl font-black leading-tight tracking-[-0.035em] text-white">
+                        {guide.title}
+                      </h2>
+                    </div>
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-white/[0.07] bg-white/[0.03] text-zinc-600 transition group-hover:text-violet-200">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  </div>
 
-              <p className="mt-5 text-sm font-bold text-purple-400">
-                Read featured guide →
-              </p>
-            </Link>
-          ))}
-        </section>
+                  <p className="relative mt-4 text-sm leading-7 text-zinc-500">
+                    {guide.description}
+                  </p>
 
-        <section className="mb-10 rounded-3xl border border-white/[0.06] bg-white/[0.03] p-6 backdrop-blur-2xl">
-          <p className="mb-4 text-sm font-semibold text-purple-400">
-            Browse by category
-          </p>
+                  <div className="relative mt-5 flex flex-wrap items-center gap-4 text-[11px] font-bold text-zinc-600">
+                    <span className="inline-flex items-center gap-1.5">
+                      <Clock3 className="h-3.5 w-3.5" /> {guide.readTime}
+                    </span>
+                    <span>Updated {guide.updated}</span>
+                  </div>
 
-          <div className="flex flex-wrap gap-3">
-            {categories.map((category) => (
-              <span
-                key={category}
-                className="rounded-full border border-white/[0.08] bg-white/[0.035] px-4 py-2 text-sm font-bold text-zinc-300"
-              >
-                {category}
-              </span>
-            ))}
+                  <p className="relative mt-5 inline-flex items-center gap-2 text-sm font-black text-violet-200/80">
+                    Read guide
+                    <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                  </p>
+                </Link>
+              ))}
+            </div>
           </div>
-        </section>
+        </GlassPanel>
 
-        <section className="mb-8">
-          <p className="text-sm font-semibold text-purple-400 mb-3">
-            All Guides
-          </p>
-
-          <h2 className="text-3xl font-black text-white">
-            Pokémon TCG collecting library
-          </h2>
-
-          <p className="mt-3 max-w-3xl text-zinc-500 leading-7">
-            Use these guides as a starting point before buying, selling,
-            grading, storing, or researching Pokémon cards. Prices can change,
-            so always compare current market data and condition before making
-            important decisions.
-          </p>
-        </section>
-
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
-          {guides.map((guide) => (
-            <Link
-              key={guide.slug}
-              href={`/guides/${guide.slug}`}
-              className="group rounded-2xl border border-white/[0.08] bg-zinc-950/60 p-6 hover:border-purple-500/40 hover:bg-white/[0.04] transition"
-            >
-              <p className="text-xs font-black uppercase tracking-wider text-purple-400 mb-3">
-                {guide.category} • {guide.readTime}
+        <GlassPanel className="mt-7">
+          <div className="grid gap-7 lg:grid-cols-[1fr_360px] lg:items-center">
+            <div>
+              <p className="pv-section-kicker">How to use the library</p>
+              <h2 className="pv-section-title">Read first, then verify the exact card.</h2>
+              <p className="pv-section-copy">
+                A guide can explain the process, but the final judgement still
+                depends on the exact printing, finish, language, condition and
+                current marketplace evidence. Open the card archive after
+                reading and compare like with like.
               </p>
-
-              <h2 className="text-xl font-black text-white group-hover:text-purple-200 transition">
-                {guide.title}
-              </h2>
-
-              <p className="mt-3 text-zinc-400 leading-7">
-                {guide.description}
+              <div className="mt-6 flex flex-wrap gap-3">
+                <PrimaryLink href="/cards" arrow>
+                  Search cards
+                </PrimaryLink>
+                <SecondaryLink href="/methodology">Pricing methodology</SecondaryLink>
+              </div>
+            </div>
+            <div className="rounded-[1.6rem] border border-violet-200/[0.12] bg-violet-300/[0.035] p-5">
+              <ShieldCheck className="h-5 w-5 text-violet-200/85" />
+              <p className="mt-4 text-sm font-black text-white">Important limitation</p>
+              <p className="mt-2 text-sm leading-7 text-zinc-500">
+                PokeValue provides research and education, not authentication,
+                professional appraisal, financial advice or a guaranteed sale
+                price.
               </p>
-
-              <p className="mt-5 text-sm font-semibold text-purple-400">
-                Read guide →
-              </p>
-            </Link>
-          ))}
-        </div>
-
-        <section className="mt-12 rounded-3xl border border-white/[0.06] bg-white/[0.03] p-8 backdrop-blur-2xl">
-          <h2 className="text-3xl font-black text-white mb-5">
-            Why these guides matter
-          </h2>
-
-          <div className="space-y-5 text-zinc-400 leading-8">
-            <p>
-              Pokémon card prices are affected by more than rarity alone.
-              Condition, grading potential, set demand, artwork, recent sales,
-              population reports, and collector interest all influence value.
-            </p>
-
-            <p>
-              These guides are designed to help collectors make more informed
-              decisions before buying cards, selling collections, storing
-              valuable pulls, or submitting cards for grading.
-            </p>
-
-            <p>
-              PokeValue combines educational content with card search, set
-              browsing, collection tracking, favourites, portfolio tools, and
-              market-style information to create a clearer Pokémon TCG research
-              experience.
-            </p>
+            </div>
           </div>
-        </section>
-      </div>
+        </GlassPanel>
+      </PageShell>
     </AppLayout>
   );
 }

@@ -164,7 +164,7 @@ export default function MarketMoversClient() {
 
   return (
     <AppLayout>
-      <main className="relative min-h-full overflow-hidden bg-[#050506] px-4 py-6 text-white sm:px-6 lg:px-8 xl:px-10">
+      <main className="pv-page text-white">
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <div className="absolute left-1/2 top-[-430px] h-[780px] w-[1120px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(124,58,237,0.09),rgba(76,29,149,0.03)_38%,transparent_72%)] blur-3xl" />
 

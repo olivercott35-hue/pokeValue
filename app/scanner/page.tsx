@@ -30,7 +30,6 @@ type ScanResult = {
 
 function getPrice(card: any, fallback = 0) {
   if (!card) return fallback;
-
   return getResolvedCardPrice(card).gbpValue || fallback;
 }
 
@@ -104,20 +103,20 @@ export default function ScannerPage() {
 
   return (
     <AppLayout>
-      <div className="relative min-h-full w-full overflow-hidden px-4 py-6 text-white sm:px-6 md:px-10 md:py-10">
-        <div className="pointer-events-none absolute right-[-120px] top-0 h-96 w-96 rounded-full bg-purple-500/10 blur-[140px]" />
+      <div className="pv-page w-full overflow-hidden text-white">
+        <div className="pointer-events-none absolute right-[-120px] top-0 h-96 w-96 rounded-full bg-violet-500/10 blur-[140px]" />
         <div className="pointer-events-none absolute bottom-20 left-[-140px] h-96 w-96 rounded-full bg-fuchsia-500/10 blur-[150px]" />
 
-        <div className="relative mx-auto max-w-7xl">
-          <section className="mb-8 rounded-3xl border border-white/[0.06] bg-white/[0.035] p-6 backdrop-blur-2xl sm:p-8">
-            <div className="mb-3 flex items-center gap-2 text-purple-400">
+        <div className="relative mx-auto max-w-[1540px]">
+          <section className="pv-hero pv-shine mb-7">
+            <div className="mb-3 flex items-center gap-2 text-violet-300">
               <Sparkles size={14} />
               <span className="text-[10px] font-black uppercase tracking-[0.3em]">
                 AI Card Scanner
               </span>
             </div>
 
-            <h1 className="bg-gradient-to-r from-white via-zinc-200 to-purple-400 bg-clip-text text-4xl font-black tracking-tight text-transparent sm:text-6xl">
+            <h1 className="pv-title pv-title-compact">
               Scan a Pokémon Card
             </h1>
 
@@ -144,7 +143,7 @@ export default function ScannerPage() {
                 <button
                   type="button"
                   onClick={() => inputRef.current?.click()}
-                  className="flex min-h-[420px] w-full flex-col items-center justify-center rounded-3xl border border-dashed border-purple-500/30 bg-purple-500/5 p-6 text-center transition hover:border-purple-400/60 hover:bg-purple-500/10"
+                  className="flex min-h-[420px] w-full flex-col items-center justify-center rounded-3xl border border-dashed border-violet-300/30 bg-violet-500/5 p-6 text-center transition hover:border-violet-300/60 hover:bg-violet-400/10"
                 >
                   {preview ? (
                     <img
@@ -154,7 +153,7 @@ export default function ScannerPage() {
                     />
                   ) : (
                     <>
-                      <Camera className="mb-5 h-12 w-12 text-purple-400" />
+                      <Camera className="mb-5 h-12 w-12 text-violet-300" />
                       <h2 className="text-2xl font-black text-white">
                         Upload Card Photo
                       </h2>
@@ -180,7 +179,7 @@ export default function ScannerPage() {
                     type="button"
                     onClick={scanCard}
                     disabled={loading || !imageFile}
-                    className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-purple-600 px-5 py-3 text-sm font-black text-white transition hover:bg-purple-500 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-violet-500 px-5 py-3 text-sm font-black text-white transition hover:bg-violet-400 disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     {loading ? (
                       <Loader2 size={16} className="animate-spin" />
@@ -203,7 +202,7 @@ export default function ScannerPage() {
               {!result ? (
                 <div className="flex min-h-[520px] items-center justify-center rounded-3xl border border-white/[0.06] bg-white/[0.035] p-8 text-center backdrop-blur-2xl">
                   <div>
-                    <Sparkles className="mx-auto mb-5 h-10 w-10 text-purple-400" />
+                    <Sparkles className="mx-auto mb-5 h-10 w-10 text-violet-300" />
                     <h2 className="text-2xl font-black text-white">
                       Results will appear here
                     </h2>
@@ -232,7 +231,7 @@ export default function ScannerPage() {
                       )}
 
                       <div className="min-w-0 flex-1">
-                        <p className="mb-2 text-[10px] font-black uppercase tracking-[0.3em] text-purple-400">
+                        <p className="mb-2 text-[10px] font-black uppercase tracking-[0.3em] text-violet-300">
                           Selected Match
                         </p>
 
@@ -277,7 +276,7 @@ export default function ScannerPage() {
                         {selectedCard && (
                           <Link
                             href={`/cards/${selectedCard.id}`}
-                            className="mt-5 inline-flex rounded-2xl bg-purple-600 px-5 py-3 text-sm font-black text-white transition hover:bg-purple-500"
+                            className="mt-5 inline-flex rounded-2xl bg-violet-500 px-5 py-3 text-sm font-black text-white transition hover:bg-violet-400"
                           >
                             Open full card page
                           </Link>
@@ -289,7 +288,7 @@ export default function ScannerPage() {
                   {matches.length > 0 && (
                     <div className="rounded-3xl border border-white/[0.06] bg-white/[0.035] p-6 backdrop-blur-2xl">
                       <div className="mb-5">
-                        <p className="text-[10px] font-black uppercase tracking-[0.3em] text-purple-400">
+                        <p className="text-[10px] font-black uppercase tracking-[0.3em] text-violet-300">
                           Possible Matches
                         </p>
                         <h3 className="mt-2 text-2xl font-black text-white">
@@ -314,8 +313,8 @@ export default function ScannerPage() {
                               onClick={() => setSelectedCardId(match.id)}
                               className={`flex gap-4 rounded-2xl border p-3 text-left transition ${
                                 active
-                                  ? "border-purple-500/60 bg-purple-500/15"
-                                  : "border-white/[0.06] bg-white/[0.03] hover:border-purple-500/30 hover:bg-white/[0.05]"
+                                  ? "border-violet-300/60 bg-violet-500/15"
+                                  : "border-white/[0.06] bg-white/[0.03] hover:border-violet-300/30 hover:bg-white/[0.05]"
                               }`}
                             >
                               {match.images?.small && (
@@ -335,7 +334,7 @@ export default function ScannerPage() {
                                   {active && (
                                     <CheckCircle2
                                       size={16}
-                                      className="shrink-0 text-purple-400"
+                                      className="shrink-0 text-violet-300"
                                     />
                                   )}
                                 </div>
@@ -354,7 +353,7 @@ export default function ScannerPage() {
                                     {match.rarity || "Unknown"}
                                   </span>
 
-                                  <span className="rounded-full border border-purple-500/20 bg-purple-500/10 px-2.5 py-1 text-[10px] font-bold text-purple-300">
+                                  <span className="rounded-full border border-violet-300/20 bg-violet-500/10 px-2.5 py-1 text-[10px] font-bold text-violet-200">
                                     {matchPrice > 0
                                       ? `£${matchPrice.toFixed(2)}`
                                       : "No price"}
@@ -409,7 +408,7 @@ export default function ScannerPage() {
                     </InfoPanel>
                   </div>
 
-                  <div className="rounded-3xl border border-purple-500/20 bg-purple-500/5 p-6">
+                  <div className="rounded-3xl border border-violet-300/20 bg-violet-500/5 p-6">
                     <h3 className="mb-3 text-xl font-black text-white">
                       Scanner Notes
                     </h3>
@@ -443,7 +442,7 @@ function ResultMetric({
 }) {
   return (
     <div className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-4">
-      <div className="mb-2 flex items-center gap-2 text-purple-400">
+      <div className="mb-2 flex items-center gap-2 text-violet-300">
         {icon}
         <span className="text-[9px] font-black uppercase tracking-[0.22em]">
           {label}

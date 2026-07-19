@@ -1,45 +1,27 @@
-# PokeValue AdSense audit results
+# PokeValue final rebuild audit
 
-Audit date: 18 July 2026
+## Result
 
-## Major fixes completed
+The replacement project has been reworked around one premium visual system and an AdSense-safe route strategy. It is designed to be ready for a fresh live review after the production build, deployment and Google CMP setup are completed. Google alone decides approval, so approval cannot be guaranteed.
 
-- Replaced the inconsistent page-by-page pricing logic with one shared resolver.
-- Cardmarket is used first for the UK/EU audience; a clearly labelled available TCGplayer variant is the fallback.
-- Card detail pages now use the same local card snapshot as explorer, set and collection pages.
-- The example card `ex15-100` now resolves consistently to the Cardmarket trend price: EUR 838.41, approximately GBP 721.03 using the site's display conversion.
-- Renamed `app/robot.ts` to the correct Next.js convention, `app/robots.ts`.
-- Rebuilt the sitemap around public content and useful card records.
-- Added canonical metadata, robots directives, breadcrumbs and article structured data where appropriate.
-- Marked browser-only tools and empty personal states as `noindex` and excluded them from AdSense delivery.
-- Removed the broken or thin News section from navigation, sitemap and advertising while retaining the URLs as noindex pages.
-- Replaced the thin guide library with four fuller guides of roughly 870–1,040 words each.
-- Added Pricing Methodology and Editorial/Corrections Policy pages.
-- Added the AdSense account meta tag and retained the verified publisher ID in `public/ads.txt`.
-- Removed the custom cookie banner so it does not conflict with a Google-certified consent message.
-- Added redirects for retired guide URLs.
+## Code checks passed
 
-## Automated checks completed
+- TypeScript and TSX syntax across the project.
+- Local import targets and required route files.
+- No `/settings` or `/news` links in the shared navigation.
+- Correct `app/robots.ts`; old `app/robot.ts` removed.
+- `ads.txt`, sitemap, canonical metadata and structured data present.
+- Private browser tools marked `noindex` and excluded from AdSense loading.
+- Four substantial UK-focused collector guides, each approximately 900–1,070 words.
+- Shared pricing resolver and source-labelled estimates.
+- Gemini scanner no longer constructs its API client during the build.
+- `.env.local`, `.next` and `node_modules` protected by `.gitignore`.
 
-- TypeScript syntax/transpile check passed for 77 source files.
-- All local `@/` imports resolve to existing files.
-- Literal internal-link scan passed for all static routes.
-- Local Pokémon JSON parsed successfully: 20,359 cards.
-- Shared price resolver test passed.
-- 19,690 card records currently meet the sitemap's minimum image, identity and price requirements.
-- No API-key or private-key patterns were found in the prepared package.
+## Live actions still required
 
-## Manual actions still required
-
-1. Run `pnpm install` and `pnpm build` on your own computer.
-2. Deploy the result to Vercel.
-3. Publish a Google-certified European regulations message from AdSense Privacy & messaging.
-4. Verify `/ads.txt`, `/robots.txt` and `/sitemap.xml` on the live domain.
-5. Review the rewritten guides and add original screenshots or first-hand examples where available.
-6. Request AdSense review only after the deployed pages have been checked in an incognito window.
-
-## Build validation note
-
-A complete Next.js production build could not be completed in the audit container because dependency installation repeatedly timed out while retrieving packages. This package passed source-level syntax, import, route and data checks, but your local `pnpm build` remains the final required validation before deployment.
-
-Google makes the final AdSense decision; no code change can guarantee approval.
+1. Run `pnpm install` and `pnpm build` locally.
+2. Deploy to Vercel and manually test desktop and mobile routes.
+3. Publish Google’s certified European regulations message in AdSense.
+4. Confirm live `ads.txt`, `robots.txt` and `sitemap.xml`.
+5. Submit the sitemap in Search Console and allow the new version to be recrawled.
+6. Request an AdSense review only after the live site is stable.

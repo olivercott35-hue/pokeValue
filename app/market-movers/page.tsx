@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Collection Market Rankings | PokeValue",
   description:
     "Rank the Pokémon cards in your personal collection using available Cardmarket and TCGPlayer market data.",
+  alternates: { canonical: "https://www.pokevalue.co.uk/market-movers" },
   robots: {
     index: false,
     follow: true,

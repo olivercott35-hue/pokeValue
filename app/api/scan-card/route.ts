@@ -5,10 +5,6 @@ import { getResolvedCardPrice } from "@/lib/card-pricing";
 export const runtime = "nodejs";
 export const maxDuration = 30;
 
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY,
-});
-
 function clean(value: any) {
   return String(value || "").trim();
 }
@@ -292,6 +288,10 @@ export async function POST(req: Request) {
         { status: 500 }
       );
     }
+
+    const ai = new GoogleGenAI({
+      apiKey: process.env.GEMINI_API_KEY,
+    });
 
     const formData = await req.formData();
     const image = formData.get("image");

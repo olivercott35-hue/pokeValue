@@ -204,11 +204,11 @@ export default function AnalyticsClient() {
 
   return (
     <AppLayout>
-      <div className="relative w-full px-6 md:px-10 py-10 overflow-hidden">
-        <div className="pointer-events-none absolute top-0 right-24 h-96 w-96 rounded-full bg-purple-500/10 blur-[130px]" />
+      <div className="pv-page w-full overflow-hidden text-white">
+        <div className="pointer-events-none absolute top-0 right-24 h-96 w-96 rounded-full bg-violet-500/10 blur-[130px]" />
         <div className="pointer-events-none absolute bottom-20 left-16 h-96 w-96 rounded-full bg-fuchsia-500/10 blur-[150px]" />
 
-        <div className="relative max-w-7xl mx-auto">
+        <div className="relative mx-auto max-w-[1540px]">
           <motion.header
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
@@ -217,17 +217,17 @@ export default function AnalyticsClient() {
               stiffness: 120,
               damping: 22,
             }}
-            className="mb-10 border-b border-white/[0.05] pb-8 flex flex-col xl:flex-row xl:items-end justify-between gap-7"
+            className="pv-hero pv-shine mb-7 flex flex-col gap-7 xl:flex-row xl:items-end xl:justify-between"
           >
             <div>
-              <div className="flex items-center gap-2 text-purple-400 mb-3">
+              <div className="flex items-center gap-2 text-violet-300 mb-3">
                 <BarChart3 size={14} />
                 <span className="text-[10px] font-black uppercase tracking-[0.3em]">
                   Portfolio Analytics
                 </span>
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-black tracking-tight bg-gradient-to-r from-white via-zinc-200 to-purple-400 bg-clip-text text-transparent">
+              <h1 className="pv-title pv-title-compact">
                 Analytics
               </h1>
 
@@ -238,8 +238,8 @@ export default function AnalyticsClient() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <div className="group flex items-center gap-3 bg-white/[0.03] border border-white/[0.06] rounded-2xl px-4 py-3 backdrop-blur-xl hover:border-purple-500/20 transition-all">
-                <Search className="w-4 h-4 text-zinc-600 group-focus-within:text-purple-400 transition-colors" />
+              <div className="group flex items-center gap-3 bg-white/[0.03] border border-white/[0.06] rounded-2xl px-4 py-3 backdrop-blur-xl hover:border-violet-300/20 transition-all">
+                <Search className="w-4 h-4 text-zinc-600 group-focus-within:text-violet-300 transition-colors" />
 
                 <input
                   value={searchQuery}
@@ -251,7 +251,7 @@ export default function AnalyticsClient() {
 
               <Link
                 href="/cards"
-                className="flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-500 text-white px-6 py-3 rounded-2xl text-xs font-black uppercase tracking-widest transition-all shadow-[0_0_30px_rgba(168,85,247,0.3)]"
+                className="flex items-center justify-center gap-2 bg-violet-500 hover:bg-violet-400 text-white px-6 py-3 rounded-2xl text-xs font-black uppercase tracking-widest transition-all shadow-[0_0_30px_rgba(139,92,246,0.3)]"
               >
                 <Plus size={14} />
                 Add Asset
@@ -313,7 +313,7 @@ export default function AnalyticsClient() {
             <section className="xl:col-span-7 rounded-[2rem] border border-white/[0.06] bg-white/[0.03] p-6 md:p-8 backdrop-blur-2xl overflow-hidden">
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
                 <div>
-                  <div className="flex items-center gap-2 text-purple-400 mb-2">
+                  <div className="flex items-center gap-2 text-violet-300 mb-2">
                     <TrendingUp size={14} />
                     <span className="text-[10px] font-black uppercase tracking-[0.28em]">
                       Top Holdings
@@ -363,15 +363,15 @@ export default function AnalyticsClient() {
                           layout="position"
                         >
                           <Link href={`/cards/${card.id}`}>
-                            <div className="group relative overflow-hidden rounded-3xl border border-white/[0.05] bg-white/[0.025] p-4 hover:border-purple-500/25 hover:bg-white/[0.045] transition-all">
+                            <div className="group relative overflow-hidden rounded-3xl border border-white/[0.05] bg-white/[0.025] p-4 hover:border-violet-300/25 hover:bg-white/[0.045] transition-all">
                               <div
-                                className="absolute inset-y-0 left-0 bg-purple-500/10 transition-all"
+                                className="absolute inset-y-0 left-0 bg-violet-500/10 transition-all"
                                 style={{ width: `${percentage}%` }}
                               />
 
                               <div className="relative z-10 flex items-center justify-between gap-5">
                                 <div className="flex items-center gap-4 min-w-0">
-                                  <div className="h-9 w-9 rounded-2xl border border-purple-500/20 bg-purple-500/10 flex items-center justify-center text-purple-300 text-xs font-black shrink-0">
+                                  <div className="h-9 w-9 rounded-2xl border border-violet-300/20 bg-violet-500/10 flex items-center justify-center text-violet-200 text-xs font-black shrink-0">
                                     #{index + 1}
                                   </div>
 
@@ -390,7 +390,7 @@ export default function AnalyticsClient() {
                                       {card.set?.name || "Unknown Set"}
                                     </p>
 
-                                    <p className="text-[10px] text-purple-400 font-bold mt-2">
+                                    <p className="text-[10px] text-violet-300 font-bold mt-2">
                                       {price.source}
                                     </p>
                                   </div>
@@ -436,7 +436,7 @@ export default function AnalyticsClient() {
               />
 
               <section className="rounded-[2rem] border border-white/[0.06] bg-white/[0.03] p-6 backdrop-blur-2xl">
-                <div className="flex items-center gap-2 text-purple-400 mb-4">
+                <div className="flex items-center gap-2 text-violet-300 mb-4">
                   <Activity size={14} />
                   <span className="text-[10px] font-black uppercase tracking-[0.28em]">
                     Summary
@@ -480,8 +480,8 @@ function MetricCard({
   icon: ReactNode;
 }) {
   return (
-    <div className="rounded-3xl border border-white/[0.05] bg-white/[0.03] p-5 backdrop-blur-2xl hover:border-purple-500/20 transition-all">
-      <div className="flex items-center gap-2 text-purple-400 mb-2">
+    <div className="rounded-3xl border border-white/[0.05] bg-white/[0.03] p-5 backdrop-blur-2xl hover:border-violet-300/20 transition-all">
+      <div className="flex items-center gap-2 text-violet-300 mb-2">
         {icon}
 
         <span className="text-[9px] font-black uppercase tracking-[0.24em]">
@@ -506,8 +506,8 @@ function MiniStat({
   icon: ReactNode;
 }) {
   return (
-    <div className="rounded-2xl border border-white/[0.05] bg-white/[0.025] p-4 backdrop-blur-xl hover:border-purple-500/20 transition-all">
-      <div className="flex items-center gap-2 text-purple-400 mb-1">
+    <div className="rounded-2xl border border-white/[0.05] bg-white/[0.025] p-4 backdrop-blur-xl hover:border-violet-300/20 transition-all">
+      <div className="flex items-center gap-2 text-violet-300 mb-1">
         {icon}
 
         <span className="text-[8px] font-black uppercase tracking-[0.22em]">
@@ -535,7 +535,7 @@ function DistributionPanel({
     <section className="rounded-[2rem] border border-white/[0.06] bg-white/[0.03] p-6 backdrop-blur-2xl">
       <div className="flex items-start justify-between gap-4 mb-6">
         <div>
-          <div className="flex items-center gap-2 text-purple-400 mb-2">
+          <div className="flex items-center gap-2 text-violet-300 mb-2">
             {icon}
 
             <span className="text-[10px] font-black uppercase tracking-[0.28em]">
@@ -566,7 +566,7 @@ function DistributionPanel({
 
               <div className="h-2 rounded-full bg-white/[0.06] overflow-hidden">
                 <div
-                  className="h-full rounded-full bg-purple-500 shadow-[0_0_16px_rgba(168,85,247,0.45)]"
+                  className="h-full rounded-full bg-purple-500 shadow-[0_0_16px_rgba(139,92,246,0.45)]"
                   style={{
                     width: `${Math.max(item.percentage, 3)}%`,
                   }}
@@ -583,7 +583,7 @@ function DistributionPanel({
 function SummaryItem({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-2xl border border-white/[0.05] bg-white/[0.025] p-4">
-      <p className="text-[9px] text-purple-400 font-black uppercase tracking-[0.22em]">
+      <p className="text-[9px] text-violet-300 font-black uppercase tracking-[0.22em]">
         {label}
       </p>
 
@@ -595,7 +595,7 @@ function SummaryItem({ label, value }: { label: string; value: string }) {
 function EmptyState({ title, body }: { title: string; body: string }) {
   return (
     <div className="rounded-3xl border border-white/[0.06] bg-white/[0.02] p-12 text-center">
-      <WalletCards className="mx-auto mb-4 text-purple-400" size={38} />
+      <WalletCards className="mx-auto mb-4 text-violet-300" size={38} />
 
       <h3 className="text-2xl font-black mb-2">{title}</h3>
 
@@ -603,7 +603,7 @@ function EmptyState({ title, body }: { title: string; body: string }) {
 
       <Link
         href="/cards"
-        className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-500 text-white px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest"
+        className="inline-flex items-center gap-2 bg-violet-500 hover:bg-violet-400 text-white px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest"
       >
         <Plus size={14} />
         Browse Cards

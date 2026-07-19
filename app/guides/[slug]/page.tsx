@@ -1,12 +1,19 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArrowLeft, ArrowRight, BookOpen, Clock3, ShieldCheck } from "lucide-react";
+
 import AppLayout from "@/components/layout/AppLayout";
+import {
+  GlassPanel,
+  PageHero,
+  PageShell,
+  PrimaryLink,
+  SecondaryLink,
+} from "@/components/ui/SitePage";
 import { getGuide, guides } from "@/lib/guides";
 
 export async function generateStaticParams() {
-  return guides.map((guide) => ({
-    slug: guide.slug,
-  }));
+  return guides.map((guide) => ({ slug: guide.slug }));
 }
 
 export async function generateMetadata({
@@ -16,21 +23,13 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const guide = getGuide(slug);
-
-  if (!guide) {
-    return {
-      title: "Guide Not Found | PokeValue",
-    };
-  }
+  if (!guide) return { title: "Guide Not Found | PokeValue" };
 
   const canonical = `https://www.pokevalue.co.uk/guides/${guide.slug}`;
-
   return {
     title: `${guide.title} | PokeValue`,
     description: guide.description,
-    alternates: {
-      canonical,
-    },
+    alternates: { canonical },
     openGraph: {
       title: guide.title,
       description: guide.description,
@@ -48,21 +47,18 @@ export default async function GuideArticlePage({
 }) {
   const { slug } = await params;
   const guide = getGuide(slug);
-
   if (!guide) notFound();
 
-  const relatedGuides = guides
-    .filter((item) => item.slug !== guide.slug && item.category === guide.category)
-    .slice(0, 3);
-
+  const relatedGuides = guides.filter((item) => item.slug !== guide.slug).slice(0, 3);
   const canonical = `https://www.pokevalue.co.uk/guides/${guide.slug}`;
+  const date = "2026-07-18";
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: guide.title,
     description: guide.description,
-    datePublished: "2026-07-18",
-    dateModified: "2026-07-18",
+    datePublished: date,
+    dateModified: date,
     author: {
       "@type": "Organization",
       name: "PokeValue Editorial Team",
@@ -75,29 +71,13 @@ export default async function GuideArticlePage({
     },
     mainEntityOfPage: canonical,
   };
-
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://www.pokevalue.co.uk",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Guides",
-        item: "https://www.pokevalue.co.uk/guides",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: guide.title,
-        item: canonical,
-      },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.pokevalue.co.uk" },
+      { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.pokevalue.co.uk/guides" },
+      { "@type": "ListItem", position: 3, name: guide.title, item: canonical },
     ],
   };
 
@@ -105,138 +85,111 @@ export default async function GuideArticlePage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(articleJsonLd).replace(/</g, "\\u003c"),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd).replace(/</g, "\\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c") }}
       />
       <AppLayout>
-      <article className="max-w-5xl mx-auto px-6 py-12">
-        <Link
-          href="/guides"
-          className="text-sm font-black text-purple-400 hover:text-purple-300 transition"
-        >
-          ← Back to all guides
-        </Link>
+        <PageShell width="article">
+          <Link
+            href="/guides"
+            className="mb-5 inline-flex items-center gap-2 text-sm font-black text-zinc-500 transition hover:text-white"
+          >
+            <ArrowLeft className="h-4 w-4" /> Back to guides
+          </Link>
 
-        <header className="mt-8 rounded-3xl border border-white/[0.06] bg-white/[0.03] p-8 md:p-10 backdrop-blur-2xl">
-          <p className="text-xs font-black uppercase tracking-wider text-purple-400 mb-4">
-            {guide.category} • {guide.readTime} • Updated {guide.updated}
-          </p>
+          <PageHero
+            compact
+            eyebrow={guide.category}
+            icon={<BookOpen className="h-4 w-4" />}
+            title={guide.title}
+            description={<p>{guide.description}</p>}
+            actions={
+              <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-zinc-600">
+                <span className="inline-flex items-center gap-1.5">
+                  <Clock3 className="h-3.5 w-3.5" /> {guide.readTime}
+                </span>
+                <span>Updated {guide.updated}</span>
+                <span>
+                  Reviewed by{" "}
+                  <Link href="/editorial-policy" className="text-zinc-300 hover:text-white">
+                    PokeValue Editorial Team
+                  </Link>
+                </span>
+              </div>
+            }
+          />
 
-          <h1 className="text-4xl md:text-6xl font-black text-white leading-tight">
-            {guide.title}
-          </h1>
-
-          <p className="mt-6 text-lg text-zinc-400 leading-8">
-            {guide.description}
-          </p>
-
-          <p className="mt-5 text-sm text-zinc-500">
-            Written and reviewed by{" "}
-            <Link
-              href="/editorial-policy"
-              className="font-bold text-zinc-300 hover:text-white"
-            >
-              PokeValue Editorial Team
-            </Link>
-          </p>
-        </header>
-
-        <div className="mt-8 rounded-3xl border border-white/[0.06] bg-zinc-950/50 p-8 md:p-10">
-          <div className="space-y-10 text-zinc-300 leading-8">
+          <article className="mt-7 space-y-5">
             {guide.sections.map((section, index) => (
-              <section key={section.heading}>
-                <p className="text-xs font-black text-purple-400 mb-3">
-                  0{index + 1}
-                </p>
-
-                <h2 className="text-2xl md:text-3xl font-black text-white mb-5">
-                  {section.heading}
-                </h2>
-
-                <div className="space-y-4 text-zinc-400">
-                  {section.body.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
+              <GlassPanel key={section.heading} as="section" className="scroll-mt-24">
+                <div className="grid gap-5 sm:grid-cols-[54px_1fr]">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-violet-200/[0.12] bg-violet-300/[0.045] text-xs font-black text-violet-200/80">
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-black leading-tight tracking-[-0.035em] text-white sm:text-3xl">
+                      {section.heading}
+                    </h2>
+                    <div className="mt-5 space-y-5 text-[15px] leading-8 text-zinc-400">
+                      {section.body.map((paragraph) => (
+                        <p key={paragraph}>{paragraph}</p>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              </section>
+              </GlassPanel>
             ))}
-          </div>
-        </div>
+          </article>
 
-        <section className="mt-10 rounded-3xl border border-purple-500/20 bg-purple-500/5 p-8">
-          <h2 className="text-2xl font-black text-white mb-3">
-            Research cards on PokeValue
-          </h2>
-
-          <p className="text-zinc-400 leading-7 mb-5">
-            After reading this guide, use PokeValue to browse Pokémon cards,
-            explore sets, compare rarities, check estimated values, and track
-            your collection.
-          </p>
-
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/cards"
-              className="rounded-xl bg-purple-600 px-5 py-3 text-sm font-bold text-white hover:bg-purple-500 transition"
-            >
-              Browse Cards
-            </Link>
-
-            <Link
-              href="/sets"
-              className="rounded-xl border border-white/10 px-5 py-3 text-sm font-bold text-zinc-200 hover:bg-white/5 transition"
-            >
-              Explore Sets
-            </Link>
-
-            <Link
-              href="/portfolio"
-              className="rounded-xl border border-white/10 px-5 py-3 text-sm font-bold text-zinc-200 hover:bg-white/5 transition"
-            >
-              View Portfolio
-            </Link>
-          </div>
-        </section>
-
-        <section className="mt-12">
-          <p className="text-sm font-semibold text-purple-400 mb-2">
-            Related Guides
-          </p>
-
-          <h2 className="text-3xl font-black text-white mb-6">
-            Continue learning
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-5">
-            {relatedGuides.map((related) => (
-              <Link
-                key={related.slug}
-                href={`/guides/${related.slug}`}
-                className="rounded-2xl border border-white/[0.08] bg-zinc-950/60 p-5 hover:border-purple-500/40 transition"
-              >
-                <p className="text-[11px] font-black uppercase tracking-wider text-purple-400 mb-3">
-                  {related.category} • {related.readTime}
+          <GlassPanel className="mt-7 border-violet-200/[0.12] bg-violet-300/[0.03]">
+            <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
+              <div>
+                <div className="flex items-center gap-2 text-violet-200/80">
+                  <ShieldCheck className="h-4 w-4" />
+                  <p className="text-[10px] font-black uppercase tracking-[0.22em]">Put the process into practice</p>
+                </div>
+                <h2 className="mt-3 text-2xl font-black tracking-tight text-white">
+                  Verify the exact card and marketplace source.
+                </h2>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-zinc-500">
+                  Search the archive by set and collector number, then read the
+                  pricing methodology before relying on any estimate.
                 </p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <PrimaryLink href="/cards" arrow>Search cards</PrimaryLink>
+                <SecondaryLink href="/methodology">Methodology</SecondaryLink>
+              </div>
+            </div>
+          </GlassPanel>
 
-                <h3 className="text-base font-black text-white leading-snug">
-                  {related.title}
-                </h3>
-
-                <p className="mt-3 text-sm text-zinc-400 leading-6">
-                  {related.description}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </section>
-      </article>
+          <section className="mt-9">
+            <p className="pv-section-kicker">Continue learning</p>
+            <h2 className="pv-section-title">Related collector guides</h2>
+            <div className="mt-5 grid gap-4 md:grid-cols-3">
+              {relatedGuides.map((related) => (
+                <Link
+                  key={related.slug}
+                  href={`/guides/${related.slug}`}
+                  className="group rounded-[1.5rem] border border-white/[0.07] bg-white/[0.025] p-5 transition hover:-translate-y-1 hover:border-violet-200/[0.17] hover:bg-white/[0.045]"
+                >
+                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-violet-200/70">
+                    {related.category}
+                  </p>
+                  <h3 className="mt-3 text-base font-black leading-snug text-white">
+                    {related.title}
+                  </h3>
+                  <p className="mt-4 inline-flex items-center gap-2 text-xs font-black text-zinc-500 group-hover:text-violet-200">
+                    Read next <ArrowRight className="h-3.5 w-3.5" />
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        </PageShell>
       </AppLayout>
     </>
   );

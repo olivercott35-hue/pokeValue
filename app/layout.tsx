@@ -8,7 +8,6 @@ import "@fontsource/sora/800.css";
 
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import Script from "next/script";
 import { CurrencyProvider } from "@/components/CurrencyProvider";
 import AdSenseScript from "@/components/AdSenseScript";
 
@@ -71,21 +70,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-GB">
-      <body className="bg-[#050505] text-white font-sora">
-        <Script id="google-consent-default" strategy="beforeInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('consent', 'default', {
-              ad_storage: 'denied',
-              analytics_storage: 'denied',
-              ad_user_data: 'denied',
-              ad_personalization: 'denied',
-              wait_for_update: 500
-            });
-          `}
-        </Script>
-
+      <body className="bg-[#050507] text-white font-sora">
         <CurrencyProvider>
           <AdSenseScript publisherId={adsensePublisherId} />
 

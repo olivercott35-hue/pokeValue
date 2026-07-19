@@ -1,97 +1,46 @@
-# PokeValue AdSense deployment checklist
+# PokeValue deployment checklist
 
-The code changes in this package remove the main technical blockers found in the uploaded project. AdSense approval is still decided by Google and cannot be guaranteed.
+## Import
 
-## 1. Install and validate locally
+1. Back up the current project folder.
+2. Extract this ZIP into a new folder.
+3. Copy the old project’s hidden `.git` folder into the new folder.
+4. Copy the old `.env.local` into the new folder. If none exists, copy `.env.example` to `.env.local` and add private keys only there.
+5. Open the new folder in Visual Studio Code.
+
+## Build
+
+Run these commands from the folder containing `package.json`:
 
 ```powershell
 pnpm install
 pnpm build
+```
+
+Do not deploy if the build fails. Then test locally:
+
+```powershell
 pnpm dev
 ```
 
-Open these routes and check that each page loads without a console error:
+Test `/`, `/cards`, a card detail, `/sets`, a set detail, `/guides`, every guide, `/methodology`, `/editorial-policy`, `/about`, `/contact`, `/privacy`, `/terms`, `/robots.txt`, `/sitemap.xml` and `/ads.txt`.
 
-- `/`
-- `/cards`
-- `/cards/ex15-100`
-- `/sets`
-- `/guides`
-- `/methodology`
-- `/editorial-policy`
-- `/privacy`
-- `/terms`
-- `/robots.txt`
-- `/sitemap.xml`
-- `/ads.txt`
+## Git and Vercel
 
-The Charizard `ex15-100` card should now use the same Cardmarket-based estimate everywhere instead of showing a TCGplayer value in one place and a Cardmarket value in another.
-
-## 2. Environment variables
-
-Add the variables you actually use in `.env.local` and in Vercel. Never commit `.env.local`.
-
-```env
-POKEMON_TCG_API_KEY=
-GEMINI_API_KEY=
-OPENAI_API_KEY=
-NEXT_PUBLIC_BASE_URL=https://www.pokevalue.co.uk
-NEXT_PUBLIC_ADSENSE_PUBLISHER_ID=ca-pub-3780442870354296
+```powershell
+git status
+git add -A
+git diff --cached --name-only
+git commit -m "Deploy premium AdSense-ready rebuild"
+git push origin main
 ```
 
-## 3. Enable a Google-certified consent message
+Confirm `.env.local`, `.next` and `node_modules` are not staged. Wait for the Vercel deployment to show **Ready**.
 
-In AdSense, open **Privacy & messaging**, create a European regulations message for the UK and EEA, and publish it for `pokevalue.co.uk`. The message needs consent, reject/do-not-consent, and manage-options choices.
+## AdSense and Search Console
 
-The custom PokeValue cookie banner has been removed from the root layout so it does not conflict with the certified Google message. Consent Mode defaults advertising storage to denied until the consent system updates it.
-
-## 4. Confirm ads.txt
-
-The package includes:
-
-```text
-google.com, pub-3780442870354296, DIRECT, f08c47fec0942fa0
-```
-
-After deployment, confirm that `https://www.pokevalue.co.uk/ads.txt` displays only plain text and that AdSense recognises the same publisher ID.
-
-## 5. Submit the correct sitemap
-
-In Google Search Console, submit:
-
-```text
-https://www.pokevalue.co.uk/sitemap.xml
-```
-
-The sitemap now excludes private browser tools and card pages without enough useful data. The crawler file is now correctly named `app/robots.ts`.
-
-## 6. Ad placement
-
-The AdSense script is loaded only on the strongest public content routes:
-
-- Home
-- Card Explorer
-- Set Explorer
-- Guides and guide articles
-
-It is not loaded on individual card pages, individual set pages, News, Collection, Favourites, Portfolio, Analytics, Market Movers, Scanner, Wishlist, Contact, About, Pricing Methodology, Editorial Policy, Privacy or Terms. This conservative setup reduces approval risk; detail-page ads can be added later after those templates have been reviewed live.
-
-Do not manually add ad units to empty states, menus, buttons, loading screens or pages that only contain a personal tool.
-
-## 7. Content review before resubmission
-
-Before requesting another review:
-
-- Review the four rewritten guides for factual accuracy and add original screenshots or first-hand examples where available.
-- Keep article read times matched to the actual article length.
-- Check that article dates are specific and accurate.
-- Remove or update any article that is no longer current.
-- Test every sidebar and footer link on desktop and mobile.
-
-## 8. Resubmit only after the live deployment is checked
-
-After deployment, use an incognito window and inspect the initial HTML and visible page content. Then request review from the AdSense Sites page.
-
-## News section status
-
-The existing short news posts are intentionally removed from navigation, excluded from the sitemap, marked `noindex`, and excluded from AdSense delivery. Rewrite them as sourced, substantial reporting before making them public again.
+- In AdSense, publish a certified European regulations message for UK/EEA users.
+- Confirm AdSense detects the site and `ads.txt`.
+- Submit `https://www.pokevalue.co.uk/sitemap.xml` in Search Console.
+- Request indexing for the homepage, cards, sets, guides, methodology and editorial-policy pages.
+- Request review only after the new live pages have been crawled.

@@ -1,79 +1,40 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
-import { SearchX, Home, Boxes, Sparkles } from "lucide-react";
+import { Boxes, Home, SearchX, Sparkles } from "lucide-react";
+
+import AppLayout from "@/components/layout/AppLayout";
+import { GlassPanel, PageShell } from "@/components/ui/SitePage";
 
 export default function NotFound() {
   return (
-    <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#050505] px-6">
-      {/* Background */}
-      <div className="pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-purple-600/10 blur-[180px]" />
-      <div className="pointer-events-none absolute bottom-0 left-0 h-[500px] w-[500px] rounded-full bg-fuchsia-600/10 blur-[180px]" />
-
-      <div className="relative w-full max-w-3xl rounded-[2rem] border border-white/[0.06] bg-white/[0.03] p-10 backdrop-blur-2xl text-center">
-        <div className="mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-full border border-purple-500/20 bg-purple-500/10">
-          <SearchX size={46} className="text-purple-400" />
-        </div>
-
-        <p className="mb-3 text-[11px] font-black uppercase tracking-[0.35em] text-purple-400">
-          ERROR 404
-        </p>
-
-        <h1 className="text-5xl md:text-6xl font-black tracking-tight bg-gradient-to-r from-white via-zinc-200 to-purple-400 bg-clip-text text-transparent">
-          Lost in the Pokédex
-        </h1>
-
-        <p className="mx-auto mt-6 max-w-2xl text-zinc-400 leading-8">
-          The page you're looking for doesn't exist, may have been moved, or the
-          link you followed is no longer available.
-        </p>
-
-        <div className="mt-10 grid gap-4 sm:grid-cols-3">
-          <Link
-            href="/"
-            className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-purple-500/40 hover:bg-white/[0.05]"
-          >
-            <Home className="mx-auto mb-3 text-purple-400" size={24} />
-
-            <h2 className="font-black text-white">Home</h2>
-
-            <p className="mt-2 text-sm text-zinc-500">
-              Return to the homepage.
-            </p>
-          </Link>
-
-          <Link
-            href="/cards"
-            className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-purple-500/40 hover:bg-white/[0.05]"
-          >
-            <Sparkles className="mx-auto mb-3 text-purple-400" size={24} />
-
-            <h2 className="font-black text-white">Browse Cards</h2>
-
-            <p className="mt-2 text-sm text-zinc-500">
-              Explore thousands of Pokémon cards.
-            </p>
-          </Link>
-
-          <Link
-            href="/sets"
-            className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-purple-500/40 hover:bg-white/[0.05]"
-          >
-            <Boxes className="mx-auto mb-3 text-purple-400" size={24} />
-
-            <h2 className="font-black text-white">Explore Sets</h2>
-
-            <p className="mt-2 text-sm text-zinc-500">
-              Browse every Pokémon expansion.
-            </p>
-          </Link>
-        </div>
-
-        <div className="mt-10 rounded-2xl border border-purple-500/20 bg-purple-500/5 p-5">
-          <p className="text-sm text-zinc-400">
-            Looking for Pokémon card prices, collection tracking or market
-            insights? Use the navigation to continue exploring PokeValue.
+    <AppLayout>
+      <PageShell width="article" className="flex min-h-[70vh] items-center">
+        <GlassPanel className="w-full text-center">
+          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-[1.8rem] border border-violet-200/[0.14] bg-violet-300/[0.05] text-violet-200/80">
+            <SearchX className="h-9 w-9" />
+          </div>
+          <p className="mt-7 text-[10px] font-black uppercase tracking-[0.28em] text-violet-200/70">Error 404</p>
+          <h1 className="mt-3 text-4xl font-black tracking-[-0.05em] text-white sm:text-6xl">This record is not in the archive.</h1>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-zinc-500">
+            The page may have moved, the link may be old or the card identifier may be incorrect. Continue through one of the verified archive routes below.
           </p>
-        </div>
-      </div>
-    </main>
+          <div className="mt-8 grid gap-3 sm:grid-cols-3">
+            <NotFoundLink href="/" icon={<Home className="h-5 w-5" />} title="Home" text="Return to the collector dashboard." />
+            <NotFoundLink href="/cards" icon={<Sparkles className="h-5 w-5" />} title="Cards" text="Search the complete card archive." />
+            <NotFoundLink href="/sets" icon={<Boxes className="h-5 w-5" />} title="Sets" text="Browse set checklists by era." />
+          </div>
+        </GlassPanel>
+      </PageShell>
+    </AppLayout>
+  );
+}
+
+function NotFoundLink({ href, icon, title, text }: { href: string; icon: ReactNode; title: string; text: string }) {
+  return (
+    <Link href={href} className="group rounded-[1.4rem] border border-white/[0.07] bg-white/[0.025] p-5 text-left transition hover:-translate-y-1 hover:border-violet-200/[0.17] hover:bg-white/[0.045]">
+      <div className="pv-icon-box">{icon}</div>
+      <p className="mt-4 font-black text-white">{title}</p>
+      <p className="mt-2 text-xs leading-6 text-zinc-600">{text}</p>
+    </Link>
   );
 }

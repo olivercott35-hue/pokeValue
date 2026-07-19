@@ -1,142 +1,87 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  BadgePoundSterling,
-  CheckCircle2,
-  Database,
-  ExternalLink,
-  RefreshCw,
-  Scale,
-  ShieldCheck,
-} from "lucide-react";
-import AppLayout from "@/components/layout/AppLayout";
+import { Scale } from "lucide-react";
+
+import PolicyPage from "@/components/ui/PolicyPage";
+import { GlassPanel, PrimaryLink, SecondaryLink } from "@/components/ui/SitePage";
 
 export const metadata: Metadata = {
-  title: "Pokémon Card Pricing Methodology",
+  title: "Pricing Methodology | PokeValue",
   description:
-    "Learn how PokeValue selects marketplace price fields, converts currencies, handles variants and avoids displaying unsupported Pokémon card values.",
-  alternates: {
-    canonical: "https://www.pokevalue.co.uk/methodology",
-  },
+    "See how PokeValue selects and labels Pokémon card marketplace estimates, handles variants and explains limitations for UK collectors.",
+  alternates: { canonical: "https://www.pokevalue.co.uk/methodology" },
 };
 
 const sections = [
   {
-    icon: Database,
-    title: "Card and set data",
+    title: "Purpose of the displayed estimate",
     paragraphs: [
-      "PokeValue stores a local snapshot of Pokémon TCG card and set records sourced from the Pokémon TCG API. The local archive helps card, set and search pages return consistent information without relying on a fresh third-party request for every visitor.",
-      "Card names, set details, collector numbers, images, rarities and marketplace fields may still be incomplete when the upstream source has not supplied them. PokeValue shows a missing-data message rather than inventing a value.",
+      <p key="a">PokeValue displays marketplace estimates to make card research faster. The figure is a reference point for the database record, not a promise that a particular copy will sell for that amount. It does not automatically account for the condition, language, finish, edition, authenticity or grading potential of the card in your hand.</p>,
+      <p key="b">The estimate should be used to identify cards that deserve closer research. For an important buying, selling or grading decision, compare several recent transactions that match the exact printing and condition.</p>,
     ],
   },
   {
-    icon: Scale,
-    title: "One price rule across the site",
+    title: "One resolver across the platform",
     paragraphs: [
-      "Every PokeValue page uses the same deterministic price resolver. For a UK and European audience, an available Cardmarket trend price is selected first. If Cardmarket data is unavailable, PokeValue falls back to the market field for one clearly identified TCGplayer card variant.",
-      "The selected marketplace, currency and variant are displayed on the card page. Reverse-holo, first-edition, unlimited, normal and holofoil prices are not silently mixed together.",
+      <p key="a">Card pages, set checklists, search results, favourites, collection and portfolio tools use the same shared pricing resolver. This prevents one page from silently using a different marketplace or variant from another page.</p>,
+      <p key="b">When a record has usable Cardmarket information, the resolver prioritises that source for the UK and European context. When Cardmarket data is unavailable, one available TCGplayer market variant may be selected as a fallback. The source and chosen variant are shown with the estimate wherever the interface has room.</p>,
     ],
   },
   {
-    icon: BadgePoundSterling,
+    title: "Variant selection",
+    paragraphs: [
+      <p key="a">A card record can contain several price fields, such as normal, holofoil, reverse-holofoil, first-edition or unlimited. These are not interchangeable. PokeValue follows a fixed preference order and labels the selected field rather than simply choosing the highest number.</p>,
+      <p key="b">The database cannot inspect a physical card. You must compare the displayed variant with the finish and edition in your hand. When they do not match, do not apply the estimate to that card.</p>,
+    ],
+  },
+  {
     title: "Currency display",
     paragraphs: [
-      "Marketplace values are supplied in euros or US dollars. PokeValue converts them into the visitor's chosen display currency using central site conversion factors. These conversions are approximate display estimates, not live foreign-exchange quotes.",
-      "Changing the display currency does not change the underlying marketplace value or card variant selected by the resolver.",
+      <p key="a">PokeValue is UK-focused and displays GBP by default. Source data may originate in euros or US dollars, so currency presentation is an aid to comparison rather than a locked exchange contract. Conversion rates and marketplace values can change independently.</p>,
+      <p key="b">A converted marketplace estimate is not the same as expected net proceeds. Selling fees, payment fees, postage, insurance, import costs, taxes and negotiation can materially change the amount a seller receives.</p>,
     ],
   },
   {
-    icon: RefreshCw,
-    title: "Updates and reference fields",
+    title: "Condition and graded cards",
     paragraphs: [
-      "Where the source supplies an update date, PokeValue displays it beside the marketplace reference. Cardmarket averages, trend prices and low listings are shown as separately labelled reference fields rather than being connected into a fictional historical chart.",
-      "A marketplace estimate is not the same as a confirmed sale. Condition, language, centering, grading, seller fees and demand can all cause the actual sale price to differ.",
+      <p key="a">Raw marketplace estimates do not assign a professional condition grade to your copy. Whitening, scratches, dents, creases, print lines, centering and surface pressure marks may move a real sale well below or above a general market reference.</p>,
+      <p key="b">Graded cards belong to a separate market. The grading company, assigned grade, population, label, holder and buyer confidence all affect value. A raw card should never be valued as though it has already received a top grade.</p>,
     ],
   },
   {
-    icon: ShieldCheck,
-    title: "Missing and low-confidence data",
+    title: "Freshness and missing data",
     paragraphs: [
-      "PokeValue does not substitute zero for a missing price. Cards without enough useful information are excluded from the public XML sitemap and may be marked noindex until a card image, set identity and marketplace estimate are available.",
-      "Collection totals are estimates based on the same resolver used by public card pages, so a saved card should not show a different underlying market value elsewhere on the site.",
+      <p key="a">Marketplace feeds update on their own schedules and may be incomplete. Some records have no usable price, while others may retain an estimate after market activity has slowed. PokeValue does not invent a number when the underlying record lacks a usable field.</p>,
+      <p key="b">For thinly traded cards, unusual errors, rare vintage printings or high-value decisions, recent matching sold evidence and specialist judgement are more important than a database aggregate.</p>,
+    ],
+  },
+  {
+    title: "Responsible use",
+    paragraphs: [
+      <p key="a">Use the exact set name and collector number, confirm the finish, inspect condition outside the sleeve, compare multiple matching sales and calculate the likely costs of the sales channel. A valuation range is usually more honest than an exact figure.</p>,
+      <p key="b">PokeValue is not a financial adviser, auction house, grading company or authentication service. Report suspected data problems through the <Link key="contact" href="/contact" className="font-bold text-violet-200/85 hover:text-white">Contact page</Link>.</p>,
     ],
   },
 ];
 
 export default function MethodologyPage() {
   return (
-    <AppLayout>
-      <main className="relative mx-auto max-w-6xl px-6 py-10 md:px-10 md:py-14">
-        <div className="pointer-events-none absolute right-0 top-0 h-96 w-96 rounded-full bg-purple-500/10 blur-[140px]" />
-
-        <header className="relative border-b border-white/[0.06] pb-10">
-          <div className="inline-flex items-center gap-2 rounded-full border border-purple-500/20 bg-purple-500/10 px-3 py-1 text-xs font-black uppercase tracking-[0.22em] text-purple-300">
-            <CheckCircle2 size={14} />
-            Transparent pricing
-          </div>
-
-          <h1 className="mt-6 max-w-4xl text-4xl font-black tracking-tight text-white sm:text-5xl md:text-6xl">
-            How PokeValue chooses a card price
-          </h1>
-
-          <p className="mt-5 max-w-3xl text-base leading-8 text-zinc-400">
-            This page explains the data source, marketplace priority, variant
-            selection and limitations behind every price estimate displayed on
-            PokeValue.
-          </p>
-
-          <p className="mt-4 text-sm text-zinc-600">
-            Methodology last reviewed: 18 July 2026
-          </p>
-        </header>
-
-        <div className="relative mt-8 space-y-5">
-          {sections.map(({ icon: Icon, title, paragraphs }) => (
-            <section
-              key={title}
-              className="rounded-3xl border border-white/[0.06] bg-white/[0.03] p-6 backdrop-blur-2xl md:p-8"
-            >
-              <div className="flex items-center gap-3">
-                <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-purple-500/20 bg-purple-500/10 text-purple-300">
-                  <Icon size={19} />
-                </span>
-                <h2 className="text-2xl font-black text-white">{title}</h2>
-              </div>
-
-              <div className="mt-5 space-y-4 text-sm leading-8 text-zinc-400">
-                {paragraphs.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </div>
-            </section>
-          ))}
+    <PolicyPage
+      eyebrow="Trust & transparency"
+      title="Pricing methodology"
+      description={<p>How PokeValue chooses a marketplace field, keeps that rule consistent across pages and communicates the limitations of card-price data.</p>}
+      icon={<Scale className="h-4 w-4" />}
+      updated="18 July 2026"
+      sections={sections}
+    >
+      <GlassPanel className="border-violet-200/[0.11] bg-violet-300/[0.03]">
+        <h2 className="text-2xl font-black text-white">Research the exact record</h2>
+        <p className="mt-3 max-w-3xl text-sm leading-7 text-zinc-500">Start with the card archive, then use the valuation guide to turn a general source estimate into a realistic condition-aware range.</p>
+        <div className="mt-5 flex flex-wrap gap-3">
+          <PrimaryLink href="/cards" arrow>Search cards</PrimaryLink>
+          <SecondaryLink href="/guides/how-to-value-pokemon-cards">Valuation guide</SecondaryLink>
         </div>
-
-        <section className="relative mt-8 rounded-3xl border border-purple-500/20 bg-purple-500/[0.06] p-6 md:p-8">
-          <h2 className="text-2xl font-black text-white">Report a problem</h2>
-          <p className="mt-3 max-w-3xl text-sm leading-7 text-zinc-400">
-            Include the card name, set, collector number and the value you
-            believe is incorrect. PokeValue can then compare the stored source
-            fields and correct a resolver or data issue.
-          </p>
-
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-xl bg-purple-600 px-5 py-3 text-sm font-black text-white transition hover:bg-purple-500"
-            >
-              Contact PokeValue
-              <ExternalLink size={14} />
-            </Link>
-            <Link
-              href="/editorial-policy"
-              className="inline-flex items-center gap-2 rounded-xl border border-white/10 px-5 py-3 text-sm font-black text-zinc-300 transition hover:bg-white/[0.05] hover:text-white"
-            >
-              Editorial policy
-            </Link>
-          </div>
-        </section>
-      </main>
-    </AppLayout>
+      </GlassPanel>
+    </PolicyPage>
   );
 }

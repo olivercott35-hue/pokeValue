@@ -116,8 +116,8 @@ export default function CardClient({ card }: { card: any }) {
 
   return (
     <AppLayout>
-      <div className="relative min-h-full w-full overflow-x-hidden px-4 py-6 text-white sm:px-6 md:px-10 md:py-10">
-        <div className="pointer-events-none absolute top-0 right-[-120px] h-80 w-80 rounded-full bg-purple-500/10 blur-[120px] sm:right-24 sm:h-96 sm:w-96 sm:blur-[140px]" />
+      <div className="pv-page w-full overflow-x-hidden text-white">
+        <div className="pointer-events-none absolute top-0 right-[-120px] h-80 w-80 rounded-full bg-violet-500/10 blur-[120px] sm:right-24 sm:h-96 sm:w-96 sm:blur-[140px]" />
         <div className="pointer-events-none absolute bottom-20 left-[-140px] h-80 w-80 rounded-full bg-fuchsia-500/10 blur-[130px] sm:left-24 sm:h-96 sm:w-96 sm:blur-[150px]" />
 
         <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-6 xl:grid-cols-12">
@@ -133,7 +133,7 @@ export default function CardClient({ card }: { card: any }) {
           >
             <div className="sticky top-6">
               <div className="group relative mx-auto max-w-[320px] rounded-[2rem] border border-white/[0.06] bg-white/[0.035] p-3 shadow-[0_24px_80px_rgba(0,0,0,0.5)] backdrop-blur-2xl sm:max-w-[380px] sm:p-4">
-                <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-gradient-to-br from-purple-500/20 via-transparent to-fuchsia-500/10 opacity-50 blur-2xl" />
+                <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-gradient-to-br from-violet-500/20 via-transparent to-fuchsia-500/10 opacity-50 blur-2xl" />
 
                 <img
                   src={card.images?.large || card.images?.small}
@@ -155,9 +155,9 @@ export default function CardClient({ card }: { card: any }) {
                 stiffness: 135,
                 damping: 24,
               }}
-              className="rounded-3xl border border-white/[0.06] bg-white/[0.035] p-5 backdrop-blur-2xl sm:p-6"
+              className="pv-hero pv-shine"
             >
-              <div className="mb-2 flex items-center gap-2 text-purple-400">
+              <div className="mb-2 flex items-center gap-2 text-violet-300">
                 <Sparkles size={14} />
 
                 <span className="text-[9px] font-black uppercase tracking-[0.24em] sm:text-[10px] sm:tracking-[0.3em]">
@@ -165,7 +165,7 @@ export default function CardClient({ card }: { card: any }) {
                 </span>
               </div>
 
-              <h1 className="bg-gradient-to-r from-white via-zinc-200 to-purple-400 bg-clip-text text-4xl font-black tracking-tight text-transparent sm:text-5xl md:text-6xl">
+              <h1 className="pv-title pv-title-compact">
                 {card.name}
               </h1>
 
@@ -211,12 +211,12 @@ export default function CardClient({ card }: { card: any }) {
               }}
               className="relative overflow-hidden rounded-3xl border border-white/[0.06] bg-white/[0.035] p-5 backdrop-blur-2xl sm:p-6"
             >
-              <div className="pointer-events-none absolute right-0 top-0 h-72 w-72 rounded-full bg-purple-500/10 blur-[100px]" />
+              <div className="pointer-events-none absolute right-0 top-0 h-72 w-72 rounded-full bg-violet-500/10 blur-[100px]" />
 
               <div className="relative flex flex-col gap-6">
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <div className="mb-1 flex items-center gap-2 text-purple-400">
+                    <div className="mb-1 flex items-center gap-2 text-violet-300">
                       <TrendingUp size={14} />
 
                       <span className="text-[10px] font-black uppercase tracking-[0.25em]">
@@ -275,7 +275,7 @@ export default function CardClient({ card }: { card: any }) {
                       href={prices.sourceUrl}
                       target="_blank"
                       rel="noreferrer noopener nofollow"
-                      className="inline-flex items-center gap-2 font-bold text-purple-300 transition hover:text-purple-200"
+                      className="inline-flex items-center gap-2 font-bold text-violet-200 transition hover:text-purple-200"
                     >
                       View source
                       <ExternalLink size={13} />
@@ -546,7 +546,7 @@ function Metric({
 }) {
   return (
     <div className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-4 backdrop-blur-xl">
-      <div className="mb-2 flex items-center gap-2 text-purple-400">
+      <div className="mb-2 flex items-center gap-2 text-violet-300">
         {icon}
 
         <span className="text-[9px] font-black uppercase tracking-[0.22em]">
@@ -570,7 +570,7 @@ function Info({
 }) {
   return (
     <div className="rounded-2xl border border-white/[0.05] bg-white/[0.02] p-4">
-      <div className="mb-1 flex items-center gap-2 text-purple-400">
+      <div className="mb-1 flex items-center gap-2 text-violet-300">
         {icon}
 
         <span className="text-[9px] font-black uppercase tracking-[0.22em]">
@@ -600,7 +600,7 @@ function ContentPanel({
     <section
       className={`rounded-3xl border border-white/[0.06] bg-white/[0.03] p-6 backdrop-blur-2xl ${className}`}
     >
-      <div className="mb-4 flex items-center gap-2 text-purple-400">
+      <div className="mb-4 flex items-center gap-2 text-violet-300">
         {icon}
 
         <span className="text-[9px] font-black uppercase tracking-[0.24em]">
@@ -620,7 +620,7 @@ function ContentPanel({
 function Fact({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-2xl border border-white/[0.05] bg-white/[0.025] p-4">
-      <p className="mb-1 text-[9px] font-black uppercase tracking-[0.22em] text-purple-400">
+      <p className="mb-1 text-[9px] font-black uppercase tracking-[0.22em] text-violet-300">
         {label}
       </p>
 
@@ -653,9 +653,9 @@ function ResourceLink({
   return (
     <Link
       href={href}
-      className="group rounded-3xl border border-white/[0.06] bg-white/[0.03] p-5 backdrop-blur-2xl transition hover:border-purple-500/30 hover:bg-white/[0.045]"
+      className="group rounded-3xl border border-white/[0.06] bg-white/[0.03] p-5 backdrop-blur-2xl transition hover:border-violet-300/30 hover:bg-white/[0.045]"
     >
-      <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl border border-purple-500/20 bg-purple-500/10 text-purple-400 transition group-hover:bg-purple-600 group-hover:text-white">
+      <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl border border-violet-300/20 bg-violet-500/10 text-violet-300 transition group-hover:bg-violet-500 group-hover:text-white">
         {icon}
       </div>
 

@@ -277,7 +277,7 @@ export default function SetsClient({
 
   return (
     <AppLayout>
-      <main className="relative min-h-full overflow-hidden bg-[#060607] px-4 py-6 text-white sm:px-6 lg:px-8 xl:px-10">
+      <main className="pv-page text-white">
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <motion.div
             aria-hidden
