@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client";
 
 import { useEffect, useState } from "react";
@@ -9,9 +8,6 @@ type SyncMeta = {
   setCount: number;
   failedSetCount: number;
 };
-=======
-import { getPokemonDataSyncedAt } from "@/lib/pokemon-data";
->>>>>>> a3f5e65488a956e02f2b2b0d95f2cb48e508853a
 
 function formatSyncedDate(iso: string) {
   return new Date(iso).toLocaleDateString("en-GB", {
@@ -42,23 +38,16 @@ const STATUS_STYLES = {
 /**
  * PokeValue prices come from a periodic sync of Cardmarket/TCGplayer data via
  * pokemontcg.io, not a live feed. Rather than imply real-time accuracy, this
-<<<<<<< HEAD
  * shows visitors exactly how old the underlying data is. Fetches from
  * /api/sync-status (a thin server route) instead of importing the
  * "server-only" pokemon-data module directly, since this component can be
  * rendered inside client trees (e.g. via Footer -> AppLayout).
  */
 export default function DataFreshnessBadge({
-=======
- * shows visitors exactly how old the underlying data is.
- */
-export default async function DataFreshnessBadge({
->>>>>>> a3f5e65488a956e02f2b2b0d95f2cb48e508853a
   variant = "compact",
 }: {
   variant?: "compact" | "detailed";
 }) {
-<<<<<<< HEAD
   const [meta, setMeta] = useState<SyncMeta | null>(null);
 
   useEffect(() => {
@@ -81,10 +70,6 @@ export default async function DataFreshnessBadge({
   if (!meta) {
     return <p className={`text-xs ${STATUS_STYLES.unknown}`}>Checking data freshness…</p>;
   }
-=======
-  const meta = await getPokemonDataSyncedAt();
-  const staleness = getStaleness(meta.syncedAt);
->>>>>>> a3f5e65488a956e02f2b2b0d95f2cb48e508853a
 
   if (!meta.syncedAt) {
     return (
@@ -94,10 +79,7 @@ export default async function DataFreshnessBadge({
     );
   }
 
-<<<<<<< HEAD
   const staleness = getStaleness(meta.syncedAt);
-=======
->>>>>>> a3f5e65488a956e02f2b2b0d95f2cb48e508853a
   const dateLabel = formatSyncedDate(meta.syncedAt);
 
   if (variant === "compact") {
