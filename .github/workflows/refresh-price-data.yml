@@ -1,0 +1,65 @@
+name: Refresh Pokémon card & price data
+
+# Runs on a schedule so displayed prices don't quietly go stale between
+# manual deploys. Re-syncs data/*.json from pokemontcg.io, commits the
+# result if anything changed, and (optionally) pings a Vercel deploy hook
+# so the new data actually ships.
+#
+# Setup required (one-time, in the GitHub repo's Settings -> Secrets):
+#   POKEMON_TCG_API_KEY   optional but recommended (raises API rate limit)
+#   VERCEL_DEPLOY_HOOK_URL  optional - a Vercel "Deploy Hook" URL for this
+#                           project's production branch. Without it, this
+#                           workflow still commits fresh data, but Vercel's
+#                           own "auto deploy on push" setting is what
+#                           actually redeploys the site.
+
+on:
+  schedule:
+    # 04:00 UTC daily. Adjust to taste - Cardmarket/TCGplayer prices don't
+    # move fast enough to need more than daily refreshes.
+    - cron: "0 4 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Sync Pokémon card & price data
+        env:
+          POKEMON_TCG_API_KEY: ${{ secrets.POKEMON_TCG_API_KEY }}
+        run: pnpm sync:pokemon
+
+      - name: Commit updated data if changed
+        id: commit
+        run: |
+          git config user.name "pokevalue-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- data/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git add data/
+            git commit -m "chore: refresh Pokémon card & price data"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger Vercel redeploy
+        if: steps.commit.outputs.changed == 'true' && env.VERCEL_DEPLOY_HOOK_URL != ''
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: curl -fsS -X POST "$VERCEL_DEPLOY_HOOK_URL"

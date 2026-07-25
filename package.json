@@ -8,7 +8,9 @@
     "build": "next build",
     "build:sync": "pnpm sync:pokemon && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "verify:adsense": "node scripts/verify-adsense-readiness.mjs",
+    "check": "pnpm verify:adsense && next build"
   },
   "dependencies": {
     "@fontsource/sora": "^5.2.8",

@@ -268,6 +268,44 @@ const getPokemonDataCache = cache(async (): Promise<PokemonDataCache> => {
   };
 });
 
+export type PokemonSyncMeta = {
+  syncedAt: string | null;
+  cardCount: number;
+  setCount: number;
+  failedSetCount: number;
+};
+
+const getPokemonSyncMeta = cache(async (): Promise<PokemonSyncMeta> => {
+  try {
+    const filePath = path.join(DATA_DIR, "pokemon-sync-report.json");
+    const file = await fs.readFile(filePath, "utf8");
+    const report = JSON.parse(file) as {
+      syncedAt?: string;
+      cardCount?: number;
+      setCount?: number;
+      failedSetCount?: number;
+    };
+
+    return {
+      syncedAt: report.syncedAt || null,
+      cardCount: report.cardCount || 0,
+      setCount: report.setCount || 0,
+      failedSetCount: report.failedSetCount || 0,
+    };
+  } catch {
+    // The report is a diagnostic extra, not required for the site to run.
+    return { syncedAt: null, cardCount: 0, setCount: 0, failedSetCount: 0 };
+  }
+});
+
+/**
+ * Surfaces when the local price/card data was last synced from pokemontcg.io,
+ * so the UI can label freshness honestly instead of implying a live feed.
+ */
+export async function getPokemonDataSyncedAt() {
+  return getPokemonSyncMeta();
+}
+
 export async function getAllPokemonCards() {
   const data = await getPokemonDataCache();
 

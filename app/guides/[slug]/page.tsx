@@ -62,7 +62,7 @@ export default async function GuideArticlePage({
     author: {
       "@type": "Organization",
       name: "PokeValue Editorial Team",
-      url: "https://www.pokevalue.co.uk/editorial-policy",
+      url: "https://www.pokevalue.co.uk/authors/pokevalue-editorial-team",
     },
     publisher: {
       "@type": "Organization",
@@ -114,7 +114,7 @@ export default async function GuideArticlePage({
                 <span>Updated {guide.updated}</span>
                 <span>
                   Reviewed by{" "}
-                  <Link href="/editorial-policy" className="text-zinc-300 hover:text-white">
+                  <Link href="/authors/pokevalue-editorial-team" className="text-zinc-300 hover:text-white">
                     PokeValue Editorial Team
                   </Link>
                 </span>

@@ -3,7 +3,7 @@
 import Script from "next/script";
 import { usePathname } from "next/navigation";
 
-const PUBLIC_CONTENT_ROUTES = new Set(["/", "/guides", "/cards", "/sets"]);
+const PUBLIC_CONTENT_ROUTES = new Set(["/", "/guides", "/cards", "/sets", "/market-insights", "/collector-toolkit"]);
 const PUBLIC_CONTENT_PREFIXES = ["/guides/", "/cards/", "/sets/"];
 
 function canShowAds(pathname: string) {
