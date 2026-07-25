@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { BookOpen, ShieldCheck, Sparkles } from "lucide-react";
+import DataFreshnessBadge from "@/components/DataFreshnessBadge";
 
 const explore = [
   ["Card Explorer", "/cards"],
@@ -63,7 +64,11 @@ export default function Footer() {
           <FooterColumn title="Company" links={company} />
         </div>
 
-        <div className="mt-10 grid gap-4 border-t border-white/[0.055] pt-6 text-xs leading-6 text-zinc-600 lg:grid-cols-[auto_1fr] lg:items-start lg:gap-10">
+        <div className="mt-8 border-t border-white/[0.055] pt-6">
+          <DataFreshnessBadge variant="compact" />
+        </div>
+
+        <div className="mt-4 grid gap-4 border-t border-white/[0.055] pt-6 text-xs leading-6 text-zinc-600 lg:grid-cols-[auto_1fr] lg:items-start lg:gap-10">
           <p>© {new Date().getFullYear()} PokeValue.</p>
           <p className="max-w-4xl lg:justify-self-end lg:text-right">
             Pokémon and Pokémon TCG are trademarks of Nintendo, Game Freak and
