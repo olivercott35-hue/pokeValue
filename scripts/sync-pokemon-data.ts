@@ -372,13 +372,42 @@ type TCGdexSetDetail = TCGdexSetSummary & {
  * pokemontcg.io (or a future price-specific source) picks the set up; the
  * app's existing "no price data yet" handling covers that gracefully.
  */
+/**
+ * pokemontcg.io and TCGdex don't always agree on set ID formatting for the
+ * same real set (e.g. "me5" vs "me05") — normalize by stripping leading
+ * zeros from any digit run so the two sources compare equal when they
+ * refer to the same set. Without this, a formatting difference alone
+ * causes a duplicate set/card entry instead of correctly being recognized
+ * as "pokemontcg.io already has this."
+ */
+function normalizeSetId(id: string) {
+  return id.toLowerCase().replace(/\d+/g, (digits) => String(parseInt(digits, 10)));
+}
+
+/**
+ * ID-format differences between pokemontcg.io and TCGdex go beyond simple
+ * zero-padding — "half sets" in particular use inconsistent schemes (e.g.
+ * "me2pt5" vs "me02.5" for the same real set). Matching by the set's own
+ * name is far more reliable than trying to reconcile every ID convention,
+ * since both sources use the same official English set names.
+ */
+function normalizeSetName(name: string) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
 async function fillMissingSetsFromTCGdex(existingSets: PokemonSet[], existingCards: PokemonCard[]) {
   try {
     console.log("Checking TCGdex for any set pokemontcg.io doesn't have yet...");
 
     const tcgdexSets = await fetchJson<TCGdexSetSummary[]>(`${TCGDEX_API_BASE}/sets`);
-    const knownIds = new Set(existingSets.map((s) => s.id));
-    const missing = tcgdexSets.filter((s) => s.id && !knownIds.has(s.id));
+    const knownIds = new Set(existingSets.map((s) => normalizeSetId(s.id)));
+    const knownNames = new Set(existingSets.map((s) => normalizeSetName(s.name)));
+    const missing = tcgdexSets.filter((s) => {
+      if (!s.id) return false;
+      if (knownIds.has(normalizeSetId(s.id))) return false;
+      if (s.name && knownNames.has(normalizeSetName(s.name))) return false;
+      return true;
+    });
 
     if (missing.length === 0) {
       console.log("Nothing missing — pokemontcg.io already covers every TCGdex set id.");
