@@ -1,7 +1,103 @@
 {
-  "syncedAt": "2026-07-09T22:56:48.124Z",
-  "cardCount": 20359,
-  "setCount": 173,
-  "failedSetCount": 0,
-  "failedSets": []
+  "syncedAt": "2026-07-26T02:47:36.385Z",
+  "cardCount": 20240,
+  "setCount": 219,
+  "failedSetCount": 19,
+  "failedSets": [
+    {
+      "id": "me5",
+      "name": "Pitch Black",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv9",
+      "name": "Journey Together",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv8pt5",
+      "name": "Prismatic Evolutions",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv6",
+      "name": "Twilight Masquerade",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh12pt5",
+      "name": "Crown Zenith",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm10",
+      "name": "Unbroken Bonds",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm9",
+      "name": "Team Up",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm5",
+      "name": "Ultra Prism",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy8",
+      "name": "BREAKthrough",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy7",
+      "name": "Ancient Origins",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy1",
+      "name": "XY",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy0",
+      "name": "Kalos Starter Set",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw9",
+      "name": "Plasma Freeze",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw7",
+      "name": "Boundaries Crossed",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw3",
+      "name": "Noble Victories",
+      "reason": "API 500"
+    },
+    {
+      "id": "dpp",
+      "name": "DP Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "bp",
+      "name": "Best of Game",
+      "reason": "API 500"
+    },
+    {
+      "id": "neo4",
+      "name": "Neo Destiny",
+      "reason": "API 500"
+    }
+  ]
 }
