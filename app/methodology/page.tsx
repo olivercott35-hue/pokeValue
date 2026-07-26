@@ -4,6 +4,7 @@ import { Scale } from "lucide-react";
 
 import PolicyPage from "@/components/ui/PolicyPage";
 import { GlassPanel, PrimaryLink, SecondaryLink } from "@/components/ui/SitePage";
+import DataFreshnessBadge from "@/components/DataFreshnessBadge";
 
 export const metadata: Metadata = {
   title: "Pricing Methodology | PokeValue",
@@ -74,6 +75,13 @@ export default function MethodologyPage() {
       updated="18 July 2026"
       sections={sections}
     >
+      <GlassPanel className="mb-6 border-white/[0.08] bg-white/[0.02]">
+        <h2 className="text-2xl font-black text-white">Current data status</h2>
+        <div className="mt-3 max-w-3xl">
+          <DataFreshnessBadge variant="detailed" />
+        </div>
+      </GlassPanel>
+
       <GlassPanel className="border-violet-200/[0.11] bg-violet-300/[0.03]">
         <h2 className="text-2xl font-black text-white">Research the exact record</h2>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-zinc-500">Start with the card archive, then use the valuation guide to turn a general source estimate into a realistic condition-aware range.</p>

@@ -68,6 +68,10 @@ type PokemonCard = {
     series?: string;
     releaseDate?: string;
   };
+  images?: {
+    small?: string;
+    large?: string;
+  };
 };
 
 type PokemonSet = {
@@ -335,6 +339,115 @@ async function syncCardsBySet(sets: PokemonSet[]) {
       console.warn(`- ${failedSet.name} (${failedSet.id}): ${failedSet.reason}`);
     }
   }
+
+  return { cards, failedSets };
+}
+
+const TCGDEX_API_BASE = "https://api.tcgdex.net/v2/en";
+
+type TCGdexSetSummary = {
+  id: string;
+  name: string;
+  logo?: string;
+  symbol?: string;
+  cardCount?: { total?: number; official?: number };
+};
+
+type TCGdexSetDetail = TCGdexSetSummary & {
+  releaseDate?: string;
+  serie?: { name?: string };
+  cards?: Array<{ id: string; image?: string; localId?: string; name?: string }>;
+};
+
+/**
+ * pokemontcg.io's own team has visibly shifted focus to its paid successor
+ * (Scrydex), so brand-new set releases can land there before pokemontcg.io
+ * picks them up — or possibly never, if it's eventually retired. TCGdex is
+ * free, open-source, and requires no API key, so this checks it for any set
+ * id that isn't already in our synced data and backfills just that gap.
+ *
+ * This never touches or overwrites anything pokemontcg.io already provided
+ * (pricing included) — it only adds sets/cards pokemontcg.io doesn't have
+ * yet. Cards added this way won't have TCGplayer/Cardmarket pricing until
+ * pokemontcg.io (or a future price-specific source) picks the set up; the
+ * app's existing "no price data yet" handling covers that gracefully.
+ */
+async function fillMissingSetsFromTCGdex(existingSets: PokemonSet[], existingCards: PokemonCard[]) {
+  try {
+    console.log("Checking TCGdex for any set pokemontcg.io doesn't have yet...");
+
+    const tcgdexSets = await fetchJson<TCGdexSetSummary[]>(`${TCGDEX_API_BASE}/sets`);
+    const knownIds = new Set(existingSets.map((s) => s.id));
+    const missing = tcgdexSets.filter((s) => s.id && !knownIds.has(s.id));
+
+    if (missing.length === 0) {
+      console.log("Nothing missing — pokemontcg.io already covers every TCGdex set id.");
+      return null;
+    }
+
+    console.log(
+      `Found ${missing.length} set(s) on TCGdex not yet in pokemontcg.io: ${missing
+        .map((s) => s.id)
+        .join(", ")}`
+    );
+
+    const mergedSets = [...existingSets];
+    const cardsById = new Map(existingCards.map((c) => [c.id, c]));
+    let addedCardCount = 0;
+
+    for (const summary of missing) {
+      try {
+        const detail = await fetchJson<TCGdexSetDetail>(`${TCGDEX_API_BASE}/sets/${summary.id}`);
+
+        mergedSets.push({
+          id: detail.id,
+          name: detail.name,
+          series: detail.serie?.name,
+          total: detail.cardCount?.total,
+          printedTotal: detail.cardCount?.official,
+          releaseDate: detail.releaseDate
+        });
+
+        for (const card of detail.cards || []) {
+          if (!card.image || !card.id) continue;
+
+          cardsById.set(card.id, {
+            id: card.id,
+            name: card.name || card.id,
+            number: card.localId,
+            set: {
+              id: detail.id,
+              name: detail.name,
+              series: detail.serie?.name,
+              releaseDate: detail.releaseDate
+            },
+            images: {
+              small: `${card.image}/low.webp`,
+              large: `${card.image}/high.webp`
+            }
+          });
+          addedCardCount += 1;
+        }
+
+        console.log(`  + ${detail.name} (${detail.id}) — ${(detail.cards || []).length} cards from TCGdex`);
+      } catch (innerError) {
+        console.warn(`  TCGdex set ${summary.id} failed, skipping it:`, innerError);
+      }
+    }
+
+    if (addedCardCount === 0) return null;
+
+    return {
+      sets: sortSets(mergedSets),
+      cards: sortCards(Array.from(cardsById.values())),
+      addedSetCount: missing.length,
+      addedCardCount
+    };
+  } catch (error) {
+    console.warn("TCGdex fallback check failed (non-fatal) — keeping pokemontcg.io data as-is.");
+    console.warn(error);
+    return null;
+  }
 }
 
 async function main() {
@@ -343,7 +456,19 @@ async function main() {
   const startedAt = Date.now();
 
   const sets = await syncSets();
-  await syncCardsBySet(sets);
+  const { cards, failedSets } = await syncCardsBySet(sets);
+
+  const tcgdexResult = await fillMissingSetsFromTCGdex(sets, cards);
+
+  if (tcgdexResult) {
+    console.log(
+      `TCGdex fallback added ${tcgdexResult.addedSetCount} set(s) / ${tcgdexResult.addedCardCount} card(s) pokemontcg.io didn't have yet.`
+    );
+
+    await writeJsonFile("pokemon-sets.json", tcgdexResult.sets);
+    await writeJsonFile("pokemon-cards.json", tcgdexResult.cards);
+    await writeSyncReport(failedSets, tcgdexResult.cards.length, tcgdexResult.sets.length);
+  }
 
   const seconds = ((Date.now() - startedAt) / 1000).toFixed(1);
 

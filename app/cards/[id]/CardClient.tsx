@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo } from "react";
 import { motion } from "framer-motion";
+import CardImage from "@/components/CardImage";
 import {
   BadgeDollarSign,
   BarChart3,
@@ -135,11 +136,11 @@ export default function CardClient({ card }: { card: any }) {
               <div className="group relative mx-auto max-w-[320px] rounded-[2rem] border border-white/[0.06] bg-white/[0.035] p-3 shadow-[0_24px_80px_rgba(0,0,0,0.5)] backdrop-blur-2xl sm:max-w-[380px] sm:p-4">
                 <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-gradient-to-br from-violet-500/20 via-transparent to-fuchsia-500/10 opacity-50 blur-2xl" />
 
-                <img
-                  src={card.images?.large || card.images?.small}
+                <CardImage
+                  src={card.images?.large}
+                  fallbackSrc={card.images?.small}
                   alt={card.name}
                   loading="eager"
-                  decoding="async"
                   className="relative z-10 w-full rounded-[1.35rem] shadow-2xl"
                 />
               </div>

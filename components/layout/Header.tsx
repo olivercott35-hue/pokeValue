@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Search, ShieldCheck, Sparkles } from "lucide-react";
+import { Menu, ShieldCheck, Sparkles } from "lucide-react";
+import GlobalSearch from "@/components/GlobalSearch";
 
 interface HeaderProps {
   setMobileOpen: (value: boolean) => void;
@@ -60,16 +61,9 @@ export default function Header({ setMobileOpen }: HeaderProps) {
       </div>
 
       <div className="ml-auto flex items-center gap-2 sm:gap-3">
-        <Link
-          href="/cards"
-          className="hidden min-w-[260px] items-center gap-3 rounded-2xl border border-white/[0.075] bg-white/[0.03] px-4 py-2.5 text-sm text-zinc-600 shadow-[inset_0_1px_0_rgba(255,255,255,0.035)] transition hover:border-white/[0.13] hover:bg-white/[0.045] hover:text-zinc-300 md:flex"
-        >
-          <Search className="h-4 w-4" />
-          <span>Search the card archive</span>
-          <span className="ml-auto rounded-lg border border-white/[0.06] bg-black/20 px-2 py-1 text-[10px] font-black uppercase tracking-wider text-zinc-700">
-            20k+
-          </span>
-        </Link>
+        <div className="hidden min-w-[260px] md:block">
+          <GlobalSearch />
+        </div>
 
         <Link
           href="/methodology"

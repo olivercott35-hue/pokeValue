@@ -13,6 +13,8 @@ import {
   Info,
   Mail,
   Scale,
+  TrendingUp,
+  Wrench,
   Search,
   ShieldCheck,
   Sparkles,
@@ -37,6 +39,8 @@ const primaryItems: NavItem[] = [
   { label: "Card Explorer", href: "/cards", icon: Search },
   { label: "Set Explorer", href: "/sets", icon: Boxes },
   { label: "Collector Guides", href: "/guides", icon: BookOpen },
+  { label: "Market Insights", href: "/market-insights", icon: TrendingUp },
+  { label: "Collector Toolkit", href: "/collector-toolkit", icon: Wrench },
 ];
 
 const toolItems: NavItem[] = [

@@ -8,7 +8,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import Image from "next/image";
+import { GridCardImage } from "@/components/CardImage";
 import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
@@ -703,21 +703,13 @@ function ExplorerCardTile({
                 </div>
 
                 <div className="relative aspect-[5/7] w-full">
-                  {image ? (
-                    <Image
-                      src={image}
-                      alt={card.name}
-                      fill
-                      quality={65}
-                      loading="lazy"
-                      sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 20vw"
-                      className="object-contain p-2.5 drop-shadow-[0_24px_28px_rgba(0,0,0,0.35)] transition-transform duration-300 ease-out group-hover:scale-[1.018]"
-                    />
-                  ) : (
-                    <div className="flex h-full items-center justify-center text-xs font-bold text-zinc-600">
-                      No image
-                    </div>
-                  )}
+                  <GridCardImage
+                    src={image || null}
+                    alt={card.name}
+                    quality={65}
+                    sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 20vw"
+                    className="object-contain p-2.5 drop-shadow-[0_24px_28px_rgba(0,0,0,0.35)] transition-transform duration-300 ease-out group-hover:scale-[1.018]"
+                  />
                 </div>
               </div>
 
