@@ -1,137 +1,52 @@
 {
-  "syncedAt": "2026-07-26T07:13:26.675Z",
-  "cardCount": 18934,
+  "syncedAt": "2026-07-27T07:33:49.175Z",
+  "cardCount": 21923,
   "setCount": 219,
-  "failedSetCount": 26,
+  "failedSetCount": 9,
   "failedSets": [
     {
-      "id": "zsv10pt5",
-      "name": "Black Bolt",
+      "id": "me1",
+      "name": "Mega Evolution",
       "reason": "API 500"
     },
     {
-      "id": "sv6",
-      "name": "Twilight Masquerade",
+      "id": "sm8",
+      "name": "Lost Thunder",
       "reason": "API 500"
     },
     {
-      "id": "sv4pt5",
-      "name": "Paldean Fates",
+      "id": "mcd16",
+      "name": "McDonald's Collection 2016",
       "reason": "API 500"
     },
     {
-      "id": "sv4",
-      "name": "Paradox Rift",
+      "id": "g1",
+      "name": "Generations",
       "reason": "API 500"
     },
     {
-      "id": "sv2",
-      "name": "Paldea Evolved",
+      "id": "dc1",
+      "name": "Double Crisis",
       "reason": "API 500"
     },
     {
-      "id": "mcd22",
-      "name": "McDonald's Collection 2022",
+      "id": "bw1",
+      "name": "Black & White",
       "reason": "API 500"
     },
     {
-      "id": "swsh10",
-      "name": "Astral Radiance",
+      "id": "pop4",
+      "name": "POP Series 4",
       "reason": "API 500"
     },
     {
-      "id": "swsh7",
-      "name": "Evolving Skies",
+      "id": "ex4",
+      "name": "Team Magma vs Team Aqua",
       "reason": "API 500"
     },
     {
-      "id": "swsh6",
-      "name": "Chilling Reign",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh5",
-      "name": "Battle Styles",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh45sv",
-      "name": "Shining Fates Shiny Vault",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh2",
-      "name": "Rebel Clash",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm115",
-      "name": "Hidden Fates",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm7",
-      "name": "Celestial Storm",
-      "reason": "API 500"
-    },
-    {
-      "id": "smp",
-      "name": "SM Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy9",
-      "name": "BREAKpoint",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy5",
-      "name": "Primal Clash",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw10",
-      "name": "Plasma Blast",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw6",
-      "name": "Dragons Exalted",
-      "reason": "API 500"
-    },
-    {
-      "id": "pl2",
-      "name": "Rising Rivals",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop9",
-      "name": "POP Series 9",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop7",
-      "name": "POP Series 7",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex15",
-      "name": "Dragon Frontiers",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop3",
-      "name": "POP Series 3",
-      "reason": "API 500"
-    },
-    {
-      "id": "neo4",
-      "name": "Neo Destiny",
-      "reason": "API 500"
-    },
-    {
-      "id": "basep",
-      "name": "Wizards Black Star Promos",
+      "id": "base3",
+      "name": "Fossil",
       "reason": "API 500"
     }
   ]
