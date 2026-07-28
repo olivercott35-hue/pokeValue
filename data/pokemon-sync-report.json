@@ -1,52 +1,72 @@
 {
-  "syncedAt": "2026-07-27T07:33:49.175Z",
-  "cardCount": 21923,
+  "syncedAt": "2026-07-28T06:49:56.412Z",
+  "cardCount": 20814,
   "setCount": 219,
-  "failedSetCount": 9,
+  "failedSetCount": 13,
   "failedSets": [
     {
-      "id": "me1",
-      "name": "Mega Evolution",
+      "id": "zsv10pt5",
+      "name": "Black Bolt",
       "reason": "API 500"
     },
     {
-      "id": "sm8",
-      "name": "Lost Thunder",
+      "id": "swsh11",
+      "name": "Lost Origin",
       "reason": "API 500"
     },
     {
-      "id": "mcd16",
-      "name": "McDonald's Collection 2016",
+      "id": "swsh10",
+      "name": "Astral Radiance",
       "reason": "API 500"
     },
     {
-      "id": "g1",
-      "name": "Generations",
+      "id": "swsh7",
+      "name": "Evolving Skies",
       "reason": "API 500"
     },
     {
-      "id": "dc1",
-      "name": "Double Crisis",
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
       "reason": "API 500"
     },
     {
-      "id": "bw1",
-      "name": "Black & White",
+      "id": "sm115",
+      "name": "Hidden Fates",
       "reason": "API 500"
     },
     {
-      "id": "pop4",
-      "name": "POP Series 4",
+      "id": "sm2",
+      "name": "Guardians Rising",
       "reason": "API 500"
     },
     {
-      "id": "ex4",
-      "name": "Team Magma vs Team Aqua",
+      "id": "xy12",
+      "name": "Evolutions",
       "reason": "API 500"
     },
     {
-      "id": "base3",
-      "name": "Fossil",
+      "id": "bw8",
+      "name": "Plasma Storm",
+      "reason": "API 500"
+    },
+    {
+      "id": "pl1",
+      "name": "Platinum",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex14",
+      "name": "Crystal Guardians",
+      "reason": "API 500"
+    },
+    {
+      "id": "gym1",
+      "name": "Gym Heroes",
+      "reason": "API 500"
+    },
+    {
+      "id": "base5",
+      "name": "Team Rocket",
       "reason": "API 500"
     }
   ]
