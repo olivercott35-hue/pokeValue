@@ -1,67 +1,57 @@
 {
-  "syncedAt": "2026-07-28T06:49:56.412Z",
-  "cardCount": 20814,
+  "syncedAt": "2026-07-29T06:58:54.906Z",
+  "cardCount": 21865,
   "setCount": 219,
-  "failedSetCount": 13,
+  "failedSetCount": 11,
   "failedSets": [
     {
-      "id": "zsv10pt5",
-      "name": "Black Bolt",
+      "id": "sv4pt5",
+      "name": "Paldean Fates",
       "reason": "API 500"
     },
     {
-      "id": "swsh11",
-      "name": "Lost Origin",
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
       "reason": "API 500"
     },
     {
-      "id": "swsh10",
-      "name": "Astral Radiance",
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
       "reason": "API 500"
     },
     {
-      "id": "swsh7",
-      "name": "Evolving Skies",
+      "id": "bw10",
+      "name": "Plasma Blast",
       "reason": "API 500"
     },
     {
-      "id": "swsh3",
-      "name": "Darkness Ablaze",
+      "id": "dv1",
+      "name": "Dragon Vault",
       "reason": "API 500"
     },
     {
-      "id": "sm115",
-      "name": "Hidden Fates",
+      "id": "hgss2",
+      "name": "HS—Unleashed",
       "reason": "API 500"
     },
     {
-      "id": "sm2",
-      "name": "Guardians Rising",
+      "id": "dp4",
+      "name": "Great Encounters",
       "reason": "API 500"
     },
     {
-      "id": "xy12",
-      "name": "Evolutions",
+      "id": "ex12",
+      "name": "Legend Maker",
       "reason": "API 500"
     },
     {
-      "id": "bw8",
-      "name": "Plasma Storm",
+      "id": "pop2",
+      "name": "POP Series 2",
       "reason": "API 500"
     },
     {
-      "id": "pl1",
-      "name": "Platinum",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex14",
-      "name": "Crystal Guardians",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym1",
-      "name": "Gym Heroes",
+      "id": "np",
+      "name": "Nintendo Black Star Promos",
       "reason": "API 500"
     },
     {
