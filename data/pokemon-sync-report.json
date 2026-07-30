@@ -1,62 +1,42 @@
 {
-  "syncedAt": "2026-07-29T06:58:54.906Z",
-  "cardCount": 21865,
+  "syncedAt": "2026-07-30T06:50:04.357Z",
+  "cardCount": 21859,
   "setCount": 219,
-  "failedSetCount": 11,
+  "failedSetCount": 7,
   "failedSets": [
     {
-      "id": "sv4pt5",
-      "name": "Paldean Fates",
+      "id": "sv6",
+      "name": "Twilight Masquerade",
       "reason": "API 500"
     },
     {
-      "id": "swsh45sv",
-      "name": "Shining Fates Shiny Vault",
+      "id": "swsh12",
+      "name": "Silver Tempest",
       "reason": "API 500"
     },
     {
-      "id": "mcd19",
-      "name": "McDonald's Collection 2019",
+      "id": "sm9",
+      "name": "Team Up",
       "reason": "API 500"
     },
     {
-      "id": "bw10",
-      "name": "Plasma Blast",
+      "id": "g1",
+      "name": "Generations",
       "reason": "API 500"
     },
     {
-      "id": "dv1",
-      "name": "Dragon Vault",
+      "id": "dc1",
+      "name": "Double Crisis",
       "reason": "API 500"
     },
     {
-      "id": "hgss2",
-      "name": "HS—Unleashed",
+      "id": "xy1",
+      "name": "XY",
       "reason": "API 500"
     },
     {
-      "id": "dp4",
-      "name": "Great Encounters",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex12",
-      "name": "Legend Maker",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop2",
-      "name": "POP Series 2",
-      "reason": "API 500"
-    },
-    {
-      "id": "np",
-      "name": "Nintendo Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "base5",
-      "name": "Team Rocket",
+      "id": "tk1b",
+      "name": "EX Trainer Kit Latios",
       "reason": "API 500"
     }
   ]
