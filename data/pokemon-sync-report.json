@@ -1,42 +1,57 @@
 {
-  "syncedAt": "2026-07-30T06:50:04.357Z",
-  "cardCount": 21859,
+  "syncedAt": "2026-07-31T07:09:00.072Z",
+  "cardCount": 21154,
   "setCount": 219,
-  "failedSetCount": 7,
+  "failedSetCount": 10,
   "failedSets": [
     {
-      "id": "sv6",
-      "name": "Twilight Masquerade",
+      "id": "me5",
+      "name": "Pitch Black",
       "reason": "API 500"
     },
     {
-      "id": "swsh12",
-      "name": "Silver Tempest",
+      "id": "sv5",
+      "name": "Temporal Forces",
       "reason": "API 500"
     },
     {
-      "id": "sm9",
-      "name": "Team Up",
+      "id": "swsh4",
+      "name": "Vivid Voltage",
       "reason": "API 500"
     },
     {
-      "id": "g1",
-      "name": "Generations",
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "dc1",
-      "name": "Double Crisis",
+      "id": "sm7",
+      "name": "Celestial Storm",
       "reason": "API 500"
     },
     {
-      "id": "xy1",
-      "name": "XY",
+      "id": "smp",
+      "name": "SM Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "tk1b",
-      "name": "EX Trainer Kit Latios",
+      "id": "mcd14",
+      "name": "McDonald's Collection 2014",
+      "reason": "API 500"
+    },
+    {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "dp1",
+      "name": "Diamond & Pearl",
+      "reason": "API 500"
+    },
+    {
+      "id": "tk1a",
+      "name": "EX Trainer Kit Latias",
       "reason": "API 500"
     }
   ]
