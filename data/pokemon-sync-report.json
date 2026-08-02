@@ -1,82 +1,42 @@
 {
-  "syncedAt": "2026-08-01T06:51:06.296Z",
-  "cardCount": 20697,
+  "syncedAt": "2026-08-02T07:04:28.185Z",
+  "cardCount": 21429,
   "setCount": 219,
-  "failedSetCount": 15,
+  "failedSetCount": 7,
   "failedSets": [
     {
-      "id": "me2pt5",
-      "name": "Ascended Heroes",
+      "id": "sv4pt5",
+      "name": "Paldean Fates",
       "reason": "API 500"
     },
     {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith Galarian Gallery",
+      "id": "swsh12pt5",
+      "name": "Crown Zenith",
       "reason": "API 500"
     },
     {
-      "id": "swsh10",
-      "name": "Astral Radiance",
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh7",
-      "name": "Evolving Skies",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh1",
-      "name": "Sword & Shield",
-      "reason": "API 500"
-    },
-    {
-      "id": "swshp",
-      "name": "SWSH Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm7",
-      "name": "Celestial Storm",
+      "id": "sm11",
+      "name": "Unified Minds",
       "reason": "API 504"
     },
     {
-      "id": "bw11",
-      "name": "Legendary Treasures",
+      "id": "smp",
+      "name": "SM Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "pop5",
-      "name": "POP Series 5",
+      "id": "xy10",
+      "name": "Fates Collide",
       "reason": "API 500"
     },
     {
-      "id": "ex13",
-      "name": "Holon Phantoms",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop2",
-      "name": "POP Series 2",
-      "reason": "API 500"
-    },
-    {
-      "id": "base6",
-      "name": "Legendary Collection",
-      "reason": "API 500"
-    },
-    {
-      "id": "neo2",
-      "name": "Neo Discovery",
-      "reason": "API 500"
-    },
-    {
-      "id": "base5",
-      "name": "Team Rocket",
+      "id": "dp1",
+      "name": "Diamond & Pearl",
       "reason": "API 500"
     }
   ]
