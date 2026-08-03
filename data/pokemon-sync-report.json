@@ -1,42 +1,72 @@
 {
-  "syncedAt": "2026-08-02T07:04:28.185Z",
-  "cardCount": 21429,
+  "syncedAt": "2026-08-03T07:24:59.922Z",
+  "cardCount": 21487,
   "setCount": 219,
-  "failedSetCount": 7,
+  "failedSetCount": 13,
   "failedSets": [
     {
-      "id": "sv4pt5",
-      "name": "Paldean Fates",
+      "id": "sv1",
+      "name": "Scarlet & Violet",
       "reason": "API 500"
     },
     {
-      "id": "swsh12pt5",
-      "name": "Crown Zenith",
+      "id": "sm10",
+      "name": "Unbroken Bonds",
       "reason": "API 500"
     },
     {
-      "id": "svp",
-      "name": "Scarlet & Violet Black Star Promos",
+      "id": "det1",
+      "name": "Detective Pikachu",
       "reason": "API 500"
     },
     {
-      "id": "sm11",
-      "name": "Unified Minds",
-      "reason": "API 504"
-    },
-    {
-      "id": "smp",
-      "name": "SM Black Star Promos",
+      "id": "mcd18",
+      "name": "McDonald's Collection 2018",
       "reason": "API 500"
     },
     {
-      "id": "xy10",
-      "name": "Fates Collide",
+      "id": "bw10",
+      "name": "Plasma Blast",
       "reason": "API 500"
     },
     {
-      "id": "dp1",
-      "name": "Diamond & Pearl",
+      "id": "dv1",
+      "name": "Dragon Vault",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw2",
+      "name": "Emerging Powers",
+      "reason": "API 500"
+    },
+    {
+      "id": "hgss4",
+      "name": "HS—Triumphant",
+      "reason": "API 500"
+    },
+    {
+      "id": "pl2",
+      "name": "Rising Rivals",
+      "reason": "API 500"
+    },
+    {
+      "id": "dp7",
+      "name": "Stormfront",
+      "reason": "API 500"
+    },
+    {
+      "id": "pop7",
+      "name": "POP Series 7",
+      "reason": "API 500"
+    },
+    {
+      "id": "np",
+      "name": "Nintendo Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "ecard3",
+      "name": "Skyridge",
       "reason": "API 500"
     }
   ]
