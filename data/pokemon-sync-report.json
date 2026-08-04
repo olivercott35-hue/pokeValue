@@ -1,13 +1,28 @@
 {
-  "syncedAt": "2026-08-03T07:24:59.922Z",
-  "cardCount": 21487,
+  "syncedAt": "2026-08-04T06:53:52.051Z",
+  "cardCount": 21025,
   "setCount": 219,
-  "failedSetCount": 13,
+  "failedSetCount": 10,
   "failedSets": [
     {
-      "id": "sv1",
-      "name": "Scarlet & Violet",
+      "id": "me2pt5",
+      "name": "Ascended Heroes",
       "reason": "API 500"
+    },
+    {
+      "id": "sv8",
+      "name": "Surging Sparks",
+      "reason": "API 500"
+    },
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "reason": "API 502"
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
+      "reason": "API 404"
     },
     {
       "id": "sm10",
@@ -15,58 +30,28 @@
       "reason": "API 500"
     },
     {
-      "id": "det1",
-      "name": "Detective Pikachu",
+      "id": "pl1",
+      "name": "Platinum",
       "reason": "API 500"
     },
     {
-      "id": "mcd18",
-      "name": "McDonald's Collection 2018",
+      "id": "dp3",
+      "name": "Secret Wonders",
       "reason": "API 500"
     },
     {
-      "id": "bw10",
-      "name": "Plasma Blast",
+      "id": "ex1",
+      "name": "Ruby & Sapphire",
       "reason": "API 500"
     },
     {
-      "id": "dv1",
-      "name": "Dragon Vault",
+      "id": "ecard2",
+      "name": "Aquapolis",
       "reason": "API 500"
     },
     {
-      "id": "bw2",
-      "name": "Emerging Powers",
-      "reason": "API 500"
-    },
-    {
-      "id": "hgss4",
-      "name": "HS—Triumphant",
-      "reason": "API 500"
-    },
-    {
-      "id": "pl2",
-      "name": "Rising Rivals",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp7",
-      "name": "Stormfront",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop7",
-      "name": "POP Series 7",
-      "reason": "API 500"
-    },
-    {
-      "id": "np",
-      "name": "Nintendo Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "ecard3",
-      "name": "Skyridge",
+      "id": "neo3",
+      "name": "Neo Revelation",
       "reason": "API 500"
     }
   ]
