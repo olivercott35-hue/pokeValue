@@ -1,57 +1,67 @@
 {
-  "syncedAt": "2026-08-04T06:53:52.051Z",
-  "cardCount": 21025,
+  "syncedAt": "2026-08-05T06:54:53.503Z",
+  "cardCount": 21168,
   "setCount": 219,
-  "failedSetCount": 10,
+  "failedSetCount": 12,
   "failedSets": [
     {
-      "id": "me2pt5",
-      "name": "Ascended Heroes",
+      "id": "me2",
+      "name": "Phantasmal Flames",
       "reason": "API 500"
     },
     {
-      "id": "sv8",
-      "name": "Surging Sparks",
+      "id": "sv7",
+      "name": "Stellar Crown",
       "reason": "API 500"
     },
     {
-      "id": "swshp",
-      "name": "SWSH Black Star Promos",
-      "reason": "API 502"
+      "id": "sv2",
+      "name": "Paldea Evolved",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh11",
+      "name": "Lost Origin",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
+      "reason": "API 404"
+    },
+    {
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
+      "reason": "API 404"
     },
     {
       "id": "sm115",
       "name": "Hidden Fates",
-      "reason": "API 404"
-    },
-    {
-      "id": "sm10",
-      "name": "Unbroken Bonds",
       "reason": "API 500"
     },
     {
-      "id": "pl1",
-      "name": "Platinum",
+      "id": "sm1",
+      "name": "Sun & Moon",
       "reason": "API 500"
     },
     {
-      "id": "dp3",
-      "name": "Secret Wonders",
+      "id": "dc1",
+      "name": "Double Crisis",
       "reason": "API 500"
     },
     {
-      "id": "ex1",
-      "name": "Ruby & Sapphire",
+      "id": "xy3",
+      "name": "Furious Fists",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp7",
+      "name": "Stormfront",
       "reason": "API 500"
     },
     {
-      "id": "ecard2",
-      "name": "Aquapolis",
-      "reason": "API 500"
-    },
-    {
-      "id": "neo3",
-      "name": "Neo Revelation",
+      "id": "dpp",
+      "name": "DP Black Star Promos",
       "reason": "API 500"
     }
   ]
