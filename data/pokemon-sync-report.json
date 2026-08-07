@@ -1,47 +1,42 @@
 {
-  "syncedAt": "2026-08-06T06:58:22.781Z",
-  "cardCount": 20058,
+  "syncedAt": "2026-08-07T06:05:35.014Z",
+  "cardCount": 20243,
   "setCount": 219,
-  "failedSetCount": 20,
+  "failedSetCount": 17,
   "failedSets": [
     {
-      "id": "me3",
-      "name": "Perfect Order",
+      "id": "rsv10pt5",
+      "name": "White Flare",
       "reason": "API 500"
     },
     {
-      "id": "sv8",
-      "name": "Surging Sparks",
+      "id": "sv4",
+      "name": "Paradox Rift",
       "reason": "API 500"
     },
     {
-      "id": "sv4pt5",
-      "name": "Paldean Fates",
+      "id": "sv1",
+      "name": "Scarlet & Violet",
       "reason": "API 500"
     },
     {
-      "id": "sv3pt5",
-      "name": "151",
-      "reason": "API 500"
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "reason": "API 502"
     },
     {
-      "id": "cel25c",
-      "name": "Celebrations: Classic Collection",
-      "reason": "API 404"
+      "id": "swsh11",
+      "name": "Lost Origin",
+      "reason": "API 500"
     },
     {
       "id": "swsh6",
       "name": "Chilling Reign",
-      "reason": "API 504"
-    },
-    {
-      "id": "mcd21",
-      "name": "McDonald's Collection 2021",
       "reason": "API 500"
     },
     {
-      "id": "sm12",
-      "name": "Cosmic Eclipse",
+      "id": "sm115",
+      "name": "Hidden Fates",
       "reason": "API 502"
     },
     {
@@ -50,58 +45,48 @@
       "reason": "API 500"
     },
     {
-      "id": "sm35",
-      "name": "Shining Legends",
+      "id": "det1",
+      "name": "Detective Pikachu",
       "reason": "API 500"
     },
     {
       "id": "smp",
       "name": "SM Black Star Promos",
+      "reason": "API 404"
+    },
+    {
+      "id": "sm1",
+      "name": "Sun & Moon",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy7",
+      "name": "Ancient Origins",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw6",
+      "name": "Dragons Exalted",
       "reason": "API 502"
     },
     {
-      "id": "xy5",
-      "name": "Primal Clash",
+      "id": "bw4",
+      "name": "Next Destinies",
       "reason": "API 500"
     },
     {
-      "id": "xy4",
-      "name": "Phantom Forces",
+      "id": "base6",
+      "name": "Legendary Collection",
       "reason": "API 500"
     },
     {
-      "id": "bwp",
-      "name": "BW Black Star Promos",
+      "id": "neo3",
+      "name": "Neo Revelation",
       "reason": "API 500"
     },
     {
-      "id": "hsp",
-      "name": "HGSS Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop9",
-      "name": "POP Series 9",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex16",
-      "name": "Power Keepers",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex8",
-      "name": "Deoxys",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex1",
-      "name": "Ruby & Sapphire",
-      "reason": "API 500"
-    },
-    {
-      "id": "ecard3",
-      "name": "Skyridge",
+      "id": "base1",
+      "name": "Base",
       "reason": "API 500"
     }
   ]
