@@ -1,42 +1,82 @@
 {
-  "syncedAt": "2026-08-08T05:24:27.567Z",
-  "cardCount": 20772,
+  "syncedAt": "2026-08-09T05:42:57.803Z",
+  "cardCount": 18915,
   "setCount": 219,
-  "failedSetCount": 17,
+  "failedSetCount": 30,
   "failedSets": [
     {
-      "id": "swsh2",
-      "name": "Rebel Clash",
+      "id": "me4",
+      "name": "Chaos Rising",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv5",
+      "name": "Temporal Forces",
       "reason": "API 500"
     },
     {
-      "id": "sm11",
-      "name": "Unified Minds",
+      "id": "sv2",
+      "name": "Paldea Evolved",
       "reason": "API 500"
+    },
+    {
+      "id": "sve",
+      "name": "Scarlet & Violet Energies",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh12pt5",
+      "name": "Crown Zenith",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh12",
+      "name": "Silver Tempest",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh11",
+      "name": "Lost Origin",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh10tg",
+      "name": "Astral Radiance Trainer Gallery",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh9",
+      "name": "Brilliant Stars",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "reason": "API 500"
+    },
+    {
+      "id": "cel25",
+      "name": "Celebrations",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "reason": "API 404"
+    },
+    {
+      "id": "swsh1",
+      "name": "Sword & Shield",
+      "reason": "API 504"
+    },
+    {
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
+      "reason": "API 502"
     },
     {
       "id": "det1",
       "name": "Detective Pikachu",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm9",
-      "name": "Team Up",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm6",
-      "name": "Forbidden Light",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd17",
-      "name": "McDonald's Collection 2017",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm3",
-      "name": "Burning Shadows",
       "reason": "API 500"
     },
     {
@@ -45,48 +85,73 @@
       "reason": "API 500"
     },
     {
-      "id": "xy11",
-      "name": "Steam Siege",
+      "id": "g1",
+      "name": "Generations",
       "reason": "API 500"
     },
     {
-      "id": "hsp",
-      "name": "HGSS Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp7",
-      "name": "Stormfront",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop7",
-      "name": "POP Series 7",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp2",
-      "name": "Mysterious Treasures",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex16",
-      "name": "Power Keepers",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex12",
-      "name": "Legend Maker",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex5",
-      "name": "Hidden Legends",
+      "id": "xy9",
+      "name": "BREAKpoint",
       "reason": "API 502"
+    },
+    {
+      "id": "xy8",
+      "name": "BREAKthrough",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy3",
+      "name": "Furious Fists",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw5",
+      "name": "Dark Explorers",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw3",
+      "name": "Noble Victories",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw1",
+      "name": "Black & White",
+      "reason": "API 500"
+    },
+    {
+      "id": "col1",
+      "name": "Call of Legends",
+      "reason": "API 500"
+    },
+    {
+      "id": "pop6",
+      "name": "POP Series 6",
+      "reason": "API 500"
+    },
+    {
+      "id": "dpp",
+      "name": "DP Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex14",
+      "name": "Crystal Guardians",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex9",
+      "name": "Emerald",
+      "reason": "API 500"
     },
     {
       "id": "neo3",
       "name": "Neo Revelation",
+      "reason": "API 500"
+    },
+    {
+      "id": "base4",
+      "name": "Base Set 2",
       "reason": "API 500"
     }
   ]
