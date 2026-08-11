@@ -1,22 +1,22 @@
 {
-  "syncedAt": "2026-08-10T05:45:51.947Z",
-  "cardCount": 19538,
+  "syncedAt": "2026-08-11T05:37:19.186Z",
+  "cardCount": 18713,
   "setCount": 219,
-  "failedSetCount": 24,
+  "failedSetCount": 35,
   "failedSets": [
     {
-      "id": "sv6",
-      "name": "Twilight Masquerade",
+      "id": "me2",
+      "name": "Phantasmal Flames",
       "reason": "API 500"
     },
     {
-      "id": "sv5",
-      "name": "Temporal Forces",
+      "id": "sv4pt5",
+      "name": "Paldean Fates",
       "reason": "API 502"
     },
     {
-      "id": "sv4",
-      "name": "Paradox Rift",
+      "id": "sv2",
+      "name": "Paldea Evolved",
       "reason": "API 500"
     },
     {
@@ -25,43 +25,78 @@
       "reason": "API 500"
     },
     {
-      "id": "pgo",
-      "name": "Pokémon GO",
+      "id": "swsh12",
+      "name": "Silver Tempest",
       "reason": "API 500"
     },
     {
-      "id": "swsh7",
-      "name": "Evolving Skies",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh2",
-      "name": "Rebel Clash",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd17",
-      "name": "McDonald's Collection 2017",
+      "id": "swsh12tg",
+      "name": "Silver Tempest Trainer Gallery",
       "reason": "API 502"
+    },
+    {
+      "id": "cel25",
+      "name": "Celebrations",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh5",
+      "name": "Battle Styles",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
+      "reason": "API 404"
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
+      "reason": "API 404"
+    },
+    {
+      "id": "sma",
+      "name": "Hidden Fates Shiny Vault",
+      "reason": "API 404"
+    },
+    {
+      "id": "sm75",
+      "name": "Dragon Majesty",
+      "reason": "API 502"
+    },
+    {
+      "id": "sm7",
+      "name": "Celestial Storm",
+      "reason": "API 502"
+    },
+    {
+      "id": "sm6",
+      "name": "Forbidden Light",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm5",
+      "name": "Ultra Prism",
+      "reason": "API 500"
     },
     {
       "id": "smp",
       "name": "SM Black Star Promos",
-      "reason": "API 404"
-    },
-    {
-      "id": "sm1",
-      "name": "Sun & Moon",
-      "reason": "API 404"
-    },
-    {
-      "id": "mcd14",
-      "name": "McDonald's Collection 2014",
       "reason": "API 500"
     },
     {
-      "id": "xyp",
-      "name": "XY Black Star Promos",
+      "id": "xy9",
+      "name": "BREAKpoint",
       "reason": "API 500"
     },
     {
@@ -70,39 +105,49 @@
       "reason": "API 500"
     },
     {
-      "id": "bw3",
-      "name": "Noble Victories",
+      "id": "bw8",
+      "name": "Plasma Storm",
       "reason": "API 500"
     },
     {
-      "id": "hgss4",
-      "name": "HS—Triumphant",
+      "id": "dv1",
+      "name": "Dragon Vault",
       "reason": "API 500"
     },
     {
-      "id": "pl3",
-      "name": "Supreme Victors",
+      "id": "mcd12",
+      "name": "McDonald's Collection 2012",
       "reason": "API 500"
     },
     {
-      "id": "ex16",
-      "name": "Power Keepers",
+      "id": "bw4",
+      "name": "Next Destinies",
       "reason": "API 500"
     },
     {
-      "id": "pop4",
-      "name": "POP Series 4",
+      "id": "hgss3",
+      "name": "HS—Undaunted",
       "reason": "API 500"
     },
     {
-      "id": "tk2b",
-      "name": "EX Trainer Kit 2 Minun",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex10",
-      "name": "Unseen Forces",
+      "id": "hgss2",
+      "name": "HS—Unleashed",
       "reason": "API 502"
+    },
+    {
+      "id": "hgss1",
+      "name": "HeartGold & SoulSilver",
+      "reason": "API 502"
+    },
+    {
+      "id": "pop9",
+      "name": "POP Series 9",
+      "reason": "API 500"
+    },
+    {
+      "id": "tk2a",
+      "name": "EX Trainer Kit 2 Plusle",
+      "reason": "API 500"
     },
     {
       "id": "ex9",
@@ -110,19 +155,29 @@
       "reason": "API 500"
     },
     {
-      "id": "ex5",
-      "name": "Hidden Legends",
+      "id": "ex7",
+      "name": "Team Rocket Returns",
       "reason": "API 500"
     },
     {
-      "id": "neo3",
-      "name": "Neo Revelation",
+      "id": "tk1a",
+      "name": "EX Trainer Kit Latias",
+      "reason": "API 502"
+    },
+    {
+      "id": "ecard2",
+      "name": "Aquapolis",
       "reason": "API 500"
     },
     {
-      "id": "base2",
-      "name": "Jungle",
+      "id": "bp",
+      "name": "Best of Game",
       "reason": "API 500"
+    },
+    {
+      "id": "base1",
+      "name": "Base",
+      "reason": "API 502"
     }
   ]
 }
