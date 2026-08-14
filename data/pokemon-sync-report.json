@@ -1,52 +1,47 @@
 {
-  "syncedAt": "2026-08-13T05:57:24.964Z",
-  "cardCount": 20445,
+  "syncedAt": "2026-08-14T06:04:26.299Z",
+  "cardCount": 18483,
   "setCount": 219,
-  "failedSetCount": 22,
+  "failedSetCount": 40,
   "failedSets": [
     {
-      "id": "me4",
-      "name": "Chaos Rising",
+      "id": "me3",
+      "name": "Perfect Order",
       "reason": "API 500"
     },
     {
-      "id": "sv3pt5",
-      "name": "151",
+      "id": "sv8pt5",
+      "name": "Prismatic Evolutions",
       "reason": "API 500"
     },
     {
-      "id": "sv2",
-      "name": "Paldea Evolved",
+      "id": "sv8",
+      "name": "Surging Sparks",
       "reason": "API 500"
     },
     {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith Galarian Gallery",
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "reason": "API 500"
+    },
+    {
+      "id": "cel25",
+      "name": "Celebrations",
       "reason": "API 502"
-    },
-    {
-      "id": "swsh5",
-      "name": "Battle Styles",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh4",
-      "name": "Vivid Voltage",
-      "reason": "API 500"
-    },
-    {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
-      "reason": "API 500"
     },
     {
       "id": "swsh1",
       "name": "Sword & Shield",
-      "reason": "API 502"
+      "reason": "API 500"
     },
     {
-      "id": "sma",
-      "name": "Hidden Fates Shiny Vault",
+      "id": "sm11",
+      "name": "Unified Minds",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm10",
+      "name": "Unbroken Bonds",
       "reason": "API 502"
     },
     {
@@ -57,31 +52,26 @@
     {
       "id": "mcd17",
       "name": "McDonald's Collection 2017",
+      "reason": "API 502"
+    },
+    {
+      "id": "sm2",
+      "name": "Guardians Rising",
       "reason": "API 500"
     },
     {
-      "id": "sm4",
-      "name": "Crimson Invasion",
-      "reason": "API 404"
-    },
-    {
-      "id": "sm35",
-      "name": "Shining Legends",
-      "reason": "API 504"
-    },
-    {
-      "id": "xy12",
-      "name": "Evolutions",
+      "id": "smp",
+      "name": "SM Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "mcd16",
-      "name": "McDonald's Collection 2016",
-      "reason": "API 500"
+      "id": "xy10",
+      "name": "Fates Collide",
+      "reason": "API 502"
     },
     {
-      "id": "xy8",
-      "name": "BREAKthrough",
+      "id": "mcd15",
+      "name": "McDonald's Collection 2015",
       "reason": "API 500"
     },
     {
@@ -90,8 +80,53 @@
       "reason": "API 500"
     },
     {
+      "id": "xy0",
+      "name": "Kalos Starter Set",
+      "reason": "API 500"
+    },
+    {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "reason": "API 502"
+    },
+    {
+      "id": "bw10",
+      "name": "Plasma Blast",
+      "reason": "API 500"
+    },
+    {
       "id": "bw4",
       "name": "Next Destinies",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw3",
+      "name": "Noble Victories",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
+      "reason": "API 502"
+    },
+    {
+      "id": "bw1",
+      "name": "Black & White",
+      "reason": "API 500"
+    },
+    {
+      "id": "hgss1",
+      "name": "HeartGold & SoulSilver",
+      "reason": "API 500"
+    },
+    {
+      "id": "pl4",
+      "name": "Arceus",
+      "reason": "API 502"
+    },
+    {
+      "id": "pl2",
+      "name": "Rising Rivals",
       "reason": "API 500"
     },
     {
@@ -100,8 +135,18 @@
       "reason": "API 500"
     },
     {
-      "id": "dp5",
-      "name": "Majestic Dawn",
+      "id": "dp4",
+      "name": "Great Encounters",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex15",
+      "name": "Dragon Frontiers",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex14",
+      "name": "Crystal Guardians",
       "reason": "API 500"
     },
     {
@@ -110,8 +155,53 @@
       "reason": "API 500"
     },
     {
-      "id": "ex13",
-      "name": "Holon Phantoms",
+      "id": "pop3",
+      "name": "POP Series 3",
+      "reason": "API 500"
+    },
+    {
+      "id": "tk2b",
+      "name": "EX Trainer Kit 2 Minun",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex10",
+      "name": "Unseen Forces",
+      "reason": "API 500"
+    },
+    {
+      "id": "tk1b",
+      "name": "EX Trainer Kit Latios",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex4",
+      "name": "Team Magma vs Team Aqua",
+      "reason": "API 500"
+    },
+    {
+      "id": "np",
+      "name": "Nintendo Black Star Promos",
+      "reason": "API 502"
+    },
+    {
+      "id": "neo4",
+      "name": "Neo Destiny",
+      "reason": "API 500"
+    },
+    {
+      "id": "base5",
+      "name": "Team Rocket",
+      "reason": "API 502"
+    },
+    {
+      "id": "basep",
+      "name": "Wizards Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "base1",
+      "name": "Base",
       "reason": "API 500"
     }
   ]
