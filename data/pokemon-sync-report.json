@@ -1,117 +1,122 @@
 {
-  "syncedAt": "2026-08-16T04:58:09.251Z",
-  "cardCount": 20106,
+  "syncedAt": "2026-08-18T05:00:43.824Z",
+  "cardCount": 19360,
   "setCount": 219,
-  "failedSetCount": 22,
+  "failedSetCount": 23,
   "failedSets": [
     {
-      "id": "me1",
-      "name": "Mega Evolution",
-      "reason": "API 502"
+      "id": "sv6",
+      "name": "Twilight Masquerade",
+      "reason": "API 500"
     },
     {
-      "id": "sv8pt5",
-      "name": "Prismatic Evolutions",
+      "id": "sv3",
+      "name": "Obsidian Flames",
       "reason": "API 500"
     },
     {
       "id": "sv1",
       "name": "Scarlet & Violet",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh12pt5gg",
+      "name": "Crown Zenith Galarian Gallery",
       "reason": "API 502"
     },
     {
-      "id": "sve",
-      "name": "Scarlet & Violet Energies",
+      "id": "mcd22",
+      "name": "McDonald's Collection 2022",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
       "reason": "API 502"
     },
     {
-      "id": "svp",
-      "name": "Scarlet & Violet Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh8",
-      "name": "Fusion Strike",
-      "reason": "API 500"
-    },
-    {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
+      "id": "swsh1",
+      "name": "Sword & Shield",
       "reason": "API 500"
     },
     {
       "id": "swshp",
       "name": "SWSH Black Star Promos",
-      "reason": "API 504"
-    },
-    {
-      "id": "sm115",
-      "name": "Hidden Fates",
       "reason": "API 500"
     },
     {
-      "id": "sm10",
-      "name": "Unbroken Bonds",
+      "id": "sm11",
+      "name": "Unified Minds",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm9",
+      "name": "Team Up",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm75",
+      "name": "Dragon Majesty",
       "reason": "API 502"
     },
     {
-      "id": "sm35",
-      "name": "Shining Legends",
+      "id": "sm6",
+      "name": "Forbidden Light",
+      "reason": "API 502"
+    },
+    {
+      "id": "sm4",
+      "name": "Crimson Invasion",
+      "reason": "API 502"
+    },
+    {
+      "id": "sm1",
+      "name": "Sun & Moon",
       "reason": "API 500"
     },
     {
       "id": "mcd16",
       "name": "McDonald's Collection 2016",
-      "reason": "API 500"
-    },
-    {
-      "id": "g1",
-      "name": "Generations",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy4",
-      "name": "Phantom Forces",
       "reason": "API 502"
     },
     {
-      "id": "bw11",
-      "name": "Legendary Treasures",
+      "id": "xy11",
+      "name": "Steam Siege",
       "reason": "API 502"
     },
     {
-      "id": "bw6",
-      "name": "Dragons Exalted",
+      "id": "dc1",
+      "name": "Double Crisis",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex9",
+      "name": "Emerald",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex5",
+      "name": "Hidden Legends",
       "reason": "API 502"
     },
     {
-      "id": "hgss2",
-      "name": "HS—Unleashed",
+      "id": "ex4",
+      "name": "Team Magma vs Team Aqua",
       "reason": "API 500"
     },
     {
-      "id": "pl4",
-      "name": "Arceus",
+      "id": "ecard2",
+      "name": "Aquapolis",
       "reason": "API 500"
     },
     {
-      "id": "pop2",
-      "name": "POP Series 2",
-      "reason": "API 502"
-    },
-    {
-      "id": "si1",
-      "name": "Southern Islands",
-      "reason": "API 500"
-    },
-    {
-      "id": "base5",
-      "name": "Team Rocket",
+      "id": "ecard1",
+      "name": "Expedition Base Set",
       "reason": "API 500"
     }
   ]
