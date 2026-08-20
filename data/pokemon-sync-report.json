@@ -1,12 +1,12 @@
 {
-  "syncedAt": "2026-08-19T04:57:16.682Z",
-  "cardCount": 19604,
+  "syncedAt": "2026-08-20T04:56:09.782Z",
+  "cardCount": 19315,
   "setCount": 219,
-  "failedSetCount": 25,
+  "failedSetCount": 26,
   "failedSets": [
     {
-      "id": "me2pt5",
-      "name": "Ascended Heroes",
+      "id": "me3",
+      "name": "Perfect Order",
       "reason": "API 500"
     },
     {
@@ -15,33 +15,33 @@
       "reason": "API 500"
     },
     {
-      "id": "sv4pt5",
-      "name": "Paldean Fates",
+      "id": "sv7",
+      "name": "Stellar Crown",
       "reason": "API 500"
     },
     {
-      "id": "swsh12pt5",
-      "name": "Crown Zenith",
-      "reason": "API 500"
-    },
-    {
-      "id": "svp",
-      "name": "Scarlet & Violet Black Star Promos",
+      "id": "sv4",
+      "name": "Paradox Rift",
       "reason": "API 502"
     },
     {
-      "id": "cel25c",
-      "name": "Celebrations: Classic Collection",
-      "reason": "API 502"
-    },
-    {
-      "id": "swsh3",
-      "name": "Darkness Ablaze",
+      "id": "sv3pt5",
+      "name": "151",
       "reason": "API 500"
     },
     {
-      "id": "swsh1",
-      "name": "Sword & Shield",
+      "id": "sv2",
+      "name": "Paldea Evolved",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh11tg",
+      "name": "Lost Origin Trainer Gallery",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh10",
+      "name": "Astral Radiance",
       "reason": "API 500"
     },
     {
@@ -50,38 +50,38 @@
       "reason": "API 500"
     },
     {
-      "id": "sm11",
-      "name": "Unified Minds",
+      "id": "sm75",
+      "name": "Dragon Majesty",
       "reason": "API 500"
     },
     {
-      "id": "sm10",
-      "name": "Unbroken Bonds",
+      "id": "sm5",
+      "name": "Ultra Prism",
       "reason": "API 500"
     },
     {
-      "id": "mcd18",
-      "name": "McDonald's Collection 2018",
-      "reason": "API 500"
+      "id": "smp",
+      "name": "SM Black Star Promos",
+      "reason": "API 502"
     },
     {
-      "id": "xy11",
-      "name": "Steam Siege",
-      "reason": "API 500"
-    },
-    {
-      "id": "dc1",
-      "name": "Double Crisis",
+      "id": "sm1",
+      "name": "Sun & Moon",
       "reason": "API 500"
     },
     {
       "id": "xy4",
       "name": "Phantom Forces",
-      "reason": "API 500"
+      "reason": "API 502"
     },
     {
-      "id": "bw5",
-      "name": "Dark Explorers",
+      "id": "mcd14",
+      "name": "McDonald's Collection 2014",
+      "reason": "API 502"
+    },
+    {
+      "id": "xy1",
+      "name": "XY",
       "reason": "API 500"
     },
     {
@@ -95,13 +95,23 @@
       "reason": "API 500"
     },
     {
-      "id": "pop9",
-      "name": "POP Series 9",
+      "id": "ex16",
+      "name": "Power Keepers",
       "reason": "API 500"
     },
     {
-      "id": "tk1a",
-      "name": "EX Trainer Kit Latias",
+      "id": "ex15",
+      "name": "Dragon Frontiers",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex9",
+      "name": "Emerald",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex8",
+      "name": "Deoxys",
       "reason": "API 500"
     },
     {
@@ -110,24 +120,19 @@
       "reason": "API 500"
     },
     {
-      "id": "ex1",
-      "name": "Ruby & Sapphire",
-      "reason": "API 500"
+      "id": "si1",
+      "name": "Southern Islands",
+      "reason": "API 502"
     },
     {
-      "id": "ecard3",
-      "name": "Skyridge",
-      "reason": "API 500"
+      "id": "gym1",
+      "name": "Gym Heroes",
+      "reason": "API 502"
     },
     {
-      "id": "bp",
-      "name": "Best of Game",
-      "reason": "API 500"
-    },
-    {
-      "id": "neo1",
-      "name": "Neo Genesis",
-      "reason": "API 500"
+      "id": "base4",
+      "name": "Base Set 2",
+      "reason": "API 502"
     }
   ]
 }
