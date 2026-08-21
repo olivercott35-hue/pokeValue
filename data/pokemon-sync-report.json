@@ -1,32 +1,27 @@
 {
-  "syncedAt": "2026-08-20T04:56:09.782Z",
-  "cardCount": 19315,
+  "syncedAt": "2026-08-21T04:54:50.967Z",
+  "cardCount": 19333,
   "setCount": 219,
-  "failedSetCount": 26,
+  "failedSetCount": 24,
   "failedSets": [
     {
-      "id": "me3",
-      "name": "Perfect Order",
+      "id": "me4",
+      "name": "Chaos Rising",
       "reason": "API 500"
     },
     {
-      "id": "sv8",
-      "name": "Surging Sparks",
-      "reason": "API 500"
+      "id": "sv10",
+      "name": "Destined Rivals",
+      "reason": "API 502"
     },
     {
-      "id": "sv7",
-      "name": "Stellar Crown",
+      "id": "sv6",
+      "name": "Twilight Masquerade",
       "reason": "API 500"
     },
     {
       "id": "sv4",
       "name": "Paradox Rift",
-      "reason": "API 502"
-    },
-    {
-      "id": "sv3pt5",
-      "name": "151",
       "reason": "API 500"
     },
     {
@@ -35,18 +30,28 @@
       "reason": "API 500"
     },
     {
-      "id": "swsh11tg",
-      "name": "Lost Origin Trainer Gallery",
+      "id": "swsh12pt5",
+      "name": "Crown Zenith",
       "reason": "API 502"
     },
     {
-      "id": "swsh10",
-      "name": "Astral Radiance",
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "sm115",
-      "name": "Hidden Fates",
+      "id": "swsh12tg",
+      "name": "Silver Tempest Trainer Gallery",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
       "reason": "API 500"
     },
     {
@@ -55,49 +60,49 @@
       "reason": "API 500"
     },
     {
-      "id": "sm5",
-      "name": "Ultra Prism",
+      "id": "sm6",
+      "name": "Forbidden Light",
       "reason": "API 500"
     },
     {
-      "id": "smp",
-      "name": "SM Black Star Promos",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm1",
-      "name": "Sun & Moon",
+      "id": "xy5",
+      "name": "Primal Clash",
       "reason": "API 500"
-    },
-    {
-      "id": "xy4",
-      "name": "Phantom Forces",
-      "reason": "API 502"
     },
     {
       "id": "mcd14",
       "name": "McDonald's Collection 2014",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw10",
+      "name": "Plasma Blast",
       "reason": "API 502"
     },
     {
-      "id": "xy1",
-      "name": "XY",
+      "id": "bw3",
+      "name": "Noble Victories",
       "reason": "API 500"
     },
     {
-      "id": "bw2",
-      "name": "Emerging Powers",
+      "id": "hgss1",
+      "name": "HeartGold & SoulSilver",
       "reason": "API 500"
     },
     {
-      "id": "hgss2",
-      "name": "HS—Unleashed",
+      "id": "dp7",
+      "name": "Stormfront",
       "reason": "API 500"
     },
     {
-      "id": "ex16",
-      "name": "Power Keepers",
-      "reason": "API 500"
+      "id": "dp4",
+      "name": "Great Encounters",
+      "reason": "API 502"
+    },
+    {
+      "id": "pop6",
+      "name": "POP Series 6",
+      "reason": "API 502"
     },
     {
       "id": "ex15",
@@ -105,34 +110,19 @@
       "reason": "API 500"
     },
     {
-      "id": "ex9",
-      "name": "Emerald",
+      "id": "tk1a",
+      "name": "EX Trainer Kit Latias",
       "reason": "API 500"
     },
     {
-      "id": "ex8",
-      "name": "Deoxys",
+      "id": "ecard3",
+      "name": "Skyridge",
       "reason": "API 500"
-    },
-    {
-      "id": "tk1b",
-      "name": "EX Trainer Kit Latios",
-      "reason": "API 500"
-    },
-    {
-      "id": "si1",
-      "name": "Southern Islands",
-      "reason": "API 502"
-    },
-    {
-      "id": "gym1",
-      "name": "Gym Heroes",
-      "reason": "API 502"
     },
     {
       "id": "base4",
       "name": "Base Set 2",
-      "reason": "API 502"
+      "reason": "API 500"
     }
   ]
 }
