@@ -1,62 +1,47 @@
 {
-  "syncedAt": "2026-08-25T04:59:30.271Z",
-  "cardCount": 18990,
+  "syncedAt": "2026-08-26T04:56:42.675Z",
+  "cardCount": 19421,
   "setCount": 219,
-  "failedSetCount": 26,
+  "failedSetCount": 23,
   "failedSets": [
+    {
+      "id": "me3",
+      "name": "Perfect Order",
+      "reason": "API 500"
+    },
     {
       "id": "rsv10pt5",
       "name": "White Flare",
-      "reason": "API 502"
-    },
-    {
-      "id": "sv10",
-      "name": "Destined Rivals",
-      "reason": "API 502"
+      "reason": "API 500"
     },
     {
       "id": "sv9",
       "name": "Journey Together",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv8",
+      "name": "Surging Sparks",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv7",
+      "name": "Stellar Crown",
       "reason": "API 500"
     },
     {
       "id": "sv6",
       "name": "Twilight Masquerade",
-      "reason": "API 502"
-    },
-    {
-      "id": "sv5",
-      "name": "Temporal Forces",
       "reason": "API 500"
-    },
-    {
-      "id": "sv3pt5",
-      "name": "151",
-      "reason": "API 502"
     },
     {
       "id": "sv1",
       "name": "Scarlet & Violet",
-      "reason": "API 502"
-    },
-    {
-      "id": "svp",
-      "name": "Scarlet & Violet Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "swsh12",
-      "name": "Silver Tempest",
-      "reason": "API 502"
-    },
-    {
-      "id": "mcd22",
-      "name": "McDonald's Collection 2022",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh10",
-      "name": "Astral Radiance",
+      "id": "swsh12pt5gg",
+      "name": "Crown Zenith Galarian Gallery",
       "reason": "API 500"
     },
     {
@@ -65,73 +50,73 @@
       "reason": "API 500"
     },
     {
-      "id": "swsh45",
-      "name": "Shining Fates",
+      "id": "swsh2",
+      "name": "Rebel Clash",
       "reason": "API 500"
     },
     {
-      "id": "mcd21",
-      "name": "McDonald's Collection 2021",
+      "id": "swsh1",
+      "name": "Sword & Shield",
       "reason": "API 500"
     },
     {
-      "id": "swsh4",
-      "name": "Vivid Voltage",
-      "reason": "API 502"
-    },
-    {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
+      "id": "sm11",
+      "name": "Unified Minds",
       "reason": "API 500"
     },
     {
-      "id": "mcd18",
-      "name": "McDonald's Collection 2018",
+      "id": "sm2",
+      "name": "Guardians Rising",
       "reason": "API 500"
     },
     {
-      "id": "sm75",
-      "name": "Dragon Majesty",
+      "id": "bw10",
+      "name": "Plasma Blast",
       "reason": "API 500"
     },
     {
-      "id": "sm5",
-      "name": "Ultra Prism",
-      "reason": "API 502"
+      "id": "dv1",
+      "name": "Dragon Vault",
+      "reason": "API 500"
     },
     {
-      "id": "sm1",
-      "name": "Sun & Moon",
-      "reason": "API 502"
+      "id": "pl3",
+      "name": "Supreme Victors",
+      "reason": "API 500"
     },
     {
-      "id": "ex15",
-      "name": "Dragon Frontiers",
-      "reason": "API 502"
+      "id": "pop6",
+      "name": "POP Series 6",
+      "reason": "API 500"
     },
     {
-      "id": "ex9",
-      "name": "Emerald",
+      "id": "ex7",
+      "name": "Team Rocket Returns",
+      "reason": "API 500"
+    },
+    {
+      "id": "tk1a",
+      "name": "EX Trainer Kit Latias",
       "reason": "API 500"
     },
     {
       "id": "ex5",
       "name": "Hidden Legends",
-      "reason": "API 502"
-    },
-    {
-      "id": "ecard3",
-      "name": "Skyridge",
       "reason": "API 500"
     },
     {
-      "id": "base6",
-      "name": "Legendary Collection",
-      "reason": "API 502"
+      "id": "ex3",
+      "name": "Dragon",
+      "reason": "API 500"
     },
     {
-      "id": "si1",
-      "name": "Southern Islands",
+      "id": "base5",
+      "name": "Team Rocket",
+      "reason": "API 500"
+    },
+    {
+      "id": "base2",
+      "name": "Jungle",
       "reason": "API 500"
     }
   ]
