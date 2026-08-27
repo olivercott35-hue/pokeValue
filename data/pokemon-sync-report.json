@@ -1,57 +1,47 @@
 {
-  "syncedAt": "2026-08-26T04:56:42.675Z",
-  "cardCount": 19421,
+  "syncedAt": "2026-08-27T15:25:22.611Z",
+  "cardCount": 19572,
   "setCount": 219,
-  "failedSetCount": 23,
+  "failedSetCount": 27,
   "failedSets": [
     {
-      "id": "me3",
-      "name": "Perfect Order",
+      "id": "me1",
+      "name": "Mega Evolution",
       "reason": "API 500"
     },
     {
-      "id": "rsv10pt5",
-      "name": "White Flare",
+      "id": "sv10",
+      "name": "Destined Rivals",
       "reason": "API 500"
     },
     {
-      "id": "sv9",
-      "name": "Journey Together",
-      "reason": "API 502"
-    },
-    {
-      "id": "sv8",
-      "name": "Surging Sparks",
+      "id": "sv5",
+      "name": "Temporal Forces",
       "reason": "API 500"
     },
     {
-      "id": "sv7",
-      "name": "Stellar Crown",
+      "id": "sv3",
+      "name": "Obsidian Flames",
       "reason": "API 500"
     },
     {
-      "id": "sv6",
-      "name": "Twilight Masquerade",
+      "id": "sv2",
+      "name": "Paldea Evolved",
       "reason": "API 500"
     },
     {
-      "id": "sv1",
-      "name": "Scarlet & Violet",
+      "id": "pgo",
+      "name": "Pokémon GO",
       "reason": "API 500"
     },
     {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith Galarian Gallery",
+      "id": "cel25c",
+      "name": "Celebrations: Classic Collection",
       "reason": "API 500"
     },
     {
-      "id": "swsh8",
-      "name": "Fusion Strike",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh2",
-      "name": "Rebel Clash",
+      "id": "fut20",
+      "name": "Pokémon Futsal Collection",
       "reason": "API 500"
     },
     {
@@ -60,38 +50,58 @@
       "reason": "API 500"
     },
     {
-      "id": "sm11",
-      "name": "Unified Minds",
-      "reason": "API 500"
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "reason": "API 502"
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
+      "reason": "API 502"
     },
     {
       "id": "sm2",
       "name": "Guardians Rising",
+      "reason": "API 502"
+    },
+    {
+      "id": "smp",
+      "name": "SM Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "bw10",
-      "name": "Plasma Blast",
+      "id": "xy0",
+      "name": "Kalos Starter Set",
+      "reason": "API 502"
+    },
+    {
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
       "reason": "API 500"
     },
     {
-      "id": "dv1",
-      "name": "Dragon Vault",
+      "id": "bw1",
+      "name": "Black & White",
+      "reason": "API 502"
+    },
+    {
+      "id": "pl4",
+      "name": "Arceus",
       "reason": "API 500"
     },
     {
-      "id": "pl3",
-      "name": "Supreme Victors",
+      "id": "pop8",
+      "name": "POP Series 8",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp4",
+      "name": "Great Encounters",
       "reason": "API 500"
     },
     {
-      "id": "pop6",
-      "name": "POP Series 6",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex7",
-      "name": "Team Rocket Returns",
+      "id": "ex13",
+      "name": "Holon Phantoms",
       "reason": "API 500"
     },
     {
@@ -100,24 +110,34 @@
       "reason": "API 500"
     },
     {
-      "id": "ex5",
-      "name": "Hidden Legends",
+      "id": "bp",
+      "name": "Best of Game",
       "reason": "API 500"
     },
     {
-      "id": "ex3",
-      "name": "Dragon",
+      "id": "neo4",
+      "name": "Neo Destiny",
       "reason": "API 500"
     },
     {
-      "id": "base5",
-      "name": "Team Rocket",
+      "id": "si1",
+      "name": "Southern Islands",
       "reason": "API 500"
     },
     {
-      "id": "base2",
-      "name": "Jungle",
+      "id": "neo1",
+      "name": "Neo Genesis",
       "reason": "API 500"
+    },
+    {
+      "id": "base3",
+      "name": "Fossil",
+      "reason": "API 500"
+    },
+    {
+      "id": "base1",
+      "name": "Base",
+      "reason": "API 502"
     }
   ]
 }
