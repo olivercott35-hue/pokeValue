@@ -1,143 +1,128 @@
 {
-  "syncedAt": "2026-08-27T15:25:22.611Z",
-  "cardCount": 19572,
+  "syncedAt": "2026-08-28T16:08:47.225Z",
+  "cardCount": 20074,
   "setCount": 219,
-  "failedSetCount": 27,
+  "failedSetCount": 24,
   "failedSets": [
     {
-      "id": "me1",
-      "name": "Mega Evolution",
+      "id": "rsv10pt5",
+      "name": "White Flare",
       "reason": "API 500"
     },
     {
-      "id": "sv10",
-      "name": "Destined Rivals",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv5",
-      "name": "Temporal Forces",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv3",
-      "name": "Obsidian Flames",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv2",
-      "name": "Paldea Evolved",
-      "reason": "API 500"
-    },
-    {
-      "id": "pgo",
-      "name": "Pokémon GO",
-      "reason": "API 500"
-    },
-    {
-      "id": "cel25c",
-      "name": "Celebrations: Classic Collection",
-      "reason": "API 500"
-    },
-    {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh1",
-      "name": "Sword & Shield",
-      "reason": "API 500"
-    },
-    {
-      "id": "swshp",
-      "name": "SWSH Black Star Promos",
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
       "reason": "API 502"
     },
     {
-      "id": "sm115",
-      "name": "Hidden Fates",
+      "id": "swsh12pt5gg",
+      "name": "Crown Zenith Galarian Gallery",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm35",
+      "name": "Shining Legends",
       "reason": "API 502"
     },
     {
-      "id": "sm2",
-      "name": "Guardians Rising",
+      "id": "sm1",
+      "name": "Sun & Moon",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy4",
+      "name": "Phantom Forces",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw4",
+      "name": "Next Destinies",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw3",
+      "name": "Noble Victories",
+      "reason": "API 500"
+    },
+    {
+      "id": "hgss4",
+      "name": "HS—Triumphant",
       "reason": "API 502"
     },
     {
-      "id": "smp",
-      "name": "SM Black Star Promos",
+      "id": "hgss1",
+      "name": "HeartGold & SoulSilver",
       "reason": "API 500"
     },
     {
-      "id": "xy0",
-      "name": "Kalos Starter Set",
+      "id": "pl1",
+      "name": "Platinum",
+      "reason": "API 500"
+    },
+    {
+      "id": "dp5",
+      "name": "Majestic Dawn",
+      "reason": "API 500"
+    },
+    {
+      "id": "pop6",
+      "name": "POP Series 6",
       "reason": "API 502"
     },
     {
-      "id": "mcd11",
-      "name": "McDonald's Collection 2011",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw1",
-      "name": "Black & White",
+      "id": "dp1",
+      "name": "Diamond & Pearl",
       "reason": "API 502"
     },
     {
-      "id": "pl4",
-      "name": "Arceus",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop8",
-      "name": "POP Series 8",
+      "id": "dpp",
+      "name": "DP Black Star Promos",
       "reason": "API 502"
     },
     {
-      "id": "dp4",
-      "name": "Great Encounters",
+      "id": "ex16",
+      "name": "Power Keepers",
       "reason": "API 500"
     },
     {
-      "id": "ex13",
-      "name": "Holon Phantoms",
+      "id": "ex10",
+      "name": "Unseen Forces",
       "reason": "API 500"
     },
     {
-      "id": "tk1a",
-      "name": "EX Trainer Kit Latias",
+      "id": "ex7",
+      "name": "Team Rocket Returns",
       "reason": "API 500"
     },
     {
-      "id": "bp",
-      "name": "Best of Game",
+      "id": "ex6",
+      "name": "FireRed & LeafGreen",
       "reason": "API 500"
     },
     {
-      "id": "neo4",
-      "name": "Neo Destiny",
+      "id": "pop1",
+      "name": "POP Series 1",
       "reason": "API 500"
     },
     {
-      "id": "si1",
-      "name": "Southern Islands",
+      "id": "ex2",
+      "name": "Sandstorm",
       "reason": "API 500"
     },
     {
-      "id": "neo1",
-      "name": "Neo Genesis",
+      "id": "gym1",
+      "name": "Gym Heroes",
       "reason": "API 500"
     },
     {
-      "id": "base3",
-      "name": "Fossil",
+      "id": "base4",
+      "name": "Base Set 2",
       "reason": "API 500"
-    },
-    {
-      "id": "base1",
-      "name": "Base",
-      "reason": "API 502"
     }
   ]
 }
