@@ -1,22 +1,27 @@
 {
-  "syncedAt": "2026-08-28T16:08:47.225Z",
-  "cardCount": 20074,
-  "setCount": 219,
-  "failedSetCount": 24,
+  "syncedAt": "2026-08-30T10:02:13.154Z",
+  "cardCount": 17546,
+  "setCount": 174,
+  "failedSetCount": 23,
   "failedSets": [
     {
-      "id": "rsv10pt5",
-      "name": "White Flare",
+      "id": "me5",
+      "name": "Pitch Black",
       "reason": "API 500"
     },
     {
-      "id": "sv6pt5",
-      "name": "Shrouded Fable",
+      "id": "me3",
+      "name": "Perfect Order",
       "reason": "API 502"
     },
     {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith Galarian Gallery",
+      "id": "sv8",
+      "name": "Surging Sparks",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv2",
+      "name": "Paldea Evolved",
       "reason": "API 500"
     },
     {
@@ -25,103 +30,93 @@
       "reason": "API 500"
     },
     {
-      "id": "sm35",
-      "name": "Shining Legends",
+      "id": "cel25",
+      "name": "Celebrations",
       "reason": "API 502"
     },
     {
-      "id": "sm1",
-      "name": "Sun & Moon",
+      "id": "mcd21",
+      "name": "McDonald's Collection 2021",
+      "reason": "API 502"
+    },
+    {
+      "id": "fut20",
+      "name": "Pokémon Futsal Collection",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh1",
+      "name": "Sword & Shield",
+      "reason": "API 502"
+    },
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "reason": "API 502"
+    },
+    {
+      "id": "sma",
+      "name": "Hidden Fates Shiny Vault",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm9",
+      "name": "Team Up",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm7",
+      "name": "Celestial Storm",
       "reason": "API 500"
     },
     {
       "id": "xy4",
       "name": "Phantom Forces",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw4",
-      "name": "Next Destinies",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw3",
-      "name": "Noble Victories",
-      "reason": "API 500"
-    },
-    {
-      "id": "hgss4",
-      "name": "HS—Triumphant",
       "reason": "API 502"
     },
     {
-      "id": "hgss1",
-      "name": "HeartGold & SoulSilver",
-      "reason": "API 500"
-    },
-    {
-      "id": "pl1",
-      "name": "Platinum",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp5",
-      "name": "Majestic Dawn",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop6",
-      "name": "POP Series 6",
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
       "reason": "API 502"
     },
     {
-      "id": "dp1",
-      "name": "Diamond & Pearl",
-      "reason": "API 502"
-    },
-    {
-      "id": "dpp",
-      "name": "DP Black Star Promos",
-      "reason": "API 502"
-    },
-    {
-      "id": "ex16",
-      "name": "Power Keepers",
+      "id": "hgss3",
+      "name": "HS—Undaunted",
       "reason": "API 500"
     },
     {
-      "id": "ex10",
-      "name": "Unseen Forces",
+      "id": "dp4",
+      "name": "Great Encounters",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex14",
+      "name": "Crystal Guardians",
+      "reason": "API 500"
+    },
+    {
+      "id": "tk2b",
+      "name": "EX Trainer Kit 2 Minun",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex11",
+      "name": "Delta Species",
       "reason": "API 500"
     },
     {
       "id": "ex7",
       "name": "Team Rocket Returns",
+      "reason": "API 502"
+    },
+    {
+      "id": "np",
+      "name": "Nintendo Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "ex6",
-      "name": "FireRed & LeafGreen",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop1",
-      "name": "POP Series 1",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex2",
-      "name": "Sandstorm",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym1",
-      "name": "Gym Heroes",
-      "reason": "API 500"
-    },
-    {
-      "id": "base4",
-      "name": "Base Set 2",
+      "id": "base6",
+      "name": "Legendary Collection",
       "reason": "API 500"
     }
   ]
