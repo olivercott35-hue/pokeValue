@@ -1,18 +1,13 @@
 {
-  "syncedAt": "2026-08-30T10:02:13.154Z",
-  "cardCount": 17546,
-  "setCount": 174,
-  "failedSetCount": 23,
+  "syncedAt": "2026-08-31T10:43:44.855Z",
+  "cardCount": 19224,
+  "setCount": 219,
+  "failedSetCount": 25,
   "failedSets": [
     {
-      "id": "me5",
-      "name": "Pitch Black",
+      "id": "me1",
+      "name": "Mega Evolution",
       "reason": "API 500"
-    },
-    {
-      "id": "me3",
-      "name": "Perfect Order",
-      "reason": "API 502"
     },
     {
       "id": "sv8",
@@ -22,66 +17,81 @@
     {
       "id": "sv2",
       "name": "Paldea Evolved",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh12",
+      "name": "Silver Tempest",
       "reason": "API 500"
     },
     {
       "id": "swsh8",
       "name": "Fusion Strike",
-      "reason": "API 500"
-    },
-    {
-      "id": "cel25",
-      "name": "Celebrations",
-      "reason": "API 502"
-    },
-    {
-      "id": "mcd21",
-      "name": "McDonald's Collection 2021",
-      "reason": "API 502"
-    },
-    {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
-      "reason": "API 502"
-    },
-    {
-      "id": "swsh1",
-      "name": "Sword & Shield",
       "reason": "API 502"
     },
     {
       "id": "swshp",
       "name": "SWSH Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
       "reason": "API 502"
     },
     {
-      "id": "sma",
-      "name": "Hidden Fates Shiny Vault",
+      "id": "sm5",
+      "name": "Ultra Prism",
       "reason": "API 500"
     },
     {
-      "id": "sm9",
-      "name": "Team Up",
+      "id": "sm3",
+      "name": "Burning Shadows",
       "reason": "API 500"
     },
     {
-      "id": "sm7",
-      "name": "Celestial Storm",
+      "id": "mcd16",
+      "name": "McDonald's Collection 2016",
       "reason": "API 500"
     },
     {
-      "id": "xy4",
-      "name": "Phantom Forces",
+      "id": "xy11",
+      "name": "Steam Siege",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy1",
+      "name": "XY",
       "reason": "API 502"
+    },
+    {
+      "id": "bw6",
+      "name": "Dragons Exalted",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw2",
+      "name": "Emerging Powers",
+      "reason": "API 500"
     },
     {
       "id": "mcd11",
       "name": "McDonald's Collection 2011",
-      "reason": "API 502"
+      "reason": "API 500"
     },
     {
-      "id": "hgss3",
-      "name": "HS—Undaunted",
+      "id": "bw1",
+      "name": "Black & White",
+      "reason": "API 500"
+    },
+    {
+      "id": "pl1",
+      "name": "Platinum",
       "reason": "API 500"
     },
     {
@@ -90,34 +100,34 @@
       "reason": "API 500"
     },
     {
+      "id": "dp3",
+      "name": "Secret Wonders",
+      "reason": "API 500"
+    },
+    {
       "id": "ex14",
       "name": "Crystal Guardians",
-      "reason": "API 500"
-    },
-    {
-      "id": "tk2b",
-      "name": "EX Trainer Kit 2 Minun",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex11",
-      "name": "Delta Species",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex7",
-      "name": "Team Rocket Returns",
       "reason": "API 502"
+    },
+    {
+      "id": "pop3",
+      "name": "POP Series 3",
+      "reason": "API 500"
     },
     {
       "id": "np",
       "name": "Nintendo Black Star Promos",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex1",
+      "name": "Ruby & Sapphire",
       "reason": "API 500"
     },
     {
-      "id": "base6",
-      "name": "Legendary Collection",
-      "reason": "API 500"
+      "id": "neo4",
+      "name": "Neo Destiny",
+      "reason": "API 502"
     }
   ]
 }
