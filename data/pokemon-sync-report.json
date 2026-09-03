@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-02T08:50:01.217Z",
-  "cardCount": 19279,
+  "syncedAt": "2026-09-03T08:55:15.246Z",
+  "cardCount": 18283,
   "setCount": 219,
-  "failedSetCount": 30,
+  "failedSetCount": 34,
   "failedSets": [
     {
       "id": "me5",
@@ -10,28 +10,28 @@
       "reason": "API 500"
     },
     {
-      "id": "sv9",
-      "name": "Journey Together",
+      "id": "me1",
+      "name": "Mega Evolution",
       "reason": "API 500"
     },
     {
-      "id": "sv6pt5",
-      "name": "Shrouded Fable",
+      "id": "rsv10pt5",
+      "name": "White Flare",
       "reason": "API 500"
     },
     {
-      "id": "sv4",
-      "name": "Paradox Rift",
-      "reason": "API 502"
-    },
-    {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith Galarian Gallery",
+      "id": "sv10",
+      "name": "Destined Rivals",
       "reason": "API 500"
     },
     {
-      "id": "swsh12tg",
-      "name": "Silver Tempest Trainer Gallery",
+      "id": "sv2",
+      "name": "Paldea Evolved",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh12",
+      "name": "Silver Tempest",
       "reason": "API 500"
     },
     {
@@ -40,44 +40,54 @@
       "reason": "API 500"
     },
     {
+      "id": "pgo",
+      "name": "Pokémon GO",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh9",
+      "name": "Brilliant Stars",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh45",
+      "name": "Shining Fates",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh35",
+      "name": "Champion's Path",
+      "reason": "API 502"
+    },
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "reason": "API 500"
+    },
+    {
       "id": "mcd19",
       "name": "McDonald's Collection 2019",
       "reason": "API 500"
     },
     {
-      "id": "sm7",
-      "name": "Celestial Storm",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm5",
-      "name": "Ultra Prism",
-      "reason": "API 502"
-    },
-    {
-      "id": "mcd17",
-      "name": "McDonald's Collection 2017",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm4",
-      "name": "Crimson Invasion",
+      "id": "sm9",
+      "name": "Team Up",
       "reason": "API 500"
     },
     {
-      "id": "smp",
-      "name": "SM Black Star Promos",
+      "id": "mcd18",
+      "name": "McDonald's Collection 2018",
       "reason": "API 500"
-    },
-    {
-      "id": "xy12",
-      "name": "Evolutions",
-      "reason": "API 502"
-    },
-    {
-      "id": "xy8",
-      "name": "BREAKthrough",
-      "reason": "API 502"
     },
     {
       "id": "xy7",
@@ -85,38 +95,38 @@
       "reason": "API 500"
     },
     {
-      "id": "xy6",
-      "name": "Roaring Skies",
+      "id": "xy4",
+      "name": "Phantom Forces",
       "reason": "API 404"
     },
     {
-      "id": "dc1",
-      "name": "Double Crisis",
-      "reason": "API 500"
-    },
-    {
-      "id": "xyp",
-      "name": "XY Black Star Promos",
+      "id": "xy2",
+      "name": "Flashfire",
       "reason": "API 502"
     },
     {
-      "id": "bw4",
-      "name": "Next Destinies",
+      "id": "bw9",
+      "name": "Plasma Freeze",
+      "reason": "API 502"
+    },
+    {
+      "id": "bw8",
+      "name": "Plasma Storm",
+      "reason": "API 502"
+    },
+    {
+      "id": "hgss3",
+      "name": "HS—Undaunted",
       "reason": "API 500"
     },
     {
-      "id": "bwp",
-      "name": "BW Black Star Promos",
+      "id": "pl1",
+      "name": "Platinum",
       "reason": "API 500"
     },
     {
-      "id": "hgss2",
-      "name": "HS—Unleashed",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp4",
-      "name": "Great Encounters",
+      "id": "pop8",
+      "name": "POP Series 8",
       "reason": "API 500"
     },
     {
@@ -125,34 +135,44 @@
       "reason": "API 500"
     },
     {
-      "id": "dp1",
-      "name": "Diamond & Pearl",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex11",
-      "name": "Delta Species",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop2",
-      "name": "POP Series 2",
-      "reason": "API 500"
-    },
-    {
       "id": "ex8",
       "name": "Deoxys",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex4",
+      "name": "Team Magma vs Team Aqua",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex2",
+      "name": "Sandstorm",
       "reason": "API 500"
     },
     {
-      "id": "ex5",
-      "name": "Hidden Legends",
+      "id": "ecard2",
+      "name": "Aquapolis",
       "reason": "API 500"
     },
     {
-      "id": "si1",
-      "name": "Southern Islands",
+      "id": "neo4",
+      "name": "Neo Destiny",
+      "reason": "API 502"
+    },
+    {
+      "id": "neo3",
+      "name": "Neo Revelation",
       "reason": "API 500"
+    },
+    {
+      "id": "base5",
+      "name": "Team Rocket",
+      "reason": "API 502"
+    },
+    {
+      "id": "base1",
+      "name": "Base",
+      "reason": "API 502"
     }
   ]
 }
