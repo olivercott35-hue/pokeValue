@@ -1,67 +1,52 @@
 {
-  "syncedAt": "2026-09-09T08:55:02.426Z",
-  "cardCount": 19712,
-  "setCount": 219,
-  "failedSetCount": 31,
+  "syncedAt": "2026-09-10T08:53:58.952Z",
+  "cardCount": 18117,
+  "setCount": 174,
+  "failedSetCount": 18,
   "failedSets": [
     {
-      "id": "me4",
-      "name": "Chaos Rising",
+      "id": "me2pt5",
+      "name": "Ascended Heroes",
+      "reason": "API 500"
+    },
+    {
+      "id": "zsv10pt5",
+      "name": "Black Bolt",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
       "reason": "API 500"
     },
     {
       "id": "sv5",
       "name": "Temporal Forces",
-      "reason": "API 500"
-    },
-    {
-      "id": "sve",
-      "name": "Scarlet & Violet Energies",
       "reason": "API 502"
     },
     {
-      "id": "svp",
-      "name": "Scarlet & Violet Black Star Promos",
+      "id": "sv2",
+      "name": "Paldea Evolved",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh11",
+      "name": "Lost Origin",
       "reason": "API 500"
     },
     {
       "id": "swsh11tg",
       "name": "Lost Origin Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd22",
-      "name": "McDonald's Collection 2022",
       "reason": "API 502"
     },
     {
-      "id": "cel25c",
-      "name": "Celebrations: Classic Collection",
+      "id": "swsh6",
+      "name": "Chilling Reign",
       "reason": "API 500"
     },
     {
-      "id": "swsh35",
-      "name": "Champion's Path",
-      "reason": "API 500"
-    },
-    {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm12",
-      "name": "Cosmic Eclipse",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm11",
-      "name": "Unified Minds",
-      "reason": "API 500"
-    },
-    {
-      "id": "det1",
-      "name": "Detective Pikachu",
+      "id": "sm7",
+      "name": "Celestial Storm",
       "reason": "API 500"
     },
     {
@@ -70,94 +55,44 @@
       "reason": "API 500"
     },
     {
-      "id": "xy12",
-      "name": "Evolutions",
+      "id": "sm4",
+      "name": "Crimson Invasion",
       "reason": "API 500"
     },
     {
-      "id": "xy10",
-      "name": "Fates Collide",
-      "reason": "API 502"
-    },
-    {
-      "id": "g1",
-      "name": "Generations",
-      "reason": "API 502"
-    },
-    {
-      "id": "mcd14",
-      "name": "McDonald's Collection 2014",
-      "reason": "API 502"
-    },
-    {
-      "id": "xy1",
-      "name": "XY",
+      "id": "xy0",
+      "name": "Kalos Starter Set",
       "reason": "API 500"
     },
     {
       "id": "bw4",
       "name": "Next Destinies",
-      "reason": "API 502"
+      "reason": "API 500"
     },
     {
       "id": "bw2",
       "name": "Emerging Powers",
-      "reason": "API 502"
-    },
-    {
-      "id": "hgss3",
-      "name": "HS—Undaunted",
       "reason": "API 500"
     },
     {
-      "id": "hgss1",
-      "name": "HeartGold & SoulSilver",
+      "id": "ru1",
+      "name": "Pokémon Rumble",
       "reason": "API 500"
     },
     {
-      "id": "pop7",
-      "name": "POP Series 7",
+      "id": "pop9",
+      "name": "POP Series 9",
       "reason": "API 500"
     },
     {
-      "id": "dpp",
-      "name": "DP Black Star Promos",
+      "id": "pop5",
+      "name": "POP Series 5",
       "reason": "API 500"
     },
     {
-      "id": "ex16",
-      "name": "Power Keepers",
+      "id": "neo3",
+      "name": "Neo Revelation",
       "reason": "API 500"
-    },
-    {
-      "id": "ex13",
-      "name": "Holon Phantoms",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex12",
-      "name": "Legend Maker",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex11",
-      "name": "Delta Species",
-      "reason": "API 502"
-    },
-    {
-      "id": "ex9",
-      "name": "Emerald",
-      "reason": "API 500"
-    },
-    {
-      "id": "np",
-      "name": "Nintendo Black Star Promos",
-      "reason": "API 502"
-    },
-    {
-      "id": "base1",
-      "name": "Base",
-      "reason": "API 502"
     }
   ]
 }
