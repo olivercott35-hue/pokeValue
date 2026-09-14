@@ -1,13 +1,13 @@
 {
-  "syncedAt": "2026-09-12T08:42:16.645Z",
-  "cardCount": 19330,
+  "syncedAt": "2026-09-14T09:47:38.935Z",
+  "cardCount": 19747,
   "setCount": 219,
-  "failedSetCount": 25,
+  "failedSetCount": 22,
   "failedSets": [
     {
-      "id": "sv8",
-      "name": "Surging Sparks",
-      "reason": "API 502"
+      "id": "sv4",
+      "name": "Paradox Rift",
+      "reason": "API 500"
     },
     {
       "id": "sv2",
@@ -15,38 +15,23 @@
       "reason": "API 502"
     },
     {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith Galarian Gallery",
+      "id": "sv1",
+      "name": "Scarlet & Violet",
       "reason": "API 500"
     },
     {
-      "id": "swsh12",
-      "name": "Silver Tempest",
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "reason": "API 500"
     },
     {
-      "id": "swsh11tg",
-      "name": "Lost Origin Trainer Gallery",
+      "id": "swsh6",
+      "name": "Chilling Reign",
       "reason": "API 500"
     },
     {
-      "id": "swsh8",
-      "name": "Fusion Strike",
-      "reason": "API 502"
-    },
-    {
-      "id": "cel25",
-      "name": "Celebrations",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh3",
-      "name": "Darkness Ablaze",
-      "reason": "API 500"
-    },
-    {
-      "id": "swshp",
-      "name": "SWSH Black Star Promos",
+      "id": "swsh5",
+      "name": "Battle Styles",
       "reason": "API 502"
     },
     {
@@ -55,33 +40,23 @@
       "reason": "API 500"
     },
     {
-      "id": "sm9",
-      "name": "Team Up",
-      "reason": "API 500"
-    },
-    {
       "id": "sm5",
       "name": "Ultra Prism",
+      "reason": "API 502"
+    },
+    {
+      "id": "sm4",
+      "name": "Crimson Invasion",
+      "reason": "API 502"
+    },
+    {
+      "id": "smp",
+      "name": "SM Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "mcd17",
-      "name": "McDonald's Collection 2017",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm1",
-      "name": "Sun & Moon",
-      "reason": "API 500"
-    },
-    {
-      "id": "g1",
-      "name": "Generations",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy1",
-      "name": "XY",
+      "id": "xy3",
+      "name": "Furious Fists",
       "reason": "API 500"
     },
     {
@@ -90,38 +65,48 @@
       "reason": "API 500"
     },
     {
-      "id": "bw4",
-      "name": "Next Destinies",
+      "id": "hgss3",
+      "name": "HS—Undaunted",
       "reason": "API 500"
     },
     {
-      "id": "pl1",
-      "name": "Platinum",
+      "id": "hsp",
+      "name": "HGSS Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "pop6",
-      "name": "POP Series 6",
+      "id": "dp6",
+      "name": "Legends Awakened",
       "reason": "API 500"
+    },
+    {
+      "id": "pop7",
+      "name": "POP Series 7",
+      "reason": "API 504"
+    },
+    {
+      "id": "dp4",
+      "name": "Great Encounters",
+      "reason": "API 500"
+    },
+    {
+      "id": "dp1",
+      "name": "Diamond & Pearl",
+      "reason": "API 502"
     },
     {
       "id": "dpp",
       "name": "DP Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "tk2a",
-      "name": "EX Trainer Kit 2 Plusle",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex9",
-      "name": "Emerald",
       "reason": "API 502"
     },
     {
-      "id": "ex8",
-      "name": "Deoxys",
+      "id": "pop5",
+      "name": "POP Series 5",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex4",
+      "name": "Team Magma vs Team Aqua",
       "reason": "API 500"
     },
     {
