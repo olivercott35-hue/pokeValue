@@ -1,28 +1,58 @@
 {
-  "syncedAt": "2026-09-14T09:47:38.935Z",
-  "cardCount": 19747,
-  "setCount": 219,
-  "failedSetCount": 22,
+  "syncedAt": "2026-09-17T09:40:48.977Z",
+  "cardCount": 18038,
+  "setCount": 222,
+  "failedSetCount": 42,
   "failedSets": [
+    {
+      "id": "me3",
+      "name": "Perfect Order",
+      "reason": "API 500"
+    },
+    {
+      "id": "me1",
+      "name": "Mega Evolution",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv9",
+      "name": "Journey Together",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv8pt5",
+      "name": "Prismatic Evolutions",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv6",
+      "name": "Twilight Masquerade",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv5",
+      "name": "Temporal Forces",
+      "reason": "API 500"
+    },
     {
       "id": "sv4",
       "name": "Paradox Rift",
       "reason": "API 500"
     },
     {
-      "id": "sv2",
-      "name": "Paldea Evolved",
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh11tg",
+      "name": "Lost Origin Trainer Gallery",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd22",
+      "name": "McDonald's Collection 2022",
       "reason": "API 502"
-    },
-    {
-      "id": "sv1",
-      "name": "Scarlet & Violet",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars Trainer Gallery",
-      "reason": "API 500"
     },
     {
       "id": "swsh6",
@@ -32,46 +62,76 @@
     {
       "id": "swsh5",
       "name": "Battle Styles",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm11",
-      "name": "Unified Minds",
       "reason": "API 500"
     },
     {
-      "id": "sm5",
-      "name": "Ultra Prism",
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
       "reason": "API 502"
     },
     {
-      "id": "sm4",
-      "name": "Crimson Invasion",
-      "reason": "API 502"
+      "id": "fut20",
+      "name": "Pokémon Futsal Collection",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh1",
+      "name": "Sword & Shield",
+      "reason": "API 500"
+    },
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "det1",
+      "name": "Detective Pikachu",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm35",
+      "name": "Shining Legends",
+      "reason": "API 500"
     },
     {
       "id": "smp",
       "name": "SM Black Star Promos",
+      "reason": "API 404"
+    },
+    {
+      "id": "sm1",
+      "name": "Sun & Moon",
+      "reason": "API 502"
+    },
+    {
+      "id": "mcd16",
+      "name": "McDonald's Collection 2016",
+      "reason": "API 502"
+    },
+    {
+      "id": "bw9",
+      "name": "Plasma Freeze",
       "reason": "API 500"
     },
     {
-      "id": "xy3",
-      "name": "Furious Fists",
+      "id": "ru1",
+      "name": "Pokémon Rumble",
       "reason": "API 500"
     },
     {
-      "id": "bw5",
-      "name": "Dark Explorers",
+      "id": "pl2",
+      "name": "Rising Rivals",
       "reason": "API 500"
     },
     {
-      "id": "hgss3",
-      "name": "HS—Undaunted",
-      "reason": "API 500"
-    },
-    {
-      "id": "hsp",
-      "name": "HGSS Black Star Promos",
+      "id": "pop9",
+      "name": "POP Series 9",
       "reason": "API 500"
     },
     {
@@ -80,39 +140,79 @@
       "reason": "API 500"
     },
     {
-      "id": "pop7",
-      "name": "POP Series 7",
-      "reason": "API 504"
-    },
-    {
-      "id": "dp4",
-      "name": "Great Encounters",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp1",
-      "name": "Diamond & Pearl",
-      "reason": "API 502"
-    },
-    {
-      "id": "dpp",
-      "name": "DP Black Star Promos",
-      "reason": "API 502"
-    },
-    {
       "id": "pop5",
       "name": "POP Series 5",
       "reason": "API 500"
     },
     {
-      "id": "ex4",
-      "name": "Team Magma vs Team Aqua",
+      "id": "pop3",
+      "name": "POP Series 3",
+      "reason": "API 502"
+    },
+    {
+      "id": "tk2b",
+      "name": "EX Trainer Kit 2 Minun",
       "reason": "API 500"
     },
     {
-      "id": "base5",
-      "name": "Team Rocket",
+      "id": "ex12",
+      "name": "Legend Maker",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex11",
+      "name": "Delta Species",
       "reason": "API 500"
+    },
+    {
+      "id": "pop2",
+      "name": "POP Series 2",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex9",
+      "name": "Emerald",
+      "reason": "API 502"
+    },
+    {
+      "id": "tk1b",
+      "name": "EX Trainer Kit Latios",
+      "reason": "API 502"
+    },
+    {
+      "id": "ecard2",
+      "name": "Aquapolis",
+      "reason": "API 500"
+    },
+    {
+      "id": "bp",
+      "name": "Best of Game",
+      "reason": "API 502"
+    },
+    {
+      "id": "si1",
+      "name": "Southern Islands",
+      "reason": "API 502"
+    },
+    {
+      "id": "neo1",
+      "name": "Neo Genesis",
+      "reason": "API 502"
+    },
+    {
+      "id": "gym2",
+      "name": "Gym Challenge",
+      "reason": "API 500"
+    },
+    {
+      "id": "gym1",
+      "name": "Gym Heroes",
+      "reason": "API 500"
+    },
+    {
+      "id": "base4",
+      "name": "Base Set 2",
+      "reason": "API 502"
     }
   ]
 }
