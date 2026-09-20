@@ -1,152 +1,102 @@
 {
-  "syncedAt": "2026-09-17T09:40:48.977Z",
-  "cardCount": 18038,
+  "syncedAt": "2026-09-20T09:25:00.789Z",
+  "cardCount": 20130,
   "setCount": 222,
-  "failedSetCount": 42,
+  "failedSetCount": 29,
   "failedSets": [
     {
-      "id": "me3",
-      "name": "Perfect Order",
+      "id": "me55c",
+      "name": "30th Celebration: Classic Collection",
       "reason": "API 500"
     },
     {
-      "id": "me1",
-      "name": "Mega Evolution",
+      "id": "swsh12pt5gg",
+      "name": "Crown Zenith Galarian Gallery",
       "reason": "API 500"
     },
     {
-      "id": "sv9",
-      "name": "Journey Together",
+      "id": "swsh10",
+      "name": "Astral Radiance",
       "reason": "API 502"
     },
     {
-      "id": "sv8pt5",
-      "name": "Prismatic Evolutions",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv6",
-      "name": "Twilight Masquerade",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv5",
-      "name": "Temporal Forces",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv4",
-      "name": "Paradox Rift",
-      "reason": "API 500"
-    },
-    {
-      "id": "svp",
-      "name": "Scarlet & Violet Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh11tg",
-      "name": "Lost Origin Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd22",
-      "name": "McDonald's Collection 2022",
+      "id": "swsh2",
+      "name": "Rebel Clash",
       "reason": "API 502"
     },
     {
-      "id": "swsh6",
-      "name": "Chilling Reign",
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
       "reason": "API 500"
     },
     {
-      "id": "swsh5",
-      "name": "Battle Styles",
+      "id": "sm10",
+      "name": "Unbroken Bonds",
       "reason": "API 500"
     },
     {
-      "id": "swsh45sv",
-      "name": "Shining Fates Shiny Vault",
+      "id": "sm75",
+      "name": "Dragon Majesty",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm5",
+      "name": "Ultra Prism",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy11",
+      "name": "Steam Siege",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy10",
+      "name": "Fates Collide",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy5",
+      "name": "Primal Clash",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy3",
+      "name": "Furious Fists",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy0",
+      "name": "Kalos Starter Set",
       "reason": "API 502"
     },
     {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh3",
-      "name": "Darkness Ablaze",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh1",
-      "name": "Sword & Shield",
-      "reason": "API 500"
-    },
-    {
-      "id": "swshp",
-      "name": "SWSH Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "det1",
-      "name": "Detective Pikachu",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm35",
-      "name": "Shining Legends",
-      "reason": "API 500"
-    },
-    {
-      "id": "smp",
-      "name": "SM Black Star Promos",
-      "reason": "API 404"
-    },
-    {
-      "id": "sm1",
-      "name": "Sun & Moon",
+      "id": "bw10",
+      "name": "Plasma Blast",
       "reason": "API 502"
     },
     {
-      "id": "mcd16",
-      "name": "McDonald's Collection 2016",
+      "id": "hgss2",
+      "name": "HS—Unleashed",
+      "reason": "API 500"
+    },
+    {
+      "id": "dp2",
+      "name": "Mysterious Treasures",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex16",
+      "name": "Power Keepers",
       "reason": "API 502"
     },
     {
-      "id": "bw9",
-      "name": "Plasma Freeze",
-      "reason": "API 500"
+      "id": "ex15",
+      "name": "Dragon Frontiers",
+      "reason": "API 502"
     },
     {
-      "id": "ru1",
-      "name": "Pokémon Rumble",
-      "reason": "API 500"
-    },
-    {
-      "id": "pl2",
-      "name": "Rising Rivals",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop9",
-      "name": "POP Series 9",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp6",
-      "name": "Legends Awakened",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop5",
-      "name": "POP Series 5",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop3",
-      "name": "POP Series 3",
+      "id": "ex13",
+      "name": "Holon Phantoms",
       "reason": "API 502"
     },
     {
@@ -155,9 +105,9 @@
       "reason": "API 500"
     },
     {
-      "id": "ex12",
-      "name": "Legend Maker",
-      "reason": "API 502"
+      "id": "tk2a",
+      "name": "EX Trainer Kit 2 Plusle",
+      "reason": "API 500"
     },
     {
       "id": "ex11",
@@ -165,34 +115,29 @@
       "reason": "API 500"
     },
     {
-      "id": "pop2",
-      "name": "POP Series 2",
+      "id": "pop1",
+      "name": "POP Series 1",
       "reason": "API 500"
     },
     {
-      "id": "ex9",
-      "name": "Emerald",
+      "id": "tk1a",
+      "name": "EX Trainer Kit Latias",
       "reason": "API 502"
     },
     {
-      "id": "tk1b",
-      "name": "EX Trainer Kit Latios",
-      "reason": "API 502"
-    },
-    {
-      "id": "ecard2",
-      "name": "Aquapolis",
+      "id": "ex5",
+      "name": "Hidden Legends",
       "reason": "API 500"
     },
     {
-      "id": "bp",
-      "name": "Best of Game",
-      "reason": "API 502"
+      "id": "ex1",
+      "name": "Ruby & Sapphire",
+      "reason": "API 500"
     },
     {
-      "id": "si1",
-      "name": "Southern Islands",
-      "reason": "API 502"
+      "id": "neo2",
+      "name": "Neo Discovery",
+      "reason": "API 500"
     },
     {
       "id": "neo1",
@@ -200,18 +145,8 @@
       "reason": "API 502"
     },
     {
-      "id": "gym2",
-      "name": "Gym Challenge",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym1",
-      "name": "Gym Heroes",
-      "reason": "API 500"
-    },
-    {
-      "id": "base4",
-      "name": "Base Set 2",
+      "id": "base2",
+      "name": "Jungle",
       "reason": "API 502"
     }
   ]
