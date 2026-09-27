@@ -1,42 +1,37 @@
 {
-  "syncedAt": "2026-09-25T09:39:11.288Z",
-  "cardCount": 20677,
+  "syncedAt": "2026-09-27T10:00:39.450Z",
+  "cardCount": 20205,
   "setCount": 222,
-  "failedSetCount": 20,
+  "failedSetCount": 23,
   "failedSets": [
     {
-      "id": "me55",
-      "name": "30th Celebration",
-      "reason": "API 500"
+      "id": "sv8",
+      "name": "Surging Sparks",
+      "reason": "API 502"
     },
     {
-      "id": "me55c",
-      "name": "30th Celebration: Classic Collection",
-      "reason": "API 500"
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "reason": "API 502"
     },
     {
-      "id": "sv2",
-      "name": "Paldea Evolved",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh12pt5",
-      "name": "Crown Zenith",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh8",
-      "name": "Fusion Strike",
+      "id": "swsh11",
+      "name": "Lost Origin",
       "reason": "API 500"
     },
     {
       "id": "mcd21",
       "name": "McDonald's Collection 2021",
-      "reason": "API 502"
+      "reason": "API 500"
     },
     {
-      "id": "sma",
-      "name": "Hidden Fates Shiny Vault",
+      "id": "swsh4",
+      "name": "Vivid Voltage",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
       "reason": "API 500"
     },
     {
@@ -45,39 +40,24 @@
       "reason": "API 500"
     },
     {
-      "id": "sm8",
-      "name": "Lost Thunder",
+      "id": "smp",
+      "name": "SM Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "sm7",
-      "name": "Celestial Storm",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm3",
-      "name": "Burning Shadows",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd16",
-      "name": "McDonald's Collection 2016",
-      "reason": "API 502"
-    },
-    {
-      "id": "dv1",
-      "name": "Dragon Vault",
+      "id": "dc1",
+      "name": "Double Crisis",
       "reason": "API 500"
     },
     {
       "id": "bw2",
       "name": "Emerging Powers",
-      "reason": "API 504"
+      "reason": "API 500"
     },
     {
-      "id": "mcd11",
-      "name": "McDonald's Collection 2011",
-      "reason": "API 502"
+      "id": "hgss2",
+      "name": "HS—Unleashed",
+      "reason": "API 500"
     },
     {
       "id": "hsp",
@@ -85,23 +65,58 @@
       "reason": "API 500"
     },
     {
-      "id": "pop9",
-      "name": "POP Series 9",
+      "id": "pl4",
+      "name": "Arceus",
       "reason": "API 500"
     },
     {
-      "id": "ex16",
-      "name": "Power Keepers",
+      "id": "dp7",
+      "name": "Stormfront",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp6",
+      "name": "Legends Awakened",
       "reason": "API 500"
     },
     {
-      "id": "pop4",
-      "name": "POP Series 4",
+      "id": "pop7",
+      "name": "POP Series 7",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp4",
+      "name": "Great Encounters",
       "reason": "API 500"
     },
     {
-      "id": "ex13",
-      "name": "Holon Phantoms",
+      "id": "pop6",
+      "name": "POP Series 6",
+      "reason": "API 500"
+    },
+    {
+      "id": "dpp",
+      "name": "DP Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex15",
+      "name": "Dragon Frontiers",
+      "reason": "API 502"
+    },
+    {
+      "id": "tk2b",
+      "name": "EX Trainer Kit 2 Minun",
+      "reason": "API 500"
+    },
+    {
+      "id": "base5",
+      "name": "Team Rocket",
+      "reason": "API 500"
+    },
+    {
+      "id": "base1",
+      "name": "Base",
       "reason": "API 500"
     }
   ]
