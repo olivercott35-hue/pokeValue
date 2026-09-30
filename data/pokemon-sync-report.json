@@ -1,38 +1,38 @@
 {
-  "syncedAt": "2026-09-29T10:41:25.255Z",
-  "cardCount": 20523,
+  "syncedAt": "2026-09-30T10:35:55.297Z",
+  "cardCount": 20383,
   "setCount": 222,
   "failedSetCount": 23,
   "failedSets": [
     {
-      "id": "sv7",
-      "name": "Stellar Crown",
-      "reason": "API 502"
-    },
-    {
-      "id": "sv6",
-      "name": "Twilight Masquerade",
+      "id": "me5",
+      "name": "Pitch Black",
       "reason": "API 500"
     },
     {
-      "id": "sve",
-      "name": "Scarlet & Violet Energies",
-      "reason": "API 502"
-    },
-    {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith Galarian Gallery",
+      "id": "zsv10pt5",
+      "name": "Black Bolt",
       "reason": "API 500"
     },
     {
-      "id": "svp",
-      "name": "Scarlet & Violet Black Star Promos",
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv5",
+      "name": "Temporal Forces",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv1",
+      "name": "Scarlet & Violet",
       "reason": "API 500"
     },
     {
       "id": "swsh12tg",
       "name": "Silver Tempest Trainer Gallery",
-      "reason": "API 502"
+      "reason": "API 500"
     },
     {
       "id": "mcd22",
@@ -40,83 +40,83 @@
       "reason": "API 500"
     },
     {
-      "id": "swsh6",
-      "name": "Chilling Reign",
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "reason": "API 500"
     },
     {
-      "id": "swsh5",
-      "name": "Battle Styles",
+      "id": "swsh35",
+      "name": "Champion's Path",
       "reason": "API 500"
     },
     {
-      "id": "swsh45sv",
-      "name": "Shining Fates Shiny Vault",
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
       "reason": "API 500"
     },
     {
-      "id": "sm9",
-      "name": "Team Up",
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
+      "reason": "API 500"
+    },
+    {
+      "id": "det1",
+      "name": "Detective Pikachu",
+      "reason": "API 500"
+    },
+    {
+      "id": "smp",
+      "name": "SM Black Star Promos",
       "reason": "API 502"
     },
     {
-      "id": "sm6",
-      "name": "Forbidden Light",
-      "reason": "API 500"
-    },
-    {
-      "id": "dv1",
-      "name": "Dragon Vault",
-      "reason": "API 500"
-    },
-    {
-      "id": "hgss3",
-      "name": "HS—Undaunted",
-      "reason": "API 504"
-    },
-    {
-      "id": "hgss2",
-      "name": "HS—Unleashed",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp2",
-      "name": "Mysterious Treasures",
+      "id": "hgss4",
+      "name": "HS—Triumphant",
       "reason": "API 502"
     },
     {
-      "id": "ex13",
-      "name": "Holon Phantoms",
+      "id": "hsp",
+      "name": "HGSS Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "pop2",
-      "name": "POP Series 2",
+      "id": "pop9",
+      "name": "POP Series 9",
       "reason": "API 500"
     },
     {
-      "id": "tk1a",
-      "name": "EX Trainer Kit Latias",
-      "reason": "API 500"
-    },
-    {
-      "id": "np",
-      "name": "Nintendo Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym2",
-      "name": "Gym Challenge",
+      "id": "dp3",
+      "name": "Secret Wonders",
       "reason": "API 502"
     },
     {
-      "id": "base5",
-      "name": "Team Rocket",
+      "id": "pop3",
+      "name": "POP Series 3",
       "reason": "API 502"
     },
     {
-      "id": "base4",
-      "name": "Base Set 2",
+      "id": "ex6",
+      "name": "FireRed & LeafGreen",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex5",
+      "name": "Hidden Legends",
+      "reason": "API 500"
+    },
+    {
+      "id": "ecard1",
+      "name": "Expedition Base Set",
+      "reason": "API 502"
+    },
+    {
+      "id": "base6",
+      "name": "Legendary Collection",
+      "reason": "API 500"
+    },
+    {
+      "id": "base3",
+      "name": "Fossil",
       "reason": "API 502"
     }
   ]
