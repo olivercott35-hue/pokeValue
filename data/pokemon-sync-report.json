@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-09-30T10:35:55.297Z",
-  "cardCount": 20383,
+  "syncedAt": "2026-10-01T10:59:29.395Z",
+  "cardCount": 19977,
   "setCount": 222,
-  "failedSetCount": 23,
+  "failedSetCount": 22,
   "failedSets": [
     {
       "id": "me5",
@@ -10,89 +10,89 @@
       "reason": "API 500"
     },
     {
-      "id": "zsv10pt5",
-      "name": "Black Bolt",
+      "id": "me2pt5",
+      "name": "Ascended Heroes",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv9",
+      "name": "Journey Together",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv3",
+      "name": "Obsidian Flames",
       "reason": "API 500"
     },
     {
-      "id": "sv6pt5",
-      "name": "Shrouded Fable",
+      "id": "sv2",
+      "name": "Paldea Evolved",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh11tg",
+      "name": "Lost Origin Trainer Gallery",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
       "reason": "API 500"
     },
     {
-      "id": "sv5",
-      "name": "Temporal Forces",
+      "id": "sm10",
+      "name": "Unbroken Bonds",
       "reason": "API 500"
     },
     {
-      "id": "sv1",
-      "name": "Scarlet & Violet",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh12tg",
-      "name": "Silver Tempest Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd22",
-      "name": "McDonald's Collection 2022",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh35",
-      "name": "Champion's Path",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh3",
-      "name": "Darkness Ablaze",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm12",
-      "name": "Cosmic Eclipse",
-      "reason": "API 500"
-    },
-    {
-      "id": "det1",
-      "name": "Detective Pikachu",
+      "id": "sm3",
+      "name": "Burning Shadows",
       "reason": "API 500"
     },
     {
       "id": "smp",
       "name": "SM Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy9",
+      "name": "BREAKpoint",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy1",
+      "name": "XY",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw11",
+      "name": "Legendary Treasures",
+      "reason": "API 404"
+    },
+    {
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
       "reason": "API 502"
     },
     {
       "id": "hgss4",
       "name": "HS—Triumphant",
-      "reason": "API 502"
-    },
-    {
-      "id": "hsp",
-      "name": "HGSS Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "pop9",
-      "name": "POP Series 9",
+      "id": "dp1",
+      "name": "Diamond & Pearl",
       "reason": "API 500"
     },
     {
-      "id": "dp3",
-      "name": "Secret Wonders",
+      "id": "ex13",
+      "name": "Holon Phantoms",
       "reason": "API 502"
     },
     {
-      "id": "pop3",
-      "name": "POP Series 3",
-      "reason": "API 502"
+      "id": "ex11",
+      "name": "Delta Species",
+      "reason": "API 500"
     },
     {
       "id": "ex6",
@@ -100,24 +100,19 @@
       "reason": "API 500"
     },
     {
-      "id": "ex5",
-      "name": "Hidden Legends",
+      "id": "bp",
+      "name": "Best of Game",
       "reason": "API 500"
     },
     {
-      "id": "ecard1",
-      "name": "Expedition Base Set",
+      "id": "si1",
+      "name": "Southern Islands",
       "reason": "API 502"
-    },
-    {
-      "id": "base6",
-      "name": "Legendary Collection",
-      "reason": "API 500"
     },
     {
       "id": "base3",
       "name": "Fossil",
-      "reason": "API 502"
+      "reason": "API 500"
     }
   ]
 }
