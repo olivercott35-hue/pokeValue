@@ -1,23 +1,28 @@
 {
-  "syncedAt": "2026-10-04T10:47:40.306Z",
-  "cardCount": 19804,
+  "syncedAt": "2026-10-05T11:30:42.924Z",
+  "cardCount": 19282,
   "setCount": 222,
-  "failedSetCount": 24,
+  "failedSetCount": 28,
   "failedSets": [
     {
-      "id": "sv4",
-      "name": "Paradox Rift",
+      "id": "me2pt5",
+      "name": "Ascended Heroes",
       "reason": "API 500"
+    },
+    {
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
+      "reason": "API 502"
     },
     {
       "id": "sv2",
       "name": "Paldea Evolved",
-      "reason": "API 502"
+      "reason": "API 500"
     },
     {
-      "id": "swsh10tg",
-      "name": "Astral Radiance Trainer Gallery",
-      "reason": "API 500"
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "reason": "API 502"
     },
     {
       "id": "swsh8",
@@ -27,41 +32,31 @@
     {
       "id": "swsh7",
       "name": "Evolving Skies",
-      "reason": "API 502"
-    },
-    {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
-      "reason": "API 502"
-    },
-    {
-      "id": "swsh2",
-      "name": "Rebel Clash",
       "reason": "API 500"
     },
     {
-      "id": "swsh1",
-      "name": "Sword & Shield",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm12",
-      "name": "Cosmic Eclipse",
-      "reason": "API 404"
-    },
-    {
-      "id": "mcd19",
-      "name": "McDonald's Collection 2019",
-      "reason": "API 404"
-    },
-    {
-      "id": "sm115",
-      "name": "Hidden Fates",
+      "id": "swsh45",
+      "name": "Shining Fates",
       "reason": "API 500"
     },
     {
-      "id": "sm5",
-      "name": "Ultra Prism",
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd18",
+      "name": "McDonald's Collection 2018",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm7",
+      "name": "Celestial Storm",
+      "reason": "API 502"
+    },
+    {
+      "id": "mcd17",
+      "name": "McDonald's Collection 2017",
       "reason": "API 500"
     },
     {
@@ -70,28 +65,43 @@
       "reason": "API 500"
     },
     {
-      "id": "sm1",
-      "name": "Sun & Moon",
-      "reason": "API 502"
-    },
-    {
-      "id": "xy12",
-      "name": "Evolutions",
+      "id": "sm35",
+      "name": "Shining Legends",
       "reason": "API 500"
     },
     {
-      "id": "xy10",
-      "name": "Fates Collide",
+      "id": "xy4",
+      "name": "Phantom Forces",
       "reason": "API 502"
     },
     {
-      "id": "dc1",
-      "name": "Double Crisis",
+      "id": "mcd14",
+      "name": "McDonald's Collection 2014",
+      "reason": "API 404"
+    },
+    {
+      "id": "xy2",
+      "name": "Flashfire",
+      "reason": "API 504"
+    },
+    {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "reason": "API 502"
+    },
+    {
+      "id": "hgss2",
+      "name": "HS—Unleashed",
       "reason": "API 500"
     },
     {
-      "id": "bw6",
-      "name": "Dragons Exalted",
+      "id": "hgss1",
+      "name": "HeartGold & SoulSilver",
+      "reason": "API 502"
+    },
+    {
+      "id": "pl2",
+      "name": "Rising Rivals",
       "reason": "API 500"
     },
     {
@@ -100,28 +110,38 @@
       "reason": "API 500"
     },
     {
-      "id": "pop7",
-      "name": "POP Series 7",
+      "id": "dp5",
+      "name": "Majestic Dawn",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp3",
+      "name": "Secret Wonders",
       "reason": "API 502"
     },
     {
       "id": "dp1",
       "name": "Diamond & Pearl",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex15",
+      "name": "Dragon Frontiers",
       "reason": "API 500"
     },
     {
-      "id": "ex4",
-      "name": "Team Magma vs Team Aqua",
+      "id": "ex13",
+      "name": "Holon Phantoms",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex10",
+      "name": "Unseen Forces",
       "reason": "API 500"
     },
     {
-      "id": "ex1",
-      "name": "Ruby & Sapphire",
-      "reason": "API 500"
-    },
-    {
-      "id": "base3",
-      "name": "Fossil",
+      "id": "neo1",
+      "name": "Neo Genesis",
       "reason": "API 500"
     }
   ]
