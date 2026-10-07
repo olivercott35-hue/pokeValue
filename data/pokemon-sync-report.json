@@ -1,83 +1,88 @@
 {
-  "syncedAt": "2026-10-06T11:04:10.367Z",
-  "cardCount": 21549,
+  "syncedAt": "2026-10-07T11:04:24.252Z",
+  "cardCount": 21019,
   "setCount": 222,
-  "failedSetCount": 15,
+  "failedSetCount": 16,
   "failedSets": [
     {
-      "id": "me5",
-      "name": "Pitch Black",
+      "id": "sv8",
+      "name": "Surging Sparks",
+      "reason": "API 500"
+    },
+    {
+      "id": "pgo",
+      "name": "Pokémon GO",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh10",
+      "name": "Astral Radiance",
+      "reason": "API 500"
+    },
+    {
+      "id": "cel25",
+      "name": "Celebrations",
       "reason": "API 502"
     },
     {
-      "id": "sv4",
-      "name": "Paradox Rift",
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm6",
+      "name": "Forbidden Light",
       "reason": "API 502"
     },
     {
-      "id": "mcd22",
-      "name": "McDonald's Collection 2022",
+      "id": "mcd17",
+      "name": "McDonald's Collection 2017",
       "reason": "API 500"
     },
     {
-      "id": "swsh4",
-      "name": "Vivid Voltage",
+      "id": "g1",
+      "name": "Generations",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy6",
+      "name": "Roaring Skies",
+      "reason": "API 500"
+    },
+    {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
       "reason": "API 502"
     },
     {
-      "id": "mcd18",
-      "name": "McDonald's Collection 2018",
+      "id": "hgss3",
+      "name": "HS—Undaunted",
+      "reason": "API 504"
+    },
+    {
+      "id": "ex16",
+      "name": "Power Keepers",
       "reason": "API 500"
     },
     {
-      "id": "dc1",
-      "name": "Double Crisis",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy1",
-      "name": "XY",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw7",
-      "name": "Boundaries Crossed",
-      "reason": "API 500"
-    },
-    {
-      "id": "dv1",
-      "name": "Dragon Vault",
-      "reason": "API 500"
-    },
-    {
-      "id": "hgss2",
-      "name": "HS—Unleashed",
-      "reason": "API 500"
-    },
-    {
-      "id": "tk2a",
-      "name": "EX Trainer Kit 2 Plusle",
-      "reason": "API 500"
-    },
-    {
-      "id": "tk1a",
-      "name": "EX Trainer Kit Latias",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex4",
-      "name": "Team Magma vs Team Aqua",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym2",
-      "name": "Gym Challenge",
+      "id": "neo2",
+      "name": "Neo Discovery",
       "reason": "API 500"
     },
     {
       "id": "base4",
       "name": "Base Set 2",
-      "reason": "API 500"
+      "reason": "API 502"
     }
   ]
 }
