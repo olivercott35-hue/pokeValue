@@ -1,88 +1,108 @@
 {
-  "syncedAt": "2026-10-07T11:04:24.252Z",
-  "cardCount": 21019,
+  "syncedAt": "2026-10-10T10:38:41.902Z",
+  "cardCount": 20605,
   "setCount": 222,
-  "failedSetCount": 16,
+  "failedSetCount": 20,
   "failedSets": [
     {
-      "id": "sv8",
-      "name": "Surging Sparks",
+      "id": "me5",
+      "name": "Pitch Black",
       "reason": "API 500"
     },
     {
-      "id": "pgo",
-      "name": "Pokémon GO",
+      "id": "me3",
+      "name": "Perfect Order",
       "reason": "API 500"
     },
     {
-      "id": "swsh10",
-      "name": "Astral Radiance",
-      "reason": "API 500"
-    },
-    {
-      "id": "cel25",
-      "name": "Celebrations",
+      "id": "me2pt5",
+      "name": "Ascended Heroes",
       "reason": "API 502"
     },
     {
-      "id": "swshp",
-      "name": "SWSH Black Star Promos",
+      "id": "zsv10pt5",
+      "name": "Black Bolt",
       "reason": "API 500"
     },
     {
-      "id": "sm115",
-      "name": "Hidden Fates",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm6",
-      "name": "Forbidden Light",
+      "id": "sv2",
+      "name": "Paldea Evolved",
       "reason": "API 502"
     },
     {
-      "id": "mcd17",
-      "name": "McDonald's Collection 2017",
+      "id": "mcd21",
+      "name": "McDonald's Collection 2021",
       "reason": "API 500"
     },
     {
-      "id": "g1",
-      "name": "Generations",
+      "id": "mcd16",
+      "name": "McDonald's Collection 2016",
       "reason": "API 500"
     },
     {
-      "id": "xy6",
-      "name": "Roaring Skies",
+      "id": "xy5",
+      "name": "Primal Clash",
       "reason": "API 500"
     },
     {
-      "id": "xyp",
-      "name": "XY Black Star Promos",
+      "id": "xy2",
+      "name": "Flashfire",
       "reason": "API 500"
     },
     {
-      "id": "mcd11",
-      "name": "McDonald's Collection 2011",
+      "id": "dv1",
+      "name": "Dragon Vault",
       "reason": "API 502"
     },
     {
-      "id": "hgss3",
-      "name": "HS—Undaunted",
-      "reason": "API 504"
-    },
-    {
-      "id": "ex16",
-      "name": "Power Keepers",
+      "id": "hgss4",
+      "name": "HS—Triumphant",
       "reason": "API 500"
     },
     {
-      "id": "neo2",
-      "name": "Neo Discovery",
+      "id": "hgss1",
+      "name": "HeartGold & SoulSilver",
       "reason": "API 500"
     },
     {
-      "id": "base4",
-      "name": "Base Set 2",
+      "id": "dp1",
+      "name": "Diamond & Pearl",
+      "reason": "API 500"
+    },
+    {
+      "id": "dpp",
+      "name": "DP Black Star Promos",
       "reason": "API 502"
+    },
+    {
+      "id": "ex10",
+      "name": "Unseen Forces",
+      "reason": "API 502"
+    },
+    {
+      "id": "ecard1",
+      "name": "Expedition Base Set",
+      "reason": "API 502"
+    },
+    {
+      "id": "si1",
+      "name": "Southern Islands",
+      "reason": "API 500"
+    },
+    {
+      "id": "gym2",
+      "name": "Gym Challenge",
+      "reason": "API 500"
+    },
+    {
+      "id": "gym1",
+      "name": "Gym Heroes",
+      "reason": "API 502"
+    },
+    {
+      "id": "base2",
+      "name": "Jungle",
+      "reason": "API 500"
     }
   ]
 }
