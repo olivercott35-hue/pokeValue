@@ -1,108 +1,168 @@
 {
-  "syncedAt": "2026-10-10T10:38:41.902Z",
-  "cardCount": 20605,
+  "syncedAt": "2026-10-11T10:50:45.754Z",
+  "cardCount": 18617,
   "setCount": 222,
-  "failedSetCount": 20,
+  "failedSetCount": 32,
   "failedSets": [
     {
-      "id": "me5",
-      "name": "Pitch Black",
-      "reason": "API 500"
-    },
-    {
-      "id": "me3",
-      "name": "Perfect Order",
-      "reason": "API 500"
-    },
-    {
-      "id": "me2pt5",
-      "name": "Ascended Heroes",
+      "id": "me55",
+      "name": "30th Celebration",
       "reason": "API 502"
     },
     {
-      "id": "zsv10pt5",
-      "name": "Black Bolt",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv2",
-      "name": "Paldea Evolved",
+      "id": "sv9",
+      "name": "Journey Together",
       "reason": "API 502"
     },
     {
-      "id": "mcd21",
-      "name": "McDonald's Collection 2021",
+      "id": "sv8pt5",
+      "name": "Prismatic Evolutions",
       "reason": "API 500"
     },
     {
-      "id": "mcd16",
-      "name": "McDonald's Collection 2016",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy5",
-      "name": "Primal Clash",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy2",
-      "name": "Flashfire",
-      "reason": "API 500"
-    },
-    {
-      "id": "dv1",
-      "name": "Dragon Vault",
+      "id": "sv7",
+      "name": "Stellar Crown",
       "reason": "API 502"
     },
     {
-      "id": "hgss4",
-      "name": "HS—Triumphant",
+      "id": "sv4",
+      "name": "Paradox Rift",
       "reason": "API 500"
     },
     {
-      "id": "hgss1",
-      "name": "HeartGold & SoulSilver",
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh12tg",
+      "name": "Silver Tempest Trainer Gallery",
       "reason": "API 500"
     },
     {
-      "id": "dp1",
-      "name": "Diamond & Pearl",
+      "id": "pgo",
+      "name": "Pokémon GO",
       "reason": "API 500"
     },
     {
-      "id": "dpp",
-      "name": "DP Black Star Promos",
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "reason": "API 500"
+    },
+    {
+      "id": "cel25c",
+      "name": "Celebrations: Classic Collection",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
+      "reason": "API 502"
+    },
+    {
+      "id": "sma",
+      "name": "Hidden Fates Shiny Vault",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm11",
+      "name": "Unified Minds",
+      "reason": "API 502"
+    },
+    {
+      "id": "det1",
+      "name": "Detective Pikachu",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm9",
+      "name": "Team Up",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm75",
+      "name": "Dragon Majesty",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm5",
+      "name": "Ultra Prism",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy12",
+      "name": "Evolutions",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy3",
+      "name": "Furious Fists",
+      "reason": "API 502"
+    },
+    {
+      "id": "bw3",
+      "name": "Noble Victories",
+      "reason": "API 404"
+    },
+    {
+      "id": "bw2",
+      "name": "Emerging Powers",
+      "reason": "API 404"
+    },
+    {
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
+      "reason": "API 502"
+    },
+    {
+      "id": "ru1",
+      "name": "Pokémon Rumble",
+      "reason": "API 502"
+    },
+    {
+      "id": "pl3",
+      "name": "Supreme Victors",
+      "reason": "API 500"
+    },
+    {
+      "id": "dp3",
+      "name": "Secret Wonders",
       "reason": "API 502"
     },
     {
       "id": "ex10",
       "name": "Unseen Forces",
-      "reason": "API 502"
-    },
-    {
-      "id": "ecard1",
-      "name": "Expedition Base Set",
-      "reason": "API 502"
-    },
-    {
-      "id": "si1",
-      "name": "Southern Islands",
       "reason": "API 500"
     },
     {
-      "id": "gym2",
-      "name": "Gym Challenge",
+      "id": "ex1",
+      "name": "Ruby & Sapphire",
       "reason": "API 500"
     },
     {
-      "id": "gym1",
-      "name": "Gym Heroes",
-      "reason": "API 502"
+      "id": "ecard2",
+      "name": "Aquapolis",
+      "reason": "API 500"
+    },
+    {
+      "id": "base6",
+      "name": "Legendary Collection",
+      "reason": "API 500"
+    },
+    {
+      "id": "base3",
+      "name": "Fossil",
+      "reason": "API 500"
     },
     {
       "id": "base2",
       "name": "Jungle",
-      "reason": "API 500"
+      "reason": "API 502"
     }
   ]
 }
