@@ -1,48 +1,23 @@
 {
-  "syncedAt": "2026-10-11T10:50:45.754Z",
-  "cardCount": 18617,
+  "syncedAt": "2026-10-12T11:49:11.914Z",
+  "cardCount": 20566,
   "setCount": 222,
-  "failedSetCount": 32,
+  "failedSetCount": 24,
   "failedSets": [
     {
-      "id": "me55",
-      "name": "30th Celebration",
+      "id": "me3",
+      "name": "Perfect Order",
       "reason": "API 502"
     },
     {
-      "id": "sv9",
-      "name": "Journey Together",
-      "reason": "API 502"
-    },
-    {
-      "id": "sv8pt5",
-      "name": "Prismatic Evolutions",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv7",
-      "name": "Stellar Crown",
+      "id": "zsv10pt5",
+      "name": "Black Bolt",
       "reason": "API 502"
     },
     {
       "id": "sv4",
       "name": "Paradox Rift",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv1",
-      "name": "Scarlet & Violet",
       "reason": "API 502"
-    },
-    {
-      "id": "swsh12tg",
-      "name": "Silver Tempest Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "pgo",
-      "name": "Pokémon GO",
-      "reason": "API 500"
     },
     {
       "id": "swsh8",
@@ -50,19 +25,9 @@
       "reason": "API 500"
     },
     {
-      "id": "cel25c",
-      "name": "Celebrations: Classic Collection",
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
       "reason": "API 500"
-    },
-    {
-      "id": "swsh2",
-      "name": "Rebel Clash",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm12",
-      "name": "Cosmic Eclipse",
-      "reason": "API 502"
     },
     {
       "id": "sma",
@@ -70,63 +35,53 @@
       "reason": "API 500"
     },
     {
-      "id": "sm11",
-      "name": "Unified Minds",
-      "reason": "API 502"
-    },
-    {
       "id": "det1",
       "name": "Detective Pikachu",
       "reason": "API 500"
     },
     {
-      "id": "sm9",
-      "name": "Team Up",
+      "id": "sm35",
+      "name": "Shining Legends",
       "reason": "API 500"
     },
     {
-      "id": "sm75",
-      "name": "Dragon Majesty",
+      "id": "xy10",
+      "name": "Fates Collide",
       "reason": "API 500"
     },
     {
-      "id": "sm5",
-      "name": "Ultra Prism",
+      "id": "mcd14",
+      "name": "McDonald's Collection 2014",
       "reason": "API 500"
     },
     {
-      "id": "xy12",
-      "name": "Evolutions",
+      "id": "xy2",
+      "name": "Flashfire",
       "reason": "API 500"
     },
     {
-      "id": "xy3",
-      "name": "Furious Fists",
-      "reason": "API 502"
-    },
-    {
-      "id": "bw3",
-      "name": "Noble Victories",
-      "reason": "API 404"
-    },
-    {
-      "id": "bw2",
-      "name": "Emerging Powers",
-      "reason": "API 404"
-    },
-    {
-      "id": "mcd11",
-      "name": "McDonald's Collection 2011",
-      "reason": "API 502"
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "reason": "API 500"
     },
     {
       "id": "ru1",
       "name": "Pokémon Rumble",
-      "reason": "API 502"
+      "reason": "API 500"
     },
     {
       "id": "pl3",
       "name": "Supreme Victors",
+      "reason": "API 500"
+    },
+    {
+      "id": "pop9",
+      "name": "POP Series 9",
+      "reason": "API 502"
+    },
+    {
+      "id": "pop8",
+      "name": "POP Series 8",
       "reason": "API 500"
     },
     {
@@ -135,34 +90,39 @@
       "reason": "API 502"
     },
     {
-      "id": "ex10",
-      "name": "Unseen Forces",
-      "reason": "API 500"
+      "id": "dpp",
+      "name": "DP Black Star Promos",
+      "reason": "API 404"
     },
     {
-      "id": "ex1",
-      "name": "Ruby & Sapphire",
-      "reason": "API 500"
+      "id": "pop5",
+      "name": "POP Series 5",
+      "reason": "API 404"
     },
     {
-      "id": "ecard2",
-      "name": "Aquapolis",
-      "reason": "API 500"
-    },
-    {
-      "id": "base6",
-      "name": "Legendary Collection",
-      "reason": "API 500"
-    },
-    {
-      "id": "base3",
-      "name": "Fossil",
-      "reason": "API 500"
-    },
-    {
-      "id": "base2",
-      "name": "Jungle",
+      "id": "ex16",
+      "name": "Power Keepers",
       "reason": "API 502"
+    },
+    {
+      "id": "pop4",
+      "name": "POP Series 4",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex4",
+      "name": "Team Magma vs Team Aqua",
+      "reason": "API 500"
+    },
+    {
+      "id": "np",
+      "name": "Nintendo Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "gym1",
+      "name": "Gym Heroes",
+      "reason": "API 500"
     }
   ]
 }
