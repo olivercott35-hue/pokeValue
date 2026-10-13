@@ -1,27 +1,27 @@
 {
-  "syncedAt": "2026-10-12T11:49:11.914Z",
-  "cardCount": 20566,
+  "syncedAt": "2026-10-13T11:41:02.764Z",
+  "cardCount": 20216,
   "setCount": 222,
-  "failedSetCount": 24,
+  "failedSetCount": 20,
   "failedSets": [
     {
-      "id": "me3",
-      "name": "Perfect Order",
+      "id": "sv8",
+      "name": "Surging Sparks",
       "reason": "API 502"
     },
     {
-      "id": "zsv10pt5",
-      "name": "Black Bolt",
+      "id": "sv2",
+      "name": "Paldea Evolved",
       "reason": "API 502"
     },
     {
-      "id": "sv4",
-      "name": "Paradox Rift",
-      "reason": "API 502"
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "reason": "API 500"
     },
     {
-      "id": "swsh8",
-      "name": "Fusion Strike",
+      "id": "swsh45",
+      "name": "Shining Fates",
       "reason": "API 500"
     },
     {
@@ -30,98 +30,78 @@
       "reason": "API 500"
     },
     {
-      "id": "sma",
-      "name": "Hidden Fates Shiny Vault",
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "det1",
-      "name": "Detective Pikachu",
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
       "reason": "API 500"
     },
     {
-      "id": "sm35",
-      "name": "Shining Legends",
+      "id": "sm8",
+      "name": "Lost Thunder",
       "reason": "API 500"
     },
     {
-      "id": "xy10",
-      "name": "Fates Collide",
+      "id": "mcd17",
+      "name": "McDonald's Collection 2017",
       "reason": "API 500"
     },
     {
-      "id": "mcd14",
-      "name": "McDonald's Collection 2014",
+      "id": "smp",
+      "name": "SM Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "xy2",
-      "name": "Flashfire",
-      "reason": "API 500"
-    },
-    {
-      "id": "xyp",
-      "name": "XY Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "ru1",
-      "name": "Pokémon Rumble",
-      "reason": "API 500"
-    },
-    {
-      "id": "pl3",
-      "name": "Supreme Victors",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop9",
-      "name": "POP Series 9",
+      "id": "sm1",
+      "name": "Sun & Moon",
       "reason": "API 502"
     },
     {
-      "id": "pop8",
-      "name": "POP Series 8",
+      "id": "xy11",
+      "name": "Steam Siege",
       "reason": "API 500"
     },
     {
-      "id": "dp3",
-      "name": "Secret Wonders",
+      "id": "bw7",
+      "name": "Boundaries Crossed",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw6",
+      "name": "Dragons Exalted",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw3",
+      "name": "Noble Victories",
       "reason": "API 502"
     },
     {
-      "id": "dpp",
-      "name": "DP Black Star Promos",
-      "reason": "API 404"
+      "id": "hgss2",
+      "name": "HS—Unleashed",
+      "reason": "API 500"
     },
     {
-      "id": "pop5",
-      "name": "POP Series 5",
-      "reason": "API 404"
-    },
-    {
-      "id": "ex16",
-      "name": "Power Keepers",
+      "id": "hsp",
+      "name": "HGSS Black Star Promos",
       "reason": "API 502"
     },
     {
-      "id": "pop4",
-      "name": "POP Series 4",
+      "id": "pl1",
+      "name": "Platinum",
       "reason": "API 500"
     },
     {
-      "id": "ex4",
-      "name": "Team Magma vs Team Aqua",
+      "id": "ex2",
+      "name": "Sandstorm",
       "reason": "API 500"
     },
     {
-      "id": "np",
-      "name": "Nintendo Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym1",
-      "name": "Gym Heroes",
+      "id": "bp",
+      "name": "Best of Game",
       "reason": "API 500"
     }
   ]
