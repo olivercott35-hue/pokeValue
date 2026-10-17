@@ -1,107 +1,132 @@
 {
-  "syncedAt": "2026-10-15T09:08:35.103Z",
-  "cardCount": 20248,
+  "syncedAt": "2026-10-17T08:43:04.793Z",
+  "cardCount": 19384,
   "setCount": 222,
-  "failedSetCount": 20,
+  "failedSetCount": 25,
   "failedSets": [
     {
-      "id": "me2pt5",
-      "name": "Ascended Heroes",
-      "reason": "API 500"
+      "id": "me55c",
+      "name": "30th Celebration: Classic Collection",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv8",
+      "name": "Surging Sparks",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv6",
+      "name": "Twilight Masquerade",
+      "reason": "API 502"
     },
     {
       "id": "sv4pt5",
       "name": "Paldean Fates",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv3pt5",
-      "name": "151",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh12",
-      "name": "Silver Tempest",
       "reason": "API 502"
     },
     {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars Trainer Gallery",
+      "id": "sv1",
+      "name": "Scarlet & Violet",
       "reason": "API 500"
     },
     {
-      "id": "swsh8",
-      "name": "Fusion Strike",
+      "id": "swsh10",
+      "name": "Astral Radiance",
       "reason": "API 500"
     },
     {
-      "id": "swsh45",
-      "name": "Shining Fates",
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
       "reason": "API 500"
     },
     {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm2",
+      "name": "Guardians Rising",
       "reason": "API 502"
     },
     {
-      "id": "swsh1",
-      "name": "Sword & Shield",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm5",
-      "name": "Ultra Prism",
+      "id": "smp",
+      "name": "SM Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "sm4",
-      "name": "Crimson Invasion",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw3",
-      "name": "Noble Victories",
+      "id": "xy10",
+      "name": "Fates Collide",
       "reason": "API 502"
     },
     {
-      "id": "hgss1",
-      "name": "HeartGold & SoulSilver",
+      "id": "xy6",
+      "name": "Roaring Skies",
+      "reason": "API 500"
+    },
+    {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "reason": "API 502"
+    },
+    {
+      "id": "bw8",
+      "name": "Plasma Storm",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw4",
+      "name": "Next Destinies",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw1",
+      "name": "Black & White",
+      "reason": "API 500"
+    },
+    {
+      "id": "hgss2",
+      "name": "HS—Unleashed",
       "reason": "API 500"
     },
     {
       "id": "pop8",
       "name": "POP Series 8",
-      "reason": "API 404"
+      "reason": "API 500"
     },
     {
-      "id": "dpp",
-      "name": "DP Black Star Promos",
+      "id": "pop7",
+      "name": "POP Series 7",
       "reason": "API 502"
     },
     {
-      "id": "ex13",
-      "name": "Holon Phantoms",
+      "id": "dp4",
+      "name": "Great Encounters",
       "reason": "API 500"
     },
     {
-      "id": "ex8",
-      "name": "Deoxys",
+      "id": "pop5",
+      "name": "POP Series 5",
       "reason": "API 500"
     },
     {
-      "id": "ex6",
-      "name": "FireRed & LeafGreen",
+      "id": "ex16",
+      "name": "Power Keepers",
       "reason": "API 500"
     },
     {
-      "id": "base6",
-      "name": "Legendary Collection",
-      "reason": "API 500"
+      "id": "neo4",
+      "name": "Neo Destiny",
+      "reason": "API 502"
     },
     {
-      "id": "base4",
-      "name": "Base Set 2",
+      "id": "neo1",
+      "name": "Neo Genesis",
+      "reason": "API 502"
+    },
+    {
+      "id": "base5",
+      "name": "Team Rocket",
       "reason": "API 500"
     }
   ]
