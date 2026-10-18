@@ -1,27 +1,22 @@
 {
-  "syncedAt": "2026-10-17T08:43:04.793Z",
-  "cardCount": 19384,
+  "syncedAt": "2026-10-18T08:57:34.213Z",
+  "cardCount": 19404,
   "setCount": 222,
-  "failedSetCount": 25,
+  "failedSetCount": 30,
   "failedSets": [
     {
-      "id": "me55c",
-      "name": "30th Celebration: Classic Collection",
-      "reason": "API 502"
+      "id": "me5",
+      "name": "Pitch Black",
+      "reason": "API 500"
     },
     {
-      "id": "sv8",
-      "name": "Surging Sparks",
-      "reason": "API 502"
+      "id": "zsv10pt5",
+      "name": "Black Bolt",
+      "reason": "API 500"
     },
     {
-      "id": "sv6",
-      "name": "Twilight Masquerade",
-      "reason": "API 502"
-    },
-    {
-      "id": "sv4pt5",
-      "name": "Paldean Fates",
+      "id": "sv7",
+      "name": "Stellar Crown",
       "reason": "API 502"
     },
     {
@@ -30,63 +25,68 @@
       "reason": "API 500"
     },
     {
-      "id": "swsh10",
-      "name": "Astral Radiance",
+      "id": "swsh12pt5",
+      "name": "Crown Zenith",
       "reason": "API 500"
     },
     {
-      "id": "swsh3",
-      "name": "Darkness Ablaze",
+      "id": "pgo",
+      "name": "Pokémon GO",
       "reason": "API 500"
     },
     {
-      "id": "sm12",
-      "name": "Cosmic Eclipse",
+      "id": "swsh1",
+      "name": "Sword & Shield",
       "reason": "API 500"
     },
     {
-      "id": "sm2",
-      "name": "Guardians Rising",
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
       "reason": "API 502"
     },
     {
-      "id": "smp",
-      "name": "SM Black Star Promos",
+      "id": "sm11",
+      "name": "Unified Minds",
       "reason": "API 500"
     },
     {
-      "id": "xy10",
-      "name": "Fates Collide",
+      "id": "sm10",
+      "name": "Unbroken Bonds",
       "reason": "API 502"
     },
     {
-      "id": "xy6",
-      "name": "Roaring Skies",
-      "reason": "API 500"
-    },
-    {
-      "id": "xyp",
-      "name": "XY Black Star Promos",
+      "id": "sm6",
+      "name": "Forbidden Light",
       "reason": "API 502"
     },
     {
-      "id": "bw8",
-      "name": "Plasma Storm",
+      "id": "g1",
+      "name": "Generations",
       "reason": "API 500"
     },
     {
-      "id": "bw4",
-      "name": "Next Destinies",
+      "id": "mcd15",
+      "name": "McDonald's Collection 2015",
       "reason": "API 500"
     },
     {
-      "id": "bw1",
-      "name": "Black & White",
+      "id": "mcd14",
+      "name": "McDonald's Collection 2014",
       "reason": "API 500"
     },
     {
-      "id": "hgss2",
-      "name": "HS—Unleashed",
+      "id": "bw7",
+      "name": "Boundaries Crossed",
+      "reason": "API 500"
+    },
+    {
+      "id": "hgss3",
+      "name": "HS—Undaunted",
+      "reason": "API 500"
+    },
+    {
+      "id": "hsp",
+      "name": "HGSS Black Star Promos",
       "reason": "API 500"
     },
     {
@@ -95,9 +95,14 @@
       "reason": "API 500"
     },
     {
+      "id": "dp5",
+      "name": "Majestic Dawn",
+      "reason": "API 500"
+    },
+    {
       "id": "pop7",
       "name": "POP Series 7",
-      "reason": "API 502"
+      "reason": "API 500"
     },
     {
       "id": "dp4",
@@ -105,29 +110,49 @@
       "reason": "API 500"
     },
     {
-      "id": "pop5",
-      "name": "POP Series 5",
-      "reason": "API 500"
+      "id": "dpp",
+      "name": "DP Black Star Promos",
+      "reason": "API 502"
     },
     {
       "id": "ex16",
       "name": "Power Keepers",
-      "reason": "API 500"
-    },
-    {
-      "id": "neo4",
-      "name": "Neo Destiny",
       "reason": "API 502"
     },
     {
-      "id": "neo1",
-      "name": "Neo Genesis",
+      "id": "tk2a",
+      "name": "EX Trainer Kit 2 Plusle",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex11",
+      "name": "Delta Species",
       "reason": "API 502"
     },
     {
-      "id": "base5",
-      "name": "Team Rocket",
+      "id": "ex10",
+      "name": "Unseen Forces",
       "reason": "API 500"
+    },
+    {
+      "id": "ex9",
+      "name": "Emerald",
+      "reason": "API 500"
+    },
+    {
+      "id": "neo2",
+      "name": "Neo Discovery",
+      "reason": "API 500"
+    },
+    {
+      "id": "base4",
+      "name": "Base Set 2",
+      "reason": "API 500"
+    },
+    {
+      "id": "basep",
+      "name": "Wizards Black Star Promos",
+      "reason": "API 502"
     }
   ]
 }
