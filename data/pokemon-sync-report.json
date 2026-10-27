@@ -1,67 +1,72 @@
 {
-  "syncedAt": "2026-10-26T09:53:06.995Z",
-  "cardCount": 20050,
+  "syncedAt": "2026-10-27T09:49:55.171Z",
+  "cardCount": 20243,
   "setCount": 222,
-  "failedSetCount": 26,
+  "failedSetCount": 28,
   "failedSets": [
     {
-      "id": "me55c",
-      "name": "30th Celebration: Classic Collection",
+      "id": "sv9",
+      "name": "Journey Together",
       "reason": "API 500"
     },
     {
-      "id": "sv4pt5",
-      "name": "Paldean Fates",
+      "id": "swsh11tg",
+      "name": "Lost Origin Trainer Gallery",
       "reason": "API 500"
     },
     {
-      "id": "swsh12pt5",
-      "name": "Crown Zenith",
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "reason": "API 502"
     },
     {
-      "id": "swsh7",
-      "name": "Evolving Skies",
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
+      "reason": "API 500"
+    },
+    {
+      "id": "det1",
+      "name": "Detective Pikachu",
       "reason": "API 502"
     },
     {
-      "id": "sm8",
-      "name": "Lost Thunder",
-      "reason": "API 503"
+      "id": "sm6",
+      "name": "Forbidden Light",
+      "reason": "API 500"
     },
     {
-      "id": "smp",
-      "name": "SM Black Star Promos",
+      "id": "sm2",
+      "name": "Guardians Rising",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy11",
+      "name": "Steam Siege",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy4",
+      "name": "Phantom Forces",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy3",
+      "name": "Furious Fists",
       "reason": "API 502"
     },
     {
-      "id": "mcd16",
-      "name": "McDonald's Collection 2016",
-      "reason": "API 500"
+      "id": "xy2",
+      "name": "Flashfire",
+      "reason": "API 502"
     },
     {
-      "id": "xy8",
-      "name": "BREAKthrough",
-      "reason": "API 500"
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "reason": "API 502"
     },
     {
-      "id": "mcd14",
-      "name": "McDonald's Collection 2014",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw6",
-      "name": "Dragons Exalted",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd12",
-      "name": "McDonald's Collection 2012",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw3",
-      "name": "Noble Victories",
+      "id": "dv1",
+      "name": "Dragon Vault",
       "reason": "API 500"
     },
     {
@@ -70,68 +75,73 @@
       "reason": "API 500"
     },
     {
-      "id": "hgss1",
-      "name": "HeartGold & SoulSilver",
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw1",
+      "name": "Black & White",
       "reason": "API 502"
     },
     {
-      "id": "pl1",
-      "name": "Platinum",
+      "id": "hgss4",
+      "name": "HS—Triumphant",
+      "reason": "API 503"
+    },
+    {
+      "id": "hgss3",
+      "name": "HS—Undaunted",
+      "reason": "API 503"
+    },
+    {
+      "id": "hsp",
+      "name": "HGSS Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "ru1",
+      "name": "Pokémon Rumble",
+      "reason": "API 502"
+    },
+    {
+      "id": "pl3",
+      "name": "Supreme Victors",
       "reason": "API 500"
     },
     {
       "id": "pop8",
       "name": "POP Series 8",
-      "reason": "API 503"
-    },
-    {
-      "id": "ex15",
-      "name": "Dragon Frontiers",
       "reason": "API 500"
     },
     {
-      "id": "ex9",
-      "name": "Emerald",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex6",
-      "name": "FireRed & LeafGreen",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym2",
-      "name": "Gym Challenge",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym1",
-      "name": "Gym Heroes",
+      "id": "dp6",
+      "name": "Legends Awakened",
       "reason": "API 502"
     },
     {
-      "id": "base5",
-      "name": "Team Rocket",
-      "reason": "API 503"
-    },
-    {
-      "id": "base4",
-      "name": "Base Set 2",
-      "reason": "API 503"
-    },
-    {
-      "id": "base3",
-      "name": "Fossil",
-      "reason": "API 404"
-    },
-    {
-      "id": "basep",
-      "name": "Wizards Black Star Promos",
+      "id": "pop6",
+      "name": "POP Series 6",
       "reason": "API 500"
     },
     {
-      "id": "base2",
-      "name": "Jungle",
+      "id": "ex16",
+      "name": "Power Keepers",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex4",
+      "name": "Team Magma vs Team Aqua",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex1",
+      "name": "Ruby & Sapphire",
+      "reason": "API 500"
+    },
+    {
+      "id": "neo2",
+      "name": "Neo Discovery",
       "reason": "API 500"
     }
   ]
