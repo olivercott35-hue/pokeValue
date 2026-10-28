@@ -1,42 +1,72 @@
 {
-  "syncedAt": "2026-10-27T09:49:55.171Z",
-  "cardCount": 20243,
+  "syncedAt": "2026-10-28T10:33:24.566Z",
+  "cardCount": 18927,
   "setCount": 222,
-  "failedSetCount": 28,
+  "failedSetCount": 32,
   "failedSets": [
+    {
+      "id": "zsv10pt5",
+      "name": "Black Bolt",
+      "reason": "API 500"
+    },
     {
       "id": "sv9",
       "name": "Journey Together",
       "reason": "API 500"
     },
     {
-      "id": "swsh11tg",
-      "name": "Lost Origin Trainer Gallery",
+      "id": "sv7",
+      "name": "Stellar Crown",
       "reason": "API 500"
     },
     {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars Trainer Gallery",
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "reason": "API 500"
+    },
+    {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd21",
+      "name": "McDonald's Collection 2021",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
       "reason": "API 502"
     },
     {
-      "id": "sm12",
-      "name": "Cosmic Eclipse",
-      "reason": "API 500"
-    },
-    {
-      "id": "det1",
-      "name": "Detective Pikachu",
+      "id": "sm3",
+      "name": "Burning Shadows",
       "reason": "API 502"
-    },
-    {
-      "id": "sm6",
-      "name": "Forbidden Light",
-      "reason": "API 500"
     },
     {
       "id": "sm2",
       "name": "Guardians Rising",
+      "reason": "API 500"
+    },
+    {
+      "id": "smp",
+      "name": "SM Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm1",
+      "name": "Sun & Moon",
       "reason": "API 500"
     },
     {
@@ -45,64 +75,24 @@
       "reason": "API 500"
     },
     {
-      "id": "xy4",
-      "name": "Phantom Forces",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy3",
-      "name": "Furious Fists",
+      "id": "xy0",
+      "name": "Kalos Starter Set",
       "reason": "API 502"
     },
     {
-      "id": "xy2",
-      "name": "Flashfire",
+      "id": "bw7",
+      "name": "Boundaries Crossed",
       "reason": "API 502"
     },
     {
-      "id": "xyp",
-      "name": "XY Black Star Promos",
-      "reason": "API 502"
-    },
-    {
-      "id": "dv1",
-      "name": "Dragon Vault",
+      "id": "bwp",
+      "name": "BW Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "bw2",
-      "name": "Emerging Powers",
+      "id": "col1",
+      "name": "Call of Legends",
       "reason": "API 500"
-    },
-    {
-      "id": "mcd11",
-      "name": "McDonald's Collection 2011",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw1",
-      "name": "Black & White",
-      "reason": "API 502"
-    },
-    {
-      "id": "hgss4",
-      "name": "HS—Triumphant",
-      "reason": "API 503"
-    },
-    {
-      "id": "hgss3",
-      "name": "HS—Undaunted",
-      "reason": "API 503"
-    },
-    {
-      "id": "hsp",
-      "name": "HGSS Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "ru1",
-      "name": "Pokémon Rumble",
-      "reason": "API 502"
     },
     {
       "id": "pl3",
@@ -110,33 +100,63 @@
       "reason": "API 500"
     },
     {
-      "id": "pop8",
-      "name": "POP Series 8",
-      "reason": "API 500"
+      "id": "pop7",
+      "name": "POP Series 7",
+      "reason": "API 503"
     },
     {
-      "id": "dp6",
-      "name": "Legends Awakened",
+      "id": "dp3",
+      "name": "Secret Wonders",
       "reason": "API 502"
     },
     {
-      "id": "pop6",
-      "name": "POP Series 6",
-      "reason": "API 500"
+      "id": "dpp",
+      "name": "DP Black Star Promos",
+      "reason": "API 503"
     },
     {
       "id": "ex16",
       "name": "Power Keepers",
+      "reason": "API 503"
+    },
+    {
+      "id": "ex15",
+      "name": "Dragon Frontiers",
       "reason": "API 500"
     },
     {
-      "id": "ex4",
-      "name": "Team Magma vs Team Aqua",
+      "id": "ex13",
+      "name": "Holon Phantoms",
+      "reason": "API 502"
+    },
+    {
+      "id": "tk2b",
+      "name": "EX Trainer Kit 2 Minun",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex12",
+      "name": "Legend Maker",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex9",
+      "name": "Emerald",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex6",
+      "name": "FireRed & LeafGreen",
       "reason": "API 500"
     },
     {
       "id": "ex1",
       "name": "Ruby & Sapphire",
+      "reason": "API 502"
+    },
+    {
+      "id": "bp",
+      "name": "Best of Game",
       "reason": "API 500"
     },
     {
