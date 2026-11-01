@@ -1,23 +1,28 @@
 {
-  "syncedAt": "2026-10-30T10:57:39.792Z",
-  "cardCount": 20298,
+  "syncedAt": "2026-11-01T11:23:36.721Z",
+  "cardCount": 16732,
   "setCount": 222,
-  "failedSetCount": 24,
+  "failedSetCount": 45,
   "failedSets": [
-    {
-      "id": "me5",
-      "name": "Pitch Black",
-      "reason": "API 502"
-    },
     {
       "id": "me4",
       "name": "Chaos Rising",
       "reason": "API 500"
     },
     {
+      "id": "me3",
+      "name": "Perfect Order",
+      "reason": "API 500"
+    },
+    {
       "id": "me2pt5",
       "name": "Ascended Heroes",
-      "reason": "API 503"
+      "reason": "API 502"
+    },
+    {
+      "id": "me2",
+      "name": "Phantasmal Flames",
+      "reason": "API 500"
     },
     {
       "id": "me1",
@@ -25,18 +30,48 @@
       "reason": "API 502"
     },
     {
-      "id": "sv10",
-      "name": "Destined Rivals",
-      "reason": "API 502"
-    },
-    {
-      "id": "sv4pt5",
-      "name": "Paldean Fates",
+      "id": "rsv10pt5",
+      "name": "White Flare",
       "reason": "API 500"
     },
     {
-      "id": "sv4",
-      "name": "Paradox Rift",
+      "id": "sv9",
+      "name": "Journey Together",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv8pt5",
+      "name": "Prismatic Evolutions",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv8",
+      "name": "Surging Sparks",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv7",
+      "name": "Stellar Crown",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv6",
+      "name": "Twilight Masquerade",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv3",
+      "name": "Obsidian Flames",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv2",
+      "name": "Paldea Evolved",
       "reason": "API 500"
     },
     {
@@ -45,13 +80,58 @@
       "reason": "API 502"
     },
     {
+      "id": "pgo",
+      "name": "Pokémon GO",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh6",
+      "name": "Chilling Reign",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh5",
+      "name": "Battle Styles",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh35",
+      "name": "Champion's Path",
+      "reason": "API 503"
+    },
+    {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm11",
+      "name": "Unified Minds",
+      "reason": "API 502"
+    },
+    {
       "id": "det1",
       "name": "Detective Pikachu",
       "reason": "API 500"
     },
     {
-      "id": "sm6",
-      "name": "Forbidden Light",
+      "id": "smp",
+      "name": "SM Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm1",
+      "name": "Sun & Moon",
       "reason": "API 500"
     },
     {
@@ -60,13 +140,13 @@
       "reason": "API 500"
     },
     {
-      "id": "xy5",
-      "name": "Primal Clash",
+      "id": "mcd15",
+      "name": "McDonald's Collection 2015",
       "reason": "API 500"
     },
     {
-      "id": "mcd14",
-      "name": "McDonald's Collection 2014",
+      "id": "xy5",
+      "name": "Primal Clash",
       "reason": "API 500"
     },
     {
@@ -75,23 +155,43 @@
       "reason": "API 500"
     },
     {
-      "id": "bw8",
-      "name": "Plasma Storm",
+      "id": "bw9",
+      "name": "Plasma Freeze",
       "reason": "API 500"
     },
     {
-      "id": "pop7",
-      "name": "POP Series 7",
+      "id": "bw6",
+      "name": "Dragons Exalted",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
+      "reason": "API 500"
+    },
+    {
+      "id": "bwp",
+      "name": "BW Black Star Promos",
       "reason": "API 502"
     },
     {
-      "id": "pop6",
-      "name": "POP Series 6",
+      "id": "col1",
+      "name": "Call of Legends",
       "reason": "API 500"
     },
     {
-      "id": "pop2",
-      "name": "POP Series 2",
+      "id": "hsp",
+      "name": "HGSS Black Star Promos",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp6",
+      "name": "Legends Awakened",
+      "reason": "API 500"
+    },
+    {
+      "id": "dp1",
+      "name": "Diamond & Pearl",
       "reason": "API 500"
     },
     {
@@ -100,28 +200,33 @@
       "reason": "API 502"
     },
     {
+      "id": "ex6",
+      "name": "FireRed & LeafGreen",
+      "reason": "API 500"
+    },
+    {
       "id": "pop1",
       "name": "POP Series 1",
+      "reason": "API 502"
+    },
+    {
+      "id": "neo3",
+      "name": "Neo Revelation",
       "reason": "API 500"
     },
     {
-      "id": "np",
-      "name": "Nintendo Black Star Promos",
+      "id": "base5",
+      "name": "Team Rocket",
       "reason": "API 500"
     },
     {
-      "id": "ex1",
-      "name": "Ruby & Sapphire",
+      "id": "base4",
+      "name": "Base Set 2",
       "reason": "API 500"
     },
     {
-      "id": "base6",
-      "name": "Legendary Collection",
-      "reason": "API 500"
-    },
-    {
-      "id": "neo4",
-      "name": "Neo Destiny",
+      "id": "basep",
+      "name": "Wizards Black Star Promos",
       "reason": "API 500"
     }
   ]
