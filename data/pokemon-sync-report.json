@@ -1,142 +1,137 @@
 {
-  "syncedAt": "2026-11-03T11:55:21.340Z",
-  "cardCount": 19651,
+  "syncedAt": "2026-11-04T12:06:17.346Z",
+  "cardCount": 20007,
   "setCount": 222,
-  "failedSetCount": 27,
+  "failedSetCount": 26,
   "failedSets": [
     {
-      "id": "sv8",
-      "name": "Surging Sparks",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv1",
-      "name": "Scarlet & Violet",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh12pt5",
-      "name": "Crown Zenith",
+      "id": "me3",
+      "name": "Perfect Order",
       "reason": "API 502"
     },
     {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith Galarian Gallery",
-      "reason": "API 502"
-    },
-    {
-      "id": "pgo",
-      "name": "Pokémon GO",
-      "reason": "API 502"
-    },
-    {
-      "id": "swsh10",
-      "name": "Astral Radiance",
+      "id": "sv10",
+      "name": "Destined Rivals",
       "reason": "API 500"
     },
     {
-      "id": "swsh7",
-      "name": "Evolving Skies",
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh11tg",
+      "name": "Lost Origin Trainer Gallery",
       "reason": "API 500"
     },
     {
-      "id": "mcd21",
-      "name": "McDonald's Collection 2021",
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
       "reason": "API 500"
     },
     {
       "id": "swsh4",
       "name": "Vivid Voltage",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh35",
-      "name": "Champion's Path",
-      "reason": "API 500"
-    },
-    {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh1",
-      "name": "Sword & Shield",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd18",
-      "name": "McDonald's Collection 2018",
       "reason": "API 502"
     },
     {
-      "id": "sm3",
-      "name": "Burning Shadows",
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
       "reason": "API 502"
     },
     {
-      "id": "xy8",
-      "name": "BREAKthrough",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy4",
-      "name": "Phantom Forces",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw11",
-      "name": "Legendary Treasures",
-      "reason": "API 500"
-    },
-    {
-      "id": "xyp",
-      "name": "XY Black Star Promos",
+      "id": "sm11",
+      "name": "Unified Minds",
       "reason": "API 502"
     },
     {
-      "id": "dv1",
-      "name": "Dragon Vault",
+      "id": "det1",
+      "name": "Detective Pikachu",
       "reason": "API 500"
     },
     {
-      "id": "hgss3",
-      "name": "HS—Undaunted",
+      "id": "sm1",
+      "name": "Sun & Moon",
       "reason": "API 500"
     },
     {
-      "id": "hgss2",
-      "name": "HS—Unleashed",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop8",
-      "name": "POP Series 8",
+      "id": "xy9",
+      "name": "BREAKpoint",
       "reason": "API 502"
     },
     {
-      "id": "pop7",
-      "name": "POP Series 7",
-      "reason": "API 502"
-    },
-    {
-      "id": "dp3",
-      "name": "Secret Wonders",
+      "id": "mcd14",
+      "name": "McDonald's Collection 2014",
       "reason": "API 500"
     },
     {
-      "id": "ex13",
-      "name": "Holon Phantoms",
-      "reason": "API 502"
-    },
-    {
-      "id": "ex11",
-      "name": "Delta Species",
+      "id": "xy1",
+      "name": "XY",
       "reason": "API 500"
     },
     {
-      "id": "ex5",
-      "name": "Hidden Legends",
+      "id": "xy0",
+      "name": "Kalos Starter Set",
+      "reason": "API 502"
+    },
+    {
+      "id": "bw10",
+      "name": "Plasma Blast",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw5",
+      "name": "Dark Explorers",
+      "reason": "API 503"
+    },
+    {
+      "id": "bw4",
+      "name": "Next Destinies",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp1",
+      "name": "Diamond & Pearl",
+      "reason": "API 500"
+    },
+    {
+      "id": "pop3",
+      "name": "POP Series 3",
+      "reason": "API 503"
+    },
+    {
+      "id": "tk2a",
+      "name": "EX Trainer Kit 2 Plusle",
+      "reason": "API 500"
+    },
+    {
+      "id": "base6",
+      "name": "Legendary Collection",
+      "reason": "API 502"
+    },
+    {
+      "id": "si1",
+      "name": "Southern Islands",
+      "reason": "API 502"
+    },
+    {
+      "id": "gym1",
+      "name": "Gym Heroes",
+      "reason": "API 502"
+    },
+    {
+      "id": "base5",
+      "name": "Team Rocket",
       "reason": "API 502"
     }
   ]
