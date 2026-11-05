@@ -1,103 +1,88 @@
 {
-  "syncedAt": "2026-11-04T12:06:17.346Z",
-  "cardCount": 20007,
+  "syncedAt": "2026-11-05T12:08:06.189Z",
+  "cardCount": 20452,
   "setCount": 222,
   "failedSetCount": 26,
   "failedSets": [
     {
-      "id": "me3",
-      "name": "Perfect Order",
+      "id": "zsv10pt5",
+      "name": "Black Bolt",
       "reason": "API 502"
     },
     {
-      "id": "sv10",
-      "name": "Destined Rivals",
+      "id": "pgo",
+      "name": "Pokémon GO",
       "reason": "API 500"
     },
     {
-      "id": "svp",
-      "name": "Scarlet & Violet Black Star Promos",
+      "id": "swsh10",
+      "name": "Astral Radiance",
       "reason": "API 502"
     },
     {
-      "id": "swsh11tg",
-      "name": "Lost Origin Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars Trainer Gallery",
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
       "reason": "API 502"
     },
     {
-      "id": "swsh8",
-      "name": "Fusion Strike",
+      "id": "fut20",
+      "name": "Pokémon Futsal Collection",
       "reason": "API 500"
     },
     {
-      "id": "swsh4",
-      "name": "Vivid Voltage",
-      "reason": "API 502"
-    },
-    {
-      "id": "swsh2",
-      "name": "Rebel Clash",
+      "id": "xy11",
+      "name": "Steam Siege",
       "reason": "API 500"
     },
     {
-      "id": "sm115",
-      "name": "Hidden Fates",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm11",
-      "name": "Unified Minds",
-      "reason": "API 502"
-    },
-    {
-      "id": "det1",
-      "name": "Detective Pikachu",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm1",
-      "name": "Sun & Moon",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy9",
-      "name": "BREAKpoint",
-      "reason": "API 502"
-    },
-    {
-      "id": "mcd14",
-      "name": "McDonald's Collection 2014",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy1",
-      "name": "XY",
+      "id": "dc1",
+      "name": "Double Crisis",
       "reason": "API 500"
     },
     {
       "id": "xy0",
       "name": "Kalos Starter Set",
-      "reason": "API 502"
-    },
-    {
-      "id": "bw10",
-      "name": "Plasma Blast",
       "reason": "API 500"
     },
     {
-      "id": "bw5",
-      "name": "Dark Explorers",
+      "id": "bw2",
+      "name": "Emerging Powers",
+      "reason": "API 500"
+    },
+    {
+      "id": "hgss4",
+      "name": "HS—Triumphant",
+      "reason": "API 500"
+    },
+    {
+      "id": "hgss2",
+      "name": "HS—Unleashed",
+      "reason": "API 500"
+    },
+    {
+      "id": "ru1",
+      "name": "Pokémon Rumble",
       "reason": "API 503"
     },
     {
-      "id": "bw4",
-      "name": "Next Destinies",
+      "id": "pl4",
+      "name": "Arceus",
       "reason": "API 502"
+    },
+    {
+      "id": "pl2",
+      "name": "Rising Rivals",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp6",
+      "name": "Legends Awakened",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp3",
+      "name": "Secret Wonders",
+      "reason": "API 503"
     },
     {
       "id": "dp1",
@@ -105,29 +90,44 @@
       "reason": "API 500"
     },
     {
-      "id": "pop3",
-      "name": "POP Series 3",
+      "id": "ex13",
+      "name": "Holon Phantoms",
       "reason": "API 503"
     },
     {
-      "id": "tk2a",
-      "name": "EX Trainer Kit 2 Plusle",
+      "id": "pop3",
+      "name": "POP Series 3",
       "reason": "API 500"
     },
     {
-      "id": "base6",
-      "name": "Legendary Collection",
+      "id": "tk2b",
+      "name": "EX Trainer Kit 2 Minun",
       "reason": "API 502"
     },
     {
-      "id": "si1",
-      "name": "Southern Islands",
+      "id": "ex12",
+      "name": "Legend Maker",
       "reason": "API 502"
+    },
+    {
+      "id": "ex10",
+      "name": "Unseen Forces",
+      "reason": "API 502"
+    },
+    {
+      "id": "neo2",
+      "name": "Neo Discovery",
+      "reason": "API 502"
+    },
+    {
+      "id": "gym2",
+      "name": "Gym Challenge",
+      "reason": "API 500"
     },
     {
       "id": "gym1",
       "name": "Gym Heroes",
-      "reason": "API 502"
+      "reason": "API 500"
     },
     {
       "id": "base5",
