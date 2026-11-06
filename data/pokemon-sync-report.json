@@ -1,138 +1,123 @@
 {
-  "syncedAt": "2026-11-05T12:08:06.189Z",
-  "cardCount": 20452,
+  "syncedAt": "2026-11-06T12:06:31.443Z",
+  "cardCount": 20201,
   "setCount": 222,
-  "failedSetCount": 26,
+  "failedSetCount": 23,
   "failedSets": [
+    {
+      "id": "me3",
+      "name": "Perfect Order",
+      "reason": "API 500"
+    },
     {
       "id": "zsv10pt5",
       "name": "Black Bolt",
       "reason": "API 502"
     },
     {
-      "id": "pgo",
-      "name": "Pokémon GO",
+      "id": "swsh11",
+      "name": "Lost Origin",
       "reason": "API 500"
     },
     {
-      "id": "swsh10",
-      "name": "Astral Radiance",
+      "id": "swsh10tg",
+      "name": "Astral Radiance Trainer Gallery",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "reason": "API 500"
+    },
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "sma",
+      "name": "Hidden Fates Shiny Vault",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy12",
+      "name": "Evolutions",
       "reason": "API 502"
     },
     {
-      "id": "swsh45sv",
-      "name": "Shining Fates Shiny Vault",
-      "reason": "API 502"
+      "id": "mcd14",
+      "name": "McDonald's Collection 2014",
+      "reason": "API 404"
     },
     {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
+      "id": "xy2",
+      "name": "Flashfire",
+      "reason": "API 404"
+    },
+    {
+      "id": "xy1",
+      "name": "XY",
       "reason": "API 500"
     },
     {
-      "id": "xy11",
-      "name": "Steam Siege",
+      "id": "bw11",
+      "name": "Legendary Treasures",
       "reason": "API 500"
     },
     {
-      "id": "dc1",
-      "name": "Double Crisis",
+      "id": "pl1",
+      "name": "Platinum",
       "reason": "API 500"
     },
     {
-      "id": "xy0",
-      "name": "Kalos Starter Set",
+      "id": "pop8",
+      "name": "POP Series 8",
       "reason": "API 500"
     },
     {
-      "id": "bw2",
-      "name": "Emerging Powers",
+      "id": "ex16",
+      "name": "Power Keepers",
       "reason": "API 500"
-    },
-    {
-      "id": "hgss4",
-      "name": "HS—Triumphant",
-      "reason": "API 500"
-    },
-    {
-      "id": "hgss2",
-      "name": "HS—Unleashed",
-      "reason": "API 500"
-    },
-    {
-      "id": "ru1",
-      "name": "Pokémon Rumble",
-      "reason": "API 503"
-    },
-    {
-      "id": "pl4",
-      "name": "Arceus",
-      "reason": "API 502"
-    },
-    {
-      "id": "pl2",
-      "name": "Rising Rivals",
-      "reason": "API 502"
-    },
-    {
-      "id": "dp6",
-      "name": "Legends Awakened",
-      "reason": "API 502"
-    },
-    {
-      "id": "dp3",
-      "name": "Secret Wonders",
-      "reason": "API 503"
-    },
-    {
-      "id": "dp1",
-      "name": "Diamond & Pearl",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex13",
-      "name": "Holon Phantoms",
-      "reason": "API 503"
-    },
-    {
-      "id": "pop3",
-      "name": "POP Series 3",
-      "reason": "API 500"
-    },
-    {
-      "id": "tk2b",
-      "name": "EX Trainer Kit 2 Minun",
-      "reason": "API 502"
     },
     {
       "id": "ex12",
       "name": "Legend Maker",
-      "reason": "API 502"
-    },
-    {
-      "id": "ex10",
-      "name": "Unseen Forces",
-      "reason": "API 502"
-    },
-    {
-      "id": "neo2",
-      "name": "Neo Discovery",
-      "reason": "API 502"
-    },
-    {
-      "id": "gym2",
-      "name": "Gym Challenge",
       "reason": "API 500"
     },
     {
-      "id": "gym1",
-      "name": "Gym Heroes",
+      "id": "ex11",
+      "name": "Delta Species",
       "reason": "API 500"
     },
     {
-      "id": "base5",
-      "name": "Team Rocket",
+      "id": "ex9",
+      "name": "Emerald",
       "reason": "API 502"
+    },
+    {
+      "id": "tk1a",
+      "name": "EX Trainer Kit Latias",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex5",
+      "name": "Hidden Legends",
+      "reason": "API 503"
+    },
+    {
+      "id": "ecard2",
+      "name": "Aquapolis",
+      "reason": "API 502"
+    },
+    {
+      "id": "base4",
+      "name": "Base Set 2",
+      "reason": "API 500"
+    },
+    {
+      "id": "basep",
+      "name": "Wizards Black Star Promos",
+      "reason": "API 500"
     }
   ]
 }
