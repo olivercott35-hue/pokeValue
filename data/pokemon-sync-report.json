@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-06T12:06:31.443Z",
-  "cardCount": 20201,
-  "setCount": 222,
-  "failedSetCount": 23,
+  "syncedAt": "2026-11-08T11:16:42.466Z",
+  "cardCount": 19602,
+  "setCount": 223,
+  "failedSetCount": 25,
   "failedSets": [
     {
       "id": "me3",
@@ -10,23 +10,23 @@
       "reason": "API 500"
     },
     {
-      "id": "zsv10pt5",
-      "name": "Black Bolt",
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv3",
+      "name": "Obsidian Flames",
       "reason": "API 502"
     },
     {
-      "id": "swsh11",
-      "name": "Lost Origin",
+      "id": "sv2",
+      "name": "Paldea Evolved",
       "reason": "API 500"
     },
     {
-      "id": "swsh10tg",
-      "name": "Astral Radiance Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh8",
-      "name": "Fusion Strike",
+      "id": "swsh6",
+      "name": "Chilling Reign",
       "reason": "API 500"
     },
     {
@@ -35,88 +35,98 @@
       "reason": "API 500"
     },
     {
-      "id": "sma",
-      "name": "Hidden Fates Shiny Vault",
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
       "reason": "API 500"
     },
     {
-      "id": "xy12",
-      "name": "Evolutions",
+      "id": "sm115",
+      "name": "Hidden Fates",
       "reason": "API 502"
     },
     {
-      "id": "mcd14",
-      "name": "McDonald's Collection 2014",
-      "reason": "API 404"
-    },
-    {
-      "id": "xy2",
-      "name": "Flashfire",
-      "reason": "API 404"
-    },
-    {
-      "id": "xy1",
-      "name": "XY",
+      "id": "sm7",
+      "name": "Celestial Storm",
       "reason": "API 500"
     },
     {
-      "id": "bw11",
-      "name": "Legendary Treasures",
+      "id": "sm5",
+      "name": "Ultra Prism",
       "reason": "API 500"
     },
     {
-      "id": "pl1",
-      "name": "Platinum",
+      "id": "sm35",
+      "name": "Shining Legends",
       "reason": "API 500"
     },
     {
-      "id": "pop8",
-      "name": "POP Series 8",
+      "id": "xyp",
+      "name": "XY Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "ex16",
-      "name": "Power Keepers",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex12",
-      "name": "Legend Maker",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex11",
-      "name": "Delta Species",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex9",
-      "name": "Emerald",
+      "id": "bw4",
+      "name": "Next Destinies",
       "reason": "API 502"
     },
     {
-      "id": "tk1a",
-      "name": "EX Trainer Kit Latias",
+      "id": "bw3",
+      "name": "Noble Victories",
       "reason": "API 500"
     },
     {
-      "id": "ex5",
-      "name": "Hidden Legends",
+      "id": "bw1",
+      "name": "Black & White",
+      "reason": "API 500"
+    },
+    {
+      "id": "col1",
+      "name": "Call of Legends",
       "reason": "API 503"
     },
     {
-      "id": "ecard2",
-      "name": "Aquapolis",
-      "reason": "API 502"
-    },
-    {
-      "id": "base4",
-      "name": "Base Set 2",
+      "id": "hgss3",
+      "name": "HS—Undaunted",
       "reason": "API 500"
     },
     {
-      "id": "basep",
-      "name": "Wizards Black Star Promos",
+      "id": "hgss1",
+      "name": "HeartGold & SoulSilver",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp6",
+      "name": "Legends Awakened",
+      "reason": "API 502"
+    },
+    {
+      "id": "dp1",
+      "name": "Diamond & Pearl",
+      "reason": "API 500"
+    },
+    {
+      "id": "pop4",
+      "name": "POP Series 4",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex6",
+      "name": "FireRed & LeafGreen",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex3",
+      "name": "Dragon",
+      "reason": "API 503"
+    },
+    {
+      "id": "ex2",
+      "name": "Sandstorm",
+      "reason": "API 502"
+    },
+    {
+      "id": "gym1",
+      "name": "Gym Heroes",
       "reason": "API 500"
     }
   ]
