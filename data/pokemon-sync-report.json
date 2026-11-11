@@ -1,147 +1,97 @@
 {
-  "syncedAt": "2026-11-10T12:22:57.481Z",
-  "cardCount": 19358,
+  "syncedAt": "2026-11-11T11:58:59.764Z",
+  "cardCount": 21046,
   "setCount": 223,
-  "failedSetCount": 36,
+  "failedSetCount": 24,
   "failedSets": [
     {
-      "id": "me3",
-      "name": "Perfect Order",
-      "reason": "API 502"
-    },
-    {
-      "id": "me2",
-      "name": "Phantasmal Flames",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv3pt5",
-      "name": "151",
-      "reason": "API 500"
-    },
-    {
-      "id": "sve",
-      "name": "Scarlet & Violet Energies",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh6",
-      "name": "Chilling Reign",
-      "reason": "API 502"
-    },
-    {
-      "id": "swsh45",
-      "name": "Shining Fates",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh45sv",
-      "name": "Shining Fates Shiny Vault",
+      "id": "me6",
+      "name": "Delta Reign",
       "reason": "API 503"
-    },
-    {
-      "id": "swsh4",
-      "name": "Vivid Voltage",
-      "reason": "API 500"
-    },
-    {
-      "id": "swshp",
-      "name": "SWSH Black Star Promos",
-      "reason": "API 502"
-    },
-    {
-      "id": "mcd19",
-      "name": "McDonald's Collection 2019",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm115",
-      "name": "Hidden Fates",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm10",
-      "name": "Unbroken Bonds",
-      "reason": "API 500"
-    },
-    {
-      "id": "det1",
-      "name": "Detective Pikachu",
-      "reason": "API 500"
     },
     {
       "id": "sm9",
       "name": "Team Up",
-      "reason": "API 503"
-    },
-    {
-      "id": "sm5",
-      "name": "Ultra Prism",
       "reason": "API 500"
     },
     {
-      "id": "sm4",
-      "name": "Crimson Invasion",
-      "reason": "API 502"
+      "id": "mcd18",
+      "name": "McDonald's Collection 2018",
+      "reason": "API 500"
     },
     {
       "id": "sm35",
       "name": "Shining Legends",
-      "reason": "API 502"
+      "reason": "API 503"
     },
     {
-      "id": "xy10",
-      "name": "Fates Collide",
-      "reason": "API 502"
-    },
-    {
-      "id": "bw6",
-      "name": "Dragons Exalted",
+      "id": "mcd16",
+      "name": "McDonald's Collection 2016",
       "reason": "API 500"
     },
     {
-      "id": "bw5",
-      "name": "Dark Explorers",
-      "reason": "API 502"
-    },
-    {
-      "id": "mcd11",
-      "name": "McDonald's Collection 2011",
-      "reason": "API 502"
-    },
-    {
-      "id": "pop9",
-      "name": "POP Series 9",
+      "id": "mcd15",
+      "name": "McDonald's Collection 2015",
       "reason": "API 500"
     },
     {
-      "id": "pop6",
-      "name": "POP Series 6",
+      "id": "xy6",
+      "name": "Roaring Skies",
       "reason": "API 500"
     },
     {
-      "id": "dpp",
-      "name": "DP Black Star Promos",
-      "reason": "API 504"
+      "id": "xy4",
+      "name": "Phantom Forces",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy3",
+      "name": "Furious Fists",
+      "reason": "API 502"
+    },
+    {
+      "id": "hgss4",
+      "name": "HS—Triumphant",
+      "reason": "API 500"
+    },
+    {
+      "id": "hgss3",
+      "name": "HS—Undaunted",
+      "reason": "API 502"
+    },
+    {
+      "id": "ru1",
+      "name": "Pokémon Rumble",
+      "reason": "API 500"
+    },
+    {
+      "id": "pl4",
+      "name": "Arceus",
+      "reason": "API 502"
+    },
+    {
+      "id": "pl3",
+      "name": "Supreme Victors",
+      "reason": "API 500"
+    },
+    {
+      "id": "dp7",
+      "name": "Stormfront",
+      "reason": "API 500"
     },
     {
       "id": "pop5",
       "name": "POP Series 5",
-      "reason": "API 503"
+      "reason": "API 500"
     },
     {
-      "id": "ex16",
-      "name": "Power Keepers",
-      "reason": "API 502"
+      "id": "tk2a",
+      "name": "EX Trainer Kit 2 Plusle",
+      "reason": "API 500"
     },
     {
-      "id": "ex15",
-      "name": "Dragon Frontiers",
-      "reason": "API 503"
-    },
-    {
-      "id": "ex12",
-      "name": "Legend Maker",
+      "id": "ex11",
+      "name": "Delta Species",
       "reason": "API 502"
     },
     {
@@ -150,38 +100,28 @@
       "reason": "API 502"
     },
     {
-      "id": "ex10",
-      "name": "Unseen Forces",
+      "id": "np",
+      "name": "Nintendo Black Star Promos",
       "reason": "API 502"
-    },
-    {
-      "id": "tk1a",
-      "name": "EX Trainer Kit Latias",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex5",
-      "name": "Hidden Legends",
-      "reason": "API 500"
     },
     {
       "id": "ex2",
       "name": "Sandstorm",
+      "reason": "API 503"
+    },
+    {
+      "id": "ecard3",
+      "name": "Skyridge",
       "reason": "API 500"
     },
     {
-      "id": "ecard1",
-      "name": "Expedition Base Set",
+      "id": "base6",
+      "name": "Legendary Collection",
       "reason": "API 500"
     },
     {
-      "id": "neo3",
-      "name": "Neo Revelation",
-      "reason": "API 502"
-    },
-    {
-      "id": "basep",
-      "name": "Wizards Black Star Promos",
+      "id": "neo4",
+      "name": "Neo Destiny",
       "reason": "API 502"
     }
   ]
