@@ -1,53 +1,138 @@
 {
-  "syncedAt": "2026-11-11T11:58:59.764Z",
-  "cardCount": 21046,
+  "syncedAt": "2026-11-13T12:12:26.399Z",
+  "cardCount": 17908,
   "setCount": 223,
-  "failedSetCount": 24,
+  "failedSetCount": 43,
   "failedSets": [
     {
-      "id": "me6",
-      "name": "Delta Reign",
-      "reason": "API 503"
-    },
-    {
-      "id": "sm9",
-      "name": "Team Up",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd18",
-      "name": "McDonald's Collection 2018",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm35",
-      "name": "Shining Legends",
-      "reason": "API 503"
-    },
-    {
-      "id": "mcd16",
-      "name": "McDonald's Collection 2016",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd15",
-      "name": "McDonald's Collection 2015",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy6",
-      "name": "Roaring Skies",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy4",
-      "name": "Phantom Forces",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy3",
-      "name": "Furious Fists",
+      "id": "me55",
+      "name": "30th Celebration",
       "reason": "API 502"
+    },
+    {
+      "id": "me2pt5",
+      "name": "Ascended Heroes",
+      "reason": "API 500"
+    },
+    {
+      "id": "me1",
+      "name": "Mega Evolution",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv9",
+      "name": "Journey Together",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv4pt5",
+      "name": "Paldean Fates",
+      "reason": "API 500"
+    },
+    {
+      "id": "sve",
+      "name": "Scarlet & Violet Energies",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh12pt5gg",
+      "name": "Crown Zenith Galarian Gallery",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh11",
+      "name": "Lost Origin",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh45sv",
+      "name": "Shining Fates Shiny Vault",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh1",
+      "name": "Sword & Shield",
+      "reason": "API 502"
+    },
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "det1",
+      "name": "Detective Pikachu",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm75",
+      "name": "Dragon Majesty",
+      "reason": "API 502"
+    },
+    {
+      "id": "sm1",
+      "name": "Sun & Moon",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy9",
+      "name": "BREAKpoint",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy1",
+      "name": "XY",
+      "reason": "API 502"
+    },
+    {
+      "id": "bw8",
+      "name": "Plasma Storm",
+      "reason": "API 503"
+    },
+    {
+      "id": "bw7",
+      "name": "Boundaries Crossed",
+      "reason": "API 404"
+    },
+    {
+      "id": "bw6",
+      "name": "Dragons Exalted",
+      "reason": "API 503"
+    },
+    {
+      "id": "bw5",
+      "name": "Dark Explorers",
+      "reason": "API 502"
+    },
+    {
+      "id": "bw2",
+      "name": "Emerging Powers",
+      "reason": "API 503"
+    },
+    {
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
+      "reason": "API 502"
+    },
+    {
+      "id": "bw1",
+      "name": "Black & White",
+      "reason": "API 500"
+    },
+    {
+      "id": "bwp",
+      "name": "BW Black Star Promos",
+      "reason": "API 500"
+    },
+    {
+      "id": "col1",
+      "name": "Call of Legends",
+      "reason": "API 503"
     },
     {
       "id": "hgss4",
@@ -57,6 +142,16 @@
     {
       "id": "hgss3",
       "name": "HS—Undaunted",
+      "reason": "API 503"
+    },
+    {
+      "id": "hgss2",
+      "name": "HS—Unleashed",
+      "reason": "API 503"
+    },
+    {
+      "id": "hsp",
+      "name": "HGSS Black Star Promos",
       "reason": "API 502"
     },
     {
@@ -65,64 +160,64 @@
       "reason": "API 500"
     },
     {
-      "id": "pl4",
-      "name": "Arceus",
-      "reason": "API 502"
-    },
-    {
-      "id": "pl3",
-      "name": "Supreme Victors",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp7",
-      "name": "Stormfront",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop5",
-      "name": "POP Series 5",
-      "reason": "API 500"
-    },
-    {
-      "id": "tk2a",
-      "name": "EX Trainer Kit 2 Plusle",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex11",
-      "name": "Delta Species",
-      "reason": "API 502"
-    },
-    {
-      "id": "pop2",
-      "name": "POP Series 2",
-      "reason": "API 502"
-    },
-    {
-      "id": "np",
-      "name": "Nintendo Black Star Promos",
-      "reason": "API 502"
-    },
-    {
-      "id": "ex2",
-      "name": "Sandstorm",
+      "id": "pl2",
+      "name": "Rising Rivals",
       "reason": "API 503"
     },
     {
-      "id": "ecard3",
-      "name": "Skyridge",
-      "reason": "API 500"
+      "id": "dp5",
+      "name": "Majestic Dawn",
+      "reason": "API 502"
     },
     {
-      "id": "base6",
-      "name": "Legendary Collection",
+      "id": "pop6",
+      "name": "POP Series 6",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex9",
+      "name": "Emerald",
+      "reason": "API 502"
+    },
+    {
+      "id": "tk1b",
+      "name": "EX Trainer Kit Latios",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex3",
+      "name": "Dragon",
       "reason": "API 500"
     },
     {
       "id": "neo4",
       "name": "Neo Destiny",
-      "reason": "API 502"
+      "reason": "API 500"
+    },
+    {
+      "id": "neo1",
+      "name": "Neo Genesis",
+      "reason": "API 500"
+    },
+    {
+      "id": "gym2",
+      "name": "Gym Challenge",
+      "reason": "API 500"
+    },
+    {
+      "id": "base5",
+      "name": "Team Rocket",
+      "reason": "API 500"
+    },
+    {
+      "id": "base4",
+      "name": "Base Set 2",
+      "reason": "API 500"
+    },
+    {
+      "id": "base3",
+      "name": "Fossil",
+      "reason": "API 500"
     }
   ]
 }
