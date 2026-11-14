@@ -1,52 +1,47 @@
 {
-  "syncedAt": "2026-11-13T12:12:26.399Z",
-  "cardCount": 17908,
+  "syncedAt": "2026-11-14T11:29:05.567Z",
+  "cardCount": 19953,
   "setCount": 223,
-  "failedSetCount": 43,
+  "failedSetCount": 27,
   "failedSets": [
     {
-      "id": "me55",
-      "name": "30th Celebration",
+      "id": "me6",
+      "name": "Delta Reign",
+      "reason": "API 500"
+    },
+    {
+      "id": "me2",
+      "name": "Phantasmal Flames",
       "reason": "API 502"
     },
     {
-      "id": "me2pt5",
-      "name": "Ascended Heroes",
+      "id": "zsv10pt5",
+      "name": "Black Bolt",
       "reason": "API 500"
     },
     {
-      "id": "me1",
-      "name": "Mega Evolution",
+      "id": "sv4",
+      "name": "Paradox Rift",
       "reason": "API 502"
     },
     {
-      "id": "sv9",
-      "name": "Journey Together",
+      "id": "swsh12",
+      "name": "Silver Tempest",
       "reason": "API 502"
     },
     {
-      "id": "sv4pt5",
-      "name": "Paldean Fates",
+      "id": "swsh12tg",
+      "name": "Silver Tempest Trainer Gallery",
+      "reason": "API 502"
+    },
+    {
+      "id": "cel25c",
+      "name": "Celebrations: Classic Collection",
       "reason": "API 500"
     },
     {
-      "id": "sve",
-      "name": "Scarlet & Violet Energies",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith Galarian Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh11",
-      "name": "Lost Origin",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh8",
-      "name": "Fusion Strike",
+      "id": "swsh45",
+      "name": "Shining Fates",
       "reason": "API 500"
     },
     {
@@ -55,168 +50,93 @@
       "reason": "API 500"
     },
     {
+      "id": "swsh35",
+      "name": "Champion's Path",
+      "reason": "API 500"
+    },
+    {
       "id": "swsh1",
       "name": "Sword & Shield",
-      "reason": "API 502"
-    },
-    {
-      "id": "swshp",
-      "name": "SWSH Black Star Promos",
       "reason": "API 500"
     },
     {
-      "id": "det1",
-      "name": "Detective Pikachu",
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
       "reason": "API 500"
     },
     {
-      "id": "sm75",
-      "name": "Dragon Majesty",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm1",
-      "name": "Sun & Moon",
+      "id": "sm11",
+      "name": "Unified Minds",
       "reason": "API 500"
     },
     {
-      "id": "xy9",
-      "name": "BREAKpoint",
+      "id": "sm4",
+      "name": "Crimson Invasion",
       "reason": "API 500"
     },
     {
-      "id": "xy1",
-      "name": "XY",
-      "reason": "API 502"
+      "id": "xy7",
+      "name": "Ancient Origins",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy3",
+      "name": "Furious Fists",
+      "reason": "API 404"
+    },
+    {
+      "id": "xy2",
+      "name": "Flashfire",
+      "reason": "API 500"
     },
     {
       "id": "bw8",
       "name": "Plasma Storm",
-      "reason": "API 503"
-    },
-    {
-      "id": "bw7",
-      "name": "Boundaries Crossed",
-      "reason": "API 404"
-    },
-    {
-      "id": "bw6",
-      "name": "Dragons Exalted",
-      "reason": "API 503"
-    },
-    {
-      "id": "bw5",
-      "name": "Dark Explorers",
-      "reason": "API 502"
-    },
-    {
-      "id": "bw2",
-      "name": "Emerging Powers",
-      "reason": "API 503"
-    },
-    {
-      "id": "mcd11",
-      "name": "McDonald's Collection 2011",
-      "reason": "API 502"
-    },
-    {
-      "id": "bw1",
-      "name": "Black & White",
       "reason": "API 500"
+    },
+    {
+      "id": "bw3",
+      "name": "Noble Victories",
+      "reason": "API 502"
     },
     {
       "id": "bwp",
       "name": "BW Black Star Promos",
-      "reason": "API 500"
+      "reason": "API 502"
     },
     {
       "id": "col1",
       "name": "Call of Legends",
-      "reason": "API 503"
-    },
-    {
-      "id": "hgss4",
-      "name": "HS—Triumphant",
-      "reason": "API 500"
+      "reason": "API 502"
     },
     {
       "id": "hgss3",
       "name": "HS—Undaunted",
-      "reason": "API 503"
+      "reason": "API 502"
     },
     {
       "id": "hgss2",
       "name": "HS—Unleashed",
-      "reason": "API 503"
-    },
-    {
-      "id": "hsp",
-      "name": "HGSS Black Star Promos",
       "reason": "API 502"
     },
     {
-      "id": "ru1",
-      "name": "Pokémon Rumble",
+      "id": "hgss1",
+      "name": "HeartGold & SoulSilver",
       "reason": "API 500"
     },
     {
-      "id": "pl2",
-      "name": "Rising Rivals",
-      "reason": "API 503"
-    },
-    {
-      "id": "dp5",
-      "name": "Majestic Dawn",
-      "reason": "API 502"
-    },
-    {
-      "id": "pop6",
-      "name": "POP Series 6",
-      "reason": "API 502"
-    },
-    {
-      "id": "ex9",
-      "name": "Emerald",
-      "reason": "API 502"
-    },
-    {
-      "id": "tk1b",
-      "name": "EX Trainer Kit Latios",
-      "reason": "API 502"
-    },
-    {
-      "id": "ex3",
-      "name": "Dragon",
+      "id": "pop2",
+      "name": "POP Series 2",
       "reason": "API 500"
+    },
+    {
+      "id": "ex5",
+      "name": "Hidden Legends",
+      "reason": "API 502"
     },
     {
       "id": "neo4",
       "name": "Neo Destiny",
-      "reason": "API 500"
-    },
-    {
-      "id": "neo1",
-      "name": "Neo Genesis",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym2",
-      "name": "Gym Challenge",
-      "reason": "API 500"
-    },
-    {
-      "id": "base5",
-      "name": "Team Rocket",
-      "reason": "API 500"
-    },
-    {
-      "id": "base4",
-      "name": "Base Set 2",
-      "reason": "API 500"
-    },
-    {
-      "id": "base3",
-      "name": "Fossil",
       "reason": "API 500"
     }
   ]
