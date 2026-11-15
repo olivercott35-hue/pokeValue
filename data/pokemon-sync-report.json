@@ -1,123 +1,98 @@
 {
-  "syncedAt": "2026-11-14T11:29:05.567Z",
-  "cardCount": 19953,
+  "syncedAt": "2026-11-15T12:03:06.917Z",
+  "cardCount": 20159,
   "setCount": 223,
   "failedSetCount": 27,
   "failedSets": [
     {
-      "id": "me6",
-      "name": "Delta Reign",
+      "id": "me55c",
+      "name": "30th Celebration: Classic Collection",
       "reason": "API 500"
     },
     {
-      "id": "me2",
-      "name": "Phantasmal Flames",
+      "id": "me3",
+      "name": "Perfect Order",
+      "reason": "API 500"
+    },
+    {
+      "id": "me1",
+      "name": "Mega Evolution",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
       "reason": "API 502"
     },
     {
-      "id": "zsv10pt5",
-      "name": "Black Bolt",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv4",
-      "name": "Paradox Rift",
+      "id": "sv3",
+      "name": "Obsidian Flames",
       "reason": "API 502"
     },
     {
-      "id": "swsh12",
-      "name": "Silver Tempest",
-      "reason": "API 502"
-    },
-    {
-      "id": "swsh12tg",
-      "name": "Silver Tempest Trainer Gallery",
-      "reason": "API 502"
-    },
-    {
-      "id": "cel25c",
-      "name": "Celebrations: Classic Collection",
+      "id": "swsh10tg",
+      "name": "Astral Radiance Trainer Gallery",
       "reason": "API 500"
     },
     {
-      "id": "swsh45",
-      "name": "Shining Fates",
+      "id": "sm9",
+      "name": "Team Up",
       "reason": "API 500"
     },
     {
-      "id": "swsh45sv",
-      "name": "Shining Fates Shiny Vault",
+      "id": "mcd17",
+      "name": "McDonald's Collection 2017",
       "reason": "API 500"
     },
     {
-      "id": "swsh35",
-      "name": "Champion's Path",
+      "id": "sm2",
+      "name": "Guardians Rising",
       "reason": "API 500"
     },
     {
-      "id": "swsh1",
-      "name": "Sword & Shield",
-      "reason": "API 500"
+      "id": "sm1",
+      "name": "Sun & Moon",
+      "reason": "API 503"
     },
     {
-      "id": "mcd19",
-      "name": "McDonald's Collection 2019",
-      "reason": "API 500"
+      "id": "xy12",
+      "name": "Evolutions",
+      "reason": "API 503"
     },
     {
-      "id": "sm11",
-      "name": "Unified Minds",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm4",
-      "name": "Crimson Invasion",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy7",
-      "name": "Ancient Origins",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy3",
-      "name": "Furious Fists",
+      "id": "xy11",
+      "name": "Steam Siege",
       "reason": "API 404"
     },
     {
-      "id": "xy2",
-      "name": "Flashfire",
+      "id": "xy10",
+      "name": "Fates Collide",
+      "reason": "API 404"
+    },
+    {
+      "id": "g1",
+      "name": "Generations",
+      "reason": "API 503"
+    },
+    {
+      "id": "xy6",
+      "name": "Roaring Skies",
       "reason": "API 500"
     },
     {
-      "id": "bw8",
-      "name": "Plasma Storm",
+      "id": "dc1",
+      "name": "Double Crisis",
       "reason": "API 500"
     },
     {
-      "id": "bw3",
-      "name": "Noble Victories",
+      "id": "bw10",
+      "name": "Plasma Blast",
       "reason": "API 502"
     },
     {
-      "id": "bwp",
-      "name": "BW Black Star Promos",
-      "reason": "API 502"
-    },
-    {
-      "id": "col1",
-      "name": "Call of Legends",
-      "reason": "API 502"
-    },
-    {
-      "id": "hgss3",
-      "name": "HS—Undaunted",
-      "reason": "API 502"
-    },
-    {
-      "id": "hgss2",
-      "name": "HS—Unleashed",
-      "reason": "API 502"
+      "id": "dv1",
+      "name": "Dragon Vault",
+      "reason": "API 500"
     },
     {
       "id": "hgss1",
@@ -125,18 +100,43 @@
       "reason": "API 500"
     },
     {
-      "id": "pop2",
-      "name": "POP Series 2",
+      "id": "pl3",
+      "name": "Supreme Victors",
+      "reason": "API 502"
+    },
+    {
+      "id": "pl2",
+      "name": "Rising Rivals",
       "reason": "API 500"
     },
     {
-      "id": "ex5",
-      "name": "Hidden Legends",
-      "reason": "API 502"
+      "id": "pop7",
+      "name": "POP Series 7",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex11",
+      "name": "Delta Species",
+      "reason": "API 500"
     },
     {
       "id": "neo4",
       "name": "Neo Destiny",
+      "reason": "API 500"
+    },
+    {
+      "id": "neo1",
+      "name": "Neo Genesis",
+      "reason": "API 503"
+    },
+    {
+      "id": "gym2",
+      "name": "Gym Challenge",
+      "reason": "API 502"
+    },
+    {
+      "id": "base5",
+      "name": "Team Rocket",
       "reason": "API 500"
     }
   ]
