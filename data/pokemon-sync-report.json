@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-16T12:44:19.193Z",
-  "cardCount": 17493,
+  "syncedAt": "2026-11-17T13:02:28.881Z",
+  "cardCount": 18896,
   "setCount": 223,
-  "failedSetCount": 47,
+  "failedSetCount": 33,
   "failedSets": [
     {
       "id": "me6",
@@ -10,29 +10,9 @@
       "reason": "API 500"
     },
     {
-      "id": "me4",
-      "name": "Chaos Rising",
+      "id": "sv8",
+      "name": "Surging Sparks",
       "reason": "API 500"
-    },
-    {
-      "id": "me2pt5",
-      "name": "Ascended Heroes",
-      "reason": "API 502"
-    },
-    {
-      "id": "me2",
-      "name": "Phantasmal Flames",
-      "reason": "API 502"
-    },
-    {
-      "id": "zsv10pt5",
-      "name": "Black Bolt",
-      "reason": "API 502"
-    },
-    {
-      "id": "rsv10pt5",
-      "name": "White Flare",
-      "reason": "API 502"
     },
     {
       "id": "sv4",
@@ -40,204 +20,154 @@
       "reason": "API 500"
     },
     {
-      "id": "sv3pt5",
-      "name": "151",
+      "id": "sv3",
+      "name": "Obsidian Flames",
       "reason": "API 500"
     },
     {
-      "id": "sv1",
-      "name": "Scarlet & Violet",
+      "id": "sv2",
+      "name": "Paldea Evolved",
       "reason": "API 500"
     },
     {
-      "id": "mcd22",
-      "name": "McDonald's Collection 2022",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh10",
-      "name": "Astral Radiance",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh10tg",
-      "name": "Astral Radiance Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "cel25",
-      "name": "Celebrations",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh45",
-      "name": "Shining Fates",
+      "id": "swsh12pt5",
+      "name": "Crown Zenith",
       "reason": "API 502"
+    },
+    {
+      "id": "pgo",
+      "name": "Pokémon GO",
+      "reason": "API 502"
+    },
+    {
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd21",
+      "name": "McDonald's Collection 2021",
+      "reason": "API 500"
     },
     {
       "id": "swsh35",
       "name": "Champion's Path",
+      "reason": "API 500"
+    },
+    {
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "reason": "API 500"
+    },
+    {
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
       "reason": "API 502"
     },
     {
-      "id": "swshp",
-      "name": "SWSH Black Star Promos",
+      "id": "sm8",
+      "name": "Lost Thunder",
       "reason": "API 500"
     },
     {
-      "id": "sm115",
-      "name": "Hidden Fates",
+      "id": "sm75",
+      "name": "Dragon Majesty",
       "reason": "API 500"
     },
     {
-      "id": "sm11",
-      "name": "Unified Minds",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd17",
-      "name": "McDonald's Collection 2017",
-      "reason": "API 500"
-    },
-    {
-      "id": "smp",
-      "name": "SM Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm1",
-      "name": "Sun & Moon",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd16",
-      "name": "McDonald's Collection 2016",
+      "id": "sm5",
+      "name": "Ultra Prism",
       "reason": "API 502"
     },
     {
-      "id": "xy4",
-      "name": "Phantom Forces",
+      "id": "sm2",
+      "name": "Guardians Rising",
+      "reason": "API 502"
+    },
+    {
+      "id": "xy10",
+      "name": "Fates Collide",
+      "reason": "API 502"
+    },
+    {
+      "id": "xy9",
+      "name": "BREAKpoint",
       "reason": "API 500"
     },
     {
-      "id": "xyp",
-      "name": "XY Black Star Promos",
+      "id": "xy0",
+      "name": "Kalos Starter Set",
       "reason": "API 500"
     },
     {
       "id": "bw6",
       "name": "Dragons Exalted",
-      "reason": "API 502"
-    },
-    {
-      "id": "bw1",
-      "name": "Black & White",
       "reason": "API 500"
     },
     {
-      "id": "bwp",
-      "name": "BW Black Star Promos",
+      "id": "bw4",
+      "name": "Next Destinies",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw3",
+      "name": "Noble Victories",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw2",
+      "name": "Emerging Powers",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
+      "reason": "API 500"
+    },
+    {
+      "id": "hgss2",
+      "name": "HS—Unleashed",
+      "reason": "API 502"
+    },
+    {
+      "id": "ru1",
+      "name": "Pokémon Rumble",
+      "reason": "API 502"
+    },
+    {
+      "id": "pop4",
+      "name": "POP Series 4",
       "reason": "API 503"
     },
     {
-      "id": "hgss3",
-      "name": "HS—Undaunted",
+      "id": "tk1a",
+      "name": "EX Trainer Kit Latias",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex3",
+      "name": "Dragon",
+      "reason": "API 500"
+    },
+    {
+      "id": "ecard2",
+      "name": "Aquapolis",
       "reason": "API 502"
     },
     {
-      "id": "pop9",
-      "name": "POP Series 9",
-      "reason": "API 503"
-    },
-    {
-      "id": "dp5",
-      "name": "Majestic Dawn",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp4",
-      "name": "Great Encounters",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp2",
-      "name": "Mysterious Treasures",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp1",
-      "name": "Diamond & Pearl",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop5",
-      "name": "POP Series 5",
+      "id": "neo1",
+      "name": "Neo Genesis",
       "reason": "API 502"
-    },
-    {
-      "id": "ex15",
-      "name": "Dragon Frontiers",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex11",
-      "name": "Delta Species",
-      "reason": "API 502"
-    },
-    {
-      "id": "ex9",
-      "name": "Emerald",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex6",
-      "name": "FireRed & LeafGreen",
-      "reason": "API 502"
-    },
-    {
-      "id": "pop1",
-      "name": "POP Series 1",
-      "reason": "API 500"
-    },
-    {
-      "id": "tk1b",
-      "name": "EX Trainer Kit Latios",
-      "reason": "API 500"
-    },
-    {
-      "id": "ex2",
-      "name": "Sandstorm",
-      "reason": "API 500"
-    },
-    {
-      "id": "neo4",
-      "name": "Neo Destiny",
-      "reason": "API 503"
-    },
-    {
-      "id": "neo3",
-      "name": "Neo Revelation",
-      "reason": "API 500"
-    },
-    {
-      "id": "si1",
-      "name": "Southern Islands",
-      "reason": "API 503"
     },
     {
       "id": "gym2",
       "name": "Gym Challenge",
-      "reason": "API 502"
-    },
-    {
-      "id": "gym1",
-      "name": "Gym Heroes",
       "reason": "API 500"
     },
     {
-      "id": "base2",
-      "name": "Jungle",
-      "reason": "API 502"
+      "id": "base4",
+      "name": "Base Set 2",
+      "reason": "API 500"
     }
   ]
 }
