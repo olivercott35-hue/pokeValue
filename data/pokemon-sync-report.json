@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-11-20T12:45:37.696Z",
-  "cardCount": 20486,
+  "syncedAt": "2026-11-21T12:20:17.742Z",
+  "cardCount": 19735,
   "setCount": 223,
-  "failedSetCount": 25,
+  "failedSetCount": 28,
   "failedSets": [
     {
       "id": "me4",
@@ -10,79 +10,69 @@
       "reason": "API 500"
     },
     {
+      "id": "sv8",
+      "name": "Surging Sparks",
+      "reason": "API 502"
+    },
+    {
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
+      "reason": "API 500"
+    },
+    {
       "id": "sv4",
       "name": "Paradox Rift",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv3",
+      "name": "Obsidian Flames",
+      "reason": "API 500"
+    },
+    {
+      "id": "pgo",
+      "name": "Pokémon GO",
+      "reason": "API 500"
+    },
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
       "reason": "API 502"
     },
     {
-      "id": "sve",
-      "name": "Scarlet & Violet Energies",
+      "id": "sm115",
+      "name": "Hidden Fates",
       "reason": "API 500"
     },
     {
-      "id": "swsh11tg",
-      "name": "Lost Origin Trainer Gallery",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh9",
-      "name": "Brilliant Stars",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm75",
-      "name": "Dragon Majesty",
-      "reason": "API 500"
-    },
-    {
-      "id": "smp",
-      "name": "SM Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy12",
-      "name": "Evolutions",
-      "reason": "API 500"
-    },
-    {
-      "id": "g1",
-      "name": "Generations",
+      "id": "sm4",
+      "name": "Crimson Invasion",
       "reason": "API 500"
     },
     {
       "id": "xy8",
       "name": "BREAKthrough",
-      "reason": "API 500"
-    },
-    {
-      "id": "dc1",
-      "name": "Double Crisis",
       "reason": "API 502"
     },
     {
-      "id": "xy0",
-      "name": "Kalos Starter Set",
+      "id": "mcd14",
+      "name": "McDonald's Collection 2014",
+      "reason": "API 502"
+    },
+    {
+      "id": "xy2",
+      "name": "Flashfire",
       "reason": "API 500"
     },
     {
-      "id": "bw10",
-      "name": "Plasma Blast",
+      "id": "xyp",
+      "name": "XY Black Star Promos",
       "reason": "API 500"
     },
     {
       "id": "bw8",
       "name": "Plasma Storm",
-      "reason": "API 500"
-    },
-    {
-      "id": "bw3",
-      "name": "Noble Victories",
-      "reason": "API 504"
-    },
-    {
-      "id": "mcd11",
-      "name": "McDonald's Collection 2011",
-      "reason": "API 500"
+      "reason": "API 503"
     },
     {
       "id": "bw1",
@@ -90,43 +80,68 @@
       "reason": "API 502"
     },
     {
-      "id": "col1",
-      "name": "Call of Legends",
+      "id": "ru1",
+      "name": "Pokémon Rumble",
       "reason": "API 500"
     },
     {
-      "id": "pl3",
-      "name": "Supreme Victors",
-      "reason": "API 502"
+      "id": "pl2",
+      "name": "Rising Rivals",
+      "reason": "API 503"
     },
     {
-      "id": "pop6",
-      "name": "POP Series 6",
+      "id": "pop7",
+      "name": "POP Series 7",
       "reason": "API 502"
     },
     {
       "id": "ex14",
       "name": "Crystal Guardians",
+      "reason": "API 503"
+    },
+    {
+      "id": "ex13",
+      "name": "Holon Phantoms",
+      "reason": "API 503"
+    },
+    {
+      "id": "ex11",
+      "name": "Delta Species",
+      "reason": "API 503"
+    },
+    {
+      "id": "pop2",
+      "name": "POP Series 2",
       "reason": "API 500"
     },
     {
-      "id": "ex4",
-      "name": "Team Magma vs Team Aqua",
+      "id": "ex8",
+      "name": "Deoxys",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex2",
+      "name": "Sandstorm",
+      "reason": "API 502"
+    },
+    {
+      "id": "ecard2",
+      "name": "Aquapolis",
+      "reason": "API 500"
+    },
+    {
+      "id": "bp",
+      "name": "Best of Game",
       "reason": "API 500"
     },
     {
       "id": "gym1",
       "name": "Gym Heroes",
-      "reason": "API 500"
-    },
-    {
-      "id": "basep",
-      "name": "Wizards Black Star Promos",
       "reason": "API 502"
     },
     {
-      "id": "base1",
-      "name": "Base",
+      "id": "base2",
+      "name": "Jungle",
       "reason": "API 500"
     }
   ]
