@@ -1,62 +1,62 @@
 {
-  "syncedAt": "2026-11-21T12:20:17.742Z",
-  "cardCount": 19735,
+  "syncedAt": "2026-11-22T12:33:22.297Z",
+  "cardCount": 20762,
   "setCount": 223,
-  "failedSetCount": 28,
+  "failedSetCount": 29,
   "failedSets": [
     {
-      "id": "me4",
-      "name": "Chaos Rising",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv8",
-      "name": "Surging Sparks",
+      "id": "me55c",
+      "name": "30th Celebration: Classic Collection",
       "reason": "API 502"
     },
     {
-      "id": "sv6pt5",
-      "name": "Shrouded Fable",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv4",
-      "name": "Paradox Rift",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv3",
-      "name": "Obsidian Flames",
-      "reason": "API 500"
-    },
-    {
-      "id": "pgo",
-      "name": "Pokémon GO",
-      "reason": "API 500"
-    },
-    {
-      "id": "swshp",
-      "name": "SWSH Black Star Promos",
+      "id": "swsh12pt5gg",
+      "name": "Crown Zenith Galarian Gallery",
       "reason": "API 502"
     },
     {
-      "id": "sm115",
-      "name": "Hidden Fates",
+      "id": "cel25",
+      "name": "Celebrations",
       "reason": "API 500"
     },
     {
-      "id": "sm4",
-      "name": "Crimson Invasion",
-      "reason": "API 500"
+      "id": "swsh4",
+      "name": "Vivid Voltage",
+      "reason": "API 503"
     },
     {
-      "id": "xy8",
-      "name": "BREAKthrough",
+      "id": "fut20",
+      "name": "Pokémon Futsal Collection",
       "reason": "API 502"
     },
     {
-      "id": "mcd14",
-      "name": "McDonald's Collection 2014",
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
+      "reason": "API 500"
+    },
+    {
+      "id": "sma",
+      "name": "Hidden Fates Shiny Vault",
+      "reason": "API 502"
+    },
+    {
+      "id": "det1",
+      "name": "Detective Pikachu",
+      "reason": "API 502"
+    },
+    {
+      "id": "sm7",
+      "name": "Celestial Storm",
+      "reason": "API 502"
+    },
+    {
+      "id": "xy7",
+      "name": "Ancient Origins",
       "reason": "API 502"
     },
     {
@@ -65,49 +65,59 @@
       "reason": "API 500"
     },
     {
-      "id": "xyp",
-      "name": "XY Black Star Promos",
+      "id": "xy0",
+      "name": "Kalos Starter Set",
       "reason": "API 500"
+    },
+    {
+      "id": "bw11",
+      "name": "Legendary Treasures",
+      "reason": "API 503"
     },
     {
       "id": "bw8",
       "name": "Plasma Storm",
-      "reason": "API 503"
-    },
-    {
-      "id": "bw1",
-      "name": "Black & White",
-      "reason": "API 502"
-    },
-    {
-      "id": "ru1",
-      "name": "Pokémon Rumble",
       "reason": "API 500"
     },
     {
-      "id": "pl2",
-      "name": "Rising Rivals",
-      "reason": "API 503"
+      "id": "bw7",
+      "name": "Boundaries Crossed",
+      "reason": "API 500"
     },
     {
-      "id": "pop7",
-      "name": "POP Series 7",
+      "id": "mcd11",
+      "name": "McDonald's Collection 2011",
+      "reason": "API 500"
+    },
+    {
+      "id": "pl4",
+      "name": "Arceus",
+      "reason": "API 500"
+    },
+    {
+      "id": "dp6",
+      "name": "Legends Awakened",
+      "reason": "API 500"
+    },
+    {
+      "id": "pop6",
+      "name": "POP Series 6",
       "reason": "API 502"
     },
     {
-      "id": "ex14",
-      "name": "Crystal Guardians",
-      "reason": "API 503"
+      "id": "pop5",
+      "name": "POP Series 5",
+      "reason": "API 500"
     },
     {
-      "id": "ex13",
-      "name": "Holon Phantoms",
-      "reason": "API 503"
+      "id": "pop3",
+      "name": "POP Series 3",
+      "reason": "API 502"
     },
     {
-      "id": "ex11",
-      "name": "Delta Species",
-      "reason": "API 503"
+      "id": "tk2b",
+      "name": "EX Trainer Kit 2 Minun",
+      "reason": "API 500"
     },
     {
       "id": "pop2",
@@ -115,33 +125,28 @@
       "reason": "API 500"
     },
     {
-      "id": "ex8",
-      "name": "Deoxys",
-      "reason": "API 500"
-    },
-    {
       "id": "ex2",
       "name": "Sandstorm",
-      "reason": "API 502"
-    },
-    {
-      "id": "ecard2",
-      "name": "Aquapolis",
       "reason": "API 500"
     },
     {
-      "id": "bp",
-      "name": "Best of Game",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym1",
-      "name": "Gym Heroes",
+      "id": "ex1",
+      "name": "Ruby & Sapphire",
       "reason": "API 502"
     },
     {
-      "id": "base2",
-      "name": "Jungle",
+      "id": "ecard3",
+      "name": "Skyridge",
+      "reason": "API 500"
+    },
+    {
+      "id": "si1",
+      "name": "Southern Islands",
+      "reason": "API 502"
+    },
+    {
+      "id": "base5",
+      "name": "Team Rocket",
       "reason": "API 500"
     }
   ]
