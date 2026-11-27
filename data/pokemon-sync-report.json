@@ -1,43 +1,28 @@
 {
-  "syncedAt": "2026-11-26T13:50:07.382Z",
-  "cardCount": 19124,
+  "syncedAt": "2026-11-27T13:43:18.602Z",
+  "cardCount": 20036,
   "setCount": 223,
-  "failedSetCount": 31,
+  "failedSetCount": 26,
   "failedSets": [
-    {
-      "id": "me55c",
-      "name": "30th Celebration: Classic Collection",
-      "reason": "API 500"
-    },
-    {
-      "id": "me3",
-      "name": "Perfect Order",
-      "reason": "API 500"
-    },
-    {
-      "id": "me2pt5",
-      "name": "Ascended Heroes",
-      "reason": "API 502"
-    },
-    {
-      "id": "sv4",
-      "name": "Paradox Rift",
-      "reason": "API 500"
-    },
     {
       "id": "sv2",
       "name": "Paldea Evolved",
-      "reason": "API 502"
+      "reason": "API 500"
+    },
+    {
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "reason": "API 500"
     },
     {
       "id": "swsh12pt5gg",
       "name": "Crown Zenith Galarian Gallery",
-      "reason": "API 500"
+      "reason": "API 502"
     },
     {
-      "id": "swsh6",
-      "name": "Chilling Reign",
-      "reason": "API 502"
+      "id": "pgo",
+      "name": "Pokémon GO",
+      "reason": "API 500"
     },
     {
       "id": "swsh35",
@@ -45,119 +30,109 @@
       "reason": "API 500"
     },
     {
-      "id": "fut20",
-      "name": "Pokémon Futsal Collection",
-      "reason": "API 500"
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "reason": "API 502"
     },
     {
-      "id": "sm115",
-      "name": "Hidden Fates",
-      "reason": "API 500"
-    },
-    {
-      "id": "sma",
-      "name": "Hidden Fates Shiny Vault",
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
       "reason": "API 500"
     },
     {
       "id": "sm11",
       "name": "Unified Minds",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm10",
-      "name": "Unbroken Bonds",
       "reason": "API 502"
     },
     {
-      "id": "det1",
-      "name": "Detective Pikachu",
-      "reason": "API 500"
-    },
-    {
-      "id": "sm3",
-      "name": "Burning Shadows",
-      "reason": "API 503"
-    },
-    {
-      "id": "smp",
-      "name": "SM Black Star Promos",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy11",
-      "name": "Steam Siege",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy10",
-      "name": "Fates Collide",
-      "reason": "API 500"
-    },
-    {
-      "id": "mcd15",
-      "name": "McDonald's Collection 2015",
-      "reason": "API 500"
-    },
-    {
-      "id": "xy8",
-      "name": "BREAKthrough",
-      "reason": "API 500"
-    },
-    {
-      "id": "dc1",
-      "name": "Double Crisis",
+      "id": "sm75",
+      "name": "Dragon Majesty",
       "reason": "API 502"
     },
     {
-      "id": "bw8",
-      "name": "Plasma Storm",
-      "reason": "API 503"
+      "id": "sm35",
+      "name": "Shining Legends",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd16",
+      "name": "McDonald's Collection 2016",
+      "reason": "API 500"
+    },
+    {
+      "id": "xy7",
+      "name": "Ancient Origins",
+      "reason": "API 500"
+    },
+    {
+      "id": "bw11",
+      "name": "Legendary Treasures",
+      "reason": "API 500"
     },
     {
       "id": "bw7",
       "name": "Boundaries Crossed",
-      "reason": "API 502"
-    },
-    {
-      "id": "pl1",
-      "name": "Platinum",
       "reason": "API 500"
     },
     {
-      "id": "dp5",
-      "name": "Majestic Dawn",
-      "reason": "API 502"
+      "id": "bw3",
+      "name": "Noble Victories",
+      "reason": "API 503"
     },
     {
-      "id": "ex16",
-      "name": "Power Keepers",
-      "reason": "API 502"
-    },
-    {
-      "id": "tk1a",
-      "name": "EX Trainer Kit Latias",
+      "id": "col1",
+      "name": "Call of Legends",
       "reason": "API 500"
     },
     {
-      "id": "ex4",
-      "name": "Team Magma vs Team Aqua",
+      "id": "pl2",
+      "name": "Rising Rivals",
       "reason": "API 500"
     },
     {
-      "id": "neo3",
-      "name": "Neo Revelation",
+      "id": "pop9",
+      "name": "POP Series 9",
+      "reason": "API 500"
+    },
+    {
+      "id": "dp7",
+      "name": "Stormfront",
+      "reason": "API 500"
+    },
+    {
+      "id": "pop8",
+      "name": "POP Series 8",
       "reason": "API 502"
+    },
+    {
+      "id": "dp4",
+      "name": "Great Encounters",
+      "reason": "API 500"
+    },
+    {
+      "id": "tk2a",
+      "name": "EX Trainer Kit 2 Plusle",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex9",
+      "name": "Emerald",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex3",
+      "name": "Dragon",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex2",
+      "name": "Sandstorm",
+      "reason": "API 500"
     },
     {
       "id": "gym1",
       "name": "Gym Heroes",
       "reason": "API 500"
-    },
-    {
-      "id": "base4",
-      "name": "Base Set 2",
-      "reason": "API 502"
     }
   ]
 }
