@@ -1,73 +1,78 @@
 {
-  "syncedAt": "2026-11-27T13:43:18.602Z",
-  "cardCount": 20036,
+  "syncedAt": "2026-11-28T13:02:02.906Z",
+  "cardCount": 19356,
   "setCount": 223,
-  "failedSetCount": 26,
+  "failedSetCount": 31,
   "failedSets": [
+    {
+      "id": "me5",
+      "name": "Pitch Black",
+      "reason": "API 500"
+    },
+    {
+      "id": "sv4pt5",
+      "name": "Paldean Fates",
+      "reason": "API 502"
+    },
     {
       "id": "sv2",
       "name": "Paldea Evolved",
-      "reason": "API 500"
-    },
-    {
-      "id": "sv1",
-      "name": "Scarlet & Violet",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith Galarian Gallery",
       "reason": "API 502"
     },
     {
-      "id": "pgo",
-      "name": "Pokémon GO",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh35",
-      "name": "Champion's Path",
-      "reason": "API 500"
-    },
-    {
-      "id": "swsh3",
-      "name": "Darkness Ablaze",
+      "id": "swsh9",
+      "name": "Brilliant Stars",
       "reason": "API 502"
     },
     {
-      "id": "sm12",
-      "name": "Cosmic Eclipse",
+      "id": "swsh8",
+      "name": "Fusion Strike",
       "reason": "API 500"
     },
     {
-      "id": "sm11",
-      "name": "Unified Minds",
+      "id": "swsh2",
+      "name": "Rebel Clash",
       "reason": "API 502"
+    },
+    {
+      "id": "sm9",
+      "name": "Team Up",
+      "reason": "API 500"
+    },
+    {
+      "id": "mcd18",
+      "name": "McDonald's Collection 2018",
+      "reason": "API 500"
     },
     {
       "id": "sm75",
       "name": "Dragon Majesty",
-      "reason": "API 502"
-    },
-    {
-      "id": "sm35",
-      "name": "Shining Legends",
       "reason": "API 500"
     },
     {
-      "id": "mcd16",
-      "name": "McDonald's Collection 2016",
+      "id": "mcd17",
+      "name": "McDonald's Collection 2017",
       "reason": "API 500"
     },
     {
-      "id": "xy7",
-      "name": "Ancient Origins",
+      "id": "g1",
+      "name": "Generations",
       "reason": "API 500"
     },
     {
-      "id": "bw11",
-      "name": "Legendary Treasures",
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "reason": "API 503"
+    },
+    {
+      "id": "bw10",
+      "name": "Plasma Blast",
       "reason": "API 500"
+    },
+    {
+      "id": "bw8",
+      "name": "Plasma Storm",
+      "reason": "API 503"
     },
     {
       "id": "bw7",
@@ -75,64 +80,84 @@
       "reason": "API 500"
     },
     {
-      "id": "bw3",
-      "name": "Noble Victories",
-      "reason": "API 503"
-    },
-    {
-      "id": "col1",
-      "name": "Call of Legends",
-      "reason": "API 500"
-    },
-    {
-      "id": "pl2",
-      "name": "Rising Rivals",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop9",
-      "name": "POP Series 9",
-      "reason": "API 500"
-    },
-    {
-      "id": "dp7",
-      "name": "Stormfront",
-      "reason": "API 500"
-    },
-    {
-      "id": "pop8",
-      "name": "POP Series 8",
+      "id": "dp3",
+      "name": "Secret Wonders",
       "reason": "API 502"
     },
     {
-      "id": "dp4",
-      "name": "Great Encounters",
+      "id": "ex16",
+      "name": "Power Keepers",
       "reason": "API 500"
+    },
+    {
+      "id": "ex14",
+      "name": "Crystal Guardians",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex13",
+      "name": "Holon Phantoms",
+      "reason": "API 502"
     },
     {
       "id": "tk2a",
       "name": "EX Trainer Kit 2 Plusle",
+      "reason": "API 500"
+    },
+    {
+      "id": "ex12",
+      "name": "Legend Maker",
       "reason": "API 502"
     },
     {
-      "id": "ex9",
-      "name": "Emerald",
+      "id": "ex11",
+      "name": "Delta Species",
+      "reason": "API 502"
+    },
+    {
+      "id": "pop2",
+      "name": "POP Series 2",
       "reason": "API 500"
     },
     {
-      "id": "ex3",
-      "name": "Dragon",
+      "id": "ex8",
+      "name": "Deoxys",
+      "reason": "API 502"
+    },
+    {
+      "id": "ex5",
+      "name": "Hidden Legends",
+      "reason": "API 502"
+    },
+    {
+      "id": "si1",
+      "name": "Southern Islands",
+      "reason": "API 502"
+    },
+    {
+      "id": "neo2",
+      "name": "Neo Discovery",
+      "reason": "API 502"
+    },
+    {
+      "id": "neo1",
+      "name": "Neo Genesis",
+      "reason": "API 502"
+    },
+    {
+      "id": "gym2",
+      "name": "Gym Challenge",
+      "reason": "API 502"
+    },
+    {
+      "id": "base4",
+      "name": "Base Set 2",
       "reason": "API 500"
     },
     {
-      "id": "ex2",
-      "name": "Sandstorm",
-      "reason": "API 500"
-    },
-    {
-      "id": "gym1",
-      "name": "Gym Heroes",
-      "reason": "API 500"
+      "id": "base2",
+      "name": "Jungle",
+      "reason": "API 502"
     }
   ]
 }
